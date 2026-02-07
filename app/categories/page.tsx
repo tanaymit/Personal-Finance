@@ -14,6 +14,7 @@ export default function CategoriesPage() {
   const [globalBudget, setGlobalBudget] = useState<number>(0);
   const [filterYear, setFilterYear] = useState<number | undefined>();
   const [filterMonth, setFilterMonth] = useState<number | undefined>();
+  const [filtersLoaded, setFiltersLoaded] = useState(false);
 
   const loadCategories = async () => {
     try {
@@ -47,12 +48,14 @@ export default function CategoriesPage() {
         console.error('Failed to parse stored filter:', e);
       }
     }
+    setFiltersLoaded(true);
   }, []);
 
   useEffect(() => {
+    if (!filtersLoaded) return;
     loadCategories();
     loadBudget();
-  }, [filterYear, filterMonth]);
+  }, [filterYear, filterMonth, filtersLoaded]);
 
   // Listen for budget updates from dashboard
   useEffect(() => {

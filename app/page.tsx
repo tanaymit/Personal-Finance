@@ -20,9 +20,10 @@ export default function Dashboard() {
   const [budgetModalOpen, setBudgetModalOpen] = useState(false);
   const [filterYear, setFilterYear] = useState<number | undefined>();
   const [filterMonth, setFilterMonth] = useState<number | undefined>();
+  const [filtersLoaded, setFiltersLoaded] = useState(false);
 
+  // Load filter from localStorage on mount
   useEffect(() => {
-    // Load filter from localStorage
     const stored = localStorage.getItem('monthYearFilter');
     if (stored) {
       try {
@@ -33,9 +34,16 @@ export default function Dashboard() {
         console.error('Failed to parse stored filter:', e);
       }
     }
+    setFiltersLoaded(true);
+  }, []);
 
+  // Load data when filters change (but only after initial filter load)
+  useEffect(() => {
+    if (!filtersLoaded) return;
+    
     async function loadData() {
       try {
+        setLoading(true);
         const data = await fetchBudgetSummary(filterYear, filterMonth);
         setSummary(data);
       } catch (error) {
@@ -52,7 +60,7 @@ export default function Dashboard() {
       }
     }
     loadData();
-  }, [filterYear, filterMonth]);
+  }, [filterYear, filterMonth, filtersLoaded]);
 
   // Listen for filter changes from other pages
   useEffect(() => {

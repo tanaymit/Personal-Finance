@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Orbitron } from "next/font/google";
+import { Geist, Geist_Mono, Inter } from "next/font/google";
 import "./globals.css";
 import { Header } from '@/components/layout/Header';
 import { Sidebar } from '@/components/layout/Sidebar';
@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-const orbitron = Orbitron({
+const inter = Inter({
   variable: "--font-future",
   subsets: ["latin"],
 });
@@ -31,7 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body suppressHydrationWarning className={`${geistSans.variable} ${geistMono.variable} ${orbitron.variable} antialiased bg-slate-950 text-slate-100`}>
+      <body suppressHydrationWarning className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} antialiased bg-slate-950 text-slate-100`}>
         <Header />
         <div className="flex">
           <Sidebar />

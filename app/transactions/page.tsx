@@ -17,6 +17,7 @@ export default function TransactionsPage() {
   const [loading, setLoading] = useState(true);
   const [filterYear, setFilterYear] = useState<number | undefined>();
   const [filterMonth, setFilterMonth] = useState<number | undefined>();
+  const [filtersLoaded, setFiltersLoaded] = useState(false);
 
   useEffect(() => {
     // Load filter from localStorage on mount
@@ -30,9 +31,12 @@ export default function TransactionsPage() {
         console.error('Failed to parse stored filter:', e);
       }
     }
+    setFiltersLoaded(true);
   }, []);
 
   useEffect(() => {
+    if (!filtersLoaded) return;
+    
     async function loadTransactions() {
       try {
         const data = await fetchTransactions(undefined, filterYear, filterMonth);
@@ -45,7 +49,7 @@ export default function TransactionsPage() {
       }
     }
     loadTransactions();
-  }, [filterYear, filterMonth]);
+  }, [filterYear, filterMonth, filtersLoaded]);
 
   // Listen for filter changes
   useEffect(() => {
