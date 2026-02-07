@@ -1,15 +1,7 @@
 {
   "transactions": [
     {
-      "id": "5d6b26a8380549febc1f1c499f66ace7",
-      "date": "2026-02-07",
-      "merchant": "# COSTCO WHOLESALE",
-      "amount": 123.34,
-      "category": "Shopping",
-      "description": "Auto-created from receipt r2.jpeg"
-    },
-    {
-      "id": "19fc443d4f0046c899124976f5f7d13a",
+      "id": "ea8775ef32b8499a9a3bfcbd66f509b5",
       "date": "2025-07-17",
       "merchant": "Home Loan EMI",
       "amount": 1200.0,
@@ -17,7 +9,7 @@
       "description": "Home Loan EMI - Monthly Payment"
     },
     {
-      "id": "d857ed87c0364d7388904ff868b5dcbc",
+      "id": "db9aac6617d1460a92372bb301447240",
       "date": "2025-07-17",
       "merchant": "Kroger Cranberry Township PA",
       "amount": 29.61,
@@ -25,7 +17,7 @@
       "description": "Debit Card Purchase Kroger Cranberry Township PA"
     },
     {
-      "id": "04f7df210244449fa9e059f5a8f88bd0",
+      "id": "ab80d5dcfdd649518d5afc3d9855f889",
       "date": "2025-07-17",
       "merchant": "Target Oakland PA",
       "amount": 133.95,
@@ -33,7 +25,7 @@
       "description": "Debit Card Purchase Target Oakland PA"
     },
     {
-      "id": "868fba081e1041a881ac7a698212101c",
+      "id": "9da3c59cf2ad4bd3b8d695fce91c8479",
       "date": "2025-07-18",
       "merchant": "Caribou Coffee",
       "amount": 5.04,
@@ -41,7 +33,7 @@
       "description": "Debit Card Purchase Caribou Coffee"
     },
     {
-      "id": "920aafa15b594a3ba7dd8e02589ba0fa",
+      "id": "2ded0dea8ed5483f9998d352b5a1f053",
       "date": "2025-07-19",
       "merchant": "HomeGoods Mt Lebanon PA",
       "amount": 254.01,
@@ -49,7 +41,7 @@
       "description": "Debit Card Purchase HomeGoods Mt Lebanon PA"
     },
     {
-      "id": "02ee31472d3142c889e1642ff4e1f8e9",
+      "id": "3bee349e793a43148da5d25e3b682efb",
       "date": "2025-07-19",
       "merchant": "Kohls Homestead PA",
       "amount": 65.35,
@@ -57,7 +49,7 @@
       "description": "Debit Card Purchase Kohls Homestead PA"
     },
     {
-      "id": "48f370a9fd844df3ad4d42f40bd95ee2",
+      "id": "75c16f64a03a464ca2773c831a673a53",
       "date": "2025-07-19",
       "merchant": "Adidas Cranberry Township PA",
       "amount": 63.54,
@@ -65,7 +57,7 @@
       "description": "Debit Card Purchase Adidas Cranberry Township PA"
     },
     {
-      "id": "050da1978bf2473999a7033fb83ce872",
+      "id": "02ab1701ccf044c18a2a628b3f992de3",
       "date": "2025-07-19",
       "merchant": "Zara Shadyside PA",
       "amount": 71.22,
@@ -73,7 +65,7 @@
       "description": "Debit Card Purchase Zara Shadyside PA"
     },
     {
-      "id": "1502c07c574a4fe9ba7860d4f33b0b75",
+      "id": "40ea262b59a84f1aaa0681f7c45495ca",
       "date": "2025-07-19",
       "merchant": "Instacart",
       "amount": 37.75,
@@ -81,7 +73,7 @@
       "description": "Debit Card Purchase Instacart"
     },
     {
-      "id": "4412ba5951394bad8f296a672ca9e397",
+      "id": "af88b434262f4051a0c168d76e90566f",
       "date": "2025-07-20",
       "merchant": "Subway Cranberry Township PA",
       "amount": 14.21,
@@ -89,7 +81,7 @@
       "description": "Debit Card Purchase Subway Cranberry Township PA"
     },
     {
-      "id": "78867118534a4b24995a2667ca57072a",
+      "id": "14f327dae2754a678dac97f9b962ccf4",
       "date": "2025-07-20",
       "merchant": "Wendys Mt Lebanon PA",
       "amount": 22.41,
@@ -97,7 +89,7 @@
       "description": "Debit Card Purchase Wendys Mt Lebanon PA"
     },
     {
-      "id": "748f078192884fa892f39caea16711f0",
+      "id": "4ff95f052e79466785014eba3fc92d8a",
       "date": "2025-07-20",
       "merchant": "Blue Bottle",
       "amount": 11.52,
@@ -105,7 +97,7 @@
       "description": "Debit Card Purchase Blue Bottle"
     },
     {
-      "id": "219b0ae8dd4f4668999176442870cbcb",
+      "id": "fd8a04c0beb64dff9014c52478508bd1",
       "date": "2025-07-20",
       "merchant": "Chevron Shadyside PA",
       "amount": 54.45,
@@ -113,7 +105,7 @@
       "description": "Debit Card Purchase Chevron Shadyside PA"
     },
     {
-      "id": "2b9bee871bd0453ab48042b12a12c451",
+      "id": "19046fb617684e9f9981c02c48896b5c",
       "date": "2025-07-20",
       "merchant": "Coursera",
       "amount": 71.39,
@@ -121,7 +113,7 @@
       "description": "Debit Card Purchase Coursera"
     },
     {
-      "id": "4e0e8f2ab26c4d27aab52aa2a598e749",
+      "id": "e8a32635609e459dac6094fa22f18f3a",
       "date": "2025-07-21",
       "merchant": "Car Loan EMI",
       "amount": 350.0,
@@ -129,7 +121,7 @@
       "description": "Car Loan EMI - Monthly Payment"
     },
     {
-      "id": "ff498bcf8d6d4e808c7c51f1485e4020",
+      "id": "f02c3772e2564aecbb210be53275a52e",
       "date": "2025-07-21",
       "merchant": "Texas Roadhouse Squirrel Hill PA",
       "amount": 78.65,
@@ -137,7 +129,7 @@
       "description": "Debit Card Purchase Texas Roadhouse Squirrel Hill PA"
     },
     {
-      "id": "5df95eba54134f7cae8785c19fd579da",
+      "id": "1d768fa38f3445339d5f1ade4e166110",
       "date": "2025-07-21",
       "merchant": "Dunkin",
       "amount": 8.13,
@@ -145,7 +137,7 @@
       "description": "Debit Card Purchase Dunkin"
     },
     {
-      "id": "dadf95675f304ee38204e6feec783fce",
+      "id": "765dccc910454acf9b82873c513bafbe",
       "date": "2025-07-21",
       "merchant": "Uber",
       "amount": 20.18,
@@ -153,7 +145,7 @@
       "description": "Debit Card Purchase Uber"
     },
     {
-      "id": "5d6ed83bb28b4679b8cb9b5fb6b87b9e",
+      "id": "dbf9ef0148fe403a86ff11df5051554e",
       "date": "2025-07-21",
       "merchant": "Subway Card",
       "amount": 115.06,
@@ -161,7 +153,7 @@
       "description": "Debit Card Purchase Subway Card"
     },
     {
-      "id": "c8146a7680a04341a206001c9386b166",
+      "id": "deb6c1f4b7b0408fa203e814935343ea",
       "date": "2025-07-21",
       "merchant": "Bus Fare",
       "amount": 87.05,
@@ -169,7 +161,7 @@
       "description": "Debit Card Purchase Bus Fare"
     },
     {
-      "id": "d1857fcc0b9e41c8af9e51b698cb84b8",
+      "id": "8a82b51336a5407e986b24bf32b24a10",
       "date": "2025-07-21",
       "merchant": "TJ Maxx Squirrel Hill PA",
       "amount": 242.97,
@@ -177,7 +169,7 @@
       "description": "Debit Card Purchase TJ Maxx Squirrel Hill PA"
     },
     {
-      "id": "31098b602b7d446d831ee5516a2a579a",
+      "id": "4700a05a762a413983f9dc64c287ff16",
       "date": "2025-07-21",
       "merchant": "Escape Room",
       "amount": 37.36,
@@ -185,7 +177,7 @@
       "description": "Debit Card Purchase Escape Room"
     },
     {
-      "id": "f8e6c09a01ba4fb09b8547d758b1dc2f",
+      "id": "b1eddb8b8e584032a37b8d55cd7d1458",
       "date": "2025-07-22",
       "merchant": "Water Bill",
       "amount": 48.79,
@@ -193,7 +185,7 @@
       "description": "Water Bill"
     },
     {
-      "id": "5ed62329adc741939dee4066c4e4ac32",
+      "id": "e318a0e36a30437cba35ba899fab5f0d",
       "date": "2025-07-22",
       "merchant": "T-Mobile",
       "amount": 52.24,
@@ -201,7 +193,7 @@
       "description": "T-Mobile"
     },
     {
-      "id": "81db641a733c44e49943fb155b5965ff",
+      "id": "b418b32bfbc247a69b29be78bca62252",
       "date": "2025-07-22",
       "merchant": "Amazon Squirrel Hill PA",
       "amount": 345.09,
@@ -209,7 +201,7 @@
       "description": "Debit Card Purchase Amazon Squirrel Hill PA"
     },
     {
-      "id": "d6b3fe53a36a4be7b95ec83eee7563f0",
+      "id": "a9b8161b18a34b1c98ac23dff78a926c",
       "date": "2025-07-22",
       "merchant": "Regal Cinemas",
       "amount": 45.2,
@@ -217,7 +209,7 @@
       "description": "Debit Card Purchase Regal Cinemas"
     },
     {
-      "id": "17387d5701954850aa4f2fd85eeebead",
+      "id": "f2b9f5f931b94bd08105e9848c270204",
       "date": "2025-07-22",
       "merchant": "Pet Food",
       "amount": 122.16,
@@ -225,7 +217,7 @@
       "description": "Debit Card Purchase Pet Food"
     },
     {
-      "id": "bd3812fa67694294ac7fa7ad14272925",
+      "id": "0ee89dbea79649a39e1c3e8a83e63d92",
       "date": "2025-07-23",
       "merchant": "Lyft",
       "amount": 14.51,
@@ -233,7 +225,7 @@
       "description": "Debit Card Purchase Lyft"
     },
     {
-      "id": "ae50443e6ee64a418d6c322cb14c5e71",
+      "id": "56c90136c26249b88a5b7f21a08108aa",
       "date": "2025-07-23",
       "merchant": "Uber",
       "amount": 12.95,
@@ -241,7 +233,7 @@
       "description": "Debit Card Purchase Uber"
     },
     {
-      "id": "5ff188ae08674f64988c9bd74ef85fac",
+      "id": "cdefef4291ec468b9d64eff5152c3663",
       "date": "2025-07-23",
       "merchant": "Unknown",
       "amount": 84.03,
@@ -249,7 +241,7 @@
       "description": "ATM Withdrawal"
     },
     {
-      "id": "e8eaaa30472942a3b0f27b8ff37c0de1",
+      "id": "21212eaaa0c2475f8b4b271302f0ce07",
       "date": "2025-07-24",
       "merchant": "Subway Homestead PA",
       "amount": 20.98,
@@ -257,7 +249,7 @@
       "description": "Debit Card Purchase Subway Homestead PA"
     },
     {
-      "id": "9f8b904a424d45f28525ebb63ae29c8b",
+      "id": "7a7ae0049abc48869398d1b0a0cf317f",
       "date": "2025-07-24",
       "merchant": "Caribou Coffee",
       "amount": 9.86,
@@ -265,7 +257,7 @@
       "description": "Debit Card Purchase Caribou Coffee"
     },
     {
-      "id": "7804d09abd9c43d8ad9d0fc237e2d8e1",
+      "id": "8900b1fe3e294f14b07e5cbd65966567",
       "date": "2025-07-24",
       "merchant": "Dunkin",
       "amount": 6.04,
@@ -273,7 +265,7 @@
       "description": "Debit Card Purchase Dunkin"
     },
     {
-      "id": "92b007356090429c896f30bd752ceae0",
+      "id": "4523beba5f3547ee9d08acf4c37f9b89",
       "date": "2025-07-24",
       "merchant": "Caribou Coffee",
       "amount": 5.68,
@@ -281,7 +273,7 @@
       "description": "Debit Card Purchase Caribou Coffee"
     },
     {
-      "id": "9c03fc40f6dd4ef5a29dc558160ac6d6",
+      "id": "6b3d91502d564c9d8f424ec94a6cd505",
       "date": "2025-07-24",
       "merchant": "GetGo Shadyside PA",
       "amount": 37.06,
@@ -289,7 +281,7 @@
       "description": "Debit Card Purchase GetGo Shadyside PA"
     },
     {
-      "id": "c5a719a0d3424d38b986c27bd02e8c3a",
+      "id": "d2c8196d1b0d46b1b641fd55b3516774",
       "date": "2025-07-25",
       "merchant": "Whole Foods Homestead PA",
       "amount": 74.07,
@@ -297,7 +289,7 @@
       "description": "Debit Card Purchase Whole Foods Homestead PA"
     },
     {
-      "id": "e1d81fc33b864e439205136a7aebe07d",
+      "id": "bcca210d518c456a9963d86348614c63",
       "date": "2025-07-25",
       "merchant": "Mobil Mt Lebanon PA",
       "amount": 60.64,
@@ -305,7 +297,7 @@
       "description": "Debit Card Purchase Mobil Mt Lebanon PA"
     },
     {
-      "id": "3b0aeb459f954414b6b44535248b4fa5",
+      "id": "1695b4e2ff2f4641972f31cbed38dcde",
       "date": "2025-07-25",
       "merchant": "Menards",
       "amount": 136.62,
@@ -313,7 +305,7 @@
       "description": "Debit Card Purchase Menards"
     },
     {
-      "id": "95c8cde84d1d4b9bbf3c95b6b11921ad",
+      "id": "3a91fc0f6397431f994f07cfa75b84b3",
       "date": "2025-07-25",
       "merchant": "Unknown",
       "amount": 132.1,
@@ -321,7 +313,7 @@
       "description": "ATM Withdrawal"
     },
     {
-      "id": "ce41cd5650fe47d0a226f2af21f90b51",
+      "id": "626c84608da0480e961182963cb3bb60",
       "date": "2025-07-26",
       "merchant": "Personal Loan EMI",
       "amount": 250.0,
@@ -329,7 +321,7 @@
       "description": "Personal Loan EMI - Monthly Payment"
     },
     {
-      "id": "3a208fab94234e0ea9a1435a7c103bac",
+      "id": "ed36baf3dd774d5d934a0b2382c79033",
       "date": "2025-07-26",
       "merchant": "Kroger Monroeville PA",
       "amount": 117.37,
@@ -337,7 +329,7 @@
       "description": "Debit Card Purchase Kroger Monroeville PA"
     },
     {
-      "id": "57205e210f2f45f49a6bf86e768ad851",
+      "id": "886e1ff3c9924856954634880a66d8da",
       "date": "2025-07-27",
       "merchant": "City Parking Garage",
       "amount": 15.96,
@@ -345,7 +337,7 @@
       "description": "Debit Card Purchase City Parking Garage"
     },
     {
-      "id": "a13b140bf9c7406bbe174ae15c8d4a6b",
+      "id": "5ae0ee78866a482c8ea0630bc63e948a",
       "date": "2025-07-28",
       "merchant": "Disney Plus",
       "amount": 19.19,
@@ -353,7 +345,7 @@
       "description": "Disney Plus"
     },
     {
-      "id": "f44b9410b0c0424b891e1c3b963ac5e9",
+      "id": "48c086cbf8f2490dbe76482f4f1223d6",
       "date": "2025-07-28",
       "merchant": "PF Changs Squirrel Hill PA",
       "amount": 26.18,
@@ -361,7 +353,7 @@
       "description": "Debit Card Purchase PF Changs Squirrel Hill PA"
     },
     {
-      "id": "63bab0f952b8408fa5eb618bdffe3640",
+      "id": "c1f8ed5c28ce49b4a80a88de318db0dd",
       "date": "2025-07-28",
       "merchant": "Texas Roadhouse Monroeville PA",
       "amount": 42.44,
@@ -369,7 +361,7 @@
       "description": "Debit Card Purchase Texas Roadhouse Monroeville PA"
     },
     {
-      "id": "62d4764a5a8a4f339f90982b4d37430a",
+      "id": "0a2cdf41fc4e4e1898400405df47a4cb",
       "date": "2025-07-28",
       "merchant": "Metro Transit Pass",
       "amount": 11.93,
@@ -377,7 +369,7 @@
       "description": "Debit Card Purchase Metro Transit Pass"
     },
     {
-      "id": "8fb0eef760994e498a646d6dedd3bf80",
+      "id": "ebd61f08e1f843169d8d3299ebd43647",
       "date": "2025-07-29",
       "merchant": "Target Homestead PA",
       "amount": 198.1,
@@ -385,7 +377,7 @@
       "description": "Debit Card Purchase Target Homestead PA"
     },
     {
-      "id": "0da41f3989a74253ba0fc697b40f7006",
+      "id": "d258a6f15ac8453388b03e025dad3abb",
       "date": "2025-07-30",
       "merchant": "Panera Bread Pittsburgh PA",
       "amount": 35.42,
@@ -393,7 +385,7 @@
       "description": "Debit Card Purchase Panera Bread Pittsburgh PA"
     },
     {
-      "id": "e1bb451cfde547b68836be4c2d487f85",
+      "id": "83fac12089e54fdd84206b6657301691",
       "date": "2025-07-30",
       "merchant": "KFC Monroeville PA",
       "amount": 21.49,
@@ -401,7 +393,7 @@
       "description": "Debit Card Purchase KFC Monroeville PA"
     },
     {
-      "id": "54a8341fbe6f42dbb26a10d4df2674c9",
+      "id": "05f07415f798457ea977e856b44c81b2",
       "date": "2025-07-30",
       "merchant": "Peets Coffee",
       "amount": 10.85,
@@ -409,7 +401,7 @@
       "description": "Debit Card Purchase Peets Coffee"
     },
     {
-      "id": "d19d79f27a684ac6b02d15f5ac82d4a7",
+      "id": "21f5f0980d6046bfbced21179268a3d8",
       "date": "2025-07-31",
       "merchant": "Health Insurance Premium",
       "amount": 225.07,
@@ -417,7 +409,7 @@
       "description": "Health Insurance Premium"
     },
     {
-      "id": "d816cb9ab3a741efa73459af496cdf20",
+      "id": "b45606786a8346d58c55b204f5c538c3",
       "date": "2025-07-31",
       "merchant": "Yoga Studio",
       "amount": 42.08,
@@ -425,7 +417,7 @@
       "description": "Yoga Studio"
     },
     {
-      "id": "714f685b01594f2189347213185bbcd9",
+      "id": "27b0c7231e0e4a9ab46642659e137104",
       "date": "2025-07-31",
       "merchant": "Blue Bottle",
       "amount": 4.89,
@@ -433,7 +425,7 @@
       "description": "Debit Card Purchase Blue Bottle"
     },
     {
-      "id": "51d4615a3dc54a5ba43747d3ce5b2059",
+      "id": "94fd415993bf4a27b7062ab263428e8f",
       "date": "2025-07-31",
       "merchant": "ParkMobile",
       "amount": 18.62,
@@ -441,7 +433,7 @@
       "description": "Debit Card Purchase ParkMobile"
     },
     {
-      "id": "e593fc33a6e5408989edb407c5cbbd61",
+      "id": "cd48fa4d292a48899aaf7644b08dd57a",
       "date": "2025-08-01",
       "merchant": "Shake Shack Squirrel Hill PA",
       "amount": 17.9,
@@ -449,7 +441,7 @@
       "description": "Debit Card Purchase Shake Shack Squirrel Hill PA"
     },
     {
-      "id": "de3442b9ba81437e9fcc61fe8d90d48f",
+      "id": "08886c84f7ea4e9a817e8e3586392a17",
       "date": "2025-08-01",
       "merchant": "Caribou Coffee",
       "amount": 6.81,
@@ -457,7 +449,7 @@
       "description": "Debit Card Purchase Caribou Coffee"
     },
     {
-      "id": "c3e740299ca1426ba67ffb9216eccc4d",
+      "id": "d6e2a6d1edf4451799053d7e5e5a606a",
       "date": "2025-08-01",
       "merchant": "DoorDash Ride",
       "amount": 30.31,
@@ -465,7 +457,7 @@
       "description": "Debit Card Purchase DoorDash Ride"
     },
     {
-      "id": "c280ad2851b6480e8f778028acdbe10f",
+      "id": "1e085d06ec124444b9fb11a26fcfe690",
       "date": "2025-08-01",
       "merchant": "Urgent Care",
       "amount": 183.38,
@@ -473,7 +465,7 @@
       "description": "Debit Card Purchase Urgent Care"
     },
     {
-      "id": "c351bacf37574f0ca6a5a510d3eee54c",
+      "id": "94256e8ddb5d4cac97f259155bfdb88f",
       "date": "2025-08-02",
       "merchant": "GetGo Oakland PA",
       "amount": 33.39,
@@ -481,7 +473,7 @@
       "description": "Debit Card Purchase GetGo Oakland PA"
     },
     {
-      "id": "a66810fe6f2548f987cff678efa88563",
+      "id": "43c231225c964f9bad536a2ab9c47b01",
       "date": "2025-08-02",
       "merchant": "H&M Oakland PA",
       "amount": 29.85,
@@ -489,7 +481,7 @@
       "description": "Debit Card Purchase H&M Oakland PA"
     },
     {
-      "id": "49f2fff236ee434796865b154c408e82",
+      "id": "00cc08eeb49240cf8e6170bcf63ee2af",
       "date": "2025-08-02",
       "merchant": "Bowling Alley",
       "amount": 20.09,
@@ -497,7 +489,7 @@
       "description": "Debit Card Purchase Bowling Alley"
     },
     {
-      "id": "853a454f6c4448f2a8df8339bec2556c",
+      "id": "77390e9217174f118095ab36aa3066be",
       "date": "2025-08-02",
       "merchant": "Unknown",
       "amount": 55.72,
@@ -505,7 +497,7 @@
       "description": "ATM Withdrawal"
     },
     {
-      "id": "16efaec67f65468080bfb75d295a5830",
+      "id": "1bcec8f75bb5424189db9dd34af08aa8",
       "date": "2025-08-03",
       "merchant": "Mobil Homestead PA",
       "amount": 44.67,
@@ -513,7 +505,7 @@
       "description": "Debit Card Purchase Mobil Homestead PA"
     },
     {
-      "id": "ff6aea95008c4719ba5eef08c69e35fc",
+      "id": "23c5fcd389434c4791bdb3e109728e37",
       "date": "2025-08-04",
       "merchant": "Costco Homestead PA",
       "amount": 32.11,
@@ -521,7 +513,7 @@
       "description": "Debit Card Purchase Costco Homestead PA"
     },
     {
-      "id": "938e8316de0f43b681cd22077d0a35ca",
+      "id": "dc0a48ba98e946bea0dc4096ebfa9362",
       "date": "2025-08-04",
       "merchant": "TJ Maxx Oakland PA",
       "amount": 185.88,
@@ -529,7 +521,7 @@
       "description": "Debit Card Purchase TJ Maxx Oakland PA"
     },
     {
-      "id": "da97e89a12fc466682858b267db6b9cf",
+      "id": "bdf166d8898c449e9eca00925427bc15",
       "date": "2025-08-04",
       "merchant": "LinkedIn Learning",
       "amount": 65.92,
@@ -537,7 +529,7 @@
       "description": "Debit Card Purchase LinkedIn Learning"
     },
     {
-      "id": "337c353bfb214ebdb760fa064d87d4ab",
+      "id": "ad031ff148dd42a2a1f40512a9af4813",
       "date": "2025-08-04",
       "merchant": "Postmates",
       "amount": 37.11,
@@ -545,7 +537,7 @@
       "description": "Debit Card Purchase Postmates"
     },
     {
-      "id": "35aab0d0f55b4ee29edb9dcd6e657225",
+      "id": "1701517cdedd4d78a8a27f59cad379ed",
       "date": "2025-08-05",
       "merchant": "McDonalds Homestead PA",
       "amount": 13.53,
@@ -553,7 +545,7 @@
       "description": "Debit Card Purchase McDonalds Homestead PA"
     },
     {
-      "id": "2e9df89fe35e4cd69bb918e5ce8b8808",
+      "id": "da03583e69bc4828a10d1c8c52c220c8",
       "date": "2025-08-05",
       "merchant": "Local Coffee Shop",
       "amount": 7.38,
@@ -561,7 +553,7 @@
       "description": "Debit Card Purchase Local Coffee Shop"
     },
     {
-      "id": "39c7d913191d4680b9825f99a29be98b",
+      "id": "770cf1b2f9bf4204b67af78949c8c129",
       "date": "2025-08-05",
       "merchant": "Hair Salon",
       "amount": 40.91,
@@ -569,7 +561,7 @@
       "description": "Debit Card Purchase Hair Salon"
     },
     {
-      "id": "980338d6e9e349cc8e589087abb46e57",
+      "id": "222b59e767654641934b1b3fd72b1590",
       "date": "2025-08-05",
       "merchant": "Postmates",
       "amount": 24.53,
@@ -577,7 +569,7 @@
       "description": "Debit Card Purchase Postmates"
     },
     {
-      "id": "1ffb162c1aab477ca96c93ce8dd66b49",
+      "id": "7559b0a40c334ae19a740c7e9e806270",
       "date": "2025-08-06",
       "merchant": "Target Oakland PA",
       "amount": 267.35,
@@ -585,7 +577,7 @@
       "description": "Debit Card Purchase Target Oakland PA"
     },
     {
-      "id": "6bfc67478ef04919a16edc136fe03ec8",
+      "id": "3da7e46678ad475689b284b9dc4ab724",
       "date": "2025-08-07",
       "merchant": "City Parking Garage",
       "amount": 28.02,
@@ -593,7 +585,7 @@
       "description": "Debit Card Purchase City Parking Garage"
     },
     {
-      "id": "88915f3398d9403ab529e058726a67bf",
+      "id": "a10247c1c7f54ffb9635b4a7a0e5782e",
       "date": "2025-08-08",
       "merchant": "Trader Joes Homestead PA",
       "amount": 175.22,
@@ -601,7 +593,7 @@
       "description": "Debit Card Purchase Trader Joes Homestead PA"
     },
     {
-      "id": "50708af4862148078830dea61d8d41ba",
+      "id": "8d80005a41814d0f83e776e82a1fe6b2",
       "date": "2025-08-09",
       "merchant": "Olive Garden Oakland PA",
       "amount": 46.14,
@@ -609,7 +601,7 @@
       "description": "Debit Card Purchase Olive Garden Oakland PA"
     },
     {
-      "id": "a8c2b4adda624cba81b6ae4879235f50",
+      "id": "3fe919f9261b45f38efde5d02fe8bb45",
       "date": "2025-08-09",
       "merchant": "Rite Aid",
       "amount": 35.48,
@@ -617,7 +609,7 @@
       "description": "Debit Card Purchase Rite Aid"
     },
     {
-      "id": "fed54bc8a9c44b8182b8eed3bf879c03",
+      "id": "08c70bbde90c47a48c145396744152b7",
       "date": "2025-08-10",
       "merchant": "Costco Cranberry Township PA",
       "amount": 92.38,
@@ -625,7 +617,7 @@
       "description": "Debit Card Purchase Costco Cranberry Township PA"
     },
     {
-      "id": "12874265da6249df91a2a41724e7290e",
+      "id": "4331f36cca5c4c75b09e02a5deeb0aac",
       "date": "2025-08-10",
       "merchant": "Wawa Cranberry Township PA",
       "amount": 52.73,
@@ -633,7 +625,7 @@
       "description": "Debit Card Purchase Wawa Cranberry Township PA"
     },
     {
-      "id": "01cdb7832413454da6ae4ee2c6b6ff97",
+      "id": "37566949ec2a4597837bcc553c7d44b6",
       "date": "2025-08-10",
       "merchant": "SP Plus Parking",
       "amount": 6.77,
@@ -641,7 +633,7 @@
       "description": "Debit Card Purchase SP Plus Parking"
     },
     {
-      "id": "d749c4da39ea4fb782d6551be9444df5",
+      "id": "f5f778e7039f478bb56678b49d978584",
       "date": "2025-08-10",
       "merchant": "Uber",
       "amount": 42.11,
@@ -649,7 +641,7 @@
       "description": "Debit Card Purchase Uber"
     },
     {
-      "id": "5e094dfd743e405ca364dcb7b5633d02",
+      "id": "2506dd7bf9e949b1a752c491028815ab",
       "date": "2025-08-10",
       "merchant": "Spa",
       "amount": 114.14,
@@ -657,7 +649,7 @@
       "description": "Debit Card Purchase Spa"
     },
     {
-      "id": "155ba57f5966452d8d18488fc23f9e37",
+      "id": "fe0331261dd442159f0581f9198be8bf",
       "date": "2025-08-10",
       "merchant": "Postmates",
       "amount": 46.83,
@@ -665,7 +657,7 @@
       "description": "Debit Card Purchase Postmates"
     },
     {
-      "id": "eb3459d78cd944208c1fd425656e0cc4",
+      "id": "33ab857a269d410e9c1217ed5829a63d",
       "date": "2025-08-11",
       "merchant": "Outback Cranberry Township PA",
       "amount": 38.72,
@@ -673,7 +665,7 @@
       "description": "Debit Card Purchase Outback Cranberry Township PA"
     },
     {
-      "id": "96fec57d07b547f5a837bc6952f1c200",
+      "id": "5e93a85124ca409a882f191ee95b2160",
       "date": "2025-08-11",
       "merchant": "Five Guys Homestead PA",
       "amount": 18.93,
@@ -681,7 +673,7 @@
       "description": "Debit Card Purchase Five Guys Homestead PA"
     },
     {
-      "id": "d27d495773f541c5be3d2246eac6e4f2",
+      "id": "46698e0218c943c1bdfaf7341396a8db",
       "date": "2025-08-11",
       "merchant": "PetSmart",
       "amount": 120.96,
@@ -689,7 +681,7 @@
       "description": "Debit Card Purchase PetSmart"
     },
     {
-      "id": "e1767c3c1e71440194a484ff1ae00819",
+      "id": "33b09ac8efc44fc692531b24678ed00e",
       "date": "2025-08-12",
       "merchant": "Shop n Save Cranberry Township PA",
       "amount": 126.22,
@@ -697,7 +689,7 @@
       "description": "Debit Card Purchase Shop n Save Cranberry Township PA"
     },
     {
-      "id": "b0b0f0134987472cac511eb7e718910a",
+      "id": "9fbb5da889304275a1691b371a97678b",
       "date": "2025-08-12",
       "merchant": "Shake Shack Oakland PA",
       "amount": 13.15,
@@ -705,7 +697,7 @@
       "description": "Debit Card Purchase Shake Shack Oakland PA"
     },
     {
-      "id": "ded06be49ee3439a83e570ccb59d0b1c",
+      "id": "c4b512c773a3455997378ee378b46105",
       "date": "2025-08-12",
       "merchant": "Mini Golf",
       "amount": 38.6,
@@ -713,7 +705,7 @@
       "description": "Debit Card Purchase Mini Golf"
     },
     {
-      "id": "aea8f50c0f714248860de8292240c05a",
+      "id": "dbc25f4d0f864e38a0b087148fc55eb9",
       "date": "2025-08-12",
       "merchant": "Rite Aid",
       "amount": 42.33,
@@ -721,7 +713,7 @@
       "description": "Debit Card Purchase Rite Aid"
     },
     {
-      "id": "655bcf93fd1b48c0aedb16be0f2d901c",
+      "id": "3abce2e51c34477e8a8e1fa19bb32b1e",
       "date": "2025-08-12",
       "merchant": "Grubhub",
       "amount": 33.78,
@@ -729,7 +721,7 @@
       "description": "Debit Card Purchase Grubhub"
     },
     {
-      "id": "324b84eeec7143e6a8d89c2b288c6734",
+      "id": "07e4bd5c9a924bf2b20f5c71e36ba2eb",
       "date": "2025-08-13",
       "merchant": "Lyft",
       "amount": 27.01,
@@ -737,7 +729,7 @@
       "description": "Debit Card Purchase Lyft"
     },
     {
-      "id": "ac8d635f83364309a43147c001030445",
+      "id": "71fb458e6c57453cb181bcd39be5d31c",
       "date": "2025-08-13",
       "merchant": "Lowes",
       "amount": 212.09,
@@ -745,7 +737,7 @@
       "description": "Debit Card Purchase Lowes"
     },
     {
-      "id": "717220fe366b4ef0b9f9d5e141b9cfa7",
+      "id": "28e2d56f1e7c4570b499ddf9df3869ce",
       "date": "2025-08-13",
       "merchant": "Target Pharmacy",
       "amount": 17.79,
@@ -753,7 +745,7 @@
       "description": "Debit Card Purchase Target Pharmacy"
     },
     {
-      "id": "277f909351354ae796bf45c67c93b86b",
+      "id": "ead4c740148b4f0fb6b196932a50bc00",
       "date": "2025-08-13",
       "merchant": "Instacart",
       "amount": 18.82,
@@ -761,7 +753,7 @@
       "description": "Debit Card Purchase Instacart"
     },
     {
-      "id": "1c196c0734104e7392c1b591298d56e5",
+      "id": "bcfe3411877249008e46d4e0ac007568",
       "date": "2025-08-14",
       "merchant": "Wendys Squirrel Hill PA",
       "amount": 11.56,
@@ -769,7 +761,7 @@
       "description": "Debit Card Purchase Wendys Squirrel Hill PA"
     },
     {
-      "id": "5c8d18269b834d7e9d75c5ac68b3c3c9",
+      "id": "23a02928f6f841c9b36e803a7ad9a5b2",
       "date": "2025-08-14",
       "merchant": "Taco Bell Monroeville PA",
       "amount": 15.94,
@@ -777,7 +769,7 @@
       "description": "Debit Card Purchase Taco Bell Monroeville PA"
     },
     {
-      "id": "1f6081ec865b46c9a5a880b923ded13b",
+      "id": "0aa9cc8239264676b9a0d4188aa48f30",
       "date": "2025-08-14",
       "merchant": "Wawa Mt Lebanon PA",
       "amount": 33.9,
@@ -785,7 +777,7 @@
       "description": "Debit Card Purchase Wawa Mt Lebanon PA"
     },
     {
-      "id": "0c2447c67ec049e2a6f2e005ed39f87e",
+      "id": "4627944f7f824a64b43806b990abd2ff",
       "date": "2025-08-14",
       "merchant": "Speedway Mt Lebanon PA",
       "amount": 59.38,
@@ -793,7 +785,7 @@
       "description": "Debit Card Purchase Speedway Mt Lebanon PA"
     },
     {
-      "id": "7ade784ea8b748af8bfd3545a1feca0c",
+      "id": "d81386cfe829484395dfc9cedcb86179",
       "date": "2025-08-14",
       "merchant": "Apple Store Cranberry Township PA",
       "amount": 282.64,
@@ -801,7 +793,7 @@
       "description": "Debit Card Purchase Apple Store Cranberry Township PA"
     },
     {
-      "id": "363a008cdc9c48c2a69f492a98464222",
+      "id": "f165751dd05f4a17a5550abd25e18e31",
       "date": "2025-08-15",
       "merchant": "Monthly Salary",
       "amount": -12000.0,
@@ -809,7 +801,7 @@
       "description": "Payroll Direct Deposit - Monthly Salary"
     },
     {
-      "id": "8a6b5823a03b4544a8c0f7c9e6aef4bb",
+      "id": "c49e6e0d994d4172a0f7f346331bf798",
       "date": "2025-08-15",
       "merchant": "Peets Coffee",
       "amount": 5.61,
@@ -817,7 +809,7 @@
       "description": "Debit Card Purchase Peets Coffee"
     },
     {
-      "id": "da3c97d479a5473092493bd7572e6d49",
+      "id": "2a66ae5bef434847a79738772d5dcc2b",
       "date": "2025-08-15",
       "merchant": "Caribou Coffee",
       "amount": 11.62,
@@ -825,7 +817,7 @@
       "description": "Debit Card Purchase Caribou Coffee"
     },
     {
-      "id": "9d394154c0864f37923f4c485b628da1",
+      "id": "4be6c7be1c1c4dc8a45da445ced6c85a",
       "date": "2025-08-17",
       "merchant": "Home Loan EMI",
       "amount": 1200.0,
@@ -833,7 +825,7 @@
       "description": "Home Loan EMI - Monthly Payment"
     },
     {
-      "id": "2d5784f9ca50499892f5b733f66a52e3",
+      "id": "53d1f564fc2a4aa9ac8f9e7afd0de7ea",
       "date": "2025-08-17",
       "merchant": "Burger King Pittsburgh PA",
       "amount": 11.55,
@@ -841,7 +833,7 @@
       "description": "Debit Card Purchase Burger King Pittsburgh PA"
     },
     {
-      "id": "1162a85d53604e918a7da5687aab7146",
+      "id": "a3f19de188df40bd91ed331bd103cd76",
       "date": "2025-08-17",
       "merchant": "DoorDash Ride",
       "amount": 35.23,
@@ -849,7 +841,7 @@
       "description": "Debit Card Purchase DoorDash Ride"
     },
     {
-      "id": "6ab962d01d3f460c8dc54dd0be6ba581",
+      "id": "99edfd89d9f04240b374b9babf40c525",
       "date": "2025-08-17",
       "merchant": "Instacart",
       "amount": 23.15,
@@ -857,7 +849,7 @@
       "description": "Debit Card Purchase Instacart"
     },
     {
-      "id": "856b1d4474364844a1154a3bddb85456",
+      "id": "78c35930958f4b70be82d01acc42ee18",
       "date": "2025-08-17",
       "merchant": "Unknown",
       "amount": 66.69,
@@ -865,7 +857,7 @@
       "description": "ATM Withdrawal"
     },
     {
-      "id": "92e24b9d825c4c10b17c639895948949",
+      "id": "73647e40696240fb985f1b7cd6a6905d",
       "date": "2025-08-18",
       "merchant": "Life Insurance",
       "amount": 94.44,
@@ -873,7 +865,7 @@
       "description": "Life Insurance"
     },
     {
-      "id": "df5c883053f842d285d026232069de7e",
+      "id": "05a44aac95344f6fbe75ed62a87083a2",
       "date": "2025-08-18",
       "merchant": "Local Coffee Shop",
       "amount": 10.65,
@@ -881,7 +873,7 @@
       "description": "Debit Card Purchase Local Coffee Shop"
     },
     {
-      "id": "56c9de11ae5a46f8a1f2c64acb0e13b9",
+      "id": "411afde074324e039a7954851105b39a",
       "date": "2025-08-19",
       "merchant": "Electric Bill",
       "amount": 95.87,
@@ -889,7 +881,7 @@
       "description": "Electric Bill"
     },
     {
-      "id": "671e21e9984946eab164600fd96e3629",
+      "id": "7f4e07be3d1f418e91a848a8f8aaf428",
       "date": "2025-08-19",
       "merchant": "Aldi Squirrel Hill PA",
       "amount": 29.75,
@@ -897,7 +889,7 @@
       "description": "Debit Card Purchase Aldi Squirrel Hill PA"
     },
     {
-      "id": "754adeeac55b407fb9f8fd40df35adea",
+      "id": "f149a95b73a349f6adf1188f22af5e91",
       "date": "2025-08-19",
       "merchant": "Starbucks",
       "amount": 9.42,
@@ -905,7 +897,7 @@
       "description": "Debit Card Purchase Starbucks"
     },
     {
-      "id": "d486f09cdce44076bc0b912d536282f1",
+      "id": "85433b76642b4d48bf0a2d4235d1fbc3",
       "date": "2025-08-19",
       "merchant": "Peets Coffee",
       "amount": 6.3,
@@ -913,7 +905,7 @@
       "description": "Debit Card Purchase Peets Coffee"
     },
     {
-      "id": "5a2c617867e4471b98e254c468d31f31",
+      "id": "7cc3c01937c24916bf480e8078c98234",
       "date": "2025-08-19",
       "merchant": "Peets Coffee",
       "amount": 8.31,
@@ -921,7 +913,7 @@
       "description": "Debit Card Purchase Peets Coffee"
     },
     {
-      "id": "17a8cf0698ec45be85d360689d348f45",
+      "id": "815a959387e445c1823401088f177407",
       "date": "2025-08-19",
       "merchant": "Unknown",
       "amount": 179.5,
@@ -929,7 +921,7 @@
       "description": "ATM Withdrawal"
     },
     {
-      "id": "721e599c6f1c4ef2a30c2d70470a65c5",
+      "id": "7f390216d21a402a8b9a67cdbfb8c7e5",
       "date": "2025-08-20",
       "merchant": "24 Hour Fitness",
       "amount": 65.05,
@@ -937,7 +929,7 @@
       "description": "24 Hour Fitness"
     },
     {
-      "id": "23fccfa30e004ddfbc0874b55be14dcc",
+      "id": "ae49434438d44e43a06f9727f42caff7",
       "date": "2025-08-20",
       "merchant": "Taco Bell Cranberry Township PA",
       "amount": 16.3,
@@ -945,7 +937,7 @@
       "description": "Debit Card Purchase Taco Bell Cranberry Township PA"
     },
     {
-      "id": "a2cd0dca8859496eb469acf50464b953",
+      "id": "1449283258534a48a07571a01575fb35",
       "date": "2025-08-20",
       "merchant": "Blue Bottle",
       "amount": 5.89,
@@ -953,7 +945,7 @@
       "description": "Debit Card Purchase Blue Bottle"
     },
     {
-      "id": "24d67294b93d4f02bc90eb54427a72b0",
+      "id": "16f8badc767c4e168927d7e6f19a8728",
       "date": "2025-08-20",
       "merchant": "Dunkin",
       "amount": 9.68,
@@ -961,7 +953,7 @@
       "description": "Debit Card Purchase Dunkin"
     },
     {
-      "id": "a9487242251e41f0b3c03d306a5032cf",
+      "id": "a1266304b15a4e73826ff76b04300afe",
       "date": "2025-08-20",
       "merchant": "GetGo Cranberry Township PA",
       "amount": 30.99,
@@ -969,7 +961,7 @@
       "description": "Debit Card Purchase GetGo Cranberry Township PA"
     },
     {
-      "id": "9320653e5c9949b991530a858ac4d37c",
+      "id": "8a4c40fedd884f1c95cbf406605ddbca",
       "date": "2025-08-20",
       "merchant": "Uber Eats",
       "amount": 22.15,
@@ -977,7 +969,7 @@
       "description": "Debit Card Purchase Uber Eats"
     },
     {
-      "id": "98ecb75484ce438b8c27e6114a5e5ed5",
+      "id": "375e05d6e5d34a10a72026eafb931d7b",
       "date": "2025-08-21",
       "merchant": "Car Loan EMI",
       "amount": 350.0,
@@ -985,7 +977,7 @@
       "description": "Car Loan EMI - Monthly Payment"
     },
     {
-      "id": "4728ad11bb444027bf207ea644965fb3",
+      "id": "8fef539fdd334f0595b188bd31621b18",
       "date": "2025-08-21",
       "merchant": "Dunkin",
       "amount": 10.58,
@@ -993,7 +985,7 @@
       "description": "Debit Card Purchase Dunkin"
     },
     {
-      "id": "5bea917d3b414490bf473877cd0891ad",
+      "id": "7f20f502d0b3427c96a6c6c4651bf192",
       "date": "2025-08-21",
       "merchant": "Metro Transit Pass",
       "amount": 22.62,
@@ -1001,7 +993,7 @@
       "description": "Debit Card Purchase Metro Transit Pass"
     },
     {
-      "id": "6e1c87d6fbd449529b83097091866855",
+      "id": "b5a6ad95f7cf4bffb2aecb052801718a",
       "date": "2025-08-21",
       "merchant": "Amazon Squirrel Hill PA",
       "amount": 61.95,
@@ -1009,7 +1001,7 @@
       "description": "Debit Card Purchase Amazon Squirrel Hill PA"
     },
     {
-      "id": "5fd2ca9041cb43b4bc576c835487f076",
+      "id": "67a3fde1ed464143b452e6fa74dc2e43",
       "date": "2025-08-21",
       "merchant": "Bowling Alley",
       "amount": 61.89,
@@ -1017,7 +1009,7 @@
       "description": "Debit Card Purchase Bowling Alley"
     },
     {
-      "id": "84c9537b1fbb49e894c921a0d7dcee08",
+      "id": "159b7b30c77a462d955db0e125919df3",
       "date": "2025-08-22",
       "merchant": "Verizon Wireless",
       "amount": 145.2,
@@ -1025,7 +1017,7 @@
       "description": "Verizon Wireless"
     },
     {
-      "id": "20100cc0ec7b4088885df0a76235f85c",
+      "id": "ee749bf847cc437685a97552eb87c66a",
       "date": "2025-08-22",
       "merchant": "Ace Hardware",
       "amount": 25.62,
@@ -1033,7 +1025,7 @@
       "description": "Debit Card Purchase Ace Hardware"
     },
     {
-      "id": "894522e62cee4ce3a18e1cbab5bb1249",
+      "id": "01d3a1bf128e4dc38ef4afc3c269da2c",
       "date": "2025-08-22",
       "merchant": "Dave & Busters",
       "amount": 59.18,
@@ -1041,7 +1033,7 @@
       "description": "Debit Card Purchase Dave & Busters"
     },
     {
-      "id": "4b4cf066635b4e629f02d3e092802b51",
+      "id": "4c416ca419df4f059d1a1ce171d81a75",
       "date": "2025-08-23",
       "merchant": "Bus Fare",
       "amount": 47.63,
@@ -1049,7 +1041,7 @@
       "description": "Debit Card Purchase Bus Fare"
     },
     {
-      "id": "087182359b8643f787ea20b60cffd364",
+      "id": "a65ae40d8048471fabb8c1a60cc2a7fd",
       "date": "2025-08-23",
       "merchant": "Petco",
       "amount": 38.66,
@@ -1057,7 +1049,7 @@
       "description": "Debit Card Purchase Petco"
     },
     {
-      "id": "a25bbc3fce2940bbbac3d9832d2afe23",
+      "id": "eccb8e05e9774559ba6d4440080b4d10",
       "date": "2025-08-24",
       "merchant": "Shop n Save Pittsburgh PA",
       "amount": 140.26,
@@ -1065,7 +1057,7 @@
       "description": "Debit Card Purchase Shop n Save Pittsburgh PA"
     },
     {
-      "id": "f21bc188743247cd8fbaa720d07231d8",
+      "id": "a134fc1ccc254c7382a03373a643ec4e",
       "date": "2025-08-24",
       "merchant": "KFC Shadyside PA",
       "amount": 9.72,
@@ -1073,7 +1065,7 @@
       "description": "Debit Card Purchase KFC Shadyside PA"
     },
     {
-      "id": "e75861d1ec914be6926cf60737aba898",
+      "id": "bdeebfc275774342b31621b4d862b8c9",
       "date": "2025-08-24",
       "merchant": "BP Shadyside PA",
       "amount": 59.38,
@@ -1081,7 +1073,7 @@
       "description": "Debit Card Purchase BP Shadyside PA"
     },
     {
-      "id": "576a0ff650384f708ae33eeecd2f6d17",
+      "id": "8d10ea1d9ec3496eb24df2be61ce1e87",
       "date": "2025-08-24",
       "merchant": "Instacart",
       "amount": 21.56,
@@ -1089,7 +1081,7 @@
       "description": "Debit Card Purchase Instacart"
     },
     {
-      "id": "07435aa7e0d94d7ebd6b29c18985afa5",
+      "id": "2631dcdf9ccf4d81a4dd2f5ffae03786",
       "date": "2025-08-25",
       "merchant": "Amazon Prime",
       "amount": 11.87,
@@ -1097,7 +1089,7 @@
       "description": "Amazon Prime"
     },
     {
-      "id": "017d67f9932a41d7be3c7d8903056a8f",
+      "id": "45af462080bf4e6b87a7bf5e22230d96",
       "date": "2025-08-25",
       "merchant": "Lab Tests",
       "amount": 64.48,
@@ -1105,7 +1097,7 @@
       "description": "Debit Card Purchase Lab Tests"
     },
     {
-      "id": "c91a05d5fd3442bf9b826c096773944b",
+      "id": "5e389ef2fdc249fca3a73869788b3d57",
       "date": "2025-08-26",
       "merchant": "Personal Loan EMI",
       "amount": 250.0,
@@ -1113,7 +1105,7 @@
       "description": "Personal Loan EMI - Monthly Payment"
     },
     {
-      "id": "420553ae91b6457cb7d9fbcab6b1fb02",
+      "id": "429574ca81994686b174d8745b213dc8",
       "date": "2025-08-26",
       "merchant": "Safeway Mt Lebanon PA",
       "amount": 125.38,
@@ -1121,7 +1113,7 @@
       "description": "Debit Card Purchase Safeway Mt Lebanon PA"
     },
     {
-      "id": "19343af52e84487c99928a83c1da916e",
+      "id": "5e86aeb9188847c6babbd992e91df381",
       "date": "2025-08-26",
       "merchant": "Starbucks",
       "amount": 7.26,
@@ -1129,7 +1121,7 @@
       "description": "Debit Card Purchase Starbucks"
     },
     {
-      "id": "5acd5ff73673418aafecfc1f7efbc214",
+      "id": "6a5f128545ce41e8b8b3bdf12cec651c",
       "date": "2025-08-26",
       "merchant": "Walmart Pittsburgh PA",
       "amount": 225.17,
@@ -1137,7 +1129,7 @@
       "description": "Debit Card Purchase Walmart Pittsburgh PA"
     },
     {
-      "id": "3be2fd398f4349d691342b55530f2e2f",
+      "id": "0081dd6a863a45a5b20fcf6640ba4610",
       "date": "2025-08-26",
       "merchant": "Walgreens",
       "amount": 44.05,
@@ -1145,7 +1137,7 @@
       "description": "Debit Card Purchase Walgreens"
     },
     {
-      "id": "6c104ff3e7f14908a01868676cf2ee7a",
+      "id": "bd9ad737c1f14b05984c58ea562d87bb",
       "date": "2025-08-27",
       "merchant": "Taco Bell Pittsburgh PA",
       "amount": 18.54,
@@ -1153,7 +1145,7 @@
       "description": "Debit Card Purchase Taco Bell Pittsburgh PA"
     },
     {
-      "id": "407ec2eaf0854901bea8df98f7b79b74",
+      "id": "bd19afed4476432dab8d1b4873da3b26",
       "date": "2025-08-27",
       "merchant": "GetGo Monroeville PA",
       "amount": 64.5,
@@ -1161,7 +1153,7 @@
       "description": "Debit Card Purchase GetGo Monroeville PA"
     },
     {
-      "id": "01fd44fff0d64ddfa4b940c7cfb5519f",
+      "id": "c5423c400b994cba9ba38ecd1621275b",
       "date": "2025-08-27",
       "merchant": "Uber",
       "amount": 43.74,
@@ -1169,7 +1161,7 @@
       "description": "Debit Card Purchase Uber"
     },
     {
-      "id": "a2d9615460ff44379ff226b389c29734",
+      "id": "6eea5e971de5438e998c823339003b03",
       "date": "2025-08-28",
       "merchant": "Bus Fare",
       "amount": 118.59,
@@ -1177,7 +1169,7 @@
       "description": "Debit Card Purchase Bus Fare"
     },
     {
-      "id": "43bcba113d964818a4828c8d282e4bb8",
+      "id": "4539348fd9214d98beb6733593d71c23",
       "date": "2025-08-28",
       "merchant": "H&M Cranberry Township PA",
       "amount": 128.51,
@@ -1185,7 +1177,7 @@
       "description": "Debit Card Purchase H&M Cranberry Township PA"
     },
     {
-      "id": "ad72f76e2a374bf0a592fc2a90a0f19c",
+      "id": "f88dd0f9936a4803ae95d0c32e81be14",
       "date": "2025-08-29",
       "merchant": "Olive Garden Mt Lebanon PA",
       "amount": 81.16,
@@ -1193,7 +1185,7 @@
       "description": "Debit Card Purchase Olive Garden Mt Lebanon PA"
     },
     {
-      "id": "38aaaf78574342cca25b6f56a6271761",
+      "id": "8f0fd2718bee42d796e050afd095b720",
       "date": "2025-08-29",
       "merchant": "KFC Homestead PA",
       "amount": 23.23,
@@ -1201,7 +1193,7 @@
       "description": "Debit Card Purchase KFC Homestead PA"
     },
     {
-      "id": "87df7012c99c45a1a5b82aa51b83dec0",
+      "id": "4e6e90ec68394492885775648b0f4587",
       "date": "2025-08-29",
       "merchant": "Udemy",
       "amount": 185.31,
@@ -1209,7 +1201,7 @@
       "description": "Debit Card Purchase Udemy"
     },
     {
-      "id": "c1595b95b1494a9e8ec41fc81d5b4d4a",
+      "id": "0797d4621de04a56bc732900da6b045a",
       "date": "2025-08-29",
       "merchant": "Vet Clinic",
       "amount": 121.0,
@@ -1217,7 +1209,7 @@
       "description": "Debit Card Purchase Vet Clinic"
     },
     {
-      "id": "f52b1f7898f546c5800f12bafa14a0a6",
+      "id": "399733b855e74437a277759349f04f38",
       "date": "2025-08-29",
       "merchant": "Uber Eats",
       "amount": 26.42,
@@ -1225,7 +1217,7 @@
       "description": "Debit Card Purchase Uber Eats"
     },
     {
-      "id": "84b78196f734496f9e6d8592f0571cfb",
+      "id": "ca131690ec74455090a712655fb4bcf7",
       "date": "2025-08-30",
       "merchant": "Giant Eagle Oakland PA",
       "amount": 171.09,
@@ -1233,7 +1225,7 @@
       "description": "Debit Card Purchase Giant Eagle Oakland PA"
     },
     {
-      "id": "0cbb63c3774e4562a7ce77d0041bb5e6",
+      "id": "2f56f298550549baaaee8b44b994f7e5",
       "date": "2025-08-30",
       "merchant": "Ulta Beauty",
       "amount": 26.97,
@@ -1241,7 +1233,7 @@
       "description": "Debit Card Purchase Ulta Beauty"
     },
     {
-      "id": "3f552fb7bb804714b0dcbb674797882e",
+      "id": "6c3278eebb6645df8d0cf6fefbc49db6",
       "date": "2025-08-30",
       "merchant": "Uber Eats",
       "amount": 15.15,
@@ -1249,7 +1241,7 @@
       "description": "Debit Card Purchase Uber Eats"
     },
     {
-      "id": "f7208a6c7007477aa169f12d5190d180",
+      "id": "2f1cb3cbe8714aabb8a77757258d7dd0",
       "date": "2025-08-31",
       "merchant": "Exxon Cranberry Township PA",
       "amount": 38.5,
@@ -1257,7 +1249,7 @@
       "description": "Debit Card Purchase Exxon Cranberry Township PA"
     },
     {
-      "id": "d45c99bc97584b68930f424f8aacc09e",
+      "id": "77a302ece4f140f783c607a8ef70bb52",
       "date": "2025-08-31",
       "merchant": "ParkMobile",
       "amount": 30.23,
@@ -1265,7 +1257,7 @@
       "description": "Debit Card Purchase ParkMobile"
     },
     {
-      "id": "2bb3f109b2bc428c897e690fc5965a6b",
+      "id": "759143eb905949a4b90cfb79e115fa1c",
       "date": "2025-08-31",
       "merchant": "TJ Maxx Pittsburgh PA",
       "amount": 182.16,
@@ -1273,7 +1265,7 @@
       "description": "Debit Card Purchase TJ Maxx Pittsburgh PA"
     },
     {
-      "id": "fcd4559c37754ce99dc66720e35f7c2a",
+      "id": "f649fa0a3e814e47bfd3d1e01ca58e15",
       "date": "2025-09-01",
       "merchant": "Shop n Save Cranberry Township PA",
       "amount": 83.09,
@@ -1281,7 +1273,7 @@
       "description": "Debit Card Purchase Shop n Save Cranberry Township PA"
     },
     {
-      "id": "7794c4ba68e24bb183b2d3c11ba182c3",
+      "id": "022c2d72dd084c7483b28c5aae4a4038",
       "date": "2025-09-01",
       "merchant": "Five Guys Shadyside PA",
       "amount": 23.3,
@@ -1289,7 +1281,7 @@
       "description": "Debit Card Purchase Five Guys Shadyside PA"
     },
     {
-      "id": "83fe6830f3674bf7a61ac16b43e7a574",
+      "id": "7b68a24c95a446a7b35bc88fab0ba742",
       "date": "2025-09-01",
       "merchant": "Walmart Mt Lebanon PA",
       "amount": 112.02,
@@ -1297,7 +1289,7 @@
       "description": "Debit Card Purchase Walmart Mt Lebanon PA"
     },
     {
-      "id": "3474335f74814b89b7b67bf51b0dca2a",
+      "id": "98542aa1d6054b93950f0c3c4ffcad98",
       "date": "2025-09-02",
       "merchant": "PF Changs Monroeville PA",
       "amount": 41.23,
@@ -1305,7 +1297,7 @@
       "description": "Debit Card Purchase PF Changs Monroeville PA"
     },
     {
-      "id": "0061d8e25cc8470299493aa1e10c5b85",
+      "id": "58b1282bc7914d1787b110ddbcfb3c4e",
       "date": "2025-09-02",
       "merchant": "Wendys Oakland PA",
       "amount": 10.03,
@@ -1313,7 +1305,7 @@
       "description": "Debit Card Purchase Wendys Oakland PA"
     },
     {
-      "id": "5e6d0fc6fb1446cbbdb8bfcc516a9227",
+      "id": "24c4d37e050b48fbaf8203df41a9d89a",
       "date": "2025-09-02",
       "merchant": "Mobil Cranberry Township PA",
       "amount": 48.0,
@@ -1321,7 +1313,7 @@
       "description": "Debit Card Purchase Mobil Cranberry Township PA"
     },
     {
-      "id": "98e42c18aa0942d1a6c68f63e65f94ea",
+      "id": "3dc7bd22507b433f8cf0abc6d48ab457",
       "date": "2025-09-02",
       "merchant": "City Parking Garage",
       "amount": 15.59,
@@ -1329,7 +1321,7 @@
       "description": "Debit Card Purchase City Parking Garage"
     },
     {
-      "id": "28a77ef7e08b422686e2bccd53e671a2",
+      "id": "aa2abe45ffc94459bd5779b6fa3331f9",
       "date": "2025-09-02",
       "merchant": "Uber",
       "amount": 21.68,
@@ -1337,7 +1329,7 @@
       "description": "Debit Card Purchase Uber"
     },
     {
-      "id": "a647c6ad12ba42c8afb76d5bb5070ab4",
+      "id": "c3f251111a0d46b9b910aa3859f97099",
       "date": "2025-09-02",
       "merchant": "Nordstrom Monroeville PA",
       "amount": 269.27,
@@ -1345,7 +1337,7 @@
       "description": "Debit Card Purchase Nordstrom Monroeville PA"
     },
     {
-      "id": "22e8d3ffd53f4b91967c64908f1f8d1c",
+      "id": "fe85a38b85cc4f55a52e9332450755a4",
       "date": "2025-09-03",
       "merchant": "Peets Coffee",
       "amount": 6.29,
@@ -1353,7 +1345,7 @@
       "description": "Debit Card Purchase Peets Coffee"
     },
     {
-      "id": "ce7fad986fc645eca5ca3e3b6b8b9635",
+      "id": "9d8de769e25f40ea80a10969603c97e5",
       "date": "2025-09-03",
       "merchant": "Shell Shadyside PA",
       "amount": 39.68,
@@ -1361,7 +1353,7 @@
       "description": "Debit Card Purchase Shell Shadyside PA"
     },
     {
-      "id": "a50e899eb255467abaf38cd7690fca8d",
+      "id": "96c545ce7b7f417d9f363db1394eb5af",
       "date": "2025-09-03",
       "merchant": "Marshalls Shadyside PA",
       "amount": 122.77,
@@ -1369,7 +1361,7 @@
       "description": "Debit Card Purchase Marshalls Shadyside PA"
     },
     {
-      "id": "579b440353824e7ca2b3c3ae167a760d",
+      "id": "999d74c2fb5b4143a936b2dabfce4fdb",
       "date": "2025-09-04",
       "merchant": "Trader Joes Homestead PA",
       "amount": 133.7,
@@ -1377,7 +1369,7 @@
       "description": "Debit Card Purchase Trader Joes Homestead PA"
     },
     {
-      "id": "e7ac94d441ee4bf1ac86be55ca18e66e",
+      "id": "4d54a6b7992b472cab07bb7a4bb2a00e",
       "date": "2025-09-04",
       "merchant": "CVS Pharmacy",
       "amount": 40.05,
@@ -1385,7 +1377,7 @@
       "description": "Debit Card Purchase CVS Pharmacy"
     },
     {
-      "id": "fc7cdc0ea0db4ec8a81de7c549478496",
+      "id": "d224f63760464b9e8798a13c2b7c6599",
       "date": "2025-09-05",
       "merchant": "Outback Pittsburgh PA",
       "amount": 54.0,
@@ -1393,7 +1385,7 @@
       "description": "Debit Card Purchase Outback Pittsburgh PA"
     },
     {
-      "id": "90248ab4581745eca886905cd2e5d8d4",
+      "id": "87742e84e5a14f55af744c691cb48d47",
       "date": "2025-09-05",
       "merchant": "Chipotle Oakland PA",
       "amount": 75.09,
@@ -1401,7 +1393,7 @@
       "description": "Debit Card Purchase Chipotle Oakland PA"
     },
     {
-      "id": "6388895811cf4a06927bd40071d17d7b",
+      "id": "97a98ef2a1d046b98e63e70834f3a971",
       "date": "2025-09-05",
       "merchant": "Peets Coffee",
       "amount": 7.04,
@@ -1409,7 +1401,7 @@
       "description": "Debit Card Purchase Peets Coffee"
     },
     {
-      "id": "d1774d0c4f784039a7fae81ce940885a",
+      "id": "ae5d2c34e8664936ae672cad47d820cc",
       "date": "2025-09-05",
       "merchant": "Ross Monroeville PA",
       "amount": 137.65,
@@ -1417,7 +1409,7 @@
       "description": "Debit Card Purchase Ross Monroeville PA"
     },
     {
-      "id": "081151e339d64508841b36bd76de7f1b",
+      "id": "e81b4e8812964e2b8be3f2f42a1b52e1",
       "date": "2025-09-06",
       "merchant": "Texas Roadhouse Cranberry Township PA",
       "amount": 35.25,
@@ -1425,7 +1417,7 @@
       "description": "Debit Card Purchase Texas Roadhouse Cranberry Township PA"
     },
     {
-      "id": "57671b6ac9f24896a11ddc2264586496",
+      "id": "7e9900609fa34a1999ffac3f7b2e2ec1",
       "date": "2025-09-06",
       "merchant": "Unknown",
       "amount": 95.94,
@@ -1433,7 +1425,7 @@
       "description": "ATM Withdrawal"
     },
     {
-      "id": "5a8e878bcf3d42cd9f708b548a6fd7df",
+      "id": "d6e2c69e89ac478d99513c22bf683e65",
       "date": "2025-09-07",
       "merchant": "Shell Shadyside PA",
       "amount": 60.32,
@@ -1441,7 +1433,7 @@
       "description": "Debit Card Purchase Shell Shadyside PA"
     },
     {
-      "id": "d0f1bf5b9732412d8e17da85525ef4e8",
+      "id": "d87269676b164ed99d28cc4c333fc619",
       "date": "2025-09-07",
       "merchant": "Tutoring Service",
       "amount": 164.06,
@@ -1449,7 +1441,7 @@
       "description": "Debit Card Purchase Tutoring Service"
     },
     {
-      "id": "2216535350044807b5929ed6dba4c455",
+      "id": "505524d744b84d49bcc8433c18068c77",
       "date": "2025-09-08",
       "merchant": "TJ Maxx Oakland PA",
       "amount": 79.09,
@@ -1457,7 +1449,7 @@
       "description": "Debit Card Purchase TJ Maxx Oakland PA"
     },
     {
-      "id": "72f02b4ab6344a27be681cd66e27a14e",
+      "id": "a4611a28c93a4e93a412723442886f60",
       "date": "2025-09-08",
       "merchant": "TopGolf",
       "amount": 68.86,
@@ -1465,7 +1457,7 @@
       "description": "Debit Card Purchase TopGolf"
     },
     {
-      "id": "b6469f8f124549929d9c4cd8ecce7508",
+      "id": "7b6b222e24544b85862df65eff3b064d",
       "date": "2025-09-09",
       "merchant": "Safeway Pittsburgh PA",
       "amount": 55.09,
@@ -1473,7 +1465,7 @@
       "description": "Debit Card Purchase Safeway Pittsburgh PA"
     },
     {
-      "id": "dc7cba17b8934f469fb2343ee4cebd79",
+      "id": "02a0f54dfa494bef8f076e5d94777269",
       "date": "2025-09-09",
       "merchant": "Home Depot",
       "amount": 130.04,
@@ -1481,7 +1473,7 @@
       "description": "Debit Card Purchase Home Depot"
     },
     {
-      "id": "8e070a522f5447cb9145710c9f71eefe",
+      "id": "0bc0c92ebdfa4c3ab734ed1828d9b08f",
       "date": "2025-09-10",
       "merchant": "McDonalds Squirrel Hill PA",
       "amount": 23.49,
@@ -1489,7 +1481,7 @@
       "description": "Debit Card Purchase McDonalds Squirrel Hill PA"
     },
     {
-      "id": "ff69dada5a22460aba95212d4621b4dc",
+      "id": "33f02c56b9fc4bc4bef68aeb0a25b772",
       "date": "2025-09-10",
       "merchant": "ParkMobile",
       "amount": 17.57,
@@ -1497,7 +1489,7 @@
       "description": "Debit Card Purchase ParkMobile"
     },
     {
-      "id": "b4bd35ecdbc846aaa5da5e66238afaf4",
+      "id": "5b10930cf69b4568b6d69d301903d2e6",
       "date": "2025-09-11",
       "merchant": "Whole Foods Shadyside PA",
       "amount": 69.31,
@@ -1505,7 +1497,7 @@
       "description": "Debit Card Purchase Whole Foods Shadyside PA"
     },
     {
-      "id": "618dc11324e9453ba6eadf57d1813d1c",
+      "id": "54b5504206374e078c18ccb370d132ea",
       "date": "2025-09-11",
       "merchant": "DoorDash Ride",
       "amount": 15.01,
@@ -1513,7 +1505,7 @@
       "description": "Debit Card Purchase DoorDash Ride"
     },
     {
-      "id": "74334918b6064fd3ad3a6889cbfa756b",
+      "id": "cecca79cdd7841098cb962be3419b568",
       "date": "2025-09-11",
       "merchant": "Nordstrom Mt Lebanon PA",
       "amount": 180.16,
@@ -1521,7 +1513,7 @@
       "description": "Debit Card Purchase Nordstrom Mt Lebanon PA"
     },
     {
-      "id": "3dc14e52d49d4066a023b88b42e12199",
+      "id": "928fac5588894a8786cd94f780373ab2",
       "date": "2025-09-11",
       "merchant": "HomeGoods Shadyside PA",
       "amount": 349.03,
@@ -1529,7 +1521,7 @@
       "description": "Debit Card Purchase HomeGoods Shadyside PA"
     },
     {
-      "id": "b87f538fcbd64241bf4e8cb4ff567102",
+      "id": "13db7c0633e148eb826c2b9bc2017b54",
       "date": "2025-09-12",
       "merchant": "Airport Parking",
       "amount": 14.03,
@@ -1537,7 +1529,7 @@
       "description": "Debit Card Purchase Airport Parking"
     },
     {
-      "id": "d8f4541d5d0b4a5787938279e10ffba9",
+      "id": "652f104f129441b5865db5c1c5929cbe",
       "date": "2025-09-12",
       "merchant": "Grubhub",
       "amount": 46.3,
@@ -1545,7 +1537,7 @@
       "description": "Debit Card Purchase Grubhub"
     },
     {
-      "id": "c5173ef2e1354b29bb88c9e547392e75",
+      "id": "056ac259195b43e2be66d94ffb42c9ee",
       "date": "2025-09-12",
       "merchant": "Uber Eats",
       "amount": 19.49,
@@ -1553,7 +1545,7 @@
       "description": "Debit Card Purchase Uber Eats"
     },
     {
-      "id": "304cc417a99a428cb359ee3acccc3790",
+      "id": "4512ca839f954d5b969da66635297dd6",
       "date": "2025-09-13",
       "merchant": "Shake Shack Monroeville PA",
       "amount": 17.36,
@@ -1561,7 +1553,7 @@
       "description": "Debit Card Purchase Shake Shack Monroeville PA"
     },
     {
-      "id": "1f12448ccfef42d29beebab1771dbca5",
+      "id": "94cc6d55d3484d28b141210d14972cfe",
       "date": "2025-09-13",
       "merchant": "Sunoco Homestead PA",
       "amount": 33.0,
@@ -1569,7 +1561,7 @@
       "description": "Debit Card Purchase Sunoco Homestead PA"
     },
     {
-      "id": "865cd70f64584715a6611442635838cb",
+      "id": "15c28566ea6044f6a1459cc4bf98c0df",
       "date": "2025-09-13",
       "merchant": "Mini Golf",
       "amount": 16.93,
@@ -1577,7 +1569,7 @@
       "description": "Debit Card Purchase Mini Golf"
     },
     {
-      "id": "be801873cb224032b8f9e72ab1e72ada",
+      "id": "03df17f70bce42f5a9c0583504820a42",
       "date": "2025-09-14",
       "merchant": "Burger King Oakland PA",
       "amount": 24.09,
@@ -1585,7 +1577,7 @@
       "description": "Debit Card Purchase Burger King Oakland PA"
     },
     {
-      "id": "215192b20c58450eaaca2eac86843105",
+      "id": "e4f709e282474fe8b781ed771e80610e",
       "date": "2025-09-14",
       "merchant": "Peets Coffee",
       "amount": 5.57,
@@ -1593,7 +1585,7 @@
       "description": "Debit Card Purchase Peets Coffee"
     },
     {
-      "id": "ccbd8dfb0d3b4dc98bef2285d8e62210",
+      "id": "d009b449caf14b1ebffe50bd837661a6",
       "date": "2025-09-14",
       "merchant": "Sephora",
       "amount": 41.78,
@@ -1601,7 +1593,7 @@
       "description": "Debit Card Purchase Sephora"
     },
     {
-      "id": "fdd4edcd2d134779a8e96dac13ce9469",
+      "id": "62997e45b5474bed842de5d88f57188b",
       "date": "2025-09-15",
       "merchant": "Outback Homestead PA",
       "amount": 47.94,
@@ -1609,7 +1601,7 @@
       "description": "Debit Card Purchase Outback Homestead PA"
     },
     {
-      "id": "2f564d1d64c9486cb301dfc26ec0c15e",
+      "id": "932c63321dcb4897a7ee786d5773ba14",
       "date": "2025-09-15",
       "merchant": "Rite Aid",
       "amount": 43.85,
@@ -1617,7 +1609,7 @@
       "description": "Debit Card Purchase Rite Aid"
     },
     {
-      "id": "cdcf73db920548e3943a2b6584606276",
+      "id": "c8ca9a04adaa402c9afc492467f7175a",
       "date": "2025-09-15",
       "merchant": "Monthly Salary",
       "amount": -12000.0,
@@ -1625,7 +1617,7 @@
       "description": "Payroll Direct Deposit - Monthly Salary"
     },
     {
-      "id": "80becc7cebc64eb695706e8e9d760e9f",
+      "id": "56abfd11e4db4d96b9828c4ce2862c5d",
       "date": "2025-09-15",
       "merchant": "Local Coffee Shop",
       "amount": 9.9,
@@ -1633,7 +1625,7 @@
       "description": "Debit Card Purchase Local Coffee Shop"
     },
     {
-      "id": "cda5b8c572b144a7bdf562b8de8ebad6",
+      "id": "6e4c9bcbfd4d4fceac8f4b79a010dafb",
       "date": "2025-09-15",
       "merchant": "Uber",
       "amount": 26.83,
@@ -1641,7 +1633,7 @@
       "description": "Debit Card Purchase Uber"
     },
     {
-      "id": "8afc19b5985e48d48363cfcdc0cfd355",
+      "id": "c0b8ad08a56a472aacf8a6d50bd17fcf",
       "date": "2025-09-16",
       "merchant": "Home Loan EMI",
       "amount": 1200.0,
@@ -1649,7 +1641,7 @@
       "description": "Home Loan EMI - Monthly Payment"
     },
     {
-      "id": "8e9d29e3d0aa4b06b45cd905c5f32817",
+      "id": "7129b17d842f460cb027adcd81f34b45",
       "date": "2025-09-17",
       "merchant": "Renters Insurance",
       "amount": 289.05,
@@ -1657,7 +1649,7 @@
       "description": "Renters Insurance"
     },
     {
-      "id": "b4e5142715ad4b2095dd02221b390ac9",
+      "id": "6d1a3dfbb94447ea8df70c40f847db1a",
       "date": "2025-09-17",
       "merchant": "Subway Monroeville PA",
       "amount": 8.86,
@@ -1665,7 +1657,7 @@
       "description": "Debit Card Purchase Subway Monroeville PA"
     },
     {
-      "id": "4d762e0ec5434d94b13755b72b738999",
+      "id": "b5b17d25e4f24c9d8e95d582200940fa",
       "date": "2025-09-17",
       "merchant": "Subway Mt Lebanon PA",
       "amount": 19.73,
@@ -1673,7 +1665,7 @@
       "description": "Debit Card Purchase Subway Mt Lebanon PA"
     },
     {
-      "id": "58ab0faf73fa4404819837a2e221b5a6",
+      "id": "5cb0809aef0b4e6c82c362fb08453bcf",
       "date": "2025-09-17",
       "merchant": "DoorDash",
       "amount": 43.07,
@@ -1681,7 +1673,7 @@
       "description": "Debit Card Purchase DoorDash"
     },
     {
-      "id": "1c12a9dbbf774531b60b02fc5b71b958",
+      "id": "e4e7065ed4304d5a901a61d495037eaa",
       "date": "2025-09-18",
       "merchant": "Metro Transit Pass",
       "amount": 96.68,
@@ -1689,7 +1681,7 @@
       "description": "Debit Card Purchase Metro Transit Pass"
     },
     {
-      "id": "d29bc54a92bc46d7a6d6f3f7aa8b8433",
+      "id": "e3b72e01650a4bf2984b51de20dd25c9",
       "date": "2025-09-18",
       "merchant": "Marshalls Mt Lebanon PA",
       "amount": 100.05,
@@ -1697,7 +1689,7 @@
       "description": "Debit Card Purchase Marshalls Mt Lebanon PA"
     },
     {
-      "id": "a0e370d116964bb797655e20426ba578",
+      "id": "0faae00fe3644f118652cd609c614c61",
       "date": "2025-09-18",
       "merchant": "TopGolf",
       "amount": 26.3,
@@ -1705,7 +1697,7 @@
       "description": "Debit Card Purchase TopGolf"
     },
     {
-      "id": "b9f6fbd8be8f45bf99057d1f404237b2",
+      "id": "27f43e850f5b4e249e799084a1287c1d",
       "date": "2025-09-19",
       "merchant": "Google Fi",
       "amount": 69.13,
@@ -1713,7 +1705,7 @@
       "description": "Google Fi"
     },
     {
-      "id": "33ec5d26006141ad9d2ab1b7cd1cae1c",
+      "id": "5e0933f882ec4c4ab2c53c854fbb1670",
       "date": "2025-09-19",
       "merchant": "Outback Oakland PA",
       "amount": 66.32,
@@ -1721,7 +1713,7 @@
       "description": "Debit Card Purchase Outback Oakland PA"
     },
     {
-      "id": "0b1cd3f40e684d099316522585d01895",
+      "id": "4ba7bca3aaac4258831866eb4207af14",
       "date": "2025-09-19",
       "merchant": "Local Coffee Shop",
       "amount": 7.88,
@@ -1729,7 +1721,7 @@
       "description": "Debit Card Purchase Local Coffee Shop"
     },
     {
-      "id": "d14ef6c6b55f42478ca9fbde09c89328",
+      "id": "785ceb42352b4f3a8dbf6e4ce11841ca",
       "date": "2025-09-19",
       "merchant": "Dunkin",
       "amount": 9.89,
@@ -1737,7 +1729,7 @@
       "description": "Debit Card Purchase Dunkin"
     },
     {
-      "id": "8d3195b6fc9e44ba91cd043ada9feac5",
+      "id": "f4be9e7607034e6198a4901e01aea3f4",
       "date": "2025-09-19",
       "merchant": "Physical Therapy",
       "amount": 67.67,
@@ -1745,7 +1737,7 @@
       "description": "Debit Card Purchase Physical Therapy"
     },
     {
-      "id": "5d5c81eeb07f425580474946162f10ba",
+      "id": "8afdbd22d957454e9bb8189b7b56ca0b",
       "date": "2025-09-19",
       "merchant": "Instacart",
       "amount": 30.57,
@@ -1753,7 +1745,7 @@
       "description": "Debit Card Purchase Instacart"
     },
     {
-      "id": "99f250ae0c7f4d2e9e855a0a38b45a2c",
+      "id": "3bdf7343cc264491be07096decb75e89",
       "date": "2025-09-20",
       "merchant": "Car Loan EMI",
       "amount": 350.0,
@@ -1761,7 +1753,7 @@
       "description": "Car Loan EMI - Monthly Payment"
     },
     {
-      "id": "759ecadc22294735b779df78e85f9e79",
+      "id": "1302005320e04ac3af00d4a668df7f66",
       "date": "2025-09-20",
       "merchant": "Equinox",
       "amount": 79.34,
@@ -1769,7 +1761,7 @@
       "description": "Equinox"
     },
     {
-      "id": "c598ba90d9a44514b786940c7a8a34b7",
+      "id": "ec27ecc4679841c69eb5c666fa13e5fb",
       "date": "2025-09-20",
       "merchant": "ParkMobile",
       "amount": 16.5,
@@ -1777,7 +1769,7 @@
       "description": "Debit Card Purchase ParkMobile"
     },
     {
-      "id": "fb761881d1794f91912496c9b50a9a60",
+      "id": "b123c0e61dd548f7812782af60b4f087",
       "date": "2025-09-20",
       "merchant": "Unknown",
       "amount": 120.93,
@@ -1785,7 +1777,7 @@
       "description": "ATM Withdrawal"
     },
     {
-      "id": "1b9a57f71e89492c9fd496285174a04b",
+      "id": "3e3da643d78141e09b7fb1dd87a9650d",
       "date": "2025-09-21",
       "merchant": "Chipotle Cranberry Township PA",
       "amount": 82.28,
@@ -1793,7 +1785,7 @@
       "description": "Debit Card Purchase Chipotle Cranberry Township PA"
     },
     {
-      "id": "b607eb6652534b1f92f9708063e7f651",
+      "id": "aca6efb51fa94d56acda631ab78af6ee",
       "date": "2025-09-21",
       "merchant": "Subway Shadyside PA",
       "amount": 11.57,
@@ -1801,7 +1793,7 @@
       "description": "Debit Card Purchase Subway Shadyside PA"
     },
     {
-      "id": "93889e0dfc914acd90d3a93b94429861",
+      "id": "32254e774c0142778d63842af7c655be",
       "date": "2025-09-22",
       "merchant": "Safeway Homestead PA",
       "amount": 31.64,
@@ -1809,7 +1801,7 @@
       "description": "Debit Card Purchase Safeway Homestead PA"
     },
     {
-      "id": "b318f7a7c1ae4ba29cc1dd6ce6732ccc",
+      "id": "c7fca78b3e3d4ee6808b90a774b50df0",
       "date": "2025-09-22",
       "merchant": "Costco Pittsburgh PA",
       "amount": 59.13,
@@ -1817,7 +1809,7 @@
       "description": "Debit Card Purchase Costco Pittsburgh PA"
     },
     {
-      "id": "abd462c1bfbc492ea92c7d6d824a13f5",
+      "id": "fa9c17015c544d62ae77826827f9e874",
       "date": "2025-09-22",
       "merchant": "Outback Oakland PA",
       "amount": 70.28,
@@ -1825,7 +1817,7 @@
       "description": "Debit Card Purchase Outback Oakland PA"
     },
     {
-      "id": "173644d508bb40e18f6b1a2991657da1",
+      "id": "9e9e43abf2774d4f8cdfd1c03845f981",
       "date": "2025-09-22",
       "merchant": "Mobil Shadyside PA",
       "amount": 45.78,
@@ -1833,7 +1825,7 @@
       "description": "Debit Card Purchase Mobil Shadyside PA"
     },
     {
-      "id": "1a8104e277e945b1a545a74d2e2b697b",
+      "id": "1abb1c05cb9144a6ae6d8aa5ad4e3e5e",
       "date": "2025-09-22",
       "merchant": "Sunoco Mt Lebanon PA",
       "amount": 61.0,
@@ -1841,7 +1833,7 @@
       "description": "Debit Card Purchase Sunoco Mt Lebanon PA"
     },
     {
-      "id": "375c981411b34aeb915a151c3e5b8a49",
+      "id": "5c8c1603ffab4acbad76c55829e107ae",
       "date": "2025-09-23",
       "merchant": "Target Monroeville PA",
       "amount": 138.47,
@@ -1849,7 +1841,7 @@
       "description": "Debit Card Purchase Target Monroeville PA"
     },
     {
-      "id": "57e14867f2034752b18035096a2bcedf",
+      "id": "0541bbe7ef42420192f64e12daf82378",
       "date": "2025-09-23",
       "merchant": "Local Coffee Shop",
       "amount": 7.68,
@@ -1857,7 +1849,7 @@
       "description": "Debit Card Purchase Local Coffee Shop"
     },
     {
-      "id": "fdf2aed3db2c4ae1a99c08589e2d6570",
+      "id": "58b3265fc3864775a0747a0e84bbd475",
       "date": "2025-09-23",
       "merchant": "Local Coffee Shop",
       "amount": 7.54,
@@ -1865,7 +1857,7 @@
       "description": "Debit Card Purchase Local Coffee Shop"
     },
     {
-      "id": "53a2e7b02d3644e294f46a53c679cb3c",
+      "id": "6782295b869446c194df212eb90eaf44",
       "date": "2025-09-23",
       "merchant": "Ulta Beauty",
       "amount": 28.74,
@@ -1873,7 +1865,7 @@
       "description": "Debit Card Purchase Ulta Beauty"
     },
     {
-      "id": "00af554bee2346d0978ed2e13aa31ebe",
+      "id": "6b04246c3ca64d87844767c4551ce7fb",
       "date": "2025-09-25",
       "merchant": "Personal Loan EMI",
       "amount": 250.0,
@@ -1881,7 +1873,7 @@
       "description": "Personal Loan EMI - Monthly Payment"
     },
     {
-      "id": "240c6ea7cb034ad08942f26774c67ea4",
+      "id": "4736b59bab0d412d90008806f18f7cc9",
       "date": "2025-09-25",
       "merchant": "HBO Max",
       "amount": 16.84,
@@ -1889,7 +1881,7 @@
       "description": "HBO Max"
     },
     {
-      "id": "a818b2878940412b802b2d6010c66c0d",
+      "id": "1e3fbce000da4064b24e7837373597f4",
       "date": "2025-09-25",
       "merchant": "Walmart Supercenter Monroeville PA",
       "amount": 44.94,
@@ -1897,7 +1889,7 @@
       "description": "Debit Card Purchase Walmart Supercenter Monroeville PA"
     },
     {
-      "id": "55140c3cdd2a4508a4dd27f27546c5b8",
+      "id": "b6fd5eca9f604cc89d398ce46e37d339",
       "date": "2025-09-25",
       "merchant": "Whole Foods Squirrel Hill PA",
       "amount": 118.77,
@@ -1905,7 +1897,7 @@
       "description": "Debit Card Purchase Whole Foods Squirrel Hill PA"
     },
     {
-      "id": "f3f1612f2a444cdda1a69ad06d2f4bac",
+      "id": "d2bc8d6ae99a4498969f045ed5c4bdcc",
       "date": "2025-09-25",
       "merchant": "Taco Bell Oakland PA",
       "amount": 19.85,
@@ -1913,7 +1905,7 @@
       "description": "Debit Card Purchase Taco Bell Oakland PA"
     },
     {
-      "id": "5d7b075f2a624132a03d5c46ef52d537",
+      "id": "7ce9e50f6bc24ae6b9deab4bbc046196",
       "date": "2025-09-25",
       "merchant": "Shake Shack Mt Lebanon PA",
       "amount": 14.27,
@@ -1921,7 +1913,7 @@
       "description": "Debit Card Purchase Shake Shack Mt Lebanon PA"
     },
     {
-      "id": "06391b864b7e4eb38d59f97c6cc17141",
+      "id": "0992c475bb204a538c104b6bf2e38440",
       "date": "2025-09-25",
       "merchant": "BP Oakland PA",
       "amount": 53.86,
@@ -1929,7 +1921,7 @@
       "description": "Debit Card Purchase BP Oakland PA"
     },
     {
-      "id": "9d06c3aec0124e259f96b3a56a2c5be3",
+      "id": "9519bd6be1ae47da91fdf45cba229aa7",
       "date": "2025-09-25",
       "merchant": "Unknown",
       "amount": 116.92,
@@ -1937,7 +1929,7 @@
       "description": "ATM Withdrawal"
     },
     {
-      "id": "a7f10bf9345548f48041c35c93c883b2",
+      "id": "b2d856e12e3d4cc988d7451bf6005744",
       "date": "2025-09-26",
       "merchant": "Apple Store Cranberry Township PA",
       "amount": 276.34,
@@ -1945,7 +1937,7 @@
       "description": "Debit Card Purchase Apple Store Cranberry Township PA"
     },
     {
-      "id": "fa0c93a0f2414d2cb64efbbe7d7eafc8",
+      "id": "07ec1655871b4eda8780fdcfada1b2d8",
       "date": "2025-09-26",
       "merchant": "Target Monroeville PA",
       "amount": 69.29,
@@ -1953,7 +1945,7 @@
       "description": "Debit Card Purchase Target Monroeville PA"
     },
     {
-      "id": "502e9ce18c394e849853dd44689494b0",
+      "id": "e43baf7c38f9433bbd4a85f2f23b51c5",
       "date": "2025-09-26",
       "merchant": "Instacart",
       "amount": 53.08,
@@ -1961,7 +1953,7 @@
       "description": "Debit Card Purchase Instacart"
     },
     {
-      "id": "c8df3b841cbe41e2b6fdbaad482fe74d",
+      "id": "7dfec7eae612422ba8303825bc4d8a71",
       "date": "2025-09-27",
       "merchant": "Wendys Shadyside PA",
       "amount": 10.86,
@@ -1969,7 +1961,7 @@
       "description": "Debit Card Purchase Wendys Shadyside PA"
     },
     {
-      "id": "2d2b3832eae2493a91964b518fccf2cb",
+      "id": "d3ce818803c241e6805eb84c335d164b",
       "date": "2025-09-27",
       "merchant": "Uber Eats",
       "amount": 32.61,
@@ -1977,7 +1969,7 @@
       "description": "Debit Card Purchase Uber Eats"
     },
     {
-      "id": "9383346f4cda4c7aa261027cea5694bf",
+      "id": "d305fb6001e447eea706b717e28858fc",
       "date": "2025-09-27",
       "merchant": "HomeGoods Shadyside PA",
       "amount": 167.03,
@@ -1985,7 +1977,7 @@
       "description": "Debit Card Purchase HomeGoods Shadyside PA"
     },
     {
-      "id": "d03fa5233d3d4a1cb111417218a1da33",
+      "id": "f71430c0fec6452fa53bb8d9f5668a51",
       "date": "2025-09-27",
       "merchant": "Uniqlo Pittsburgh PA",
       "amount": 97.19,
@@ -1993,7 +1985,7 @@
       "description": "Debit Card Purchase Uniqlo Pittsburgh PA"
     },
     {
-      "id": "d44971b1b08a44c39cbd7060403f7446",
+      "id": "dd004e0f0db74ad1ab8852f53c1d5d2d",
       "date": "2025-09-27",
       "merchant": "School Supplies",
       "amount": 103.77,
@@ -2001,7 +1993,7 @@
       "description": "Debit Card Purchase School Supplies"
     },
     {
-      "id": "656e1c74256645d8bf49446f0babb89e",
+      "id": "484e6ad00c5b4d8bb3f29baf714978b2",
       "date": "2025-09-28",
       "merchant": "Target Monroeville PA",
       "amount": 97.0,
@@ -2009,7 +2001,7 @@
       "description": "Debit Card Purchase Target Monroeville PA"
     },
     {
-      "id": "ab4e02a899fa43fc9d0b99441cd527a8",
+      "id": "7e3e7e6a26904ac095dca5a59d22599c",
       "date": "2025-09-28",
       "merchant": "Local Coffee Shop",
       "amount": 11.11,
@@ -2017,7 +2009,7 @@
       "description": "Debit Card Purchase Local Coffee Shop"
     },
     {
-      "id": "8d8e0b3533004ccdac6dd1fb97e86ad8",
+      "id": "200be849f1334a10baa9acc2f3616adc",
       "date": "2025-09-28",
       "merchant": "Peets Coffee",
       "amount": 5.24,
@@ -2025,7 +2017,7 @@
       "description": "Debit Card Purchase Peets Coffee"
     },
     {
-      "id": "6e98a7d5bdec4575a9bfa7502b66fde2",
+      "id": "458f021c226d47069703244d565fbdf7",
       "date": "2025-09-28",
       "merchant": "Exxon Monroeville PA",
       "amount": 31.46,
@@ -2033,7 +2025,7 @@
       "description": "Debit Card Purchase Exxon Monroeville PA"
     },
     {
-      "id": "882999f1ff724e9e8562b57da4d121c2",
+      "id": "49fdbfcf4018468dbf348b69035777c3",
       "date": "2025-09-28",
       "merchant": "Macys Monroeville PA",
       "amount": 129.92,
@@ -2041,7 +2033,7 @@
       "description": "Debit Card Purchase Macys Monroeville PA"
     },
     {
-      "id": "89e24b20cfa84a2fa06ac233a136a852",
+      "id": "dc582b33a03e412ea4a0202929300845",
       "date": "2025-09-28",
       "merchant": "Mini Golf",
       "amount": 20.42,
@@ -2049,7 +2041,7 @@
       "description": "Debit Card Purchase Mini Golf"
     },
     {
-      "id": "0180adea875d45df8b033098128f6bda",
+      "id": "48395d16ac3e403b8a78be6a52b0c336",
       "date": "2025-09-28",
       "merchant": "Rite Aid",
       "amount": 71.96,
@@ -2057,7 +2049,7 @@
       "description": "Debit Card Purchase Rite Aid"
     },
     {
-      "id": "262817df31f841868dd538a2bbee789c",
+      "id": "937dcb6b5d4845c59cad76ad4f5aabc1",
       "date": "2025-09-29",
       "merchant": "Gas Bill",
       "amount": 132.89,
@@ -2065,7 +2057,7 @@
       "description": "Gas Bill"
     },
     {
-      "id": "17b2621e37de45549bd6e0b148d094b0",
+      "id": "f8d5c0b97f0445f0be737c64692f63e8",
       "date": "2025-09-30",
       "merchant": "Safeway Cranberry Township PA",
       "amount": 179.48,
@@ -2073,7 +2065,7 @@
       "description": "Debit Card Purchase Safeway Cranberry Township PA"
     },
     {
-      "id": "751a946fc6b8445a94acff662762d21d",
+      "id": "46e05188e12d4d9087a1c27f84fa327b",
       "date": "2025-09-30",
       "merchant": "Uniqlo Pittsburgh PA",
       "amount": 33.54,
@@ -2081,7 +2073,7 @@
       "description": "Debit Card Purchase Uniqlo Pittsburgh PA"
     },
     {
-      "id": "70c86b085ae84fcfa58144f72927de2e",
+      "id": "622695eac07b4b5b808a9cfff67715f9",
       "date": "2025-09-30",
       "merchant": "Uber Eats",
       "amount": 36.37,
@@ -2089,7 +2081,7 @@
       "description": "Debit Card Purchase Uber Eats"
     },
     {
-      "id": "b25215a075d64fc49b1470678aa69eae",
+      "id": "5eeecc94d94147a49486069abbd32068",
       "date": "2025-10-01",
       "merchant": "Giant Eagle Monroeville PA",
       "amount": 118.52,
@@ -2097,7 +2089,7 @@
       "description": "Debit Card Purchase Giant Eagle Monroeville PA"
     },
     {
-      "id": "8e42ed69a6af4e0b954fd0c389b47cc5",
+      "id": "9608ba4b7b4e4c959969c205e0f347e8",
       "date": "2025-10-01",
       "merchant": "Wendys Mt Lebanon PA",
       "amount": 22.17,
@@ -2105,7 +2097,7 @@
       "description": "Debit Card Purchase Wendys Mt Lebanon PA"
     },
     {
-      "id": "be8ff2f4c3a2456f8818c39cdb51c3f8",
+      "id": "e364ce18edb54dd2b59002d620610e8a",
       "date": "2025-10-01",
       "merchant": "Mobil Pittsburgh PA",
       "amount": 40.53,
@@ -2113,7 +2105,7 @@
       "description": "Debit Card Purchase Mobil Pittsburgh PA"
     },
     {
-      "id": "c4825d0e13614f799ec1f496e14e9b41",
+      "id": "744f436818e040c4b117f29ac00bca1b",
       "date": "2025-10-02",
       "merchant": "BP Squirrel Hill PA",
       "amount": 47.52,
@@ -2121,7 +2113,7 @@
       "description": "Debit Card Purchase BP Squirrel Hill PA"
     },
     {
-      "id": "39ec355c4a5949fb98400ec8d1bb4dd3",
+      "id": "d8a3364c44d84d419d73a9e05d68929c",
       "date": "2025-10-03",
       "merchant": "Walmart Pittsburgh PA",
       "amount": 322.63,
@@ -2129,7 +2121,7 @@
       "description": "Debit Card Purchase Walmart Pittsburgh PA"
     },
     {
-      "id": "7f1a417126f949f6a1345c3402141390",
+      "id": "a8b97506a3824758b4c61bbbe6c49c69",
       "date": "2025-10-03",
       "merchant": "TopGolf",
       "amount": 21.86,
@@ -2137,7 +2129,7 @@
       "description": "Debit Card Purchase TopGolf"
     },
     {
-      "id": "7818c88880664aadb8d7238f05c6f9c7",
+      "id": "21cd7fd0e3e946fab74d6683f211e405",
       "date": "2025-10-04",
       "merchant": "KFC Mt Lebanon PA",
       "amount": 9.02,
@@ -2145,7 +2137,7 @@
       "description": "Debit Card Purchase KFC Mt Lebanon PA"
     },
     {
-      "id": "9749cb4b2ed240ecb44c7906da4f1a8e",
+      "id": "c0e1980562344d49aba7f518926f2d6c",
       "date": "2025-10-05",
       "merchant": "Bus Fare",
       "amount": 113.25,
@@ -2153,7 +2145,7 @@
       "description": "Debit Card Purchase Bus Fare"
     },
     {
-      "id": "cf62a25123ba471695d44095d3982cf1",
+      "id": "9fc858fac8544c30a21c04593884e94f",
       "date": "2025-10-06",
       "merchant": "ParkMobile",
       "amount": 26.13,
@@ -2161,7 +2153,7 @@
       "description": "Debit Card Purchase ParkMobile"
     },
     {
-      "id": "9b9127ec624948c9b63087b7bf094ccf",
+      "id": "7ec6e3ffe5df4251b42fe1da90b79165",
       "date": "2025-10-06",
       "merchant": "Target Homestead PA",
       "amount": 208.56,
@@ -2169,7 +2161,7 @@
       "description": "Debit Card Purchase Target Homestead PA"
     },
     {
-      "id": "1f7fef68e3b6468ebcd8f7edd52640e3",
+      "id": "fd7c33b94a4d4d0ea11797969e39bc7e",
       "date": "2025-10-06",
       "merchant": "CVS Pharmacy",
       "amount": 62.9,
@@ -2177,7 +2169,7 @@
       "description": "Debit Card Purchase CVS Pharmacy"
     },
     {
-      "id": "69e3dec1cc7b4cfc958dfb62d3706b76",
+      "id": "e4d9a21331d54cf3bb52fa6e22353705",
       "date": "2025-10-06",
       "merchant": "Marriott",
       "amount": 110.11,
@@ -2185,7 +2177,7 @@
       "description": "Debit Card Purchase Marriott"
     },
     {
-      "id": "c819f098f545492ebdc1313cfc4ec05b",
+      "id": "c971d5c77951423e92a60e1249415c32",
       "date": "2025-10-06",
       "merchant": "Sephora",
       "amount": 117.8,
@@ -2193,7 +2185,7 @@
       "description": "Debit Card Purchase Sephora"
     },
     {
-      "id": "0ace05e9d0e54ddf8d358f7b8532ddd1",
+      "id": "6cea095a01714765b474aa103035f775",
       "date": "2025-10-07",
       "merchant": "Shell Oakland PA",
       "amount": 31.0,
@@ -2201,7 +2193,7 @@
       "description": "Debit Card Purchase Shell Oakland PA"
     },
     {
-      "id": "08a8c068490a4b1bacb49ad5ff0b1172",
+      "id": "adb90866996c489cbe2d24bc2be3c94e",
       "date": "2025-10-07",
       "merchant": "TJ Maxx Squirrel Hill PA",
       "amount": 51.58,
@@ -2209,7 +2201,7 @@
       "description": "Debit Card Purchase TJ Maxx Squirrel Hill PA"
     },
     {
-      "id": "5a28696e00354c16abafd692f8869e68",
+      "id": "39d2d700ee9d48e8ab7535daed9b309e",
       "date": "2025-10-08",
       "merchant": "Dunkin",
       "amount": 10.71,
@@ -2217,7 +2209,7 @@
       "description": "Debit Card Purchase Dunkin"
     },
     {
-      "id": "a60fecd5bd8940d489593fa0794445e5",
+      "id": "1565199d711b4329a715525b7b9081c0",
       "date": "2025-10-08",
       "merchant": "Uber Eats",
       "amount": 31.31,
@@ -2225,7 +2217,7 @@
       "description": "Debit Card Purchase Uber Eats"
     },
     {
-      "id": "0325d6d949044711a81776637359faae",
+      "id": "da089a321b2349e2b0ae79311e0983ad",
       "date": "2025-10-09",
       "merchant": "Texas Roadhouse Squirrel Hill PA",
       "amount": 81.46,
@@ -2233,7 +2225,7 @@
       "description": "Debit Card Purchase Texas Roadhouse Squirrel Hill PA"
     },
     {
-      "id": "e80390a943074360912cb772e151b5c0",
+      "id": "034f2971e8a84786a2ae617aa3c5215f",
       "date": "2025-10-09",
       "merchant": "Wendys Oakland PA",
       "amount": 11.39,
@@ -2241,7 +2233,7 @@
       "description": "Debit Card Purchase Wendys Oakland PA"
     },
     {
-      "id": "d3ebad5f09004ad09c1fa8f3beff647c",
+      "id": "2b0918a824c046eda476e66e830e5084",
       "date": "2025-10-09",
       "merchant": "Local Coffee Shop",
       "amount": 5.48,
@@ -2249,7 +2241,7 @@
       "description": "Debit Card Purchase Local Coffee Shop"
     },
     {
-      "id": "aa67697f73ef4d6299d439bcc45b7d97",
+      "id": "a8ff4804abaa42d89f717ee97b1acc94",
       "date": "2025-10-09",
       "merchant": "Uber Eats",
       "amount": 43.69,
@@ -2257,7 +2249,7 @@
       "description": "Debit Card Purchase Uber Eats"
     },
     {
-      "id": "29658cd17f5c42548e45744867db8b82",
+      "id": "8560e78faf2d4dd9bf9bcb72f1c686d4",
       "date": "2025-10-09",
       "merchant": "IKEA",
       "amount": 60.7,
@@ -2265,7 +2257,7 @@
       "description": "Debit Card Purchase IKEA"
     },
     {
-      "id": "a0737b7241cc47289e7b1f525149652b",
+      "id": "5aee63472d4040b287983042d714d3ca",
       "date": "2025-10-09",
       "merchant": "Regal Cinemas",
       "amount": 25.37,
@@ -2273,7 +2265,7 @@
       "description": "Debit Card Purchase Regal Cinemas"
     },
     {
-      "id": "7cf273e0ccf14da688c401fc39cdbaa6",
+      "id": "d92ca117abe14e12ab5dd75f6a2524c7",
       "date": "2025-10-09",
       "merchant": "DoorDash",
       "amount": 48.31,
@@ -2281,7 +2273,7 @@
       "description": "Debit Card Purchase DoorDash"
     },
     {
-      "id": "5e56bffa91f044efba4cb9276eac9fb0",
+      "id": "d143a7ef45d54fcc9930e980ae4f6e5d",
       "date": "2025-10-10",
       "merchant": "PF Changs Squirrel Hill PA",
       "amount": 65.03,
@@ -2289,7 +2281,7 @@
       "description": "Debit Card Purchase PF Changs Squirrel Hill PA"
     },
     {
-      "id": "4934031988994013b33cced7ed8b646c",
+      "id": "72addd1b63f941b5bb162512b7d8d368",
       "date": "2025-10-10",
       "merchant": "Subway Card",
       "amount": 114.42,
@@ -2297,7 +2289,7 @@
       "description": "Debit Card Purchase Subway Card"
     },
     {
-      "id": "ed6ad21bee0144a985aeaf15a03af7c3",
+      "id": "73d521ae3f9a4089a409262e11a8d723",
       "date": "2025-10-10",
       "merchant": "Vet Clinic",
       "amount": 87.51,
@@ -2305,7 +2297,7 @@
       "description": "Debit Card Purchase Vet Clinic"
     },
     {
-      "id": "68db46b3e8074d2ca565987f0dbe019a",
+      "id": "ac4537df1e99403d94680e7f404a4fb4",
       "date": "2025-10-11",
       "merchant": "City Parking Garage",
       "amount": 22.82,
@@ -2313,7 +2305,7 @@
       "description": "Debit Card Purchase City Parking Garage"
     },
     {
-      "id": "c3a0d8648b23422ca4af8f0bffe6b470",
+      "id": "1d915d97e19c470da95df0fc99a4c20b",
       "date": "2025-10-11",
       "merchant": "Rite Aid",
       "amount": 20.0,
@@ -2321,7 +2313,7 @@
       "description": "Debit Card Purchase Rite Aid"
     },
     {
-      "id": "5d05c63acfae47e7bea2d7c92cb81291",
+      "id": "6fc33a3f90d4477db7acfafb69b6c786",
       "date": "2025-10-11",
       "merchant": "Udemy",
       "amount": 173.4,
@@ -2329,7 +2321,7 @@
       "description": "Debit Card Purchase Udemy"
     },
     {
-      "id": "72357332a04a4d2f99faec52879a39ba",
+      "id": "5b7334b30dae44a585bb955ad6298abe",
       "date": "2025-10-11",
       "merchant": "Postmates",
       "amount": 25.03,
@@ -2337,7 +2329,7 @@
       "description": "Debit Card Purchase Postmates"
     },
     {
-      "id": "a5d110daa2384f989cf1d75d1258edb4",
+      "id": "579de1264622434ebcdf11fdc1d05fa8",
       "date": "2025-10-12",
       "merchant": "Dunkin",
       "amount": 6.41,
@@ -2345,7 +2337,7 @@
       "description": "Debit Card Purchase Dunkin"
     },
     {
-      "id": "28af698fc6194786907804a65e6da40f",
+      "id": "023cccd4b38946ac837a15a4571748a9",
       "date": "2025-10-12",
       "merchant": "Airport Parking",
       "amount": 21.58,
@@ -2353,7 +2345,7 @@
       "description": "Debit Card Purchase Airport Parking"
     },
     {
-      "id": "0cd3552e968c4cd995cda0e4dda692ac",
+      "id": "311e440c2b3346d581fbfae4f7fbb542",
       "date": "2025-10-12",
       "merchant": "DoorDash Ride",
       "amount": 44.01,
@@ -2361,7 +2353,7 @@
       "description": "Debit Card Purchase DoorDash Ride"
     },
     {
-      "id": "57f21d119aad47cd8352eb3e18d335f7",
+      "id": "e41d11488d72463aab3b87a9307d1cbc",
       "date": "2025-10-12",
       "merchant": "Target Oakland PA",
       "amount": 78.21,
@@ -2369,7 +2361,7 @@
       "description": "Debit Card Purchase Target Oakland PA"
     },
     {
-      "id": "f7cd7f1cd027490180670e7376277b5b",
+      "id": "7590c5741b014e0d81289a899093be6d",
       "date": "2025-10-13",
       "merchant": "Dunkin",
       "amount": 5.73,
@@ -2377,7 +2369,7 @@
       "description": "Debit Card Purchase Dunkin"
     },
     {
-      "id": "4fef2c955af04d1e994ef8296a2f8a19",
+      "id": "8c6a8d400f0549a298d7e40d23f83da7",
       "date": "2025-10-13",
       "merchant": "DoorDash Ride",
       "amount": 32.41,
@@ -2385,7 +2377,7 @@
       "description": "Debit Card Purchase DoorDash Ride"
     },
     {
-      "id": "21ecd77f50e74565a84d0f8dfbc4837f",
+      "id": "0680a1ce63814b1c93d30065422f5ff9",
       "date": "2025-10-13",
       "merchant": "Uber",
       "amount": 22.4,
@@ -2393,7 +2385,7 @@
       "description": "Debit Card Purchase Uber"
     },
     {
-      "id": "182f35a81208465191dfeb9ed2ea1065",
+      "id": "cdf76498812944e6a394a28e89dfbc16",
       "date": "2025-10-13",
       "merchant": "Unknown",
       "amount": 174.9,
@@ -2401,7 +2393,7 @@
       "description": "ATM Withdrawal"
     },
     {
-      "id": "ea0b2d30852c4bce9c0ec048528dd90b",
+      "id": "20111b4176654997bc57ec61c511f25f",
       "date": "2025-10-14",
       "merchant": "GetGo Oakland PA",
       "amount": 64.66,
@@ -2409,7 +2401,7 @@
       "description": "Debit Card Purchase GetGo Oakland PA"
     },
     {
-      "id": "4764c65b2f2f4141aaa312d207ccaa0e",
+      "id": "db559fda37af4b049257914f3c00575d",
       "date": "2025-10-14",
       "merchant": "Vet Clinic",
       "amount": 138.56,
@@ -2417,7 +2409,7 @@
       "description": "Debit Card Purchase Vet Clinic"
     },
     {
-      "id": "6563ea044fc74439bb41e63359088fd0",
+      "id": "addb3a026eae46ef8c492314d8df2acb",
       "date": "2025-10-15",
       "merchant": "Monthly Salary",
       "amount": -12000.0,
@@ -2425,7 +2417,7 @@
       "description": "Payroll Direct Deposit - Monthly Salary"
     },
     {
-      "id": "e3cad45683ef49b7a83f5f94da707a79",
+      "id": "5e12a05d71df4734a04ae1ae3c974c7e",
       "date": "2025-10-15",
       "merchant": "Chipotle Cranberry Township PA",
       "amount": 41.66,
@@ -2433,7 +2425,7 @@
       "description": "Debit Card Purchase Chipotle Cranberry Township PA"
     },
     {
-      "id": "0a970b8e96ff431e9cc1b4c27513f6a0",
+      "id": "7c44d375fded4b1989375f12157378c2",
       "date": "2025-10-15",
       "merchant": "Burger King Shadyside PA",
       "amount": 10.44,
@@ -2441,7 +2433,7 @@
       "description": "Debit Card Purchase Burger King Shadyside PA"
     },
     {
-      "id": "f49b9dfc0b78499da363a224dc4fcfdc",
+      "id": "d30e234e3d244c49836bd31cf02b95be",
       "date": "2025-10-15",
       "merchant": "Blue Bottle",
       "amount": 10.26,
@@ -2449,7 +2441,7 @@
       "description": "Debit Card Purchase Blue Bottle"
     },
     {
-      "id": "b8127e85bdf147b19d2c0bb743438db8",
+      "id": "a8a3e747d72a417184ec89b4c89950db",
       "date": "2025-10-15",
       "merchant": "Starbucks",
       "amount": 7.53,
@@ -2457,7 +2449,7 @@
       "description": "Debit Card Purchase Starbucks"
     },
     {
-      "id": "15f9eea973ee4c728c71bb6c8ac43b9f",
+      "id": "b20d062b096d4a62b4c1f8cf6012debe",
       "date": "2025-10-15",
       "merchant": "IKEA",
       "amount": 215.78,
@@ -2465,7 +2457,7 @@
       "description": "Debit Card Purchase IKEA"
     },
     {
-      "id": "8e5d028bf01f48ae99f26bd526f434ee",
+      "id": "449947d12eee4c2ba12f15b3e3bee639",
       "date": "2025-10-17",
       "merchant": "Home Loan EMI",
       "amount": 1200.0,
@@ -2473,7 +2465,7 @@
       "description": "Home Loan EMI - Monthly Payment"
     },
     {
-      "id": "1198b2ec947249bbbe649ccbc504d6cd",
+      "id": "06e0978577744f51ad7da3caf10a91e7",
       "date": "2025-10-17",
       "merchant": "Target Shadyside PA",
       "amount": 87.82,
@@ -2481,7 +2473,7 @@
       "description": "Debit Card Purchase Target Shadyside PA"
     },
     {
-      "id": "7b5578053664450f8b0278fac9f2158d",
+      "id": "53cbf7335ee8455cb16a80e58ea2c152",
       "date": "2025-10-17",
       "merchant": "Shake Shack Squirrel Hill PA",
       "amount": 13.68,
@@ -2489,7 +2481,7 @@
       "description": "Debit Card Purchase Shake Shack Squirrel Hill PA"
     },
     {
-      "id": "6c445ceb703840fb9d0eb251f4feda12",
+      "id": "887a9115beab49579407522a31576b79",
       "date": "2025-10-17",
       "merchant": "Dunkin",
       "amount": 9.71,
@@ -2497,7 +2489,7 @@
       "description": "Debit Card Purchase Dunkin"
     },
     {
-      "id": "bb1732d4800c48dbaa823a4ec4fa0770",
+      "id": "2fb52c84b2d641a0ae5341d7c145e6ea",
       "date": "2025-10-17",
       "merchant": "Starbucks",
       "amount": 4.66,
@@ -2505,7 +2497,7 @@
       "description": "Debit Card Purchase Starbucks"
     },
     {
-      "id": "7ed816a2e1a94292b8e63650b63200d7",
+      "id": "af3e0addb09b49cf97354af5e7922fa8",
       "date": "2025-10-17",
       "merchant": "Dave & Busters",
       "amount": 62.97,
@@ -2513,7 +2505,7 @@
       "description": "Debit Card Purchase Dave & Busters"
     },
     {
-      "id": "bba16593ea03489b91255c738c90ab9d",
+      "id": "9964bc030bf641fd8c430aee51b11159",
       "date": "2025-10-17",
       "merchant": "Walgreens",
       "amount": 11.05,
@@ -2521,7 +2513,7 @@
       "description": "Debit Card Purchase Walgreens"
     },
     {
-      "id": "e7a5fe93d66843d38bb97be66ddca0d8",
+      "id": "332baa4e83f64e53851574e266753985",
       "date": "2025-10-18",
       "merchant": "Yoga Studio",
       "amount": 59.21,
@@ -2529,7 +2521,7 @@
       "description": "Yoga Studio"
     },
     {
-      "id": "5eb4ef216e164b128f0e88965fc46889",
+      "id": "dd343c7c309d424bbc48563d25e7b58d",
       "date": "2025-10-18",
       "merchant": "Giant Eagle Pittsburgh PA",
       "amount": 81.87,
@@ -2537,7 +2529,7 @@
       "description": "Debit Card Purchase Giant Eagle Pittsburgh PA"
     },
     {
-      "id": "953641cf3bc1461581e12ab0631f87e6",
+      "id": "c3978f10db024bb699e23c150273fb04",
       "date": "2025-10-18",
       "merchant": "Uniqlo Cranberry Township PA",
       "amount": 58.43,
@@ -2545,7 +2537,7 @@
       "description": "Debit Card Purchase Uniqlo Cranberry Township PA"
     },
     {
-      "id": "d402bc7c2760422ba0316d8797247a47",
+      "id": "0f71142c9915471ba948b90bea25463a",
       "date": "2025-10-19",
       "merchant": "KFC Pittsburgh PA",
       "amount": 21.14,
@@ -2553,7 +2545,7 @@
       "description": "Debit Card Purchase KFC Pittsburgh PA"
     },
     {
-      "id": "542d338368d14ba4b48058f73031469b",
+      "id": "c1ce7737c9fb42d8a31ee8d4cc791b50",
       "date": "2025-10-20",
       "merchant": "Costco Oakland PA",
       "amount": 46.74,
@@ -2561,7 +2553,7 @@
       "description": "Debit Card Purchase Costco Oakland PA"
     },
     {
-      "id": "f8d1f15d2db6450c8bbfccfadeb3d07a",
+      "id": "1e3f4bc111ae4f94adc975a37f765bff",
       "date": "2025-10-20",
       "merchant": "Kroger Monroeville PA",
       "amount": 65.52,
@@ -2569,7 +2561,7 @@
       "description": "Debit Card Purchase Kroger Monroeville PA"
     },
     {
-      "id": "6c9563c1de9c4a1f846a8dd807894767",
+      "id": "a8833795981b4bb49dd7122cb5859168",
       "date": "2025-10-20",
       "merchant": "Shop n Save Mt Lebanon PA",
       "amount": 66.81,
@@ -2577,7 +2569,7 @@
       "description": "Debit Card Purchase Shop n Save Mt Lebanon PA"
     },
     {
-      "id": "bf8874fd07f3465f9e4ad76819193570",
+      "id": "ae2e31a481b3479b9330fcf744f6c441",
       "date": "2025-10-20",
       "merchant": "SP Plus Parking",
       "amount": 13.67,
@@ -2585,7 +2577,7 @@
       "description": "Debit Card Purchase SP Plus Parking"
     },
     {
-      "id": "9ee570e01b1a4716be15a66ca58ad481",
+      "id": "e8eafac855e84d97ae75b6a676484ea6",
       "date": "2025-10-21",
       "merchant": "Car Loan EMI",
       "amount": 350.0,
@@ -2593,7 +2585,7 @@
       "description": "Car Loan EMI - Monthly Payment"
     },
     {
-      "id": "8c176419c64d4c8697f8d8a2969bb295",
+      "id": "673d9b8c3c024897a0365c67c19b2cac",
       "date": "2025-10-22",
       "merchant": "Gas Bill",
       "amount": 106.81,
@@ -2601,7 +2593,7 @@
       "description": "Gas Bill"
     },
     {
-      "id": "748b38c5983944cab5663731104193e0",
+      "id": "bb8b4a3d5db14098a4c5995c7100b090",
       "date": "2025-10-22",
       "merchant": "Shake Shack Mt Lebanon PA",
       "amount": 11.33,
@@ -2609,7 +2601,7 @@
       "description": "Debit Card Purchase Shake Shack Mt Lebanon PA"
     },
     {
-      "id": "3034f56b9c2e452089e9e96cd5747954",
+      "id": "46f3a4f76dc94d39a03f04af24ed900b",
       "date": "2025-10-22",
       "merchant": "Chick-fil-A Cranberry Township PA",
       "amount": 15.43,
@@ -2617,7 +2609,7 @@
       "description": "Debit Card Purchase Chick-fil-A Cranberry Township PA"
     },
     {
-      "id": "6ef2760c94c944ab89d9b6b2b27db70d",
+      "id": "64c4663414f145f5a76e534d253f5735",
       "date": "2025-10-22",
       "merchant": "Subway Homestead PA",
       "amount": 18.46,
@@ -2625,7 +2617,7 @@
       "description": "Debit Card Purchase Subway Homestead PA"
     },
     {
-      "id": "f5ace97fec2a492d82b36cb901a71b04",
+      "id": "2d2e91d725eb490ebad121ba2601b16e",
       "date": "2025-10-22",
       "merchant": "Peets Coffee",
       "amount": 6.81,
@@ -2633,7 +2625,7 @@
       "description": "Debit Card Purchase Peets Coffee"
     },
     {
-      "id": "563d5f5b0e92476ab0e4f4b442bce234",
+      "id": "df709aecc27f4831a73a5a3b630755e1",
       "date": "2025-10-22",
       "merchant": "Chevron Oakland PA",
       "amount": 40.6,
@@ -2641,7 +2633,7 @@
       "description": "Debit Card Purchase Chevron Oakland PA"
     },
     {
-      "id": "03061a74786e4f71b4bb4dc1a6b949eb",
+      "id": "79ac973c7e0f42009bbe1f00a5226379",
       "date": "2025-10-23",
       "merchant": "Health Insurance Premium",
       "amount": 240.98,
@@ -2649,7 +2641,7 @@
       "description": "Health Insurance Premium"
     },
     {
-      "id": "442b17a9e12641838c84efd99604cdb7",
+      "id": "82eef234327d49bcb879854f2832279e",
       "date": "2025-10-23",
       "merchant": "Texas Roadhouse Shadyside PA",
       "amount": 69.46,
@@ -2657,7 +2649,7 @@
       "description": "Debit Card Purchase Texas Roadhouse Shadyside PA"
     },
     {
-      "id": "fa1f3e75382b4f04a3b0c66c80d2607d",
+      "id": "0251a5b68acf4969839666a459ad95d4",
       "date": "2025-10-23",
       "merchant": "Exxon Oakland PA",
       "amount": 30.88,
@@ -2665,7 +2657,7 @@
       "description": "Debit Card Purchase Exxon Oakland PA"
     },
     {
-      "id": "bae1d9316fe549429482407617b221ba",
+      "id": "c367298df4d1495e8bdc5cec789ab3d8",
       "date": "2025-10-23",
       "merchant": "Lyft",
       "amount": 35.29,
@@ -2673,7 +2665,7 @@
       "description": "Debit Card Purchase Lyft"
     },
     {
-      "id": "65257fc3b01646c1a8779fc07ecf0792",
+      "id": "55d657125e7d49bfbadba11d3eaa3410",
       "date": "2025-10-24",
       "merchant": "BP Shadyside PA",
       "amount": 39.74,
@@ -2681,7 +2673,7 @@
       "description": "Debit Card Purchase BP Shadyside PA"
     },
     {
-      "id": "9994340a454d425faa73f66a3928f5c4",
+      "id": "bf133df6bac941e38265667b775f34f5",
       "date": "2025-10-25",
       "merchant": "Spotify",
       "amount": 17.8,
@@ -2689,7 +2681,7 @@
       "description": "Spotify"
     },
     {
-      "id": "dbcc9a28f7054b85ae2b990b0579ad16",
+      "id": "54915c9f9187472d9eb64b82f3789f5b",
       "date": "2025-10-25",
       "merchant": "Peets Coffee",
       "amount": 5.72,
@@ -2697,7 +2689,7 @@
       "description": "Debit Card Purchase Peets Coffee"
     },
     {
-      "id": "2eb43487fc434e6095c4f78ff127bb0f",
+      "id": "57edc81ff77848009b5e14e6775fbf89",
       "date": "2025-10-25",
       "merchant": "Walmart Oakland PA",
       "amount": 112.36,
@@ -2705,7 +2697,7 @@
       "description": "Debit Card Purchase Walmart Oakland PA"
     },
     {
-      "id": "958c95d4635b4fbea0ed21384df8e026",
+      "id": "a70074a5071d4522be8d6451307ca398",
       "date": "2025-10-25",
       "merchant": "Target Pharmacy",
       "amount": 62.55,
@@ -2713,7 +2705,7 @@
       "description": "Debit Card Purchase Target Pharmacy"
     },
     {
-      "id": "4152f0487c16412bb424a950a8634663",
+      "id": "47324480b8c2410389e60e44c312e955",
       "date": "2025-10-25",
       "merchant": "Uber Eats",
       "amount": 27.89,
@@ -2721,7 +2713,7 @@
       "description": "Debit Card Purchase Uber Eats"
     },
     {
-      "id": "d63b2c8b1bbd4c10843c08d3289ea8dc",
+      "id": "9311b1ad6b634a39b9f9b260646599e3",
       "date": "2025-10-25",
       "merchant": "Postmates",
       "amount": 54.7,
@@ -2729,7 +2721,7 @@
       "description": "Debit Card Purchase Postmates"
     },
     {
-      "id": "cb65579007e04b788ae4678e73b2af36",
+      "id": "58b4a9e11ad747098b020dd7c6edbb28",
       "date": "2025-10-25",
       "merchant": "Unknown",
       "amount": 166.96,
@@ -2737,7 +2729,7 @@
       "description": "ATM Withdrawal"
     },
     {
-      "id": "79490b1094cf49b289052f9c899467a9",
+      "id": "f47e6364d7bc43c3b2b67d019960cd29",
       "date": "2025-10-26",
       "merchant": "Personal Loan EMI",
       "amount": 250.0,
@@ -2745,7 +2737,7 @@
       "description": "Personal Loan EMI - Monthly Payment"
     },
     {
-      "id": "fde17d5cd01443b787418402f20a3c6f",
+      "id": "d93326f172c541df9444f7983aeca963",
       "date": "2025-10-26",
       "merchant": "Safeway Mt Lebanon PA",
       "amount": 152.16,
@@ -2753,7 +2745,7 @@
       "description": "Debit Card Purchase Safeway Mt Lebanon PA"
     },
     {
-      "id": "02239c24c4eb4e5fa3898ac1198b7089",
+      "id": "8859cea78d5f438d8b2192902322b8de",
       "date": "2025-10-26",
       "merchant": "Starbucks",
       "amount": 5.66,
@@ -2761,7 +2753,7 @@
       "description": "Debit Card Purchase Starbucks"
     },
     {
-      "id": "1c455479e9d64b5c9338f5f7cf45b012",
+      "id": "00dfaeece55341a2bbafdfac1c436283",
       "date": "2025-10-26",
       "merchant": "Speedway Mt Lebanon PA",
       "amount": 59.57,
@@ -2769,7 +2761,7 @@
       "description": "Debit Card Purchase Speedway Mt Lebanon PA"
     },
     {
-      "id": "08b5dc9079e740ec8792aa394633fb17",
+      "id": "e0e150d2e05b48eea072dcc810581923",
       "date": "2025-10-26",
       "merchant": "Apple Store Cranberry Township PA",
       "amount": 241.31,
@@ -2777,7 +2769,7 @@
       "description": "Debit Card Purchase Apple Store Cranberry Township PA"
     },
     {
-      "id": "0334f538693643c6a8e178a4007389e3",
+      "id": "4b8b56c3c8994d6886eb5fe9e90b0439",
       "date": "2025-10-26",
       "merchant": "HomeGoods Oakland PA",
       "amount": 225.3,
@@ -2785,7 +2777,7 @@
       "description": "Debit Card Purchase HomeGoods Oakland PA"
     },
     {
-      "id": "9f01b5fd273f47b994992d322b3a2927",
+      "id": "53602925b1a74c8dbba1798ac1f130ad",
       "date": "2025-10-26",
       "merchant": "Petco",
       "amount": 147.18,
@@ -2793,7 +2785,7 @@
       "description": "Debit Card Purchase Petco"
     },
     {
-      "id": "88b4f8913c2b464f94fb2964db6530f7",
+      "id": "3878541e81e246028f918617c06b7c38",
       "date": "2025-10-27",
       "merchant": "Coursera",
       "amount": 107.08,
@@ -2801,7 +2793,7 @@
       "description": "Debit Card Purchase Coursera"
     },
     {
-      "id": "3420d1650c0e4d788305d8ea5ca333e3",
+      "id": "7192e872f5e74e5abaa4eb3647f6594c",
       "date": "2025-10-28",
       "merchant": "Verizon Wireless",
       "amount": 68.3,
@@ -2809,7 +2801,7 @@
       "description": "Verizon Wireless"
     },
     {
-      "id": "b821fc55cc5446faa22386f00deffb38",
+      "id": "2f0e0b1fb0fd4ca3a5daa6fa5ab11664",
       "date": "2025-10-28",
       "merchant": "BP Squirrel Hill PA",
       "amount": 33.13,
@@ -2817,7 +2809,7 @@
       "description": "Debit Card Purchase BP Squirrel Hill PA"
     },
     {
-      "id": "5822689b532a49b9913162eaab54c0f6",
+      "id": "23aef1f2fdf7424594bafde943404c91",
       "date": "2025-10-28",
       "merchant": "Menards",
       "amount": 72.05,
@@ -2825,7 +2817,7 @@
       "description": "Debit Card Purchase Menards"
     },
     {
-      "id": "8db329569d434b87814d62af44d4e33b",
+      "id": "6f94b15c6d8e47c6a35a494cc881e4c0",
       "date": "2025-10-29",
       "merchant": "Cheesecake Factory Squirrel Hill PA",
       "amount": 80.93,
@@ -2833,7 +2825,7 @@
       "description": "Debit Card Purchase Cheesecake Factory Squirrel Hill PA"
     },
     {
-      "id": "b838644ae5794ac287fafad5e56ad938",
+      "id": "7bdd1fe64dcd4f24aeb733d18809798a",
       "date": "2025-10-29",
       "merchant": "Lyft",
       "amount": 12.95,
@@ -2841,7 +2833,7 @@
       "description": "Debit Card Purchase Lyft"
     },
     {
-      "id": "dcdeb8cdd33948a3a98c9be0ba5b200a",
+      "id": "ff8b126d300d4b4c8e3692dfb6e1d8cf",
       "date": "2025-10-29",
       "merchant": "HomeGoods Shadyside PA",
       "amount": 30.24,
@@ -2849,7 +2841,7 @@
       "description": "Debit Card Purchase HomeGoods Shadyside PA"
     },
     {
-      "id": "f4f6879f4ecf48af95239baa440f46e1",
+      "id": "f4feb9e6a9a5415cab9bc33b8843c544",
       "date": "2025-10-30",
       "merchant": "Safeway Cranberry Township PA",
       "amount": 112.78,
@@ -2857,7 +2849,7 @@
       "description": "Debit Card Purchase Safeway Cranberry Township PA"
     },
     {
-      "id": "a7aab017df6b4dc99a7e35b292e47fc5",
+      "id": "025d54a56c464d41bdbecd47a872d175",
       "date": "2025-10-30",
       "merchant": "Kroger Homestead PA",
       "amount": 175.56,
@@ -2865,7 +2857,7 @@
       "description": "Debit Card Purchase Kroger Homestead PA"
     },
     {
-      "id": "35b558442176416f82b583be0f0a2b11",
+      "id": "d3e6830bf3d4421b9ca0baa70b653598",
       "date": "2025-10-30",
       "merchant": "Chipotle Cranberry Township PA",
       "amount": 30.31,
@@ -2873,7 +2865,7 @@
       "description": "Debit Card Purchase Chipotle Cranberry Township PA"
     },
     {
-      "id": "c371e97077784aeba02fb4df9d76b189",
+      "id": "862ae3397a2442a7be74081569806f19",
       "date": "2025-10-30",
       "merchant": "Blue Bottle",
       "amount": 10.8,
@@ -2881,7 +2873,7 @@
       "description": "Debit Card Purchase Blue Bottle"
     },
     {
-      "id": "3edd680692374f078c20450abe25fbd8",
+      "id": "58d7ae6fc1404e7d969fceec2c839394",
       "date": "2025-10-30",
       "merchant": "Uber Eats",
       "amount": 31.89,
@@ -2889,7 +2881,7 @@
       "description": "Debit Card Purchase Uber Eats"
     },
     {
-      "id": "79b354761e7841f1ad878b1718721336",
+      "id": "2ad41a76c85448c381e8a4f11c2183c8",
       "date": "2025-10-30",
       "merchant": "Subway Card",
       "amount": 13.09,
@@ -2897,7 +2889,7 @@
       "description": "Debit Card Purchase Subway Card"
     },
     {
-      "id": "9f37e16047ee4d5ebce9ed8cf227aa0f",
+      "id": "0104cb35f375488ea938c954699b4731",
       "date": "2025-10-30",
       "merchant": "Walmart Monroeville PA",
       "amount": 228.42,
@@ -2905,7 +2897,7 @@
       "description": "Debit Card Purchase Walmart Monroeville PA"
     },
     {
-      "id": "7d4562ddcd3c4a6fa348364436f325f4",
+      "id": "93c8c43fed5640e7a2f24adca39caa3a",
       "date": "2025-10-31",
       "merchant": "Chick-fil-A Mt Lebanon PA",
       "amount": 21.91,
@@ -2913,7 +2905,7 @@
       "description": "Debit Card Purchase Chick-fil-A Mt Lebanon PA"
     },
     {
-      "id": "9bfa21f6822e421bb041b2e161c87d0f",
+      "id": "7fe417f499aa492ea6c7085b10ad9841",
       "date": "2025-10-31",
       "merchant": "Five Guys Mt Lebanon PA",
       "amount": 11.15,
@@ -2921,7 +2913,7 @@
       "description": "Debit Card Purchase Five Guys Mt Lebanon PA"
     },
     {
-      "id": "4f7854cc3d10431fb68afb96572d8454",
+      "id": "3b0782d3186e45018e33e7dadbb52d55",
       "date": "2025-10-31",
       "merchant": "Starbucks",
       "amount": 6.73,
@@ -2929,7 +2921,7 @@
       "description": "Debit Card Purchase Starbucks"
     },
     {
-      "id": "628e9d6301ac47499967d4115ca7d183",
+      "id": "1a53f07588634ab0a96045ec8000cd11",
       "date": "2025-10-31",
       "merchant": "Kohls Shadyside PA",
       "amount": 30.77,
@@ -2937,7 +2929,7 @@
       "description": "Debit Card Purchase Kohls Shadyside PA"
     },
     {
-      "id": "33f957c62f314caabdfa7fc06f1fdb4a",
+      "id": "c8550d35d71b4b4d9a6784136f38427c",
       "date": "2025-10-31",
       "merchant": "Ulta Beauty",
       "amount": 49.09,
@@ -2945,7 +2937,7 @@
       "description": "Debit Card Purchase Ulta Beauty"
     },
     {
-      "id": "ae72b481eb5a4e9693272d29bae6f876",
+      "id": "08beec505c034aac92f32724b91e75c5",
       "date": "2025-11-02",
       "merchant": "Uber Eats",
       "amount": 34.15,
@@ -2953,7 +2945,7 @@
       "description": "Debit Card Purchase Uber Eats"
     },
     {
-      "id": "59c927628ad041dda8a6c389735ef37d",
+      "id": "22fc842d90d641c797faf9be3da7e668",
       "date": "2025-11-02",
       "merchant": "Forever 21 Cranberry Township PA",
       "amount": 37.95,
@@ -2961,7 +2953,7 @@
       "description": "Debit Card Purchase Forever 21 Cranberry Township PA"
     },
     {
-      "id": "2d15d8ba007248cd97c572188fb10b5b",
+      "id": "196d0e9cf8e54a5cb87223b69189d2fb",
       "date": "2025-11-03",
       "merchant": "Olive Garden Monroeville PA",
       "amount": 80.9,
@@ -2969,7 +2961,7 @@
       "description": "Debit Card Purchase Olive Garden Monroeville PA"
     },
     {
-      "id": "c7dce6b8d2d74e2197a6568bc7a9b990",
+      "id": "96dc8e89b7be4e358f322048e469f67e",
       "date": "2025-11-03",
       "merchant": "Kohls Monroeville PA",
       "amount": 56.57,
@@ -2977,7 +2969,7 @@
       "description": "Debit Card Purchase Kohls Monroeville PA"
     },
     {
-      "id": "5c1f47c019af47dfa0090d5e00f36c3e",
+      "id": "c2d9bafea8044b0daccf093f797b6c02",
       "date": "2025-11-03",
       "merchant": "Amazon Monroeville PA",
       "amount": 83.46,
@@ -2985,7 +2977,7 @@
       "description": "Debit Card Purchase Amazon Monroeville PA"
     },
     {
-      "id": "da13c9d580284fc5bce32f368b944517",
+      "id": "05e242f40c9649c99402094f4fe2e8f4",
       "date": "2025-11-04",
       "merchant": "Unknown",
       "amount": 125.22,
@@ -2993,7 +2985,7 @@
       "description": "ATM Withdrawal"
     },
     {
-      "id": "c5fdb2e9331e41569205dededc627b9c",
+      "id": "a37b5a08db6b4ca9ad2a1b5f7f8e5e5e",
       "date": "2025-11-05",
       "merchant": "Olive Garden Squirrel Hill PA",
       "amount": 39.33,
@@ -3001,7 +2993,7 @@
       "description": "Debit Card Purchase Olive Garden Squirrel Hill PA"
     },
     {
-      "id": "96edd4ec38b34d48a8045439655fed0f",
+      "id": "24867c1c227648b8879fd6d1eb29a453",
       "date": "2025-11-05",
       "merchant": "Metro Transit Pass",
       "amount": 93.27,
@@ -3009,7 +3001,7 @@
       "description": "Debit Card Purchase Metro Transit Pass"
     },
     {
-      "id": "ea1a7fc2cdc54267b19998571db9994a",
+      "id": "60641b838cf14d42918ae22d4ad9b1c0",
       "date": "2025-11-05",
       "merchant": "Grubhub",
       "amount": 37.69,
@@ -3017,7 +3009,7 @@
       "description": "Debit Card Purchase Grubhub"
     },
     {
-      "id": "6ae10f0d9473467993155e8c6a8dd9e6",
+      "id": "13d02a463dd74c2fbadc40ceb62b9b62",
       "date": "2025-11-06",
       "merchant": "Shake Shack Monroeville PA",
       "amount": 24.06,
@@ -3025,7 +3017,7 @@
       "description": "Debit Card Purchase Shake Shack Monroeville PA"
     },
     {
-      "id": "61693e9b67a047178b158c12a9187fc3",
+      "id": "692d263a4974467b85f0550e5a42576e",
       "date": "2025-11-06",
       "merchant": "Caribou Coffee",
       "amount": 7.11,
@@ -3033,7 +3025,7 @@
       "description": "Debit Card Purchase Caribou Coffee"
     },
     {
-      "id": "22b8d81747eb44c0b404333e521c5702",
+      "id": "6a8aa2b3e70149138e247967e79f5030",
       "date": "2025-11-06",
       "merchant": "Sunoco Cranberry Township PA",
       "amount": 34.7,
@@ -3041,7 +3033,7 @@
       "description": "Debit Card Purchase Sunoco Cranberry Township PA"
     },
     {
-      "id": "505f8fad2ac345d481339bfdad9f859e",
+      "id": "1cc58a31d3504a7787413a44a11123f7",
       "date": "2025-11-06",
       "merchant": "City Parking Garage",
       "amount": 31.36,
@@ -3049,7 +3041,7 @@
       "description": "Debit Card Purchase City Parking Garage"
     },
     {
-      "id": "f839e59f8d484a638cc60a9f302fb528",
+      "id": "81332e5baeae4129834b0e0206641ca9",
       "date": "2025-11-06",
       "merchant": "Dave & Busters",
       "amount": 52.92,
@@ -3057,7 +3049,7 @@
       "description": "Debit Card Purchase Dave & Busters"
     },
     {
-      "id": "fcd46e31670648ddaeac019294844e8d",
+      "id": "a41c0958e5ac478cb9c6a86c825169a4",
       "date": "2025-11-06",
       "merchant": "Dave & Busters",
       "amount": 39.07,
@@ -3065,7 +3057,7 @@
       "description": "Debit Card Purchase Dave & Busters"
     },
     {
-      "id": "51b449ce237543b5848112b97e8220b0",
+      "id": "c7590aaecc274fc6834b6c943ad3f9a6",
       "date": "2025-11-06",
       "merchant": "Ulta Beauty",
       "amount": 84.73,
@@ -3073,7 +3065,7 @@
       "description": "Debit Card Purchase Ulta Beauty"
     },
     {
-      "id": "aa27aaf1827342ac8eb8d080d1293607",
+      "id": "3e8ff032fdfc41979d53cfb5ab681611",
       "date": "2025-11-07",
       "merchant": "Taco Bell Shadyside PA",
       "amount": 10.8,
@@ -3081,7 +3073,7 @@
       "description": "Debit Card Purchase Taco Bell Shadyside PA"
     },
     {
-      "id": "697aefba6332426289c80e4f9ff4b8ad",
+      "id": "382f1bf509cb4f728efdece2f2da12cc",
       "date": "2025-11-07",
       "merchant": "Unknown",
       "amount": 89.6,
@@ -3089,7 +3081,7 @@
       "description": "ATM Withdrawal"
     },
     {
-      "id": "f3b201c521294832bd707fbcf357b148",
+      "id": "b22ee9673a5447e8b6f2efc2b52ff7a0",
       "date": "2025-11-08",
       "merchant": "Mobil Squirrel Hill PA",
       "amount": 30.71,
@@ -3097,7 +3089,7 @@
       "description": "Debit Card Purchase Mobil Squirrel Hill PA"
     },
     {
-      "id": "04f5a2ba3ec84268adb986bfe1d3a8c4",
+      "id": "c71700181c184eac83e545600df5b7cd",
       "date": "2025-11-09",
       "merchant": "Olive Garden Mt Lebanon PA",
       "amount": 35.54,
@@ -3105,7 +3097,7 @@
       "description": "Debit Card Purchase Olive Garden Mt Lebanon PA"
     },
     {
-      "id": "943ba34ae1e441768b9d9e4f0a6e2c0c",
+      "id": "d7062845fa3b40f7bc39730c3ce71534",
       "date": "2025-11-09",
       "merchant": "Blue Bottle",
       "amount": 7.71,
@@ -3113,7 +3105,7 @@
       "description": "Debit Card Purchase Blue Bottle"
     },
     {
-      "id": "da51eb96e18d43de89c51438c726e0d3",
+      "id": "0ca6391b540747a48785545cc76844b2",
       "date": "2025-11-09",
       "merchant": "Bus Fare",
       "amount": 81.7,
@@ -3121,7 +3113,7 @@
       "description": "Debit Card Purchase Bus Fare"
     },
     {
-      "id": "198c652d80f9477890750383115910c7",
+      "id": "7e0f2cf46a4e43999155d3b2b2a37cbd",
       "date": "2025-11-09",
       "merchant": "Menards",
       "amount": 235.71,
@@ -3129,7 +3121,7 @@
       "description": "Debit Card Purchase Menards"
     },
     {
-      "id": "73c3453cd9ee47c684d8754023b35228",
+      "id": "c18449ff512e417cadd2056d5e5595a9",
       "date": "2025-11-09",
       "merchant": "Doctor Visit Copay",
       "amount": 67.61,
@@ -3137,7 +3129,7 @@
       "description": "Debit Card Purchase Doctor Visit Copay"
     },
     {
-      "id": "ce90259821a147bebb9ff7390dd369a3",
+      "id": "06eb10ac4a6b47ca969ddcb8970f9ac6",
       "date": "2025-11-09",
       "merchant": "Dog Grooming",
       "amount": 29.92,
@@ -3145,7 +3137,7 @@
       "description": "Debit Card Purchase Dog Grooming"
     },
     {
-      "id": "3950d965b9de48c080a2763398457a1d",
+      "id": "9833229e0b1b4543b2c1e0af40a36a69",
       "date": "2025-11-09",
       "merchant": "Grubhub",
       "amount": 26.23,
@@ -3153,7 +3145,7 @@
       "description": "Debit Card Purchase Grubhub"
     },
     {
-      "id": "ad320fa6bf9f4901af37e7395d7b8979",
+      "id": "221ec621e35b485991bd12be0a256b94",
       "date": "2025-11-10",
       "merchant": "Chick-fil-A Monroeville PA",
       "amount": 9.29,
@@ -3161,7 +3153,7 @@
       "description": "Debit Card Purchase Chick-fil-A Monroeville PA"
     },
     {
-      "id": "6e09bb51a44a452e91a3871a458401ff",
+      "id": "b446e5330b574d679afa8374f2653ed0",
       "date": "2025-11-10",
       "merchant": "DoorDash Ride",
       "amount": 38.76,
@@ -3169,7 +3161,7 @@
       "description": "Debit Card Purchase DoorDash Ride"
     },
     {
-      "id": "34e100492ac04d6182bb0a232b57eac8",
+      "id": "c227ddec7c2349dcabc9a58cd7c42589",
       "date": "2025-11-11",
       "merchant": "Uber",
       "amount": 14.82,
@@ -3177,7 +3169,7 @@
       "description": "Debit Card Purchase Uber"
     },
     {
-      "id": "c222dfb1ed2e407fa6ebd334365db1d3",
+      "id": "df28bb7f017f40d19cc99cbee6e618cc",
       "date": "2025-11-11",
       "merchant": "Uber Eats",
       "amount": 45.59,
@@ -3185,7 +3177,7 @@
       "description": "Debit Card Purchase Uber Eats"
     },
     {
-      "id": "3c2a49e34aa34f999a00dd129752b87f",
+      "id": "13f803abba044845a2ba39a848c9d266",
       "date": "2025-11-11",
       "merchant": "Grubhub",
       "amount": 32.64,
@@ -3193,7 +3185,7 @@
       "description": "Debit Card Purchase Grubhub"
     },
     {
-      "id": "f7e4b04d6a974eafbb67e7eefc202c20",
+      "id": "e66faf5f851a4b3baa039c7afa015936",
       "date": "2025-11-12",
       "merchant": "ParkMobile",
       "amount": 16.63,
@@ -3201,7 +3193,7 @@
       "description": "Debit Card Purchase ParkMobile"
     },
     {
-      "id": "0e4ceb1718734927ae3c2c6adddcf049",
+      "id": "f7bca60b71db4b70b50da414f876353f",
       "date": "2025-11-13",
       "merchant": "Blue Bottle",
       "amount": 7.62,
@@ -3209,7 +3201,7 @@
       "description": "Debit Card Purchase Blue Bottle"
     },
     {
-      "id": "aad70982cb7d472586cc8c9c891f440b",
+      "id": "ed202ede1dc94f769cbb79922c97bf8c",
       "date": "2025-11-13",
       "merchant": "Peets Coffee",
       "amount": 10.32,
@@ -3217,7 +3209,7 @@
       "description": "Debit Card Purchase Peets Coffee"
     },
     {
-      "id": "1620ab1901e14159874010d7da7372f0",
+      "id": "09392c5330c4445bacccc77f4bdc5a0c",
       "date": "2025-11-13",
       "merchant": "Mobil Homestead PA",
       "amount": 46.04,
@@ -3225,7 +3217,7 @@
       "description": "Debit Card Purchase Mobil Homestead PA"
     },
     {
-      "id": "3328a050d05e4473b4e736a7d991a017",
+      "id": "aa53916af5ae4483bc201653f9bd0c36",
       "date": "2025-11-13",
       "merchant": "Forever 21 Cranberry Township PA",
       "amount": 127.06,
@@ -3233,7 +3225,7 @@
       "description": "Debit Card Purchase Forever 21 Cranberry Township PA"
     },
     {
-      "id": "3d3e502325d24ea69a8cbb1d88e556d1",
+      "id": "6abe982b2dbc4b588573dc4bf1f3e19f",
       "date": "2025-11-13",
       "merchant": "Rite Aid",
       "amount": 55.01,
@@ -3241,7 +3233,7 @@
       "description": "Debit Card Purchase Rite Aid"
     },
     {
-      "id": "c76dd5204e224410907def7d3fde3601",
+      "id": "3e78094573584a5398a667133fd0f755",
       "date": "2025-11-14",
       "merchant": "City Parking Garage",
       "amount": 16.61,
@@ -3249,7 +3241,7 @@
       "description": "Debit Card Purchase City Parking Garage"
     },
     {
-      "id": "021a06e5bee14ae1959c70408dc39395",
+      "id": "d14f8201f7ff4dc18bdf5559a8681623",
       "date": "2025-11-14",
       "merchant": "Dave & Busters",
       "amount": 67.63,
@@ -3257,7 +3249,7 @@
       "description": "Debit Card Purchase Dave & Busters"
     },
     {
-      "id": "95ecfe6c8faf48bbaa95c5feb4f5170e",
+      "id": "a1178bcc66574ff9b1165ce696be58ef",
       "date": "2025-11-14",
       "merchant": "School Supplies",
       "amount": 147.69,
@@ -3265,7 +3257,7 @@
       "description": "Debit Card Purchase School Supplies"
     },
     {
-      "id": "538344816a1f426e9bbd177bd2d09d71",
+      "id": "13dc88f10b9b4d5885134670acf85a47",
       "date": "2025-11-15",
       "merchant": "Monthly Salary",
       "amount": -12000.0,
@@ -3273,7 +3265,7 @@
       "description": "Payroll Direct Deposit - Monthly Salary"
     },
     {
-      "id": "89f9784d6daa4010a7836d9ce6742b1f",
+      "id": "b42fd6076acc445b9d0660f1828240d8",
       "date": "2025-11-15",
       "merchant": "Peets Coffee",
       "amount": 11.96,
@@ -3281,7 +3273,7 @@
       "description": "Debit Card Purchase Peets Coffee"
     },
     {
-      "id": "ed52f636f48b48898ee598c6e6ef43ac",
+      "id": "0050d3c9081b45019ef52e6417308fe2",
       "date": "2025-11-16",
       "merchant": "Home Loan EMI",
       "amount": 1200.0,
@@ -3289,7 +3281,7 @@
       "description": "Home Loan EMI - Monthly Payment"
     },
     {
-      "id": "3c115177299b445bbff313d5cf6aa10e",
+      "id": "d41e6d833edd4247931f4418de959ec5",
       "date": "2025-11-16",
       "merchant": "Walgreens",
       "amount": 40.61,
@@ -3297,7 +3289,7 @@
       "description": "Debit Card Purchase Walgreens"
     },
     {
-      "id": "91f48297ea9940dbb286c9d2985ec2eb",
+      "id": "d3412872d490411d886ac4552ccda924",
       "date": "2025-11-16",
       "merchant": "Book Store",
       "amount": 50.09,
@@ -3305,7 +3297,7 @@
       "description": "Debit Card Purchase Book Store"
     },
     {
-      "id": "19ca2f285c7b4c39b9b98b58b5d0c7ef",
+      "id": "810fd56fb05d4c08aaec64d72da9fd4e",
       "date": "2025-11-17",
       "merchant": "Gap Shadyside PA",
       "amount": 35.63,
@@ -3313,7 +3305,7 @@
       "description": "Debit Card Purchase Gap Shadyside PA"
     },
     {
-      "id": "86fdbf1e6f0244178c339d6f032bd4da",
+      "id": "48a91270fb0745ebbd2085f1db39206a",
       "date": "2025-11-17",
       "merchant": "Dave & Busters",
       "amount": 55.33,
@@ -3321,7 +3313,7 @@
       "description": "Debit Card Purchase Dave & Busters"
     },
     {
-      "id": "38194cd05161454dbc7c6d984d85470d",
+      "id": "4dd2b4936c314cb891232ab270da7041",
       "date": "2025-11-17",
       "merchant": "Udemy",
       "amount": 120.02,
@@ -3329,7 +3321,7 @@
       "description": "Debit Card Purchase Udemy"
     },
     {
-      "id": "2e3f4572e3404339813eeb6662046287",
+      "id": "b4a75087d4a8467fa6f7abaabdab69e3",
       "date": "2025-11-18",
       "merchant": "Wendys Cranberry Township PA",
       "amount": 22.94,
@@ -3337,7 +3329,7 @@
       "description": "Debit Card Purchase Wendys Cranberry Township PA"
     },
     {
-      "id": "97410a1fcb6343cb8dd14cd2a11ae1ee",
+      "id": "8835c60346264e9a96f988a52bb24776",
       "date": "2025-11-18",
       "merchant": "McDonalds Monroeville PA",
       "amount": 13.19,
@@ -3345,7 +3337,7 @@
       "description": "Debit Card Purchase McDonalds Monroeville PA"
     },
     {
-      "id": "bfd70be5269e4666846ac40b3ed4b25e",
+      "id": "ae44485dbb9448e58ad75bb7fa7fb677",
       "date": "2025-11-18",
       "merchant": "Mobil Squirrel Hill PA",
       "amount": 51.33,
@@ -3353,7 +3345,7 @@
       "description": "Debit Card Purchase Mobil Squirrel Hill PA"
     },
     {
-      "id": "b328266e34524ea6b5d69f11d6114438",
+      "id": "5ef40c8a37e941a081535eb85c248c63",
       "date": "2025-11-18",
       "merchant": "BP Shadyside PA",
       "amount": 59.09,
@@ -3361,7 +3353,7 @@
       "description": "Debit Card Purchase BP Shadyside PA"
     },
     {
-      "id": "8c1027f0665e4e989a657b35cf65c88c",
+      "id": "f3b1ec80e51945a2b65f41917bce464b",
       "date": "2025-11-19",
       "merchant": "Electric Bill",
       "amount": 165.95,
@@ -3369,7 +3361,7 @@
       "description": "Electric Bill"
     },
     {
-      "id": "e587ec21211946d4a58fc802c1c5af23",
+      "id": "1614901083d446429ffe4262dc42e059",
       "date": "2025-11-19",
       "merchant": "HomeGoods Mt Lebanon PA",
       "amount": 225.64,
@@ -3377,7 +3369,7 @@
       "description": "Debit Card Purchase HomeGoods Mt Lebanon PA"
     },
     {
-      "id": "013fb26fca644c0b9da7826a4e28284c",
+      "id": "549f28ff2fb043a19dfe8ced08e623b2",
       "date": "2025-11-19",
       "merchant": "Barbershop",
       "amount": 105.79,
@@ -3385,7 +3377,7 @@
       "description": "Debit Card Purchase Barbershop"
     },
     {
-      "id": "3ce7d59e6fdc4410bcdf655e71f3033f",
+      "id": "0637ea08f9834be294b211929bf0990e",
       "date": "2025-11-19",
       "merchant": "Spa",
       "amount": 91.59,
@@ -3393,7 +3385,7 @@
       "description": "Debit Card Purchase Spa"
     },
     {
-      "id": "950ae39405a746d497e248c6f36cb658",
+      "id": "7cd66b0523074d6bb76b7fa942cd8468",
       "date": "2025-11-20",
       "merchant": "Car Loan EMI",
       "amount": 350.0,
@@ -3401,7 +3393,7 @@
       "description": "Car Loan EMI - Monthly Payment"
     },
     {
-      "id": "f46bfede729d47a3838b26ed48e4ae4e",
+      "id": "30246da286be41daba6c8217e048601d",
       "date": "2025-11-20",
       "merchant": "Dentist Payment",
       "amount": 79.96,
@@ -3409,7 +3401,7 @@
       "description": "Debit Card Purchase Dentist Payment"
     },
     {
-      "id": "260943f88013498fb130abcc6ee88bf8",
+      "id": "c0b13b44d4694c69ad40b801a88d6654",
       "date": "2025-11-21",
       "merchant": "TJ Maxx Pittsburgh PA",
       "amount": 301.52,
@@ -3417,7 +3409,7 @@
       "description": "Debit Card Purchase TJ Maxx Pittsburgh PA"
     },
     {
-      "id": "78845999cf3f49f89fdfa4cc2a6c893f",
+      "id": "e39c1f2208f240bcad8d223c5fb715db",
       "date": "2025-11-21",
       "merchant": "Bowling Alley",
       "amount": 82.88,
@@ -3425,7 +3417,7 @@
       "description": "Debit Card Purchase Bowling Alley"
     },
     {
-      "id": "5956f5be7944454a859c26d7b5ed3a78",
+      "id": "71deed78c59a4979907915453adf8137",
       "date": "2025-11-22",
       "merchant": "Walmart Squirrel Hill PA",
       "amount": 339.55,
@@ -3433,7 +3425,7 @@
       "description": "Debit Card Purchase Walmart Squirrel Hill PA"
     },
     {
-      "id": "ef56e8a2843c45afac43726410313a00",
+      "id": "dae4a0c6c8544c64932a1079a56b326a",
       "date": "2025-11-22",
       "merchant": "Petco",
       "amount": 66.87,
@@ -3441,7 +3433,7 @@
       "description": "Debit Card Purchase Petco"
     },
     {
-      "id": "c75e2fdd975945db8d3adc3b30f70980",
+      "id": "3848042fc0ab4b30a255b3fb52554a55",
       "date": "2025-11-23",
       "merchant": "Equinox",
       "amount": 32.64,
@@ -3449,7 +3441,7 @@
       "description": "Equinox"
     },
     {
-      "id": "70f72eac7e1e445c85c0a71fced42781",
+      "id": "56edffb5ae494137990fc05412733827",
       "date": "2025-11-23",
       "merchant": "Aldi Pittsburgh PA",
       "amount": 153.59,
@@ -3457,7 +3449,7 @@
       "description": "Debit Card Purchase Aldi Pittsburgh PA"
     },
     {
-      "id": "b74e1f0b749843cf9872ac3cd66742ee",
+      "id": "35c163e12cc743fd93bd3ebd034cbe43",
       "date": "2025-11-23",
       "merchant": "KFC Oakland PA",
       "amount": 14.68,
@@ -3465,7 +3457,7 @@
       "description": "Debit Card Purchase KFC Oakland PA"
     },
     {
-      "id": "eea82e4088ed4d10aa04c34b26d80e32",
+      "id": "8391b0394465468cb723162be57fc76f",
       "date": "2025-11-23",
       "merchant": "Five Guys Pittsburgh PA",
       "amount": 21.84,
@@ -3473,7 +3465,7 @@
       "description": "Debit Card Purchase Five Guys Pittsburgh PA"
     },
     {
-      "id": "c486eb33d4a14b268f6f29b94e8f7708",
+      "id": "c76e5f36fe254e06ac82485f4d2cf93c",
       "date": "2025-11-23",
       "merchant": "Starbucks",
       "amount": 8.49,
@@ -3481,7 +3473,7 @@
       "description": "Debit Card Purchase Starbucks"
     },
     {
-      "id": "9214a355f495473083e92bbbe9f9b256",
+      "id": "4a7c2f327cee43d0976e1b87c8cd6b27",
       "date": "2025-11-23",
       "merchant": "GetGo Oakland PA",
       "amount": 50.49,
@@ -3489,7 +3481,7 @@
       "description": "Debit Card Purchase GetGo Oakland PA"
     },
     {
-      "id": "4da17067483f4c5ca1338663e9a75b33",
+      "id": "56419664397144d589b28e5eeda9c311",
       "date": "2025-11-23",
       "merchant": "Uber Eats",
       "amount": 27.24,
@@ -3497,7 +3489,7 @@
       "description": "Debit Card Purchase Uber Eats"
     },
     {
-      "id": "fc06a0ef8cbe4789b6356eee00ccc1ba",
+      "id": "38c9bc2534e640f29586634db19268c0",
       "date": "2025-11-25",
       "merchant": "Personal Loan EMI",
       "amount": 250.0,
@@ -3505,7 +3497,7 @@
       "description": "Personal Loan EMI - Monthly Payment"
     },
     {
-      "id": "d4f886d1799d4e41a1ecd468960ef305",
+      "id": "a7b905a35cf54610bf218b606741c662",
       "date": "2025-11-25",
       "merchant": "YouTube Premium",
       "amount": 10.64,
@@ -3513,7 +3505,7 @@
       "description": "YouTube Premium"
     },
     {
-      "id": "ee54f92315084acebda563e9bb064085",
+      "id": "88049989ec944d32ae9e1bb48999c581",
       "date": "2025-11-25",
       "merchant": "Giant Eagle Squirrel Hill PA",
       "amount": 153.19,
@@ -3521,7 +3513,7 @@
       "description": "Debit Card Purchase Giant Eagle Squirrel Hill PA"
     },
     {
-      "id": "47deb729db8f48c7bcafad4bed864dea",
+      "id": "d509d7036ec441c498baffb1978d906d",
       "date": "2025-11-25",
       "merchant": "Costco Mt Lebanon PA",
       "amount": 111.43,
@@ -3529,7 +3521,7 @@
       "description": "Debit Card Purchase Costco Mt Lebanon PA"
     },
     {
-      "id": "a733bd7be2cb4ebf92e09008ba24f10f",
+      "id": "4098746a53074f9491fbb8467998e823",
       "date": "2025-11-25",
       "merchant": "Burger King Monroeville PA",
       "amount": 14.47,
@@ -3537,7 +3529,7 @@
       "description": "Debit Card Purchase Burger King Monroeville PA"
     },
     {
-      "id": "870132e5d68b4176b9c68a6ee1066efd",
+      "id": "c38351ffd0e846d3963379f923d18d70",
       "date": "2025-11-25",
       "merchant": "Exxon Mt Lebanon PA",
       "amount": 56.86,
@@ -3545,7 +3537,7 @@
       "description": "Debit Card Purchase Exxon Mt Lebanon PA"
     },
     {
-      "id": "ef92833aa20a4845a0c1bb642f3bd959",
+      "id": "4dc5e00260b74c5db302019fa85f5d65",
       "date": "2025-11-25",
       "merchant": "Subway Card",
       "amount": 51.96,
@@ -3553,7 +3545,7 @@
       "description": "Debit Card Purchase Subway Card"
     },
     {
-      "id": "c38caa75bc3c4e1d81c057aea1f5bc86",
+      "id": "9f012e8376cd4c419cb9595c4bc95fd0",
       "date": "2025-11-25",
       "merchant": "DoorDash",
       "amount": 21.4,
@@ -3561,7 +3553,7 @@
       "description": "Debit Card Purchase DoorDash"
     },
     {
-      "id": "6eae9a7f43894ed3ad794b6b521d27da",
+      "id": "538c65609d1b4902971bbdcfc0c32556",
       "date": "2025-11-26",
       "merchant": "Kroger Squirrel Hill PA",
       "amount": 156.79,
@@ -3569,7 +3561,7 @@
       "description": "Debit Card Purchase Kroger Squirrel Hill PA"
     },
     {
-      "id": "c922e1d56bc24077bc1973ef9868c1ee",
+      "id": "c95f80d480b7404d830f9ac58728fc09",
       "date": "2025-11-26",
       "merchant": "Caribou Coffee",
       "amount": 5.58,
@@ -3577,7 +3569,7 @@
       "description": "Debit Card Purchase Caribou Coffee"
     },
     {
-      "id": "ed25b75067394ef0a7be20b4b58bfb10",
+      "id": "a2482ef700654df581cda3bba9dd661f",
       "date": "2025-11-26",
       "merchant": "Apple Store Mt Lebanon PA",
       "amount": 72.82,
@@ -3585,7 +3577,7 @@
       "description": "Debit Card Purchase Apple Store Mt Lebanon PA"
     },
     {
-      "id": "848f6391919b436298f40b08d84016f0",
+      "id": "f81cd89edc6c4b60bfdc92562bcdc7fe",
       "date": "2025-11-26",
       "merchant": "Regal Cinemas",
       "amount": 36.2,
@@ -3593,7 +3585,7 @@
       "description": "Debit Card Purchase Regal Cinemas"
     },
     {
-      "id": "202fddec1c6d4292921722dd78bc665a",
+      "id": "c0e5b506a0c443d7905b02e6fe87d947",
       "date": "2025-11-27",
       "merchant": "Walmart Supercenter Homestead PA",
       "amount": 99.53,
@@ -3601,7 +3593,7 @@
       "description": "Debit Card Purchase Walmart Supercenter Homestead PA"
     },
     {
-      "id": "9aff95e896fa4557b4c68d4d5ee00a3a",
+      "id": "dc05633b0e2b4e129d9a969f396362d1",
       "date": "2025-11-27",
       "merchant": "Taco Bell Pittsburgh PA",
       "amount": 10.59,
@@ -3609,7 +3601,7 @@
       "description": "Debit Card Purchase Taco Bell Pittsburgh PA"
     },
     {
-      "id": "2f9ad04e63be484f914c69d0f5ae699a",
+      "id": "386d119d504b4035b84898858eafcdca",
       "date": "2025-11-27",
       "merchant": "Uber Eats",
       "amount": 12.13,
@@ -3617,7 +3609,7 @@
       "description": "Debit Card Purchase Uber Eats"
     },
     {
-      "id": "ff9d4067db4b479dbcc5f50af8031aca",
+      "id": "9030da8a9f7e4cbd9b18284c52cb5d3b",
       "date": "2025-11-27",
       "merchant": "Unknown",
       "amount": 161.51,
@@ -3625,7 +3617,7 @@
       "description": "ATM Withdrawal"
     },
     {
-      "id": "fe7fca01365446df8e6404a9b1f75857",
+      "id": "bb67edd15d1e4ec8ae0622b377a753c4",
       "date": "2025-11-28",
       "merchant": "T-Mobile",
       "amount": 51.84,
@@ -3633,7 +3625,7 @@
       "description": "T-Mobile"
     },
     {
-      "id": "6b0b8c08c3cd4a8eb6963b522ec8c069",
+      "id": "10dfc969fe0c4a9e9cef493ae651b99c",
       "date": "2025-11-28",
       "merchant": "Car Insurance",
       "amount": 165.43,
@@ -3641,7 +3633,7 @@
       "description": "Car Insurance"
     },
     {
-      "id": "7984edb585da470cb56ca62bf0f4e3c3",
+      "id": "9e4de73345724d5186bc467c1edb3d59",
       "date": "2025-11-28",
       "merchant": "Red Lobster Cranberry Township PA",
       "amount": 38.28,
@@ -3649,7 +3641,7 @@
       "description": "Debit Card Purchase Red Lobster Cranberry Township PA"
     },
     {
-      "id": "8a166fa27b8f48afb90b7b5f92a9bbba",
+      "id": "fdb966e3ce3c47f09a2f90c99d88cb8a",
       "date": "2025-11-28",
       "merchant": "PF Changs Cranberry Township PA",
       "amount": 51.66,
@@ -3657,7 +3649,7 @@
       "description": "Debit Card Purchase PF Changs Cranberry Township PA"
     },
     {
-      "id": "a33c5e731c974aef92cad58b970a1044",
+      "id": "352da515b66542a2913fd0418c216f52",
       "date": "2025-11-28",
       "merchant": "GetGo Mt Lebanon PA",
       "amount": 45.14,
@@ -3665,7 +3657,7 @@
       "description": "Debit Card Purchase GetGo Mt Lebanon PA"
     },
     {
-      "id": "92fddb52b4294b8f9fde23d881861582",
+      "id": "228287b4c51244989c97da1eac8ebb31",
       "date": "2025-11-28",
       "merchant": "Apple Store Shadyside PA",
       "amount": 173.93,
@@ -3673,7 +3665,7 @@
       "description": "Debit Card Purchase Apple Store Shadyside PA"
     },
     {
-      "id": "c810283fa65344bb9a806809af569db6",
+      "id": "ab0ac891971c425ebdca73c971a6659e",
       "date": "2025-11-28",
       "merchant": "Target Pharmacy",
       "amount": 46.18,
@@ -3681,7 +3673,7 @@
       "description": "Debit Card Purchase Target Pharmacy"
     },
     {
-      "id": "565b23885cae49f4a79a98f97fc20cff",
+      "id": "1e69021431bf419c997ce2a8a3390c0d",
       "date": "2025-11-29",
       "merchant": "HomeGoods Pittsburgh PA",
       "amount": 229.6,
@@ -3689,7 +3681,7 @@
       "description": "Debit Card Purchase HomeGoods Pittsburgh PA"
     },
     {
-      "id": "da18a05163724ee692ccd9b8e47540a7",
+      "id": "cfad724f4a5c41ae811947cfb53f1bd6",
       "date": "2025-11-30",
       "merchant": "City Parking Garage",
       "amount": 9.14,
@@ -3697,7 +3689,7 @@
       "description": "Debit Card Purchase City Parking Garage"
     },
     {
-      "id": "6efe6a4254c3481b807e22e822608405",
+      "id": "7c0da2b2c653416a91e8dbbd6275d41d",
       "date": "2025-11-30",
       "merchant": "Uber Eats",
       "amount": 51.08,
@@ -3705,7 +3697,7 @@
       "description": "Debit Card Purchase Uber Eats"
     },
     {
-      "id": "431f78fe621b4fa4bdc906552b191338",
+      "id": "9d407acbb4db4d29bb74c1cd3a14d35b",
       "date": "2025-12-01",
       "merchant": "Dunkin",
       "amount": 11.33,
@@ -3713,7 +3705,7 @@
       "description": "Debit Card Purchase Dunkin"
     },
     {
-      "id": "3d5d9e781d36477cbe780ebf770deca3",
+      "id": "c9d96ec46ec24210822fc10e8f8a21bf",
       "date": "2025-12-01",
       "merchant": "Exxon Pittsburgh PA",
       "amount": 30.37,
@@ -3721,7 +3713,7 @@
       "description": "Debit Card Purchase Exxon Pittsburgh PA"
     },
     {
-      "id": "14f9e1fa3bb44520bf3a343249778287",
+      "id": "1d90bdf697fb4032baebc683221f498f",
       "date": "2025-12-01",
       "merchant": "City Parking Garage",
       "amount": 7.73,
@@ -3729,7 +3721,7 @@
       "description": "Debit Card Purchase City Parking Garage"
     },
     {
-      "id": "cf4b25cf0cd84191bb2ff66cc13ee45a",
+      "id": "67f61913c5594aaa913264e207c7bbcd",
       "date": "2025-12-01",
       "merchant": "Unknown",
       "amount": 174.46,
@@ -3737,7 +3729,7 @@
       "description": "ATM Withdrawal"
     },
     {
-      "id": "5d084b16625944d9b71c627f91090b0a",
+      "id": "07be1eaa9d3f4313b900d611a4458e08",
       "date": "2025-12-01",
       "merchant": "Unknown",
       "amount": 66.84,
@@ -3745,7 +3737,7 @@
       "description": "ATM Withdrawal"
     },
     {
-      "id": "be60c52bfcc1432c88064de9d4a32474",
+      "id": "1851e58997e04f659193489db4ec9648",
       "date": "2025-12-02",
       "merchant": "Outback Homestead PA",
       "amount": 70.65,
@@ -3753,7 +3745,7 @@
       "description": "Debit Card Purchase Outback Homestead PA"
     },
     {
-      "id": "27b15f39999e4f329d0be81d04b32cfc",
+      "id": "8c52b06d21aa4b079d7620b1289a51c2",
       "date": "2025-12-02",
       "merchant": "Target Monroeville PA",
       "amount": 56.05,
@@ -3761,7 +3753,7 @@
       "description": "Debit Card Purchase Target Monroeville PA"
     },
     {
-      "id": "c5d83c63a9024c68b8ec9451f3c0b7f4",
+      "id": "b1bff6c6ea834661a7f8598466327d15",
       "date": "2025-12-02",
       "merchant": "Pet Food",
       "amount": 63.98,
@@ -3769,7 +3761,7 @@
       "description": "Debit Card Purchase Pet Food"
     },
     {
-      "id": "47529e1989594625846cc58d7bf398ce",
+      "id": "51121e7e3a1e4fff868a3717abe3fbdb",
       "date": "2025-12-03",
       "merchant": "Starbucks",
       "amount": 9.23,
@@ -3777,7 +3769,7 @@
       "description": "Debit Card Purchase Starbucks"
     },
     {
-      "id": "6fd86e3fda234937a68e20a3466d74aa",
+      "id": "1269619a719d4b2399909a7f3f5cc5be",
       "date": "2025-12-03",
       "merchant": "Metro Transit Pass",
       "amount": 91.89,
@@ -3785,7 +3777,7 @@
       "description": "Debit Card Purchase Metro Transit Pass"
     },
     {
-      "id": "92659bf87ea542bc9a4fe2e64eefb2b9",
+      "id": "d0fa9c13499e44558a61d5401be68533",
       "date": "2025-12-03",
       "merchant": "Nordstrom Monroeville PA",
       "amount": 49.31,
@@ -3793,7 +3785,7 @@
       "description": "Debit Card Purchase Nordstrom Monroeville PA"
     },
     {
-      "id": "c5f6b5c0382f486c8ce02506e972dc03",
+      "id": "eb490172e07a4469b3f464ecbdcd13ac",
       "date": "2025-12-03",
       "merchant": "Uber Eats",
       "amount": 27.07,
@@ -3801,7 +3793,7 @@
       "description": "Debit Card Purchase Uber Eats"
     },
     {
-      "id": "801f0cdcf1dd4c19b50638071c95e120",
+      "id": "b7350ef9728543c58c489009029484b2",
       "date": "2025-12-03",
       "merchant": "Grubhub",
       "amount": 47.0,
@@ -3809,7 +3801,7 @@
       "description": "Debit Card Purchase Grubhub"
     },
     {
-      "id": "6cfa6161b76f470e820c5d459b28ab16",
+      "id": "401316a4805f47c185774bbb15843d26",
       "date": "2025-12-05",
       "merchant": "Dunkin",
       "amount": 6.82,
@@ -3817,7 +3809,7 @@
       "description": "Debit Card Purchase Dunkin"
     },
     {
-      "id": "1cf3bb48c9f047c79f7b582db90db990",
+      "id": "c83080d858054538a997ca51cdec0f47",
       "date": "2025-12-05",
       "merchant": "Caribou Coffee",
       "amount": 11.44,
@@ -3825,7 +3817,7 @@
       "description": "Debit Card Purchase Caribou Coffee"
     },
     {
-      "id": "d1fb3afa9df04654a4dd7ad3eb5cfe23",
+      "id": "12595ee3ee3d440ba1825fde008481a3",
       "date": "2025-12-05",
       "merchant": "Dunkin",
       "amount": 10.1,
@@ -3833,7 +3825,7 @@
       "description": "Debit Card Purchase Dunkin"
     },
     {
-      "id": "4b850ac06ef1496c944a9803f9920504",
+      "id": "926e096f876049f3a5f3f871cd7cf985",
       "date": "2025-12-05",
       "merchant": "Lyft",
       "amount": 18.1,
@@ -3841,7 +3833,7 @@
       "description": "Debit Card Purchase Lyft"
     },
     {
-      "id": "c4106afccce842c8948aa5423969e7ba",
+      "id": "4390ca68b14e464cac523506aa720733",
       "date": "2025-12-05",
       "merchant": "Ace Hardware",
       "amount": 241.68,
@@ -3849,7 +3841,7 @@
       "description": "Debit Card Purchase Ace Hardware"
     },
     {
-      "id": "7d88420302fd41e694f9308809d7080a",
+      "id": "dfa502ecfc17449f83f91292ca7fcc39",
       "date": "2025-12-05",
       "merchant": "Rite Aid",
       "amount": 66.29,
@@ -3857,7 +3849,7 @@
       "description": "Debit Card Purchase Rite Aid"
     },
     {
-      "id": "e20a292095f447eca47630b61244fbe9",
+      "id": "80b3c2c4dbf64352891edc34c5f43e9b",
       "date": "2025-12-06",
       "merchant": "Dunkin",
       "amount": 8.79,
@@ -3865,7 +3857,7 @@
       "description": "Debit Card Purchase Dunkin"
     },
     {
-      "id": "f0a27bc5138a40e4ba52098ee08b35bb",
+      "id": "8d0f29966a0547bcb8815892f5781ced",
       "date": "2025-12-07",
       "merchant": "Giant Eagle Oakland PA",
       "amount": 92.95,
@@ -3873,7 +3865,7 @@
       "description": "Debit Card Purchase Giant Eagle Oakland PA"
     },
     {
-      "id": "aa208f23b6ce4f198e8b606874eeb267",
+      "id": "3290a81b3bc84c1d8038d43e40f848d5",
       "date": "2025-12-07",
       "merchant": "PF Changs Oakland PA",
       "amount": 74.74,
@@ -3881,7 +3873,7 @@
       "description": "Debit Card Purchase PF Changs Oakland PA"
     },
     {
-      "id": "32846ad49f674032aab37688e4269776",
+      "id": "38ab0f58543b4819bf6629367698fcd5",
       "date": "2025-12-07",
       "merchant": "Postmates",
       "amount": 28.93,
@@ -3889,7 +3881,7 @@
       "description": "Debit Card Purchase Postmates"
     },
     {
-      "id": "1f4f6bea6a234f2e966fee948a9badcd",
+      "id": "651dd46a8f554806a268988d1f3f489c",
       "date": "2025-12-08",
       "merchant": "Kroger Squirrel Hill PA",
       "amount": 104.06,
@@ -3897,7 +3889,7 @@
       "description": "Debit Card Purchase Kroger Squirrel Hill PA"
     },
     {
-      "id": "6125d9e3d4dc49adb1637260864ab0f9",
+      "id": "175d8fe10b1142c9a76da6d0eeceaf30",
       "date": "2025-12-08",
       "merchant": "PF Changs Oakland PA",
       "amount": 81.51,
@@ -3905,7 +3897,7 @@
       "description": "Debit Card Purchase PF Changs Oakland PA"
     },
     {
-      "id": "4bb334655ddb44e09d5334b2d43afd2b",
+      "id": "d6112f1359ac4a61a54abbeed2ce543d",
       "date": "2025-12-08",
       "merchant": "Lyft",
       "amount": 19.72,
@@ -3913,7 +3905,7 @@
       "description": "Debit Card Purchase Lyft"
     },
     {
-      "id": "1d691825a6fe494aa2369ef0802b6edc",
+      "id": "878886a599b6459a9282d31c2507f5b8",
       "date": "2025-12-08",
       "merchant": "Lowes",
       "amount": 117.76,
@@ -3921,7 +3913,7 @@
       "description": "Debit Card Purchase Lowes"
     },
     {
-      "id": "988f4b61187242458339646a7df4467b",
+      "id": "b1493d2811c044b88d0b470c00796dc8",
       "date": "2025-12-09",
       "merchant": "KFC Oakland PA",
       "amount": 18.15,
@@ -3929,7 +3921,7 @@
       "description": "Debit Card Purchase KFC Oakland PA"
     },
     {
-      "id": "f3f4338b7f5f4405976394a451bde7ef",
+      "id": "78345dc3dff24bd286bd8c5a7344d0b1",
       "date": "2025-12-09",
       "merchant": "Street Parking Meter",
       "amount": 32.25,
@@ -3937,7 +3929,7 @@
       "description": "Debit Card Purchase Street Parking Meter"
     },
     {
-      "id": "1133ec3e417144509d4ec4162ab379e1",
+      "id": "5dde0cc8bcbd4c13b609426cf0db11fc",
       "date": "2025-12-09",
       "merchant": "Lyft",
       "amount": 26.12,
@@ -3945,7 +3937,7 @@
       "description": "Debit Card Purchase Lyft"
     },
     {
-      "id": "0bd0c5d2af6b4af393f45387d89ada3e",
+      "id": "cd99cd7f62304c6c86884e3e72e6fa1c",
       "date": "2025-12-10",
       "merchant": "Uber Eats",
       "amount": 34.04,
@@ -3953,7 +3945,7 @@
       "description": "Debit Card Purchase Uber Eats"
     },
     {
-      "id": "b384b8d5c2974f4da142ad6ad021d07f",
+      "id": "ef728594c13d4efb9199fb0d349c9277",
       "date": "2025-12-11",
       "merchant": "Burger King Squirrel Hill PA",
       "amount": 14.5,
@@ -3961,7 +3953,7 @@
       "description": "Debit Card Purchase Burger King Squirrel Hill PA"
     },
     {
-      "id": "61f81abaafec4a048fa2723418c7e8ac",
+      "id": "45ba11a02aae467c8ce932a60554fc77",
       "date": "2025-12-11",
       "merchant": "Mobil Pittsburgh PA",
       "amount": 56.77,
@@ -3969,7 +3961,7 @@
       "description": "Debit Card Purchase Mobil Pittsburgh PA"
     },
     {
-      "id": "1425df761b1144039280679c0911152f",
+      "id": "20bb544f1e594213a0389d2ccc4f00d7",
       "date": "2025-12-11",
       "merchant": "Street Parking Meter",
       "amount": 17.46,
@@ -3977,7 +3969,7 @@
       "description": "Debit Card Purchase Street Parking Meter"
     },
     {
-      "id": "3212641b30834de8b36176f1b6545522",
+      "id": "8666ca82788a44b2b59c2acaf6f304f2",
       "date": "2025-12-11",
       "merchant": "Train Ticket",
       "amount": 107.4,
@@ -3985,7 +3977,7 @@
       "description": "Debit Card Purchase Train Ticket"
     },
     {
-      "id": "2d1602f3f9a14141a143c665e3a7a129",
+      "id": "6ad6bda43052498d8104e028d05d9fbe",
       "date": "2025-12-12",
       "merchant": "Red Lobster Oakland PA",
       "amount": 63.48,
@@ -3993,7 +3985,7 @@
       "description": "Debit Card Purchase Red Lobster Oakland PA"
     },
     {
-      "id": "b0cc03be17434ea88654561dba4d3434",
+      "id": "f53f4ac21aa84a0181631e624fbecf9c",
       "date": "2025-12-12",
       "merchant": "Caribou Coffee",
       "amount": 10.32,
@@ -4001,7 +3993,7 @@
       "description": "Debit Card Purchase Caribou Coffee"
     },
     {
-      "id": "60efef4cbc2646bcbd4c59899fe41d8e",
+      "id": "5e7c50dd177249838eb6d9b56b3bb18b",
       "date": "2025-12-12",
       "merchant": "Sunoco Pittsburgh PA",
       "amount": 33.3,
@@ -4009,7 +4001,7 @@
       "description": "Debit Card Purchase Sunoco Pittsburgh PA"
     },
     {
-      "id": "c63f54acf4714651bd1bf0b29e2f8bd5",
+      "id": "9a06b95e2d624ab6b9f084e2d988e3fb",
       "date": "2025-12-12",
       "merchant": "Lyft",
       "amount": 40.63,
@@ -4017,7 +4009,7 @@
       "description": "Debit Card Purchase Lyft"
     },
     {
-      "id": "9ab839ac2dc24bab8e6e3ea111320f68",
+      "id": "574d88236d0244689111930948c1d4c5",
       "date": "2025-12-12",
       "merchant": "TopGolf",
       "amount": 76.95,
@@ -4025,7 +4017,7 @@
       "description": "Debit Card Purchase TopGolf"
     },
     {
-      "id": "f63263ce0c8844a2a48c03967c10e0b5",
+      "id": "9e05cabceb9c4f2f9cd0cd3c46b6a2c4",
       "date": "2025-12-13",
       "merchant": "Whole Foods Squirrel Hill PA",
       "amount": 30.32,
@@ -4033,7 +4025,7 @@
       "description": "Debit Card Purchase Whole Foods Squirrel Hill PA"
     },
     {
-      "id": "727116e0ab284b3faafb49ccfb49615c",
+      "id": "12b2616d4593422ba7e0c33c7151c157",
       "date": "2025-12-13",
       "merchant": "Peets Coffee",
       "amount": 10.24,
@@ -4041,7 +4033,7 @@
       "description": "Debit Card Purchase Peets Coffee"
     },
     {
-      "id": "ec372f8293fa4891920ef5f29e6363c2",
+      "id": "39e553a893d24dc4b5c502432c0f4954",
       "date": "2025-12-13",
       "merchant": "Marshalls Pittsburgh PA",
       "amount": 123.77,
@@ -4049,7 +4041,7 @@
       "description": "Debit Card Purchase Marshalls Pittsburgh PA"
     },
     {
-      "id": "7edd7c7e6e364990959e8ceb288c9516",
+      "id": "afa3acbadc884bc8acf2ae172287ae30",
       "date": "2025-12-13",
       "merchant": "Marshalls Mt Lebanon PA",
       "amount": 89.91,
@@ -4057,7 +4049,7 @@
       "description": "Debit Card Purchase Marshalls Mt Lebanon PA"
     },
     {
-      "id": "573d6159b75248b5bfcbd4b3e8acdcfe",
+      "id": "9b1383720b7746e9a442d7f143673472",
       "date": "2025-12-14",
       "merchant": "Five Guys Homestead PA",
       "amount": 21.16,
@@ -4065,7 +4057,7 @@
       "description": "Debit Card Purchase Five Guys Homestead PA"
     },
     {
-      "id": "649b6714093e408292421a3649bdeee0",
+      "id": "b200d5105639490a95600735509315eb",
       "date": "2025-12-14",
       "merchant": "Local Coffee Shop",
       "amount": 7.48,
@@ -4073,7 +4065,7 @@
       "description": "Debit Card Purchase Local Coffee Shop"
     },
     {
-      "id": "b215a61e33fb479c83307bb205e01b9e",
+      "id": "7a6dab1ab97b4707ab15003c88770531",
       "date": "2025-12-15",
       "merchant": "Starbucks",
       "amount": 10.01,
@@ -4081,7 +4073,7 @@
       "description": "Debit Card Purchase Starbucks"
     },
     {
-      "id": "7866933bcb4f452b85876411732a1f23",
+      "id": "b514cb0eb88d4b9184d2cde977d423a3",
       "date": "2025-12-16",
       "merchant": "Monthly Salary",
       "amount": -12000.0,
@@ -4089,7 +4081,7 @@
       "description": "Payroll Direct Deposit - Monthly Salary"
     },
     {
-      "id": "90f49d1f39f84b60ba805add1cbd85e6",
+      "id": "6f106dc895f1455a89c43e4e372d731e",
       "date": "2025-12-16",
       "merchant": "Chick-fil-A Oakland PA",
       "amount": 8.59,
@@ -4097,7 +4089,7 @@
       "description": "Debit Card Purchase Chick-fil-A Oakland PA"
     },
     {
-      "id": "5974d166691e492bbb207f0a70c97379",
+      "id": "2fb9527a5c994b37a546e3d3866ac757",
       "date": "2025-12-17",
       "merchant": "Home Loan EMI",
       "amount": 1200.0,
@@ -4105,7 +4097,7 @@
       "description": "Home Loan EMI - Monthly Payment"
     },
     {
-      "id": "f8e08ca43ee241e28ad0f8f14a598bf3",
+      "id": "b2d71a9bbd044c9291f52b358fd5a3af",
       "date": "2025-12-17",
       "merchant": "Walmart Supercenter Squirrel Hill PA",
       "amount": 53.33,
@@ -4113,7 +4105,7 @@
       "description": "Debit Card Purchase Walmart Supercenter Squirrel Hill PA"
     },
     {
-      "id": "9b61d4d278274a4294ade579728cdaf0",
+      "id": "71d058d35c4e42b785ea1a60061c0a0e",
       "date": "2025-12-18",
       "merchant": "SoulCycle",
       "amount": 36.12,
@@ -4121,7 +4113,7 @@
       "description": "SoulCycle"
     },
     {
-      "id": "0f54cb7a562f4180b8ee2d6dd3954796",
+      "id": "74458451ed464e2aac4189933b1ce7e0",
       "date": "2025-12-18",
       "merchant": "Target Monroeville PA",
       "amount": 330.52,
@@ -4129,7 +4121,7 @@
       "description": "Debit Card Purchase Target Monroeville PA"
     },
     {
-      "id": "10f53cb574a549f8ab0cac20501f8cc5",
+      "id": "88cf591aeffe4076977f53a1fb1d914f",
       "date": "2025-12-19",
       "merchant": "Red Lobster Squirrel Hill PA",
       "amount": 49.38,
@@ -4137,7 +4129,7 @@
       "description": "Debit Card Purchase Red Lobster Squirrel Hill PA"
     },
     {
-      "id": "d97e5e762a42406cbf2b9b0babc333ac",
+      "id": "d7331f1d17684699b4965d836d3efae8",
       "date": "2025-12-19",
       "merchant": "Wendys Cranberry Township PA",
       "amount": 17.77,
@@ -4145,7 +4137,7 @@
       "description": "Debit Card Purchase Wendys Cranberry Township PA"
     },
     {
-      "id": "5440fbf421c643de828476988e14f48f",
+      "id": "57516b61dc954ba69c83f54a528d1c3d",
       "date": "2025-12-19",
       "merchant": "Peets Coffee",
       "amount": 7.64,
@@ -4153,7 +4145,7 @@
       "description": "Debit Card Purchase Peets Coffee"
     },
     {
-      "id": "eb7cd261de0949f793452cd67d6ac67a",
+      "id": "c45442af326346bfa386ded220cc3266",
       "date": "2025-12-19",
       "merchant": "BP Cranberry Township PA",
       "amount": 36.65,
@@ -4161,7 +4153,7 @@
       "description": "Debit Card Purchase BP Cranberry Township PA"
     },
     {
-      "id": "0bab0327dad34ad78191596ab548cb15",
+      "id": "6971507d60de47329c0717e337107310",
       "date": "2025-12-19",
       "merchant": "Rite Aid",
       "amount": 71.96,
@@ -4169,7 +4161,7 @@
       "description": "Debit Card Purchase Rite Aid"
     },
     {
-      "id": "cf0476c0507046d09245052d5ba3bfa7",
+      "id": "e7277956e06f4f65ab7d784cda631570",
       "date": "2025-12-20",
       "merchant": "Outback Monroeville PA",
       "amount": 28.49,
@@ -4177,7 +4169,7 @@
       "description": "Debit Card Purchase Outback Monroeville PA"
     },
     {
-      "id": "4e7c1cda5035461d9d73bb49081d482f",
+      "id": "739c7107a61441d8bde99876608216ac",
       "date": "2025-12-20",
       "merchant": "DoorDash Ride",
       "amount": 14.56,
@@ -4185,7 +4177,7 @@
       "description": "Debit Card Purchase DoorDash Ride"
     },
     {
-      "id": "3a92bc5e0db2466a9cc52412ab25803e",
+      "id": "77269bbca57f4db683efc5db228a33c6",
       "date": "2025-12-20",
       "merchant": "Instacart",
       "amount": 27.27,
@@ -4193,7 +4185,7 @@
       "description": "Debit Card Purchase Instacart"
     },
     {
-      "id": "52f1a37f22424a37bc2ba47707b957a4",
+      "id": "b9ea3e19631b4887861e334c81b71689",
       "date": "2025-12-21",
       "merchant": "Car Loan EMI",
       "amount": 350.0,
@@ -4201,7 +4193,7 @@
       "description": "Car Loan EMI - Monthly Payment"
     },
     {
-      "id": "88e3a70cb52144de8e4a8515fd5a58e2",
+      "id": "90a6bcfbd4ac4285b383b042633076f2",
       "date": "2025-12-21",
       "merchant": "Electric Bill",
       "amount": 83.86,
@@ -4209,7 +4201,7 @@
       "description": "Electric Bill"
     },
     {
-      "id": "b564ae0bc6034a60afca73637a3c8bd5",
+      "id": "1d6789dd89024c29be8e07f4ac2db9a9",
       "date": "2025-12-21",
       "merchant": "Google Fi",
       "amount": 124.38,
@@ -4217,7 +4209,7 @@
       "description": "Google Fi"
     },
     {
-      "id": "485ee8f6dd3443c3b4986e2395b42c58",
+      "id": "e584f377389b48749ea84f9b929d8aaa",
       "date": "2025-12-21",
       "merchant": "Shell Cranberry Township PA",
       "amount": 47.27,
@@ -4225,7 +4217,7 @@
       "description": "Debit Card Purchase Shell Cranberry Township PA"
     },
     {
-      "id": "4638f72f9c8e44a0a97af823df67c33b",
+      "id": "abed189d3c2d43798bd6a1945b98cab2",
       "date": "2025-12-21",
       "merchant": "Target Mt Lebanon PA",
       "amount": 176.86,
@@ -4233,7 +4225,7 @@
       "description": "Debit Card Purchase Target Mt Lebanon PA"
     },
     {
-      "id": "3e03056ecc7141b9bce3dfb3a420915d",
+      "id": "9f9bb602455f4ef88f3cc6f7cc34b096",
       "date": "2025-12-21",
       "merchant": "TopGolf",
       "amount": 53.31,
@@ -4241,7 +4233,7 @@
       "description": "Debit Card Purchase TopGolf"
     },
     {
-      "id": "71e6175b8257464e9ddcccc3f774bdcc",
+      "id": "128352c3dfe045eb8ed0cf74a67d0983",
       "date": "2025-12-22",
       "merchant": "Shake Shack Shadyside PA",
       "amount": 19.67,
@@ -4249,7 +4241,7 @@
       "description": "Debit Card Purchase Shake Shack Shadyside PA"
     },
     {
-      "id": "6138e16d560d476394318d22d9d4c0b1",
+      "id": "fbe33f50226247dd9591218ad90cb45c",
       "date": "2025-12-22",
       "merchant": "Wawa Mt Lebanon PA",
       "amount": 48.54,
@@ -4257,7 +4249,7 @@
       "description": "Debit Card Purchase Wawa Mt Lebanon PA"
     },
     {
-      "id": "375293e783b84f4db6000a727c6e1fb9",
+      "id": "30970d716c4c4084886233758f73c6e4",
       "date": "2025-12-22",
       "merchant": "TopGolf",
       "amount": 83.94,
@@ -4265,7 +4257,7 @@
       "description": "Debit Card Purchase TopGolf"
     },
     {
-      "id": "75fe3426498243bdad57b643525472a5",
+      "id": "c9006882c0ba4b3a9ec145b6ec00c1e6",
       "date": "2025-12-23",
       "merchant": "Costco Shadyside PA",
       "amount": 90.56,
@@ -4273,7 +4265,7 @@
       "description": "Debit Card Purchase Costco Shadyside PA"
     },
     {
-      "id": "bc26c8e3efc34cedaf828ebdc169c7c6",
+      "id": "523de19078ab444e80d8be8b45fe8797",
       "date": "2025-12-23",
       "merchant": "Peets Coffee",
       "amount": 7.88,
@@ -4281,7 +4273,7 @@
       "description": "Debit Card Purchase Peets Coffee"
     },
     {
-      "id": "2efb784b524847168dd8c0a045637be8",
+      "id": "8830899c3c9f4500afc54fa85c1aecc7",
       "date": "2025-12-24",
       "merchant": "Blue Bottle",
       "amount": 7.52,
@@ -4289,7 +4281,7 @@
       "description": "Debit Card Purchase Blue Bottle"
     },
     {
-      "id": "3498625837aa4aa48a4d1864da083933",
+      "id": "c74faeb029904a5999b065767a430758",
       "date": "2025-12-24",
       "merchant": "Metro Transit Pass",
       "amount": 49.7,
@@ -4297,7 +4289,7 @@
       "description": "Debit Card Purchase Metro Transit Pass"
     },
     {
-      "id": "a934d5f84dbe4ab38b1698c5709a564c",
+      "id": "9686dee1488147f3ac59f6790bd3c14a",
       "date": "2025-12-24",
       "merchant": "HomeGoods Shadyside PA",
       "amount": 120.01,
@@ -4305,7 +4297,7 @@
       "description": "Debit Card Purchase HomeGoods Shadyside PA"
     },
     {
-      "id": "a1a5b56e73c448b39daf98e41f4c3f08",
+      "id": "e5090255189c46e1a66fd2bc112f43c3",
       "date": "2025-12-24",
       "merchant": "AMC Theatres",
       "amount": 50.75,
@@ -4313,7 +4305,7 @@
       "description": "Debit Card Purchase AMC Theatres"
     },
     {
-      "id": "3aafbabfd27f4bf1a6d4d73217b98900",
+      "id": "99f4629c18da422fb02371dc87b0fc19",
       "date": "2025-12-24",
       "merchant": "Vet Clinic",
       "amount": 42.08,
@@ -4321,7 +4313,7 @@
       "description": "Debit Card Purchase Vet Clinic"
     },
     {
-      "id": "ce2f08dca63f498381da4e85ad1ad1e8",
+      "id": "9a58d0302ed542fcafaf4f79af70fb19",
       "date": "2025-12-25",
       "merchant": "Safeway Cranberry Township PA",
       "amount": 151.24,
@@ -4329,7 +4321,7 @@
       "description": "Debit Card Purchase Safeway Cranberry Township PA"
     },
     {
-      "id": "19550d4cd33a44eabd65d628a0af613c",
+      "id": "968b9eeb5082467d8c80f631600498ad",
       "date": "2025-12-25",
       "merchant": "McDonalds Homestead PA",
       "amount": 22.21,
@@ -4337,7 +4329,7 @@
       "description": "Debit Card Purchase McDonalds Homestead PA"
     },
     {
-      "id": "23fb519f53e5443ba9ee8fe642ffc24a",
+      "id": "9e9ef326413040559c66de0f6837edc3",
       "date": "2025-12-25",
       "merchant": "Uber",
       "amount": 26.96,
@@ -4345,7 +4337,7 @@
       "description": "Debit Card Purchase Uber"
     },
     {
-      "id": "f55f948a31784a88a7f442716894b6ef",
+      "id": "40b972cd7e94406c849226a7602e2031",
       "date": "2025-12-25",
       "merchant": "Nail Salon",
       "amount": 48.84,
@@ -4353,7 +4345,7 @@
       "description": "Debit Card Purchase Nail Salon"
     },
     {
-      "id": "46495be81b384419803e5c4bea6e4b6e",
+      "id": "b7ba1df8ccda41798480098523a2ceac",
       "date": "2025-12-26",
       "merchant": "Personal Loan EMI",
       "amount": 250.0,
@@ -4361,7 +4353,7 @@
       "description": "Personal Loan EMI - Monthly Payment"
     },
     {
-      "id": "484280804779486183134361c3492d00",
+      "id": "90d53b6172f2493a8f40ac8dbfc92e52",
       "date": "2025-12-26",
       "merchant": "Hulu",
       "amount": 14.69,
@@ -4369,7 +4361,7 @@
       "description": "Hulu"
     },
     {
-      "id": "79a24030b2284a4b85259e1365f0b7be",
+      "id": "f73504a9ab99446db91ea22a9329e5f2",
       "date": "2025-12-26",
       "merchant": "BP Cranberry Township PA",
       "amount": 44.14,
@@ -4377,7 +4369,7 @@
       "description": "Debit Card Purchase BP Cranberry Township PA"
     },
     {
-      "id": "3367e60b3d7f407d86edc215c134c3f0",
+      "id": "ce5305f26f00441da53d6c3f7dc3fdf3",
       "date": "2025-12-26",
       "merchant": "Target Pharmacy",
       "amount": 35.9,
@@ -4385,7 +4377,7 @@
       "description": "Debit Card Purchase Target Pharmacy"
     },
     {
-      "id": "d97af747984f41418b393ab5b75a5951",
+      "id": "9250b6964c2e4c5eb67e176382342938",
       "date": "2025-12-27",
       "merchant": "Olive Garden Squirrel Hill PA",
       "amount": 38.67,
@@ -4393,7 +4385,7 @@
       "description": "Debit Card Purchase Olive Garden Squirrel Hill PA"
     },
     {
-      "id": "829de2cdc6e64a889aabba6eac5843e6",
+      "id": "c81f436292114d6bb2ef7ce06f30c1d8",
       "date": "2025-12-27",
       "merchant": "Dunkin",
       "amount": 8.98,
@@ -4401,7 +4393,7 @@
       "description": "Debit Card Purchase Dunkin"
     },
     {
-      "id": "29a48fa58a574fef92d347cd5190a293",
+      "id": "ac1293ad263f4a16bae5ceefa41a13eb",
       "date": "2025-12-27",
       "merchant": "City Parking Garage",
       "amount": 12.19,
@@ -4409,7 +4401,7 @@
       "description": "Debit Card Purchase City Parking Garage"
     },
     {
-      "id": "fe7c641e04c84b5eac60438e5b2875c7",
+      "id": "d579a7fc07694575a7d8d550821d277e",
       "date": "2025-12-27",
       "merchant": "Old Navy Monroeville PA",
       "amount": 126.87,
@@ -4417,7 +4409,7 @@
       "description": "Debit Card Purchase Old Navy Monroeville PA"
     },
     {
-      "id": "7e4bbcf0da864209873ef09fd0887f11",
+      "id": "203416fbb6d34b6bb577e2de09b89286",
       "date": "2025-12-27",
       "merchant": "Urgent Care",
       "amount": 102.1,
@@ -4425,7 +4417,7 @@
       "description": "Debit Card Purchase Urgent Care"
     },
     {
-      "id": "459888f817f64ce78f049dbe79cc593c",
+      "id": "76c49ec218eb461fa4398f135acc055f",
       "date": "2025-12-28",
       "merchant": "Kroger Cranberry Township PA",
       "amount": 127.01,
@@ -4433,7 +4425,7 @@
       "description": "Debit Card Purchase Kroger Cranberry Township PA"
     },
     {
-      "id": "c53755fa57d247cf8aadc90b8a50aa0f",
+      "id": "7d9de922d3734952b75b138f649b097e",
       "date": "2025-12-28",
       "merchant": "Uber Eats",
       "amount": 40.95,
@@ -4441,7 +4433,7 @@
       "description": "Debit Card Purchase Uber Eats"
     },
     {
-      "id": "825f7c583f134fd49061c165667a8768",
+      "id": "d98095aa38934063aa1cf6a3a8cc6577",
       "date": "2025-12-29",
       "merchant": "Trader Joes Squirrel Hill PA",
       "amount": 75.5,
@@ -4449,7 +4441,7 @@
       "description": "Debit Card Purchase Trader Joes Squirrel Hill PA"
     },
     {
-      "id": "7f99aa40b57e42349654c07e948121c7",
+      "id": "a9ffd2b27ff14164a5f382a3f0695b30",
       "date": "2025-12-29",
       "merchant": "Street Parking Meter",
       "amount": 23.03,
@@ -4457,7 +4449,7 @@
       "description": "Debit Card Purchase Street Parking Meter"
     },
     {
-      "id": "feebef2bdd5b47dc8035302f946d8c30",
+      "id": "b1cbf8f6280d481cb2ed859eadb51cc5",
       "date": "2025-12-29",
       "merchant": "Regal Cinemas",
       "amount": 36.06,
@@ -4465,7 +4457,7 @@
       "description": "Debit Card Purchase Regal Cinemas"
     },
     {
-      "id": "e31bda5266d54792ad8e27b4f9776ff0",
+      "id": "7dfe45c839584dd7aeea6c49655cbf74",
       "date": "2025-12-29",
       "merchant": "Grubhub",
       "amount": 50.49,
@@ -4473,7 +4465,7 @@
       "description": "Debit Card Purchase Grubhub"
     },
     {
-      "id": "5083c7f45ace4ec2b821992d33815d37",
+      "id": "5b87992efde1417cb35e2e04cbf596f1",
       "date": "2025-12-30",
       "merchant": "Shop n Save Pittsburgh PA",
       "amount": 38.5,
@@ -4481,7 +4473,7 @@
       "description": "Debit Card Purchase Shop n Save Pittsburgh PA"
     },
     {
-      "id": "602ee84026594f86bd50220cc2f74aae",
+      "id": "50bd5326bba2423391f7279810e62b21",
       "date": "2025-12-30",
       "merchant": "Lowes",
       "amount": 124.59,
@@ -4489,7 +4481,7 @@
       "description": "Debit Card Purchase Lowes"
     },
     {
-      "id": "ff44cfe402f24793a9044705bff9ba72",
+      "id": "c90e94ac09e6487182a46fdbd80285e2",
       "date": "2025-12-30",
       "merchant": "Spa",
       "amount": 97.75,
@@ -4497,7 +4489,7 @@
       "description": "Debit Card Purchase Spa"
     },
     {
-      "id": "bd62372f399244dfbaf6f9bda1156896",
+      "id": "50e34cef8634478bb0aeea4645bef607",
       "date": "2025-12-30",
       "merchant": "Uber Eats",
       "amount": 53.14,
@@ -4505,7 +4497,7 @@
       "description": "Debit Card Purchase Uber Eats"
     },
     {
-      "id": "d15c6fcaf0824b2eb3ec603cd22f0431",
+      "id": "f8a963b1155e4f0b9d1ba6616993a0b8",
       "date": "2025-12-31",
       "merchant": "Life Insurance",
       "amount": 281.47,
@@ -4513,7 +4505,7 @@
       "description": "Life Insurance"
     },
     {
-      "id": "a6f8d73e68cc44309d86a439ff35e5e4",
+      "id": "90c10a8a97fe4d05a8ffbd6a9480d9bd",
       "date": "2025-12-31",
       "merchant": "Red Lobster Shadyside PA",
       "amount": 46.03,
@@ -4521,7 +4513,7 @@
       "description": "Debit Card Purchase Red Lobster Shadyside PA"
     },
     {
-      "id": "c509245c089e4710b4931f72dbbadec8",
+      "id": "d7fe98f4d24d41838139198b62337e6f",
       "date": "2025-12-31",
       "merchant": "Taco Bell Pittsburgh PA",
       "amount": 24.83,
@@ -4529,7 +4521,7 @@
       "description": "Debit Card Purchase Taco Bell Pittsburgh PA"
     },
     {
-      "id": "b8e5eadf29b94d3e9f955b8f6d72c3bc",
+      "id": "a4a5327b1cd744809ef289f233f67aaa",
       "date": "2025-12-31",
       "merchant": "Petco",
       "amount": 143.21,
@@ -4537,7 +4529,7 @@
       "description": "Debit Card Purchase Petco"
     },
     {
-      "id": "57801c259b6644e08f90fbf980ac512d",
+      "id": "e53e19371343475a93f68094cd4d878e",
       "date": "2025-12-31",
       "merchant": "Instacart",
       "amount": 46.66,
@@ -4545,7 +4537,7 @@
       "description": "Debit Card Purchase Instacart"
     },
     {
-      "id": "7e5458296b7b4b5bbd97f29099d7c9ce",
+      "id": "52e9fc4738c4450cb7b8eae0f444b4aa",
       "date": "2026-01-01",
       "merchant": "Shop n Save Monroeville PA",
       "amount": 127.73,
@@ -4553,7 +4545,7 @@
       "description": "Debit Card Purchase Shop n Save Monroeville PA"
     },
     {
-      "id": "73afe8d1729240c19a2171741487fe24",
+      "id": "ca1197615ed143e1bbf61c1b0fdd8efa",
       "date": "2026-01-01",
       "merchant": "Burger King Cranberry Township PA",
       "amount": 9.79,
@@ -4561,7 +4553,7 @@
       "description": "Debit Card Purchase Burger King Cranberry Township PA"
     },
     {
-      "id": "6bb47105976842249bdad287607673d6",
+      "id": "866f8c7a0f3d4bdaa3f682c271eb14f0",
       "date": "2026-01-01",
       "merchant": "Peets Coffee",
       "amount": 8.95,
@@ -4569,7 +4561,7 @@
       "description": "Debit Card Purchase Peets Coffee"
     },
     {
-      "id": "be3c85efaf164d3e953e1c0bc5f0627b",
+      "id": "55266ca2d35848e2bf2fb718b97f2aa1",
       "date": "2026-01-01",
       "merchant": "Ross Cranberry Township PA",
       "amount": 131.87,
@@ -4577,7 +4569,7 @@
       "description": "Debit Card Purchase Ross Cranberry Township PA"
     },
     {
-      "id": "5ce72c5841e24c8099edd18600aaa356",
+      "id": "87e75ae4d04449bfaa02a5db98db4427",
       "date": "2026-01-01",
       "merchant": "Gap Squirrel Hill PA",
       "amount": 92.13,
@@ -4585,7 +4577,7 @@
       "description": "Debit Card Purchase Gap Squirrel Hill PA"
     },
     {
-      "id": "7a32e647112b4d6f95fdb110ef29f147",
+      "id": "a74f66f3dcc14787884da07ae57f48a9",
       "date": "2026-01-01",
       "merchant": "Unknown",
       "amount": 189.68,
@@ -4593,7 +4585,7 @@
       "description": "ATM Withdrawal"
     },
     {
-      "id": "2229db0327c944c695e51ff5a96aadd5",
+      "id": "550a5b4610064e968c09cd5603a48b03",
       "date": "2026-01-02",
       "merchant": "City Parking Garage",
       "amount": 5.03,
@@ -4601,7 +4593,7 @@
       "description": "Debit Card Purchase City Parking Garage"
     },
     {
-      "id": "da50ae47acf841759fddff6e98eb98ce",
+      "id": "c8dcc6c11d6f47ac90e846b67b891db6",
       "date": "2026-01-02",
       "merchant": "Subway Card",
       "amount": 17.87,
@@ -4609,7 +4601,7 @@
       "description": "Debit Card Purchase Subway Card"
     },
     {
-      "id": "c9285bfa70f74aaba67f1cf4ed272cb1",
+      "id": "7323a62e5d8c42d69b131bf3a6e31f7d",
       "date": "2026-01-02",
       "merchant": "School Supplies",
       "amount": 193.43,
@@ -4617,7 +4609,7 @@
       "description": "Debit Card Purchase School Supplies"
     },
     {
-      "id": "195a85a3ba8d45df9b29912104c78273",
+      "id": "101c6f433df54f08b1d1de93b181aa4f",
       "date": "2026-01-03",
       "merchant": "Target Oakland PA",
       "amount": 38.42,
@@ -4625,7 +4617,7 @@
       "description": "Debit Card Purchase Target Oakland PA"
     },
     {
-      "id": "2aa435b7c3ae4049af920acec52361db",
+      "id": "da298bb48b904d4891defe88d26a521d",
       "date": "2026-01-04",
       "merchant": "Subway Oakland PA",
       "amount": 19.26,
@@ -4633,7 +4625,7 @@
       "description": "Debit Card Purchase Subway Oakland PA"
     },
     {
-      "id": "895f6656be1d44feabd7ece68633d468",
+      "id": "7df5964f374341d6996689a1be0e265f",
       "date": "2026-01-04",
       "merchant": "Wawa Homestead PA",
       "amount": 39.97,
@@ -4641,7 +4633,7 @@
       "description": "Debit Card Purchase Wawa Homestead PA"
     },
     {
-      "id": "74cad12ea842417ea21290b149c3f0b7",
+      "id": "f85b76d74570443eadf971d56a4a09b3",
       "date": "2026-01-05",
       "merchant": "Shake Shack Shadyside PA",
       "amount": 11.44,
@@ -4649,7 +4641,7 @@
       "description": "Debit Card Purchase Shake Shack Shadyside PA"
     },
     {
-      "id": "ca118807e2514db18bd23c0eb2490d50",
+      "id": "e5f8e36eaa41464eb44654d4fa1bd7be",
       "date": "2026-01-05",
       "merchant": "Postmates",
       "amount": 52.86,
@@ -4657,7 +4649,7 @@
       "description": "Debit Card Purchase Postmates"
     },
     {
-      "id": "a93c0e34f89e46a2afc579e67354883d",
+      "id": "278870f3b25b4834a00d3f38c49eb5b7",
       "date": "2026-01-06",
       "merchant": "Panera Bread Monroeville PA",
       "amount": 81.67,
@@ -4665,7 +4657,7 @@
       "description": "Debit Card Purchase Panera Bread Monroeville PA"
     },
     {
-      "id": "8eaaa220a5f24baa888f833262b9af58",
+      "id": "29ded817c1904e1284588fc0e33d73c1",
       "date": "2026-01-06",
       "merchant": "Uber",
       "amount": 42.05,
@@ -4673,7 +4665,7 @@
       "description": "Debit Card Purchase Uber"
     },
     {
-      "id": "071476fae7374c22b48c47718fdc00d4",
+      "id": "97e1fdc3e6d347a99d5f68f51f9b1c63",
       "date": "2026-01-06",
       "merchant": "Walmart Squirrel Hill PA",
       "amount": 115.01,
@@ -4681,7 +4673,7 @@
       "description": "Debit Card Purchase Walmart Squirrel Hill PA"
     },
     {
-      "id": "931390b65b824e6a90b417bbd522404e",
+      "id": "9022b268697741fba7fab910ddb7d623",
       "date": "2026-01-06",
       "merchant": "Southwest Airlines",
       "amount": 390.84,
@@ -4689,7 +4681,7 @@
       "description": "Debit Card Purchase Southwest Airlines"
     },
     {
-      "id": "bdd8bd0c84854f04b42e937634f1c36f",
+      "id": "d50354760fe64635860a82f3d083a64e",
       "date": "2026-01-07",
       "merchant": "Chick-fil-A Homestead PA",
       "amount": 12.12,
@@ -4697,7 +4689,7 @@
       "description": "Debit Card Purchase Chick-fil-A Homestead PA"
     },
     {
-      "id": "7966128c8f1e4a5284ffc658fa511d69",
+      "id": "db44a10660854fd385ef9f287130b84a",
       "date": "2026-01-07",
       "merchant": "Local Coffee Shop",
       "amount": 11.67,
@@ -4705,7 +4697,7 @@
       "description": "Debit Card Purchase Local Coffee Shop"
     },
     {
-      "id": "a5ca50732024406e9e294442ddc27756",
+      "id": "b85ff16e8fb3433d98aec1cdfadf81bf",
       "date": "2026-01-07",
       "merchant": "Blue Bottle",
       "amount": 9.31,
@@ -4713,7 +4705,7 @@
       "description": "Debit Card Purchase Blue Bottle"
     },
     {
-      "id": "f2c3b826103d4b369bcd654bad020877",
+      "id": "9e77d5c519524992bf5ac1d304fc8b6d",
       "date": "2026-01-09",
       "merchant": "Panera Bread Monroeville PA",
       "amount": 45.46,
@@ -4721,7 +4713,7 @@
       "description": "Debit Card Purchase Panera Bread Monroeville PA"
     },
     {
-      "id": "6288aba638814aedbf0de9f4efb00c7f",
+      "id": "6cc98c327092478daea0589810cee178",
       "date": "2026-01-09",
       "merchant": "Dunkin",
       "amount": 7.04,
@@ -4729,7 +4721,7 @@
       "description": "Debit Card Purchase Dunkin"
     },
     {
-      "id": "38d3cd3dd7174f5983a1f3a7fdb2f5a4",
+      "id": "1aacc8ad861e4b99b98851350fb24e04",
       "date": "2026-01-09",
       "merchant": "Peets Coffee",
       "amount": 8.28,
@@ -4737,7 +4729,7 @@
       "description": "Debit Card Purchase Peets Coffee"
     },
     {
-      "id": "3c2e106c2b374ab1b03f6c64aba104e9",
+      "id": "b101ca0ecfe845b19012f6d41b0c36d4",
       "date": "2026-01-09",
       "merchant": "Street Parking Meter",
       "amount": 33.39,
@@ -4745,7 +4737,7 @@
       "description": "Debit Card Purchase Street Parking Meter"
     },
     {
-      "id": "75ed2ca825ff46f7b326189b2b028bea",
+      "id": "36dd93375bae4ad9adce87963723d882",
       "date": "2026-01-09",
       "merchant": "Home Depot",
       "amount": 144.64,
@@ -4753,7 +4745,7 @@
       "description": "Debit Card Purchase Home Depot"
     },
     {
-      "id": "fbb3b78483bd44319a66e4d7098dbedf",
+      "id": "38fdf6dffa284f8087c693a3097af99d",
       "date": "2026-01-09",
       "merchant": "CVS Pharmacy",
       "amount": 51.59,
@@ -4761,7 +4753,7 @@
       "description": "Debit Card Purchase CVS Pharmacy"
     },
     {
-      "id": "64ea06b6a85e401a8f6e20d5ef7f1797",
+      "id": "04f8d9444bc14742a5e18bf1ed5286d7",
       "date": "2026-01-09",
       "merchant": "Unknown",
       "amount": 44.01,
@@ -4769,7 +4761,7 @@
       "description": "ATM Withdrawal"
     },
     {
-      "id": "1e297d1ee1ef4624923f260f63a79c45",
+      "id": "6ce5f052f40f48ed9f3a6a3a063c558f",
       "date": "2026-01-10",
       "merchant": "Peets Coffee",
       "amount": 6.98,
@@ -4777,7 +4769,7 @@
       "description": "Debit Card Purchase Peets Coffee"
     },
     {
-      "id": "c7392b1c69e14ad0ad0932a72656516d",
+      "id": "117ab0cc47294bc682700c71ca0787c7",
       "date": "2026-01-10",
       "merchant": "Exxon Oakland PA",
       "amount": 46.08,
@@ -4785,7 +4777,7 @@
       "description": "Debit Card Purchase Exxon Oakland PA"
     },
     {
-      "id": "c8b92e10e13b44b294627d6b6c7dd155",
+      "id": "b41d7bce72424b17b15759cf54c0a778",
       "date": "2026-01-10",
       "merchant": "GetGo Shadyside PA",
       "amount": 58.88,
@@ -4793,7 +4785,7 @@
       "description": "Debit Card Purchase GetGo Shadyside PA"
     },
     {
-      "id": "a5bfc67bbb864226b053f42a0dc911e4",
+      "id": "7af28db8ebb14397a693deeed34b69ed",
       "date": "2026-01-10",
       "merchant": "Wawa Oakland PA",
       "amount": 42.04,
@@ -4801,7 +4793,7 @@
       "description": "Debit Card Purchase Wawa Oakland PA"
     },
     {
-      "id": "6543cf312b294ad8b642523be68fc3ba",
+      "id": "bb753328d4594650901f6d7894850d16",
       "date": "2026-01-10",
       "merchant": "Uber Eats",
       "amount": 47.17,
@@ -4809,7 +4801,7 @@
       "description": "Debit Card Purchase Uber Eats"
     },
     {
-      "id": "2c38b5beefd74c87bdd4050ac63233fb",
+      "id": "35a6bb7ee074470890ab905bac70ad3c",
       "date": "2026-01-11",
       "merchant": "Taco Bell Pittsburgh PA",
       "amount": 16.71,
@@ -4817,7 +4809,7 @@
       "description": "Debit Card Purchase Taco Bell Pittsburgh PA"
     },
     {
-      "id": "8aa9e23734ab4e5ea94b02250d3b16bd",
+      "id": "b911d00c4fed4ea7b76965c1388f5d15",
       "date": "2026-01-11",
       "merchant": "Amazon Cranberry Township PA",
       "amount": 128.98,
@@ -4825,7 +4817,7 @@
       "description": "Debit Card Purchase Amazon Cranberry Township PA"
     },
     {
-      "id": "2948c15ac6714ad3ba49d799812d8c16",
+      "id": "90d77daedd554640a749e48f3e71fb53",
       "date": "2026-01-12",
       "merchant": "Wendys Mt Lebanon PA",
       "amount": 11.22,
@@ -4833,7 +4825,7 @@
       "description": "Debit Card Purchase Wendys Mt Lebanon PA"
     },
     {
-      "id": "363a03c604624719a271d36b407e778a",
+      "id": "126fa3bfeea64b619ba24ff0037e41ad",
       "date": "2026-01-12",
       "merchant": "Caribou Coffee",
       "amount": 4.82,
@@ -4841,7 +4833,7 @@
       "description": "Debit Card Purchase Caribou Coffee"
     },
     {
-      "id": "5d3771fa09ee47c4a10c2e723ff874fb",
+      "id": "59723ad239034a9793aa46b933c70ab9",
       "date": "2026-01-12",
       "merchant": "Uber",
       "amount": 25.68,
@@ -4849,7 +4841,7 @@
       "description": "Debit Card Purchase Uber"
     },
     {
-      "id": "4aa4c04562f04ee29a60e5dcce73cc5c",
+      "id": "74fe4a38383d45d8bc38e618ea125678",
       "date": "2026-01-12",
       "merchant": "Uber",
       "amount": 34.09,
@@ -4857,7 +4849,7 @@
       "description": "Debit Card Purchase Uber"
     },
     {
-      "id": "2f1edef12c8842ac9c29dffe4ca905aa",
+      "id": "3dd11e71889346e5830b312486d98044",
       "date": "2026-01-12",
       "merchant": "Coursera",
       "amount": 66.64,
@@ -4865,7 +4857,7 @@
       "description": "Debit Card Purchase Coursera"
     },
     {
-      "id": "b4401927cdb7434995b834bb98889601",
+      "id": "82b5d7bb1bf341ad8982ea89adae7bb8",
       "date": "2026-01-13",
       "merchant": "Monthly Salary",
       "amount": -12000.0,
@@ -4873,7 +4865,7 @@
       "description": "Payroll Direct Deposit - Monthly Salary"
     },
     {
-      "id": "dbc4736095364c189950ba602cc2fd86",
+      "id": "4c676f6fbad5457291ee0968a3f1b894",
       "date": "2026-01-13",
       "merchant": "Blue Bottle",
       "amount": 11.91,
@@ -4881,7 +4873,7 @@
       "description": "Debit Card Purchase Blue Bottle"
     },
     {
-      "id": "6276456ed0ab49d18b630e8191abb0ab",
+      "id": "a17fac74b8c54c108c05580af758bd05",
       "date": "2026-01-13",
       "merchant": "Metro Transit Pass",
       "amount": 56.35,
@@ -4889,7 +4881,7 @@
       "description": "Debit Card Purchase Metro Transit Pass"
     },
     {
-      "id": "1d42d6d54ce14e88a88acc9cf182e901",
+      "id": "ff5165cfcaa6457fa6b1f1e9fd46c1af",
       "date": "2026-01-13",
       "merchant": "Best Buy Oakland PA",
       "amount": 162.05,
@@ -4897,7 +4889,7 @@
       "description": "Debit Card Purchase Best Buy Oakland PA"
     },
     {
-      "id": "27e49349a8c74a86b842154ba6dd82f9",
+      "id": "c3b74b2538c84f7692ea0d9e592eea84",
       "date": "2026-01-13",
       "merchant": "Kohls Cranberry Township PA",
       "amount": 301.13,
@@ -4905,7 +4897,7 @@
       "description": "Debit Card Purchase Kohls Cranberry Township PA"
     },
     {
-      "id": "26676fee34f34e718181e58ef74bbe78",
+      "id": "a1f81b176bd240ceab2519fe229281ba",
       "date": "2026-01-13",
       "merchant": "Nordstrom Monroeville PA",
       "amount": 280.28,
@@ -4913,7 +4905,7 @@
       "description": "Debit Card Purchase Nordstrom Monroeville PA"
     },
     {
-      "id": "487b495149dc47b89ac7943a739ed03d",
+      "id": "2e8e1f2d54ec4f82b5cc252018166f31",
       "date": "2026-01-13",
       "merchant": "Unknown",
       "amount": 47.64,
@@ -4922,6 +4914,6 @@
     }
   ],
   "category_budgets": {},
-  "default_budget": 10000.0,
+  "default_budget": 3000.0,
   "goals": []
 }

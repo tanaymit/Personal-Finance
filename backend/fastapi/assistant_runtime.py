@@ -88,16 +88,32 @@ def get_spending_summary(
     year: Optional[int] = None,
     month: Optional[int] = None,
 ) -> Dict[str, Any]:
-    y, m = resolve_period_for_transactions(transactions, year, month)
-    period_tx = filter_transactions_period(transactions, y, m)
+    # GLOBAL MODE: If no specific date requested, analyze ALL data
+    if year is None and month is None:
+        expenses = [t for t in transactions if is_expense(t)]
+        y, m = 0, 0 # "All Time"
+    else:
+        y, m = resolve_period_for_transactions(transactions, year, month)
+        period_tx = filter_transactions_period(transactions, y, m)
+        expenses = [t for t in period_tx if is_expense(t)]
 
-    expenses = [t for t in period_tx if is_expense(t)]
     total_spent = round(sum(amount(t) for t in expenses), 2)
 
     by_cat: Dict[str, float] = {}
+    monthly_totals: Dict[str, float] = {}
+
     for t in expenses:
         cat = (t.get("category") or "Other").strip() or "Other"
         by_cat[cat] = by_cat.get(cat, 0.0) + amount(t)
+        
+        # Track monthly totals for "highest month" / average calc
+        if year is None and month is None:
+            try:
+                dt = parse_date(str(t.get("date", "")))
+                m_key = dt.strftime("%Y-%m")
+                monthly_totals[m_key] = monthly_totals.get(m_key, 0.0) + amount(t)
+            except:
+                pass
 
     top_categories = [
         {"category": c, "spent": round(v, 2)}
@@ -116,12 +132,23 @@ def get_spending_summary(
             "amount": round(amount(biggest), 2),
         }
 
+    # Stats for all-time queries
+    highest_month = None
+    average_monthly = None
+    
+    if monthly_totals:
+        max_m = max(monthly_totals, key=monthly_totals.get)
+        highest_month = {"month": max_m, "amount": round(monthly_totals[max_m], 2)}
+        average_monthly = round(total_spent / len(monthly_totals), 2)
+
     return {
-        "period": {"year": y, "month": m},
+        "period": {"year": y, "month": m} if y != 0 else "All Time",
         "currency": "USD",
         "totalSpent": total_spent,
         "topCategories": top_categories,
         "outlier": outlier,
+        "highestMonth": highest_month,
+        "averageMonthlySpend": average_monthly,
     }
 
 
@@ -297,6 +324,60 @@ def simulate_purchase(
     }
 
 
+def search_transactions(
+    transactions: List[Dict[str, Any]],
+    query: Optional[str] = None,
+    category: Optional[str] = None,
+    start_date: Optional[str] = None,
+    end_date: Optional[str] = None,
+) -> Dict[str, Any]:
+    matches = []
+    total = 0.0
+    
+    # helper for date checking
+    def to_date_obj(d_str):
+        try: return parse_date(str(d_str))
+        except: return None
+
+    start_dt = to_date_obj(start_date) if start_date else None
+    end_dt = to_date_obj(end_date) if end_date else None
+    q = (query or "").lower().strip()
+    cat = (category or "").lower().strip()
+
+    for t in transactions:
+        # filter by date
+        if start_dt or end_dt:
+            dt = to_date_obj(t.get("date"))
+            if not dt: continue
+            if start_dt and dt < start_dt: continue
+            if end_dt and dt > end_dt: continue
+        
+        # filter by category
+        if cat:
+            t_cat = str(t.get("category", "")).lower()
+            if cat not in t_cat: continue
+            
+        # filter by query (merchant/desc)
+        if q:
+            merch = str(t.get("merchant", "")).lower()
+            desc = str(t.get("description", "")).lower()
+            if q not in merch and q not in desc: continue
+            
+        matches.append(t)
+        if is_expense(t):
+            total += amount(t)
+            
+    # Sort by date desc
+    matches.sort(key=lambda x: x.get("date", ""), reverse=True)
+    
+    return {
+        "count": len(matches),
+        "totalAmount": round(total, 2),
+        "transactions": matches[:20], # limit return size
+        "filter": {"query": query, "category": category, "start": start_date, "end": end_date}
+    }
+
+
 def detect_anomalies(
     transactions: List[Dict[str, Any]],
     year: Optional[int] = None,
@@ -306,12 +387,25 @@ def detect_anomalies(
     y, m = resolve_period_for_transactions(transactions, year, month)
     period_tx = [t for t in filter_transactions_period(transactions, y, m) if is_expense(t)]
 
-    # Simple, hackathon-friendly anomaly: top-N largest expenses
+    # 1. Top-N largest expenses
     top = sorted(period_tx, key=lambda t: amount(t), reverse=True)[: max(1, int(limit))]
+
+    # 2. Frequent merchants (potential anomalies)
+    counts = {}
+    for t in period_tx:
+        merch = (t.get("merchant") or "Unknown")
+        counts[merch] = counts.get(merch, 0) + 1
+    
+    frequent = [
+        {"merchant": k, "count": v} 
+        for k, v in counts.items() if v >= 5
+    ]
+    frequent = sorted(frequent, key=lambda x: x["count"], reverse=True)[:3]
+
     return {
         "period": {"year": y, "month": m},
         "currency": "USD",
-        "anomalies": [
+        "highValue": [
             {
                 "id": t.get("id"),
                 "date": t.get("date"),
@@ -322,7 +416,8 @@ def detect_anomalies(
             }
             for t in top
         ],
-        "method": "largest_expenses",
+        "highFrequency": frequent,
+        "method": "largest_expenses_and_frequency",
     }
 
 
@@ -385,7 +480,7 @@ DEDALUS_PLANNER_MODEL = os.getenv(
 )
 DEDALUS_REASONER_MODEL = os.getenv(
     "DEDALUS_REASONER_MODEL",
-    "anthropic/claude-sonnet-4-5-20250929",
+    "deepseek/deepseek-chat",
 )
 
 
@@ -451,16 +546,111 @@ def tier0_response(user_text: str) -> Optional[str]:
     return None
 
 
+def get_latest_transaction_date() -> str:
+    """Read data.json to find the latest transaction date."""
+    try:
+        base_dir = os.path.dirname(os.path.abspath(__file__))
+        data_path = os.path.join(base_dir, "data.json")
+        if not os.path.exists(data_path):
+            return date.today().isoformat()
+        
+        with open(data_path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+            transactions = data.get("transactions", [])
+            
+        if not transactions:
+            return date.today().isoformat()
+            
+        dates = []
+        for t in transactions:
+            try:
+                dt = parse_date(str(t.get("date", "")))
+                dates.append(dt)
+            except:
+                continue
+                
+        if dates:
+            return max(dates).isoformat()
+            
+    except Exception:
+        pass
+        
+    return date.today().isoformat()
+
+
+def get_data_profile() -> str:
+    """
+    Returns a string summarizing available data to guide the LLM.
+    e.g. "Data available from 2025-11-01 to 2026-02-15. Active months: Nov 2025, Dec 2025, Jan 2026."
+    """
+    try:
+        base_dir = os.path.dirname(os.path.abspath(__file__))
+        data_path = os.path.join(base_dir, "data.json")
+        if not os.path.exists(data_path):
+            return "No data available."
+
+        with open(data_path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+            transactions = data.get("transactions", [])
+
+        if not transactions:
+            return "No transactions found."
+
+        dates = []
+        
+        for t in transactions:
+            try:
+                dt = parse_date(str(t.get("date", "")))
+                dates.append(dt)
+            except:
+                continue
+
+        if not dates:
+            return "No valid dates found in transactions."
+
+        min_date = min(dates).isoformat()
+        max_date = max(dates).isoformat()
+        
+        # Sort months chronologically for the context
+        sorted_dates = sorted(list(dates))
+        month_list = []
+        seen = set()
+        for d in sorted_dates:
+            m_str = d.strftime("%b %Y")
+            if m_str not in seen:
+                month_list.append(m_str)
+                seen.add(m_str)
+
+        return (
+            f"Valid Data Range: {min_date} to {max_date}.\n"
+            f"Months with data: {', '.join(month_list)}.\n"
+            "IMPORTANT: Only create tool calls for months listed above. Do not hallucinate data for other months."
+        )
+
+    except Exception as e:
+        return "Could not determine data profile."
+
+
 async def plan_tool_calls(user_text: str) -> dict:
+    # 1. Get the anchor date (latest transaction)
+    current_reference_date = get_latest_transaction_date()
+    # 2. Get the specific availability profile
+    data_profile = get_data_profile()
+
     system = (
+        f"Current Date: {current_reference_date}\n"
+        f"DATA CONTEXT:\n{data_profile}\n\n"
         "You are a routing planner for a personal finance chatbot. "
         "Return JSON only.\n"
         "Choose tool calls to answer the user's question.\n"
-        "Default to current month/year if not specified.\n"
+        "If the user asks for 'past 3 months', look at the 'Months with data' list and pick the most recent ones.\n"
+        "Default to the latest active month if not specified.\n"
+        "To find 'highest' or 'most expensive' month, use get_spending_summary WITHOUT arguments.\n"
         "Tools available:\n"
-        "- get_spending_summary(year?, month?)\n"
+        "- get_spending_summary(year?, month?) -> If no args, returns All Time stats.\n"
+        "- search_transactions(query?, category?, start_date?, end_date?) -> Validates dates YYYY-MM-DD.\n"
         "- get_budget_status(year?, month?)\n"
-        "- get_cashflow_projection(year?, month?, startingBalance?)\n"
+        "- get_cashflow_projection(year?, month?, startingBalance?) -> Ask user for balance if possible.\n"
         "- get_category_spend(category, year?, month?)\n"
         "- get_transaction_detail(id)\n"
         "- simulate_purchase(amount, category, year?, month?, startingBalance?)\n"
