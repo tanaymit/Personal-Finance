@@ -25,6 +25,7 @@ from assistant_runtime import (
     get_budget_status,
     get_cashflow_projection,
     get_category_spend,
+    forecast_category_spending,
     get_transaction_detail,
     simulate_purchase,
     detect_anomalies,
@@ -435,6 +436,14 @@ async def assistant_chat(req: AssistantChatRequest):
             out = get_category_spend(
                 transactions,
                 str(args.get('category') or ''),
+                args.get('year', req.year),
+                args.get('month', req.month),
+            )
+        elif tool == 'forecast_category_spending':
+            out = forecast_category_spending(
+                transactions,
+                str(args.get('category') or ''),
+                int(args.get('months_back', 3)),
                 args.get('year', req.year),
                 args.get('month', req.month),
             )

@@ -4914,6 +4914,6 @@
     }
   ],
   "category_budgets": {},
-  "default_budget": 3000.0,
+  "default_budget": 10000.0,
   "goals": []
 }

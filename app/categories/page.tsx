@@ -19,7 +19,9 @@ export default function CategoriesPage() {
   const loadCategories = useCallback(async () => {
     try {
       const data = await fetchCategories(filterYear, filterMonth);
-      setCategories(data);
+      // Sort categories by spent amount in descending order
+      const sorted = [...data].sort((a, b) => (b.spent || 0) - (a.spent || 0));
+      setCategories(sorted);
     } catch (error) {
       console.error('Failed to load categories:', error);
     } finally {

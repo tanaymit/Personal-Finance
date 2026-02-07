@@ -77,8 +77,6 @@ export interface BudgetSummary {
 
 export interface FilterOptions {
   category?: string;
-  startDate?: string;
-  endDate?: string;
   minAmount?: number;
   maxAmount?: number;
   search?: string;

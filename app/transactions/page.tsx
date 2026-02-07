@@ -84,16 +84,12 @@ export default function TransactionsPage() {
   useEffect(() => {
     let filtered = transactions;
 
-    // Apply filters
+    // Apply category filter
     if (filters.category) {
       filtered = filtered.filter(t => t.category === filters.category);
     }
-    if (filters.startDate) {
-      filtered = filtered.filter(t => t.date >= filters.startDate!);
-    }
-    if (filters.endDate) {
-      filtered = filtered.filter(t => t.date <= filters.endDate!);
-    }
+    
+    // Apply amount range filter
     if (filters.minAmount) {
       filtered = filtered.filter(t => t.amount >= filters.minAmount!);
     }

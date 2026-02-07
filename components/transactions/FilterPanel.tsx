@@ -47,16 +47,6 @@ export function FilterPanel({ onFilterChange, isOpen, onToggle }: FilterPanelPro
     onFilterChange(newFilters);
   };
 
-  const handleDateChange = (start: string, end: string) => {
-    const newFilters = {
-      ...filters,
-      startDate: start || undefined,
-      endDate: end || undefined
-    };
-    setFilters(newFilters);
-    onFilterChange(newFilters);
-  };
-
   const handleReset = () => {
     setFilters({});
     onFilterChange({});
@@ -98,7 +88,7 @@ export function FilterPanel({ onFilterChange, isOpen, onToggle }: FilterPanelPro
 
           {/* Amount Range */}
           <div>
-            <label className="block text-sm font-medium text-slate-300 mb-2">Amount Range</label>
+            <label className="block text-sm font-medium text-slate-300 mb-2">Spend Range</label>
             <div className="flex gap-2">
               <input
                 type="number"
@@ -122,25 +112,6 @@ export function FilterPanel({ onFilterChange, isOpen, onToggle }: FilterPanelPro
                     e.target.value ? parseFloat(e.target.value) : 0
                   )
                 }
-                className="flex-1 px-3 py-2 border border-slate-800 rounded-lg bg-slate-900/70 text-slate-100 focus:outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/20"
-              />
-            </div>
-          </div>
-
-          {/* Date Range */}
-          <div>
-            <label className="block text-sm font-medium text-slate-300 mb-2">Date Range</label>
-            <div className="flex gap-2">
-              <input
-                type="date"
-                value={filters.startDate || ''}
-                onChange={e => handleDateChange(e.target.value, filters.endDate || '')}
-                className="flex-1 px-3 py-2 border border-slate-800 rounded-lg bg-slate-900/70 text-slate-100 focus:outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/20"
-              />
-              <input
-                type="date"
-                value={filters.endDate || ''}
-                onChange={e => handleDateChange(filters.startDate || '', e.target.value)}
                 className="flex-1 px-3 py-2 border border-slate-800 rounded-lg bg-slate-900/70 text-slate-100 focus:outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/20"
               />
             </div>

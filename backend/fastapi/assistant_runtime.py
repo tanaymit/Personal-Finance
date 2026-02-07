@@ -242,6 +242,66 @@ def get_transaction_detail(transactions: List[Dict[str, Any]], transaction_id: s
     return {"error": "Transaction not found"}
 
 
+def forecast_category_spending(
+    transactions: List[Dict[str, Any]],
+    category: str,
+    months_back: int = 3,
+    year: Optional[int] = None,
+    month: Optional[int] = None,
+) -> Dict[str, Any]:
+    """
+    Forecast spending for a category based on historical average.
+    
+    Args:
+        transactions: List of all transactions
+        category: Category name to forecast for
+        months_back: Number of months to look back (default 3 for quarter)
+        year: Optional year (if not specified, uses latest)
+        month: Optional month (if not specified, uses latest)
+    
+    Returns:
+        Forecast object with historical average and predicted amount
+    """
+    y, m = resolve_period_for_transactions(transactions, year, month)
+    
+    # Collect spending for the past N months
+    monthly_spends = []
+    for i in range(months_back):
+        # Go back i months
+        check_month = m - i
+        check_year = y
+        
+        while check_month <= 0:
+            check_month += 12
+            check_year -= 1
+        
+        period_tx = filter_transactions_period(transactions, check_year, check_month)
+        cat = (category or "").strip().lower()
+        matches = [t for t in period_tx if is_expense(t) and str(t.get("category", "")).strip().lower() == cat]
+        spent = round(sum(amount(t) for t in matches), 2)
+        monthly_spends.append({
+            "year": check_year,
+            "month": check_month,
+            "spent": spent
+        })
+    
+    # Calculate average
+    total = sum(item["spent"] for item in monthly_spends)
+    average = round(total / months_back, 2) if months_back > 0 else 0
+    
+    # Reverse to show chronologically
+    monthly_spends.reverse()
+    
+    return {
+        "category": category,
+        "lookback_months": months_back,
+        "historical_data": monthly_spends,
+        "average_monthly_spend": average,
+        "forecasted_spend_next_month": average,
+        "confidence": "Medium" if months_back >= 3 else "Low",
+    }
+
+
 def get_cashflow_projection(
     transactions: List[Dict[str, Any]],
     year: Optional[int] = None,
@@ -652,6 +712,7 @@ async def plan_tool_calls(user_text: str) -> dict:
         "- get_budget_status(year?, month?)\n"
         "- get_cashflow_projection(year?, month?, startingBalance?) -> Ask user for balance if possible.\n"
         "- get_category_spend(category, year?, month?)\n"
+        "- forecast_category_spending(category, months_back=3, year?, month?) -> Forecasts spending based on historical average.\n"
         "- get_transaction_detail(id)\n"
         "- simulate_purchase(amount, category, year?, month?, startingBalance?)\n"
         "- detect_anomalies(year?, month?, limit?)\n"

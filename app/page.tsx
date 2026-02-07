@@ -1,13 +1,14 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { DollarSign, TrendingUp, Wallet, AlertCircle } from 'lucide-react';
+import { DollarSign, TrendingUp, Wallet, AlertCircle, MessageCircle } from 'lucide-react';
 import { SummaryCard } from '@/components/dashboard/SummaryCard';
 import { SpendingChart } from '@/components/dashboard/SpendingChart';
 import { CategoryChart } from '@/components/dashboard/CategoryChart';
 import { RecentTransactions } from '@/components/dashboard/RecentTransactions';
 import { BudgetEditModal } from '@/components/dashboard/BudgetEditModal';
 import { MonthYearFilter } from '@/components/shared/MonthYearFilter';
+import { ChatModal } from '@/components/shared/ChatModal';
 import { fetchBudgetSummary } from '@/lib/api';
 import { formatCurrency } from '@/lib/utils';
 import { BudgetSummary } from '@/lib/types';
@@ -18,6 +19,7 @@ export default function Dashboard() {
   const [summary, setSummary] = useState<BudgetSummary | null>(null);
   const [loading, setLoading] = useState(true);
   const [budgetModalOpen, setBudgetModalOpen] = useState(false);
+  const [chatModalOpen, setChatModalOpen] = useState(false);
   const [filterYear, setFilterYear] = useState<number | undefined>();
   const [filterMonth, setFilterMonth] = useState<number | undefined>();
   const [filtersLoaded, setFiltersLoaded] = useState(false);
@@ -218,6 +220,18 @@ export default function Dashboard() {
         onClose={() => setBudgetModalOpen(false)}
         onSave={handleBudgetUpdate}
       />
+
+      {/* Chat Modal */}
+      <ChatModal isOpen={chatModalOpen} onClose={() => setChatModalOpen(false)} />
+
+      {/* Floating Chat Button */}
+      <button
+        onClick={() => setChatModalOpen(true)}
+        className="fixed bottom-6 right-6 w-14 h-14 bg-cyan-500 hover:bg-cyan-400 text-slate-950 rounded-full flex items-center justify-center shadow-lg transition-all hover:scale-110 z-40"
+        title="Open finance assistant"
+      >
+        <MessageCircle size={24} />
+      </button>
     </div>
   );
 }
