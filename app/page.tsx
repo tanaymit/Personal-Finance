@@ -20,27 +20,20 @@ export default function Dashboard() {
   const [budgetModalOpen, setBudgetModalOpen] = useState(false);
 
   useEffect(() => {
-    // Check if app has been initialized by an uploaded receipt
-    const flag = typeof window !== 'undefined' && localStorage.getItem('dataInitialized');
-    setInitialized(!!flag);
-
     async function loadData() {
       try {
-        if (!flag) {
-          // Not initialized yet — show zeros by default
-          setSummary({
-            totalBudget: 0,
-            totalSpent: 0,
-            remainingBudget: 0,
-            largestCategory: '',
-            largestCategoryAmount: 0
-          });
-        } else {
-          const data = await fetchBudgetSummary();
-          setSummary(data);
-        }
+        // Always try to fetch summary from backend; if it fails, fall back to zeros
+        const data = await fetchBudgetSummary();
+        setSummary(data);
       } catch (error) {
-        console.error('Failed to load budget summary:', error);
+        console.error('Failed to load budget summary, showing zeros:', error);
+        setSummary({
+          totalBudget: 0,
+          totalSpent: 0,
+          remainingBudget: 0,
+          largestCategory: '',
+          largestCategoryAmount: 0
+        });
       } finally {
         setLoading(false);
       }

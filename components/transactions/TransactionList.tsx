@@ -67,6 +67,10 @@ export function TransactionList({
         const category = categories.find(c => c.name === transaction.category);
         const isDeleting = deletingId === transaction.id;
 
+        const amount = transaction.amount;
+        const isNegative = amount < 0;
+        const amountDisplay = `${isNegative ? '-' : '+'}${formatCurrency(Math.abs(amount))}`;
+
         return (
           <div
             key={transaction.id}
@@ -96,7 +100,9 @@ export function TransactionList({
             </div>
             <div className="flex items-center gap-4 flex-shrink-0">
               <div className="text-right">
-                <p className="font-semibold text-slate-900">-{formatCurrency(transaction.amount)}</p>
+                <p className={`font-semibold ${isNegative ? 'text-red-600' : 'text-emerald-700'}`}>
+                  {amountDisplay}
+                </p>
                 {transaction.paymentMethod && (
                   <p className="text-xs text-slate-500">{transaction.paymentMethod}</p>
                 )}

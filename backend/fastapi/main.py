@@ -19,7 +19,20 @@ env_path = Path(__file__).parent / '.env'
 load_dotenv(dotenv_path=env_path)
 
 from receipt_extractor import ReceiptExtractor
+from ai_agent import chat_with_ai, ChatRequest, ChatResponse
 import json
+
+
+def _parsed_date_safe(dt_str: str):
+    for fmt in ("%Y-%m-%d", "%m/%d/%Y", "%m/%d/%y"):
+        try:
+            return datetime.strptime(dt_str, fmt)
+        except Exception:
+            continue
+    try:
+        return datetime.fromisoformat(dt_str)
+    except Exception:
+        return datetime.min
 
 # JSON-based persistence
 data_file = Path(__file__).parent / 'data.json'
@@ -82,7 +95,8 @@ class Category(BaseModel):
 
 @app.get('/transactions', response_model=List[Transaction])
 def list_transactions():
-    return transactions
+    # Return transactions sorted by date desc so newest shows first in UI
+    return sorted(transactions, key=lambda t: _parsed_date_safe(t.get('date', '')), reverse=True)
 
 @app.get('/transactions/{transaction_id}', response_model=Transaction)
 def get_transaction(transaction_id: str):
@@ -96,21 +110,43 @@ def create_transaction(tx: TransactionIn):
     # Use UUIDs for transaction IDs to avoid collisions
     new_id = uuid.uuid4().hex
     new = {"id": new_id, **tx.dict()}
-    transactions.insert(0, new)
+    # insert sorted by date descending to keep order consistent
+    transactions.append(new)
+    transactions.sort(key=lambda t: _parsed_date_safe(t.get('date', '')), reverse=True)
     save_data()
     return new
 
 @app.get('/categories', response_model=List[Category])
 def list_categories():
-    # Build categories from recorded transactions
-    grouped = {}
+    # Build categories from recorded transactions (current month, outflows only)
+    # Determine reference month (latest transaction month if data is historical)
+    latest_dt = None
     for t in transactions:
+        dt = _parsed_date_safe(t.get('date', ''))
+        if dt and (latest_dt is None or dt > latest_dt):
+            latest_dt = dt
+    now_ref = latest_dt or datetime.utcnow()
+    current_year, current_month = now_ref.year, now_ref.month
+
+    monthly_txns = []
+    for t in transactions:
+        dt = _parsed_date_safe(t.get('date', ''))
+        if not dt:
+            continue
+        if dt.year == current_year and dt.month == current_month:
+            monthly_txns.append(t)
+
+    grouped = {}
+    for t in monthly_txns:
         cat = t.get('category') or 'Uncategorized'
         grouped.setdefault(cat, 0.0)
         try:
-            grouped[cat] += float(t.get('amount') or 0)
+            amt = float(t.get('amount') or 0)
         except Exception:
-            pass
+            amt = 0.0
+        # Spend is positive for outflows only
+        if amt < 0:
+            grouped[cat] += abs(amt)
 
     categories = []
     for name, spent in grouped.items():
@@ -128,22 +164,58 @@ def list_categories():
 
 @app.get('/budget-summary')
 def budget_summary():
-    # totalBudget is the user-configurable default_budget
+    """
+    Monthly view: compute spend only for the current calendar month (in data dates).
+    totalSpent counts outflows only (negative amounts). Inflows are ignored for spend.
+    """
     total_budget = float(default_budget or 0.0)
-    # totalSpent is sum of all recorded transactions
+
+    # Determine current month/year based on the latest transaction date; fallback to today
+    def _parse_date(dt_str: str):
+        for fmt in ("%Y-%m-%d", "%m/%d/%Y", "%m/%d/%y"):
+            try:
+                return datetime.strptime(dt_str, fmt)
+            except Exception:
+                continue
+        try:
+            return datetime.fromisoformat(dt_str)
+        except Exception:
+            return None
+
+    latest_dt = None
+    for t in transactions:
+        dt = _parse_date(t.get('date', ''))
+        if dt and (latest_dt is None or dt > latest_dt):
+            latest_dt = dt
+    now_ref = latest_dt or datetime.utcnow()
+
+    current_year = now_ref.year
+    current_month = now_ref.month
+
+    monthly_txns = []
+    for t in transactions:
+        dt = _parse_date(t.get('date', ''))
+        if not dt:
+            continue
+        if dt.year == current_year and dt.month == current_month:
+            monthly_txns.append(t)
+
     total_spent = 0.0
     by_cat = {}
-    for t in transactions:
+    for t in monthly_txns:
         try:
             amt = float(t.get('amount') or 0)
         except Exception:
             amt = 0.0
-        total_spent += amt
+
+        spend_component = abs(amt) if amt < 0 else 0.0
+        total_spent += spend_component
+
         cat = t.get('category') or 'Uncategorized'
         by_cat.setdefault(cat, 0.0)
-        by_cat[cat] += amt
+        if amt < 0:
+            by_cat[cat] += abs(amt)
 
-    # largest category by spent
     largest_category = None
     largest_amount = 0.0
     for cat, amt in by_cat.items():
@@ -157,6 +229,8 @@ def budget_summary():
         'remainingBudget': total_budget - total_spent,
         'largestCategory': largest_category,
         'largestCategoryAmount': largest_amount,
+        'month': now_ref.strftime('%Y-%m'),
+        'transactionCount': len(monthly_txns)
     }
 
 
@@ -236,6 +310,24 @@ async def upload_receipt(file: UploadFile = File(...)):
         print(f"❌ Upload error: {e}")
         traceback.print_exc()
         raise HTTPException(status_code=500, detail=f"Failed to process receipt: {str(e)}")
+
+
+# ==================== AI CHAT ENDPOINT ====================
+
+@app.post('/chat')
+async def chat_endpoint(request: ChatRequest):
+    """AI chat endpoint – accepts a message, uses tools + LLM reasoning, returns response."""
+    try:
+        response = await chat_with_ai(
+            user_message=request.message,
+            conversation_history=request.conversation_history
+        )
+        return response.dict()
+    except Exception as e:
+        print(f"❌ Chat error: {e}")
+        import traceback
+        traceback.print_exc()
+        raise HTTPException(status_code=500, detail=f"Chat failed: {str(e)}")
 
 
 if __name__ == '__main__':

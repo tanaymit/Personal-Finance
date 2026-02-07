@@ -16,21 +16,14 @@ export function RecentTransactions() {
   useEffect(() => {
     async function loadTransactions() {
       try {
-        const flag = typeof window !== 'undefined' && localStorage.getItem('dataInitialized');
-        setInitialized(!!flag);
-        if (!flag) {
-          // not initialized: show empty state
-          setTransactions([]);
-          setCategories([]);
-        } else {
-          const data = await fetchTransactions();
-          setTransactions(data.slice(0, 5));
-          // load categories for colors
-          const cats = await fetchCategories();
-          setCategories(cats as any[]);
-        }
+        const data = await fetchTransactions();
+        setTransactions(data.slice(0, 5));
+        const cats = await fetchCategories();
+        setCategories(cats as any[]);
       } catch (error) {
         console.error('Failed to load transactions:', error);
+        setTransactions([]);
+        setCategories([]);
       } finally {
         setLoading(false);
       }
@@ -55,6 +48,10 @@ export function RecentTransactions() {
       ) : (
         transactions.map(transaction => {
         const category = categories.find(c => c.name === transaction.category);
+        const amount = transaction.amount;
+        const isNegative = amount < 0;
+        const amountDisplay = `${isNegative ? '-' : '+'}${formatCurrency(Math.abs(amount))}`;
+
         return (
           <div
             key={transaction.id}
@@ -73,7 +70,9 @@ export function RecentTransactions() {
               </div>
             </div>
             <div className="text-right">
-              <p className="font-semibold text-slate-900">-{formatCurrency(transaction.amount)}</p>
+              <p className={`font-semibold ${isNegative ? 'text-red-600' : 'text-emerald-700'}`}>
+                {amountDisplay}
+              </p>
               <p className="text-xs text-slate-500">{transaction.category}</p>
             </div>
           </div>

@@ -157,11 +157,29 @@ export async function deleteTransaction(id: string): Promise<void> {
  */
 export async function getTransactionsByCategory(): Promise<Record<string, number>> {
   const transactions = await fetchTransactions();
+
+  // Determine reference month based on latest transaction (handles historical CSV)
+  const latest = transactions.reduce<Date | null>((acc, t) => {
+    const dt = new Date(t.date);
+    return !acc || dt > acc ? dt : acc;
+  }, null);
+  const ref = latest || new Date();
+  const refMonth = ref.getMonth();
+  const refYear = ref.getFullYear();
+
   const grouped: Record<string, number> = {};
 
-  transactions.forEach(t => {
-    grouped[t.category] = (grouped[t.category] || 0) + t.amount;
-  });
+  transactions
+    .filter(t => {
+      const d = new Date(t.date);
+      return d.getFullYear() === refYear && d.getMonth() === refMonth;
+    })
+    .forEach(t => {
+      // Spend is positive outflow only; ignore inflows
+      if (t.amount < 0) {
+        grouped[t.category] = (grouped[t.category] || 0) + Math.abs(t.amount);
+      }
+    });
 
   return grouped;
 }
@@ -185,4 +203,28 @@ export async function getTransactionsByDate(days: number = 30): Promise<Array<{ 
   return Object.entries(grouped)
     .map(([date, total]) => ({ date, total }))
     .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
+}
+
+/**
+ * Send a message to the AI financial assistant
+ * POST /chat
+ */
+export async function sendChatMessage(
+  message: string,
+  conversationHistory: Array<{ role: string; content: string }> = []
+): Promise<{ response: string; tool_calls: Array<{ tool: string; args: Record<string, unknown> }>; reasoning: string }> {
+  const res = await fetch(`${API_BASE_URL}/chat`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      message,
+      conversation_history: conversationHistory,
+    }),
+  });
+
+  if (!res.ok) {
+    throw new Error(`Chat request failed: ${res.status}`);
+  }
+
+  return await res.json();
 }

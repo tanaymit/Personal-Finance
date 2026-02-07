@@ -1,14 +1,5532 @@
 {
   "transactions": [
     {
-      "id": "fb61ea4657954931ad87a1e403131628",
+      "id": "afe30a7c-f5b6-446c-8917-2e854304b40a",
+      "date": "2025-09-01",
+      "merchant": "Home Loan EMI - Monthly Payment",
+      "amount": -1200.0,
+      "category": "Home EMI",
+      "description": "Home Loan EMI - Monthly Payment",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "8e2dca62-1174-4bfa-9ec4-9f3fdfc629d9",
+      "date": "2025-09-01",
+      "merchant": "Debit Card Purchase Kroger Cranberry Township PA",
+      "amount": -29.61,
+      "category": "Groceries",
+      "description": "Debit Card Purchase Kroger Cranberry Township PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "6d0fec8a-8a85-40c7-85bb-0dbfce7a247b",
+      "date": "2025-09-01",
+      "merchant": "Debit Card Purchase Target Oakland PA",
+      "amount": -133.95,
+      "category": "Groceries",
+      "description": "Debit Card Purchase Target Oakland PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "bf1117e4-de29-4d0e-803a-76e18161193a",
+      "date": "2025-09-02",
+      "merchant": "Debit Card Purchase Caribou Coffee",
+      "amount": -5.04,
+      "category": "Coffee Shops",
+      "description": "Debit Card Purchase Caribou Coffee",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "b9088f0c-aee4-44c1-a99d-39e8c8bb9b12",
+      "date": "2025-09-03",
+      "merchant": "Debit Card Purchase HomeGoods Mt Lebanon PA",
+      "amount": -254.01,
+      "category": "Other",
+      "description": "Debit Card Purchase HomeGoods Mt Lebanon PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "72a33be0-5102-4fb3-b76a-574ab4b82526",
+      "date": "2025-09-03",
+      "merchant": "Debit Card Purchase Kohls Homestead PA",
+      "amount": -65.35,
+      "category": "Other",
+      "description": "Debit Card Purchase Kohls Homestead PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "d8f52db6-ee1d-4169-ae71-2bde40d0e21d",
+      "date": "2025-09-03",
+      "merchant": "Debit Card Purchase Adidas Cranberry Township PA",
+      "amount": -63.54,
+      "category": "Other",
+      "description": "Debit Card Purchase Adidas Cranberry Township PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "ec7e79a5-6fb9-4f34-861a-905b8c1f0be3",
+      "date": "2025-09-03",
+      "merchant": "Debit Card Purchase Zara Shadyside PA",
+      "amount": -71.22,
+      "category": "Clothing",
+      "description": "Debit Card Purchase Zara Shadyside PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "79c732da-d109-4867-ba5e-15eefe42cd45",
+      "date": "2025-09-03",
+      "merchant": "Debit Card Purchase Instacart",
+      "amount": -37.75,
+      "category": "Other",
+      "description": "Debit Card Purchase Instacart",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "16dd68d7-c9d9-4a74-99e5-ce28ef2fdc75",
+      "date": "2025-09-04",
+      "merchant": "Debit Card Purchase Subway Cranberry Township PA",
+      "amount": -14.21,
+      "category": "Other",
+      "description": "Debit Card Purchase Subway Cranberry Township PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "d17a49fe-b436-4fd8-9989-fa9f36de9d58",
+      "date": "2025-09-04",
+      "merchant": "Debit Card Purchase Wendys Mt Lebanon PA",
+      "amount": -22.41,
+      "category": "Other",
+      "description": "Debit Card Purchase Wendys Mt Lebanon PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "95297b16-88ad-4dc7-8c8d-7eae696e3c54",
+      "date": "2025-09-04",
+      "merchant": "Debit Card Purchase Blue Bottle",
+      "amount": -11.52,
+      "category": "Other",
+      "description": "Debit Card Purchase Blue Bottle",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "e8a859a6-1529-42a2-9912-54178468420c",
+      "date": "2025-09-04",
+      "merchant": "Debit Card Purchase Chevron Shadyside PA",
+      "amount": -54.45,
+      "category": "Gas/Fuel",
+      "description": "Debit Card Purchase Chevron Shadyside PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "52b33159-6bdf-4f5c-8b5a-7670fc26685f",
+      "date": "2025-09-04",
+      "merchant": "Debit Card Purchase Coursera",
+      "amount": -71.39,
+      "category": "Education",
+      "description": "Debit Card Purchase Coursera",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "2856ae9e-fe61-43ac-a8af-1b4e178aa691",
+      "date": "2025-09-05",
+      "merchant": "Car Loan EMI - Monthly Payment",
+      "amount": -350.0,
+      "category": "Car EMI",
+      "description": "Car Loan EMI - Monthly Payment",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "907c65e6-cd0a-4086-aeb4-2283dc2ff50b",
+      "date": "2025-09-05",
+      "merchant": "Debit Card Purchase Texas Roadhouse Squirrel Hill PA",
+      "amount": -78.65,
+      "category": "Other",
+      "description": "Debit Card Purchase Texas Roadhouse Squirrel Hill PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "c26de3f5-7bb7-4e79-9115-7b7d973c394f",
+      "date": "2025-09-05",
+      "merchant": "Debit Card Purchase Dunkin",
+      "amount": -8.13,
+      "category": "Coffee Shops",
+      "description": "Debit Card Purchase Dunkin",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "17ab996c-c550-4b21-9792-9b34986f1e63",
+      "date": "2025-09-05",
+      "merchant": "Debit Card Purchase Uber",
+      "amount": -20.18,
+      "category": "Rideshare",
+      "description": "Debit Card Purchase Uber",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "c5456855-98c6-4c54-9165-8cdca6b5cf9e",
+      "date": "2025-09-05",
+      "merchant": "Debit Card Purchase Subway Card",
+      "amount": -115.06,
+      "category": "Other",
+      "description": "Debit Card Purchase Subway Card",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "0e7ae7a7-87df-4f36-a106-7bbf0ae69e9e",
+      "date": "2025-09-05",
+      "merchant": "Debit Card Purchase Bus Fare",
+      "amount": -87.05,
+      "category": "Public Transit",
+      "description": "Debit Card Purchase Bus Fare",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "2a6c07c2-f18c-44dd-862e-938117f7345b",
+      "date": "2025-09-05",
+      "merchant": "Debit Card Purchase TJ Maxx Squirrel Hill PA",
+      "amount": -242.97,
+      "category": "Other",
+      "description": "Debit Card Purchase TJ Maxx Squirrel Hill PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "9d97cd54-0b3a-4c3f-836a-66c79344da32",
+      "date": "2025-09-05",
+      "merchant": "Debit Card Purchase Escape Room",
+      "amount": -37.36,
+      "category": "Other",
+      "description": "Debit Card Purchase Escape Room",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "eb120bcd-1a89-457b-8011-0912dd7d297a",
+      "date": "2025-09-06",
+      "merchant": "Water Bill",
+      "amount": -48.79,
+      "category": "Utilities",
+      "description": "Water Bill",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "1972eac3-68a5-4178-be65-2a1cfe9fb530",
+      "date": "2025-09-06",
+      "merchant": "T-Mobile",
+      "amount": -52.24,
+      "category": "Internet/Phone",
+      "description": "T-Mobile",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "f60f230f-0a46-4798-91ad-23b714a50b58",
+      "date": "2025-09-06",
+      "merchant": "Debit Card Purchase Amazon Squirrel Hill PA",
+      "amount": -345.09,
+      "category": "Online/Retail Shopping",
+      "description": "Debit Card Purchase Amazon Squirrel Hill PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "53dffa49-49dd-4697-9c53-2150365de791",
+      "date": "2025-09-06",
+      "merchant": "Debit Card Purchase Regal Cinemas",
+      "amount": -45.2,
+      "category": "Movies/Entertainment",
+      "description": "Debit Card Purchase Regal Cinemas",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "759489ab-1936-48c3-a3fc-7debd5940cc1",
+      "date": "2025-09-06",
+      "merchant": "Debit Card Purchase Pet Food",
+      "amount": -122.16,
+      "category": "Pet Care",
+      "description": "Debit Card Purchase Pet Food",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "f42c3648-2a48-40a3-b872-e02637b287ef",
+      "date": "2025-09-07",
+      "merchant": "Debit Card Purchase Lyft",
+      "amount": -14.51,
+      "category": "Rideshare",
+      "description": "Debit Card Purchase Lyft",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "0d8e9905-e08d-4ecb-9bb9-0937de0a741b",
+      "date": "2025-09-07",
+      "merchant": "Debit Card Purchase Uber",
+      "amount": -12.95,
+      "category": "Rideshare",
+      "description": "Debit Card Purchase Uber",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "eb4ed056-2f2b-4876-9821-7592a9651ee9",
+      "date": "2025-09-07",
+      "merchant": "ATM Withdrawal",
+      "amount": -84.03,
+      "category": "ATM Withdrawal",
+      "description": "ATM Withdrawal",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "3c06b570-51e5-45ea-af42-b293887b9277",
+      "date": "2025-09-08",
+      "merchant": "Debit Card Purchase Subway Homestead PA",
+      "amount": -20.98,
+      "category": "Other",
+      "description": "Debit Card Purchase Subway Homestead PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "3b7b0095-cbfc-4187-a582-794cbdde3631",
+      "date": "2025-09-08",
+      "merchant": "Debit Card Purchase Caribou Coffee",
+      "amount": -9.86,
+      "category": "Coffee Shops",
+      "description": "Debit Card Purchase Caribou Coffee",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "2c63421a-9f14-4cff-80c8-bf51a1c16e97",
+      "date": "2025-09-08",
+      "merchant": "Debit Card Purchase Dunkin",
+      "amount": -6.04,
+      "category": "Coffee Shops",
+      "description": "Debit Card Purchase Dunkin",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "202af26d-79e8-40f8-858c-784f4078ba6c",
+      "date": "2025-09-08",
+      "merchant": "Debit Card Purchase Caribou Coffee",
+      "amount": -5.68,
+      "category": "Coffee Shops",
+      "description": "Debit Card Purchase Caribou Coffee",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "52ad6bdb-ae2e-4e51-a0af-d6a218c2d401",
+      "date": "2025-09-08",
+      "merchant": "Debit Card Purchase GetGo Shadyside PA",
+      "amount": -37.06,
+      "category": "Other",
+      "description": "Debit Card Purchase GetGo Shadyside PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "f53c3991-b9ef-4298-8a73-996cbe2fc4b9",
+      "date": "2025-09-09",
+      "merchant": "Debit Card Purchase Whole Foods Homestead PA",
+      "amount": -74.07,
+      "category": "Groceries",
+      "description": "Debit Card Purchase Whole Foods Homestead PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "cd95116f-e50c-4a09-a24c-80035d6256dc",
+      "date": "2025-09-09",
+      "merchant": "Debit Card Purchase Mobil Mt Lebanon PA",
+      "amount": -60.64,
+      "category": "Other",
+      "description": "Debit Card Purchase Mobil Mt Lebanon PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "4f30084d-0704-4f8d-bffe-f01373bb384a",
+      "date": "2025-09-09",
+      "merchant": "Debit Card Purchase Menards",
+      "amount": -136.62,
+      "category": "Other",
+      "description": "Debit Card Purchase Menards",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "2cfce2e4-9645-4004-b25b-0a7bf80962b8",
+      "date": "2025-09-09",
+      "merchant": "ATM Withdrawal",
+      "amount": -132.1,
+      "category": "ATM Withdrawal",
+      "description": "ATM Withdrawal",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "3ddd1c24-ee92-4642-96ab-dcc681270a74",
+      "date": "2025-09-10",
+      "merchant": "Personal Loan EMI - Monthly Payment",
+      "amount": -250.0,
+      "category": "Personal Loan EMI",
+      "description": "Personal Loan EMI - Monthly Payment",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "0e359527-dded-4c0b-96b3-68f7a855dce7",
+      "date": "2025-09-10",
+      "merchant": "Debit Card Purchase Kroger Monroeville PA",
+      "amount": -117.37,
+      "category": "Groceries",
+      "description": "Debit Card Purchase Kroger Monroeville PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "82b658ff-2538-4b29-9900-d71875dfe1a7",
+      "date": "2025-09-11",
+      "merchant": "Debit Card Purchase City Parking Garage",
+      "amount": -15.96,
+      "category": "Parking",
+      "description": "Debit Card Purchase City Parking Garage",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "3c7c886b-5854-4e22-8949-46e890fea360",
+      "date": "2025-09-12",
+      "merchant": "Disney Plus",
+      "amount": -19.19,
+      "category": "Streaming/Subscriptions",
+      "description": "Disney Plus",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "aeab8f57-63c0-4228-b885-4a8ea7d72626",
+      "date": "2025-09-12",
+      "merchant": "Debit Card Purchase PF Changs Squirrel Hill PA",
+      "amount": -26.18,
+      "category": "Other",
+      "description": "Debit Card Purchase PF Changs Squirrel Hill PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "ea8b4ef6-b818-4c4d-9e09-f032ef08c8fe",
+      "date": "2025-09-12",
+      "merchant": "Debit Card Purchase Texas Roadhouse Monroeville PA",
+      "amount": -42.44,
+      "category": "Other",
+      "description": "Debit Card Purchase Texas Roadhouse Monroeville PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "f970c150-aaa1-4008-9a7d-d23a858b8b69",
+      "date": "2025-09-12",
+      "merchant": "Debit Card Purchase Metro Transit Pass",
+      "amount": -11.93,
+      "category": "Public Transit",
+      "description": "Debit Card Purchase Metro Transit Pass",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "1f9e3e1c-2c48-4dcf-a5af-dcc66059a44d",
+      "date": "2025-09-13",
+      "merchant": "Debit Card Purchase Target Homestead PA",
+      "amount": -198.1,
+      "category": "Groceries",
+      "description": "Debit Card Purchase Target Homestead PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "8cb634de-cdd6-405d-8370-c322c5b49a99",
+      "date": "2025-09-14",
+      "merchant": "Debit Card Purchase Panera Bread Pittsburgh PA",
+      "amount": -35.42,
+      "category": "Dining Out",
+      "description": "Debit Card Purchase Panera Bread Pittsburgh PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "480ccd55-d312-41ed-a307-79ef54571680",
+      "date": "2025-09-14",
+      "merchant": "Debit Card Purchase KFC Monroeville PA",
+      "amount": -21.49,
+      "category": "Dining Out",
+      "description": "Debit Card Purchase KFC Monroeville PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "2a8b0826-2235-4f3a-a53f-b86177323cbc",
+      "date": "2025-09-14",
+      "merchant": "Debit Card Purchase Peets Coffee",
+      "amount": -10.85,
+      "category": "Coffee Shops",
+      "description": "Debit Card Purchase Peets Coffee",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "357dae12-0d0e-4519-83b6-e506c8c055a4",
+      "date": "2025-09-15",
+      "merchant": "Health Insurance Premium",
+      "amount": -225.07,
+      "category": "EMI/Loans",
+      "description": "Health Insurance Premium",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "60db992a-cc1a-4d55-8e2b-7c2109beca78",
+      "date": "2025-09-15",
+      "merchant": "Yoga Studio",
+      "amount": -42.08,
+      "category": "Gym/Fitness",
+      "description": "Yoga Studio",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "1a852ea5-be63-448b-8beb-bb53d11189bf",
+      "date": "2025-09-15",
+      "merchant": "Debit Card Purchase Blue Bottle",
+      "amount": -4.89,
+      "category": "Other",
+      "description": "Debit Card Purchase Blue Bottle",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "8622428c-5b4e-4e2d-a3f7-2af594bc67c7",
+      "date": "2025-09-15",
+      "merchant": "Debit Card Purchase ParkMobile",
+      "amount": -18.62,
+      "category": "Other",
+      "description": "Debit Card Purchase ParkMobile",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "b1209176-cf08-4ddf-a78a-f38c13f942c6",
+      "date": "2025-09-16",
+      "merchant": "Debit Card Purchase Shake Shack Squirrel Hill PA",
+      "amount": -17.9,
+      "category": "Other",
+      "description": "Debit Card Purchase Shake Shack Squirrel Hill PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "1739eb4a-2506-4d4a-9c20-6172dacad282",
+      "date": "2025-09-16",
+      "merchant": "Debit Card Purchase Caribou Coffee",
+      "amount": -6.81,
+      "category": "Coffee Shops",
+      "description": "Debit Card Purchase Caribou Coffee",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "215478b3-0fa5-4eea-87dd-1cba4a72f99d",
+      "date": "2025-09-16",
+      "merchant": "Debit Card Purchase DoorDash Ride",
+      "amount": -30.31,
+      "category": "Food Delivery",
+      "description": "Debit Card Purchase DoorDash Ride",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "01d3be2d-8e2c-4489-85e3-0e9ff1dd96df",
+      "date": "2025-09-16",
+      "merchant": "Debit Card Purchase Urgent Care",
+      "amount": -183.38,
+      "category": "Other",
+      "description": "Debit Card Purchase Urgent Care",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "972ed664-acea-4bcd-911f-1253256e1fdc",
+      "date": "2025-09-17",
+      "merchant": "Debit Card Purchase GetGo Oakland PA",
+      "amount": -33.39,
+      "category": "Other",
+      "description": "Debit Card Purchase GetGo Oakland PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "68270cb3-ec2c-40a7-bf7a-dee5ddde47b4",
+      "date": "2025-09-17",
+      "merchant": "Debit Card Purchase H&M Oakland PA",
+      "amount": -29.85,
+      "category": "Clothing",
+      "description": "Debit Card Purchase H&M Oakland PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "2a31d434-5c29-40ed-a0bf-04b57c3bafba",
+      "date": "2025-09-17",
+      "merchant": "Debit Card Purchase Bowling Alley",
+      "amount": -20.09,
+      "category": "Other",
+      "description": "Debit Card Purchase Bowling Alley",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "91b92225-c21c-471e-bf67-4dc1e66ec918",
+      "date": "2025-09-17",
+      "merchant": "ATM Withdrawal",
+      "amount": -55.72,
+      "category": "ATM Withdrawal",
+      "description": "ATM Withdrawal",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "aa5805dd-0b6e-4c83-8dc6-181341614fb2",
+      "date": "2025-09-18",
+      "merchant": "Debit Card Purchase Mobil Homestead PA",
+      "amount": -44.67,
+      "category": "Other",
+      "description": "Debit Card Purchase Mobil Homestead PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "07af4e99-c000-48c6-b764-1533d818b9ea",
+      "date": "2025-09-19",
+      "merchant": "Debit Card Purchase Costco Homestead PA",
+      "amount": -32.11,
+      "category": "Groceries",
+      "description": "Debit Card Purchase Costco Homestead PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "aa689673-f4ba-4ff7-a3c3-8b17c4d65656",
+      "date": "2025-09-19",
+      "merchant": "Debit Card Purchase TJ Maxx Oakland PA",
+      "amount": -185.88,
+      "category": "Other",
+      "description": "Debit Card Purchase TJ Maxx Oakland PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "ae6729ed-62ea-42e2-8ac3-880983525b36",
+      "date": "2025-09-19",
+      "merchant": "Debit Card Purchase LinkedIn Learning",
+      "amount": -65.92,
+      "category": "Other",
+      "description": "Debit Card Purchase LinkedIn Learning",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "1f2e2c24-2bb7-400f-bd15-d62056a187db",
+      "date": "2025-09-19",
+      "merchant": "Debit Card Purchase Postmates",
+      "amount": -37.11,
+      "category": "Other",
+      "description": "Debit Card Purchase Postmates",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "9382b981-9ae8-426e-9659-f1b9149c295e",
+      "date": "2025-09-20",
+      "merchant": "Debit Card Purchase McDonalds Homestead PA",
+      "amount": -13.53,
+      "category": "Dining Out",
+      "description": "Debit Card Purchase McDonalds Homestead PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "e3adcccc-1060-46fb-b5f8-ed5cc547e732",
+      "date": "2025-09-20",
+      "merchant": "Debit Card Purchase Local Coffee Shop",
+      "amount": -7.38,
+      "category": "Coffee Shops",
+      "description": "Debit Card Purchase Local Coffee Shop",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "fb89d19e-cab6-42a5-a528-ba1376e9bf63",
+      "date": "2025-09-20",
+      "merchant": "Debit Card Purchase Hair Salon",
+      "amount": -40.91,
+      "category": "Personal Care",
+      "description": "Debit Card Purchase Hair Salon",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "33e4c271-d682-47a2-b244-938e0c3aa322",
+      "date": "2025-09-20",
+      "merchant": "Debit Card Purchase Postmates",
+      "amount": -24.53,
+      "category": "Other",
+      "description": "Debit Card Purchase Postmates",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "13131cea-b703-4564-8aad-80ec12f94459",
+      "date": "2025-09-21",
+      "merchant": "Debit Card Purchase Target Oakland PA",
+      "amount": -267.35,
+      "category": "Groceries",
+      "description": "Debit Card Purchase Target Oakland PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "fd8f7ad0-cac7-401b-a6e2-72e6f7f6b5eb",
+      "date": "2025-09-22",
+      "merchant": "Debit Card Purchase City Parking Garage",
+      "amount": -28.02,
+      "category": "Parking",
+      "description": "Debit Card Purchase City Parking Garage",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "54e94423-bee8-4e69-ae2e-f3417cb70bdc",
+      "date": "2025-09-23",
+      "merchant": "Debit Card Purchase Trader Joes Homestead PA",
+      "amount": -175.22,
+      "category": "Groceries",
+      "description": "Debit Card Purchase Trader Joes Homestead PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "0dad8e6d-6676-4752-b3fa-2bf042168bd3",
+      "date": "2025-09-24",
+      "merchant": "Debit Card Purchase Olive Garden Oakland PA",
+      "amount": -46.14,
+      "category": "Dining Out",
+      "description": "Debit Card Purchase Olive Garden Oakland PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "ab6eb21e-e9f6-4f37-9952-d169c8e9c1ed",
+      "date": "2025-09-24",
+      "merchant": "Debit Card Purchase Rite Aid",
+      "amount": -35.48,
+      "category": "Pharmacy",
+      "description": "Debit Card Purchase Rite Aid",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "d20bcb91-6348-4deb-978c-81d88a39b228",
+      "date": "2025-09-25",
+      "merchant": "Debit Card Purchase Costco Cranberry Township PA",
+      "amount": -92.38,
+      "category": "Groceries",
+      "description": "Debit Card Purchase Costco Cranberry Township PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "43906607-bf81-4905-9866-7afd2d925344",
+      "date": "2025-09-25",
+      "merchant": "Debit Card Purchase Wawa Cranberry Township PA",
+      "amount": -52.73,
+      "category": "Other",
+      "description": "Debit Card Purchase Wawa Cranberry Township PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "d2429579-64f5-444f-bbe9-e98304f23178",
+      "date": "2025-09-25",
+      "merchant": "Debit Card Purchase SP Plus Parking",
+      "amount": -6.77,
+      "category": "Parking",
+      "description": "Debit Card Purchase SP Plus Parking",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "ac6f7130-9fc9-4bc2-90e6-1b9881599f44",
+      "date": "2025-09-25",
+      "merchant": "Debit Card Purchase Uber",
+      "amount": -42.11,
+      "category": "Rideshare",
+      "description": "Debit Card Purchase Uber",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "20b208af-d061-42dd-9ac0-67c403806b58",
+      "date": "2025-09-25",
+      "merchant": "Debit Card Purchase Spa",
+      "amount": -114.14,
+      "category": "Personal Care",
+      "description": "Debit Card Purchase Spa",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "fa4df9bd-4f5b-4b25-b727-62e36af1dbac",
+      "date": "2025-09-25",
+      "merchant": "Debit Card Purchase Postmates",
+      "amount": -46.83,
+      "category": "Other",
+      "description": "Debit Card Purchase Postmates",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "f6795124-2a99-4673-9e00-b1ab5865ad1e",
+      "date": "2025-09-26",
+      "merchant": "Debit Card Purchase Outback Cranberry Township PA",
+      "amount": -38.72,
+      "category": "Other",
+      "description": "Debit Card Purchase Outback Cranberry Township PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "70d2f720-6144-49da-8906-a9172d5b070c",
+      "date": "2025-09-26",
+      "merchant": "Debit Card Purchase Five Guys Homestead PA",
+      "amount": -18.93,
+      "category": "Other",
+      "description": "Debit Card Purchase Five Guys Homestead PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "4cf81e9f-db9b-48e9-acfb-038be661c291",
+      "date": "2025-09-26",
+      "merchant": "Debit Card Purchase PetSmart",
+      "amount": -120.96,
+      "category": "Pet Care",
+      "description": "Debit Card Purchase PetSmart",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "460e35ae-7a97-45d0-b049-3a6f3cf23881",
+      "date": "2025-09-27",
+      "merchant": "Debit Card Purchase Shop n Save Cranberry Township PA",
+      "amount": -126.22,
+      "category": "Other",
+      "description": "Debit Card Purchase Shop n Save Cranberry Township PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "f189931c-aea8-492c-b23c-40c23cc01268",
+      "date": "2025-09-27",
+      "merchant": "Debit Card Purchase Shake Shack Oakland PA",
+      "amount": -13.15,
+      "category": "Other",
+      "description": "Debit Card Purchase Shake Shack Oakland PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "14c88049-065f-4f26-88ca-51683d04678f",
+      "date": "2025-09-27",
+      "merchant": "Debit Card Purchase Mini Golf",
+      "amount": -38.6,
+      "category": "Other",
+      "description": "Debit Card Purchase Mini Golf",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "117813d0-34aa-4d09-a944-e0b6ad272d43",
+      "date": "2025-09-27",
+      "merchant": "Debit Card Purchase Rite Aid",
+      "amount": -42.33,
+      "category": "Pharmacy",
+      "description": "Debit Card Purchase Rite Aid",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "53858955-bed1-4f48-8448-0abbe44b7071",
+      "date": "2025-09-27",
+      "merchant": "Debit Card Purchase Grubhub",
+      "amount": -33.78,
+      "category": "Food Delivery",
+      "description": "Debit Card Purchase Grubhub",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "6812eae4-26b1-40e6-a9d9-fa1c1239a1e6",
+      "date": "2025-09-28",
+      "merchant": "Debit Card Purchase Lyft",
+      "amount": -27.01,
+      "category": "Rideshare",
+      "description": "Debit Card Purchase Lyft",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "799d5d72-6ebb-4466-a9fc-3277be6278ab",
+      "date": "2025-09-28",
+      "merchant": "Debit Card Purchase Lowes",
+      "amount": -212.09,
+      "category": "Home Improvement",
+      "description": "Debit Card Purchase Lowes",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "c5cfd2a1-19bb-4b1d-addc-588b9817cf30",
+      "date": "2025-09-28",
+      "merchant": "Debit Card Purchase Target Pharmacy",
+      "amount": -17.79,
+      "category": "Groceries",
+      "description": "Debit Card Purchase Target Pharmacy",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "5ca8b9d6-166a-45cd-bfa9-8510ca98e2ca",
+      "date": "2025-09-28",
+      "merchant": "Debit Card Purchase Instacart",
+      "amount": -18.82,
+      "category": "Other",
+      "description": "Debit Card Purchase Instacart",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "0a7e39f7-f445-466d-b47c-2da92d18629c",
+      "date": "2025-09-29",
+      "merchant": "Debit Card Purchase Wendys Squirrel Hill PA",
+      "amount": -11.56,
+      "category": "Other",
+      "description": "Debit Card Purchase Wendys Squirrel Hill PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "645724d3-c862-42f4-90ff-11a8e9dd2cb4",
+      "date": "2025-09-29",
+      "merchant": "Debit Card Purchase Taco Bell Monroeville PA",
+      "amount": -15.94,
+      "category": "Dining Out",
+      "description": "Debit Card Purchase Taco Bell Monroeville PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "3d31dd51-3d74-4452-b1d8-f71f730281f0",
+      "date": "2025-09-29",
+      "merchant": "Debit Card Purchase Wawa Mt Lebanon PA",
+      "amount": -33.9,
+      "category": "Other",
+      "description": "Debit Card Purchase Wawa Mt Lebanon PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "4ec9ad19-eda9-41be-a474-02026af3bb1d",
+      "date": "2025-09-29",
+      "merchant": "Debit Card Purchase Speedway Mt Lebanon PA",
+      "amount": -59.38,
+      "category": "Other",
+      "description": "Debit Card Purchase Speedway Mt Lebanon PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "acfab333-879e-48b5-86b5-b04eff77dd8a",
+      "date": "2025-09-29",
+      "merchant": "Debit Card Purchase Apple Store Cranberry Township PA",
+      "amount": -282.64,
+      "category": "Online/Retail Shopping",
+      "description": "Debit Card Purchase Apple Store Cranberry Township PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "6a53162f-ac03-4c77-8db1-03cc15f50637",
+      "date": "2025-09-30",
+      "merchant": "Payroll Direct Deposit - Monthly Salary",
+      "amount": 4500.0,
+      "category": "Salary",
+      "description": "Payroll Direct Deposit - Monthly Salary",
+      "type": "Deposit"
+    },
+    {
+      "id": "a710e1c7-0258-420a-8240-e998bdac0194",
+      "date": "2025-09-30",
+      "merchant": "Debit Card Purchase Peets Coffee",
+      "amount": -5.61,
+      "category": "Coffee Shops",
+      "description": "Debit Card Purchase Peets Coffee",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "18ac6268-1836-4f78-9399-b38da27493a6",
+      "date": "2025-09-30",
+      "merchant": "Debit Card Purchase Caribou Coffee",
+      "amount": -11.62,
+      "category": "Coffee Shops",
+      "description": "Debit Card Purchase Caribou Coffee",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "0340ad8f-8cd2-4d7d-a3a3-8009dfaeca72",
+      "date": "2025-10-01",
+      "merchant": "Home Loan EMI - Monthly Payment",
+      "amount": -1200.0,
+      "category": "Home EMI",
+      "description": "Home Loan EMI - Monthly Payment",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "44ed346f-6ae0-4eaf-820f-654e8df2833f",
+      "date": "2025-10-01",
+      "merchant": "Debit Card Purchase Burger King Pittsburgh PA",
+      "amount": -11.55,
+      "category": "Dining Out",
+      "description": "Debit Card Purchase Burger King Pittsburgh PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "3578ca6f-1385-4286-9729-494058bb35b8",
+      "date": "2025-10-01",
+      "merchant": "Debit Card Purchase DoorDash Ride",
+      "amount": -35.23,
+      "category": "Food Delivery",
+      "description": "Debit Card Purchase DoorDash Ride",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "080852f7-dad9-487c-bf50-623c746195a1",
+      "date": "2025-10-01",
+      "merchant": "Debit Card Purchase Instacart",
+      "amount": -23.15,
+      "category": "Other",
+      "description": "Debit Card Purchase Instacart",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "266e4d18-3ce8-412a-a972-1f585861ade1",
+      "date": "2025-10-01",
+      "merchant": "ATM Withdrawal",
+      "amount": -66.69,
+      "category": "ATM Withdrawal",
+      "description": "ATM Withdrawal",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "5b7e0a4c-e9f5-4ddd-ac2a-82a143274d01",
+      "date": "2025-10-02",
+      "merchant": "Life Insurance",
+      "amount": -94.44,
+      "category": "Insurance",
+      "description": "Life Insurance",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "7522a2ae-100b-435f-8e29-25065e9ddb67",
+      "date": "2025-10-02",
+      "merchant": "Debit Card Purchase Local Coffee Shop",
+      "amount": -10.65,
+      "category": "Coffee Shops",
+      "description": "Debit Card Purchase Local Coffee Shop",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "8f564266-c28b-4475-9119-6de9adba97e5",
+      "date": "2025-10-03",
+      "merchant": "Electric Bill",
+      "amount": -95.87,
+      "category": "Utilities",
+      "description": "Electric Bill",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "053edf31-7c25-4fd0-b898-64e8a4ff318a",
+      "date": "2025-10-03",
+      "merchant": "Debit Card Purchase Aldi Squirrel Hill PA",
+      "amount": -29.75,
+      "category": "Groceries",
+      "description": "Debit Card Purchase Aldi Squirrel Hill PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "b93cc7d2-9a2d-4db3-8447-8f294243b565",
+      "date": "2025-10-03",
+      "merchant": "Debit Card Purchase Starbucks",
+      "amount": -9.42,
+      "category": "Coffee Shops",
+      "description": "Debit Card Purchase Starbucks",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "6a2d1ed7-99af-4359-b891-b293e652a164",
+      "date": "2025-10-03",
+      "merchant": "Debit Card Purchase Peets Coffee",
+      "amount": -6.3,
+      "category": "Coffee Shops",
+      "description": "Debit Card Purchase Peets Coffee",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "4c4a91a7-2498-487b-b34b-07bf4b7deb2f",
+      "date": "2025-10-03",
+      "merchant": "Debit Card Purchase Peets Coffee",
+      "amount": -8.31,
+      "category": "Coffee Shops",
+      "description": "Debit Card Purchase Peets Coffee",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "ea628616-cbb7-4257-87fc-4a7ab478155a",
+      "date": "2025-10-03",
+      "merchant": "ATM Withdrawal",
+      "amount": -179.5,
+      "category": "ATM Withdrawal",
+      "description": "ATM Withdrawal",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "e2369526-3022-4737-9120-9c83d3950b18",
+      "date": "2025-10-04",
+      "merchant": "24 Hour Fitness",
+      "amount": -65.05,
+      "category": "Gym/Fitness",
+      "description": "24 Hour Fitness",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "cf78909c-4494-41c8-9a17-2f4d7215c133",
+      "date": "2025-10-04",
+      "merchant": "Debit Card Purchase Taco Bell Cranberry Township PA",
+      "amount": -16.3,
+      "category": "Dining Out",
+      "description": "Debit Card Purchase Taco Bell Cranberry Township PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "ae24e2bb-646f-4680-851e-2eae56927cb2",
+      "date": "2025-10-04",
+      "merchant": "Debit Card Purchase Blue Bottle",
+      "amount": -5.89,
+      "category": "Other",
+      "description": "Debit Card Purchase Blue Bottle",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "db91fff0-036b-4940-abba-3684561d21ac",
+      "date": "2025-10-04",
+      "merchant": "Debit Card Purchase Dunkin",
+      "amount": -9.68,
+      "category": "Coffee Shops",
+      "description": "Debit Card Purchase Dunkin",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "30cb5787-25e1-40c0-a1b4-3193634bf5ab",
+      "date": "2025-10-04",
+      "merchant": "Debit Card Purchase GetGo Cranberry Township PA",
+      "amount": -30.99,
+      "category": "Other",
+      "description": "Debit Card Purchase GetGo Cranberry Township PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "075bdf28-7eac-4fa0-af02-ef28e9930b87",
+      "date": "2025-10-04",
+      "merchant": "Debit Card Purchase Uber Eats",
+      "amount": -22.15,
+      "category": "Food Delivery",
+      "description": "Debit Card Purchase Uber Eats",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "d42c3589-dde1-476f-957e-55af3e6b7430",
+      "date": "2025-10-05",
+      "merchant": "Car Loan EMI - Monthly Payment",
+      "amount": -350.0,
+      "category": "Car EMI",
+      "description": "Car Loan EMI - Monthly Payment",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "bc27e981-8f32-4003-a64b-f2ec55c9ed88",
+      "date": "2025-10-05",
+      "merchant": "Debit Card Purchase Dunkin",
+      "amount": -10.58,
+      "category": "Coffee Shops",
+      "description": "Debit Card Purchase Dunkin",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "86ad7d7f-2426-48dc-945a-cefeabe101fc",
+      "date": "2025-10-05",
+      "merchant": "Debit Card Purchase Metro Transit Pass",
+      "amount": -22.62,
+      "category": "Public Transit",
+      "description": "Debit Card Purchase Metro Transit Pass",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "06d4627f-8f03-44e9-942b-7cdb516f5b51",
+      "date": "2025-10-05",
+      "merchant": "Debit Card Purchase Amazon Squirrel Hill PA",
+      "amount": -61.95,
+      "category": "Online/Retail Shopping",
+      "description": "Debit Card Purchase Amazon Squirrel Hill PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "c2788674-26b2-4bf9-9a37-b4859161b62d",
+      "date": "2025-10-05",
+      "merchant": "Debit Card Purchase Bowling Alley",
+      "amount": -61.89,
+      "category": "Other",
+      "description": "Debit Card Purchase Bowling Alley",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "21b80902-88b3-4120-8c58-7cbd5d4f7be4",
+      "date": "2025-10-06",
+      "merchant": "Verizon Wireless",
+      "amount": -145.2,
+      "category": "Internet/Phone",
+      "description": "Verizon Wireless",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "cc65b0f2-2f17-4fc7-9708-60d40779c78a",
+      "date": "2025-10-06",
+      "merchant": "Debit Card Purchase Ace Hardware",
+      "amount": -25.62,
+      "category": "Home Improvement",
+      "description": "Debit Card Purchase Ace Hardware",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "0652f817-050b-4771-a8a4-9f4b71dfb5b4",
+      "date": "2025-10-06",
+      "merchant": "Debit Card Purchase Dave & Busters",
+      "amount": -59.18,
+      "category": "Public Transit",
+      "description": "Debit Card Purchase Dave & Busters",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "6c8e7e53-43ef-4dcf-a9c5-d74842fb391b",
+      "date": "2025-10-07",
+      "merchant": "Debit Card Purchase Bus Fare",
+      "amount": -47.63,
+      "category": "Public Transit",
+      "description": "Debit Card Purchase Bus Fare",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "a374e6dd-9ae4-4a67-9f9d-ad63e64a459e",
+      "date": "2025-10-07",
+      "merchant": "Debit Card Purchase Petco",
+      "amount": -38.66,
+      "category": "Pet Care",
+      "description": "Debit Card Purchase Petco",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "9e82e200-db25-41e2-99e2-fb68bdc51c95",
+      "date": "2025-10-08",
+      "merchant": "Debit Card Purchase Shop n Save Pittsburgh PA",
+      "amount": -140.26,
+      "category": "Other",
+      "description": "Debit Card Purchase Shop n Save Pittsburgh PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "c3af81d6-7d33-4278-b080-38e1c322cb1f",
+      "date": "2025-10-08",
+      "merchant": "Debit Card Purchase KFC Shadyside PA",
+      "amount": -9.72,
+      "category": "Dining Out",
+      "description": "Debit Card Purchase KFC Shadyside PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "d78c5b17-ef79-4ff0-abe4-4394d91e6d93",
+      "date": "2025-10-08",
+      "merchant": "Debit Card Purchase BP Shadyside PA",
+      "amount": -59.38,
+      "category": "Gas/Fuel",
+      "description": "Debit Card Purchase BP Shadyside PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "418ec9df-83bb-4c23-9a9f-2d03164bc98d",
+      "date": "2025-10-08",
+      "merchant": "Debit Card Purchase Instacart",
+      "amount": -21.56,
+      "category": "Other",
+      "description": "Debit Card Purchase Instacart",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "d1099642-eccc-4c02-a787-fcc8190e844e",
+      "date": "2025-10-09",
+      "merchant": "Amazon Prime",
+      "amount": -11.87,
+      "category": "Online/Retail Shopping",
+      "description": "Amazon Prime",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "30f2eafd-4feb-4351-b40c-a8d3b2c4e069",
+      "date": "2025-10-09",
+      "merchant": "Debit Card Purchase Lab Tests",
+      "amount": -64.48,
+      "category": "Other",
+      "description": "Debit Card Purchase Lab Tests",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "d0b538c5-a4f7-457e-8c7e-9d01ea0bd505",
+      "date": "2025-10-10",
+      "merchant": "Personal Loan EMI - Monthly Payment",
+      "amount": -250.0,
+      "category": "Personal Loan EMI",
+      "description": "Personal Loan EMI - Monthly Payment",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "60cafc13-719d-4283-ac80-64879e5fb21b",
+      "date": "2025-10-10",
+      "merchant": "Debit Card Purchase Safeway Mt Lebanon PA",
+      "amount": -125.38,
+      "category": "Other",
+      "description": "Debit Card Purchase Safeway Mt Lebanon PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "face2e31-e369-4302-9ff5-c4036e29c661",
+      "date": "2025-10-10",
+      "merchant": "Debit Card Purchase Starbucks",
+      "amount": -7.26,
+      "category": "Coffee Shops",
+      "description": "Debit Card Purchase Starbucks",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "5b3a7cc8-8d01-44b2-a40c-3261a18386ef",
+      "date": "2025-10-10",
+      "merchant": "Debit Card Purchase Walmart Pittsburgh PA",
+      "amount": -225.17,
+      "category": "Groceries",
+      "description": "Debit Card Purchase Walmart Pittsburgh PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "65978820-d3e0-4a09-9ae3-cb7da7bf5159",
+      "date": "2025-10-10",
+      "merchant": "Debit Card Purchase Walgreens",
+      "amount": -44.05,
+      "category": "Pharmacy",
+      "description": "Debit Card Purchase Walgreens",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "325c1e48-99ee-428c-82ca-7425801c031a",
+      "date": "2025-10-11",
+      "merchant": "Debit Card Purchase Taco Bell Pittsburgh PA",
+      "amount": -18.54,
+      "category": "Dining Out",
+      "description": "Debit Card Purchase Taco Bell Pittsburgh PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "fb68e47b-0718-4527-9a6c-79d03dab1b96",
+      "date": "2025-10-11",
+      "merchant": "Debit Card Purchase GetGo Monroeville PA",
+      "amount": -64.5,
+      "category": "Other",
+      "description": "Debit Card Purchase GetGo Monroeville PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "26bcdd6c-2e25-4977-a018-dac9320e5128",
+      "date": "2025-10-11",
+      "merchant": "Debit Card Purchase Uber",
+      "amount": -43.74,
+      "category": "Rideshare",
+      "description": "Debit Card Purchase Uber",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "221dd5e9-6385-486c-8058-cad9e2ab284c",
+      "date": "2025-10-12",
+      "merchant": "Debit Card Purchase Bus Fare",
+      "amount": -118.59,
+      "category": "Public Transit",
+      "description": "Debit Card Purchase Bus Fare",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "8385df6c-acfb-4f86-bed2-7a8ac2051377",
+      "date": "2025-10-12",
+      "merchant": "Debit Card Purchase H&M Cranberry Township PA",
+      "amount": -128.51,
+      "category": "Clothing",
+      "description": "Debit Card Purchase H&M Cranberry Township PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "0c6c9d0c-2623-4aad-a8ea-55ff3b82b815",
+      "date": "2025-10-13",
+      "merchant": "Debit Card Purchase Olive Garden Mt Lebanon PA",
+      "amount": -81.16,
+      "category": "Dining Out",
+      "description": "Debit Card Purchase Olive Garden Mt Lebanon PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "15533053-24b2-46fb-9967-2c1cabac14df",
+      "date": "2025-10-13",
+      "merchant": "Debit Card Purchase KFC Homestead PA",
+      "amount": -23.23,
+      "category": "Dining Out",
+      "description": "Debit Card Purchase KFC Homestead PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "c5e6436d-9736-4094-aff7-893395a65003",
+      "date": "2025-10-13",
+      "merchant": "Debit Card Purchase Udemy",
+      "amount": -185.31,
+      "category": "Education",
+      "description": "Debit Card Purchase Udemy",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "99fc1776-40f7-4961-9ac8-5b3d40a7b935",
+      "date": "2025-10-13",
+      "merchant": "Debit Card Purchase Vet Clinic",
+      "amount": -121.0,
+      "category": "Healthcare",
+      "description": "Debit Card Purchase Vet Clinic",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "9882b769-61a2-4c8a-a29c-43c4ccf0fd8a",
+      "date": "2025-10-13",
+      "merchant": "Debit Card Purchase Uber Eats",
+      "amount": -26.42,
+      "category": "Food Delivery",
+      "description": "Debit Card Purchase Uber Eats",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "7fca89fd-dda4-4221-a9e3-b8535f1bdd51",
+      "date": "2025-10-14",
+      "merchant": "Debit Card Purchase Giant Eagle Oakland PA",
+      "amount": -171.09,
+      "category": "Groceries",
+      "description": "Debit Card Purchase Giant Eagle Oakland PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "97986137-dc59-448a-bf0e-02368dfb9636",
+      "date": "2025-10-14",
+      "merchant": "Debit Card Purchase Ulta Beauty",
+      "amount": -26.97,
+      "category": "Personal Care",
+      "description": "Debit Card Purchase Ulta Beauty",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "63f968f1-aa44-467e-89a5-01d3414b408e",
+      "date": "2025-10-14",
+      "merchant": "Debit Card Purchase Uber Eats",
+      "amount": -15.15,
+      "category": "Food Delivery",
+      "description": "Debit Card Purchase Uber Eats",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "65563125-dca3-43c0-8f03-5cc13455c2eb",
+      "date": "2025-10-15",
+      "merchant": "Debit Card Purchase Exxon Cranberry Township PA",
+      "amount": -38.5,
+      "category": "Gas/Fuel",
+      "description": "Debit Card Purchase Exxon Cranberry Township PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "a3468763-556d-46c8-8903-c79c64968a09",
+      "date": "2025-10-15",
+      "merchant": "Debit Card Purchase ParkMobile",
+      "amount": -30.23,
+      "category": "Other",
+      "description": "Debit Card Purchase ParkMobile",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "d091bfe9-7e93-47b1-b1c9-35d74d4d8175",
+      "date": "2025-10-15",
+      "merchant": "Debit Card Purchase TJ Maxx Pittsburgh PA",
+      "amount": -182.16,
+      "category": "Other",
+      "description": "Debit Card Purchase TJ Maxx Pittsburgh PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "2d3e242d-ba8e-435d-b751-a70ce2a19e86",
+      "date": "2025-10-16",
+      "merchant": "Debit Card Purchase Shop n Save Cranberry Township PA",
+      "amount": -83.09,
+      "category": "Other",
+      "description": "Debit Card Purchase Shop n Save Cranberry Township PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "160e9aa6-0794-4ce0-bfe6-bc374179bd07",
+      "date": "2025-10-16",
+      "merchant": "Debit Card Purchase Five Guys Shadyside PA",
+      "amount": -23.3,
+      "category": "Other",
+      "description": "Debit Card Purchase Five Guys Shadyside PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "e4b0b017-2fa6-4efd-a3d3-86322e905864",
+      "date": "2025-10-16",
+      "merchant": "Debit Card Purchase Walmart Mt Lebanon PA",
+      "amount": -112.02,
+      "category": "Groceries",
+      "description": "Debit Card Purchase Walmart Mt Lebanon PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "52efe873-7209-472f-8588-361726a1005d",
+      "date": "2025-10-17",
+      "merchant": "Debit Card Purchase PF Changs Monroeville PA",
+      "amount": -41.23,
+      "category": "Other",
+      "description": "Debit Card Purchase PF Changs Monroeville PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "13b247f0-396c-4a57-8c33-3ed3d38a9065",
+      "date": "2025-10-17",
+      "merchant": "Debit Card Purchase Wendys Oakland PA",
+      "amount": -10.03,
+      "category": "Other",
+      "description": "Debit Card Purchase Wendys Oakland PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "c98c5379-6c45-48ce-8e52-0cc53f93ecc5",
+      "date": "2025-10-17",
+      "merchant": "Debit Card Purchase Mobil Cranberry Township PA",
+      "amount": -48.0,
+      "category": "Other",
+      "description": "Debit Card Purchase Mobil Cranberry Township PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "3ae5baa8-c721-44ca-9a17-dc8bb8379d04",
+      "date": "2025-10-17",
+      "merchant": "Debit Card Purchase City Parking Garage",
+      "amount": -15.59,
+      "category": "Parking",
+      "description": "Debit Card Purchase City Parking Garage",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "e45b1482-8c21-49cd-9cb7-373b6a772f03",
+      "date": "2025-10-17",
+      "merchant": "Debit Card Purchase Uber",
+      "amount": -21.68,
+      "category": "Rideshare",
+      "description": "Debit Card Purchase Uber",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "c86fa661-d080-4fc2-9e84-4cc1351256c6",
+      "date": "2025-10-17",
+      "merchant": "Debit Card Purchase Nordstrom Monroeville PA",
+      "amount": -269.27,
+      "category": "Other",
+      "description": "Debit Card Purchase Nordstrom Monroeville PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "1dd7e6e8-9df9-4f58-a8e3-6124e54e4a36",
+      "date": "2025-10-18",
+      "merchant": "Debit Card Purchase Peets Coffee",
+      "amount": -6.29,
+      "category": "Coffee Shops",
+      "description": "Debit Card Purchase Peets Coffee",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "09a6adc5-ccef-491a-9293-b3e4caf94ab5",
+      "date": "2025-10-18",
+      "merchant": "Debit Card Purchase Shell Shadyside PA",
+      "amount": -39.68,
+      "category": "Gas/Fuel",
+      "description": "Debit Card Purchase Shell Shadyside PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "a1be2f8e-b079-4d51-be88-7465f5bac5c4",
+      "date": "2025-10-18",
+      "merchant": "Debit Card Purchase Marshalls Shadyside PA",
+      "amount": -122.77,
+      "category": "Other",
+      "description": "Debit Card Purchase Marshalls Shadyside PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "44936510-1de8-4f11-919c-0ef484baf2b5",
+      "date": "2025-10-19",
+      "merchant": "Debit Card Purchase Trader Joes Homestead PA",
+      "amount": -133.7,
+      "category": "Groceries",
+      "description": "Debit Card Purchase Trader Joes Homestead PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "62ed9370-5fd3-4c19-9f68-faa120abfae4",
+      "date": "2025-10-19",
+      "merchant": "Debit Card Purchase CVS Pharmacy",
+      "amount": -40.05,
+      "category": "Pharmacy",
+      "description": "Debit Card Purchase CVS Pharmacy",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "fd44fafa-cce6-4385-8dc6-819e32d8b549",
+      "date": "2025-10-20",
+      "merchant": "Debit Card Purchase Outback Pittsburgh PA",
+      "amount": -54.0,
+      "category": "Other",
+      "description": "Debit Card Purchase Outback Pittsburgh PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "4515c260-b7bd-40c2-b76a-81f1ce4a8b8b",
+      "date": "2025-10-20",
+      "merchant": "Debit Card Purchase Chipotle Oakland PA",
+      "amount": -75.09,
+      "category": "Dining Out",
+      "description": "Debit Card Purchase Chipotle Oakland PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "52bdf36e-0b9e-4def-880c-faa3d468963d",
+      "date": "2025-10-20",
+      "merchant": "Debit Card Purchase Peets Coffee",
+      "amount": -7.04,
+      "category": "Coffee Shops",
+      "description": "Debit Card Purchase Peets Coffee",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "03aea734-0338-4bef-9746-8f414637d173",
+      "date": "2025-10-20",
+      "merchant": "Debit Card Purchase Ross Monroeville PA",
+      "amount": -137.65,
+      "category": "Other",
+      "description": "Debit Card Purchase Ross Monroeville PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "dafae124-9224-43a4-9617-60a1d2d7ec0a",
+      "date": "2025-10-21",
+      "merchant": "Debit Card Purchase Texas Roadhouse Cranberry Township PA",
+      "amount": -35.25,
+      "category": "Other",
+      "description": "Debit Card Purchase Texas Roadhouse Cranberry Township PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "b7372489-0e42-4247-b0d8-2c3308b06700",
+      "date": "2025-10-21",
+      "merchant": "ATM Withdrawal",
+      "amount": -95.94,
+      "category": "ATM Withdrawal",
+      "description": "ATM Withdrawal",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "1f8571e2-c3ed-4374-a6a7-de32f023bfd8",
+      "date": "2025-10-22",
+      "merchant": "Debit Card Purchase Shell Shadyside PA",
+      "amount": -60.32,
+      "category": "Gas/Fuel",
+      "description": "Debit Card Purchase Shell Shadyside PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "8fbcfd40-c6e9-497f-90b0-781355afedbc",
+      "date": "2025-10-22",
+      "merchant": "Debit Card Purchase Tutoring Service",
+      "amount": -164.06,
+      "category": "Education",
+      "description": "Debit Card Purchase Tutoring Service",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "7bf675db-da08-4656-8b1d-88d4e20db65f",
+      "date": "2025-10-23",
+      "merchant": "Debit Card Purchase TJ Maxx Oakland PA",
+      "amount": -79.09,
+      "category": "Other",
+      "description": "Debit Card Purchase TJ Maxx Oakland PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "14594959-fbaf-4819-b524-61aa3ce4921e",
+      "date": "2025-10-23",
+      "merchant": "Debit Card Purchase TopGolf",
+      "amount": -68.86,
+      "category": "Other",
+      "description": "Debit Card Purchase TopGolf",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "0f5cb889-2e16-4146-8bc4-a2a516d32119",
+      "date": "2025-10-24",
+      "merchant": "Debit Card Purchase Safeway Pittsburgh PA",
+      "amount": -55.09,
+      "category": "Other",
+      "description": "Debit Card Purchase Safeway Pittsburgh PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "931eeb6e-8918-43ab-90b4-35d863468192",
+      "date": "2025-10-24",
+      "merchant": "Debit Card Purchase Home Depot",
+      "amount": -130.04,
+      "category": "Home Improvement",
+      "description": "Debit Card Purchase Home Depot",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "88e8f03f-03f4-45d7-a908-c45b657ee5f9",
+      "date": "2025-10-25",
+      "merchant": "Debit Card Purchase McDonalds Squirrel Hill PA",
+      "amount": -23.49,
+      "category": "Dining Out",
+      "description": "Debit Card Purchase McDonalds Squirrel Hill PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "9223e792-e56c-4728-a1cc-dcf35350b8dc",
+      "date": "2025-10-25",
+      "merchant": "Debit Card Purchase ParkMobile",
+      "amount": -17.57,
+      "category": "Other",
+      "description": "Debit Card Purchase ParkMobile",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "f6500c0e-9c7f-4433-8237-81a889c5fb51",
+      "date": "2025-10-26",
+      "merchant": "Debit Card Purchase Whole Foods Shadyside PA",
+      "amount": -69.31,
+      "category": "Groceries",
+      "description": "Debit Card Purchase Whole Foods Shadyside PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "6f5773d5-c591-4b51-b312-3fe840b7ebd5",
+      "date": "2025-10-26",
+      "merchant": "Debit Card Purchase DoorDash Ride",
+      "amount": -15.01,
+      "category": "Food Delivery",
+      "description": "Debit Card Purchase DoorDash Ride",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "5b3ed888-09f2-4211-bfda-4eb5977299bb",
+      "date": "2025-10-26",
+      "merchant": "Debit Card Purchase Nordstrom Mt Lebanon PA",
+      "amount": -180.16,
+      "category": "Other",
+      "description": "Debit Card Purchase Nordstrom Mt Lebanon PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "a0758cec-010a-44f2-b73a-ea6fd826306b",
+      "date": "2025-10-26",
+      "merchant": "Debit Card Purchase HomeGoods Shadyside PA",
+      "amount": -349.03,
+      "category": "Other",
+      "description": "Debit Card Purchase HomeGoods Shadyside PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "5f12e3fe-8b95-4c23-8dde-7b0ba483c613",
+      "date": "2025-10-27",
+      "merchant": "Debit Card Purchase Airport Parking",
+      "amount": -14.03,
+      "category": "Parking",
+      "description": "Debit Card Purchase Airport Parking",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "7f328b67-6af0-45e4-a754-7787ea20db3a",
+      "date": "2025-10-27",
+      "merchant": "Debit Card Purchase Grubhub",
+      "amount": -46.3,
+      "category": "Food Delivery",
+      "description": "Debit Card Purchase Grubhub",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "26a78583-9638-4e75-98a8-74c20b70d992",
+      "date": "2025-10-27",
+      "merchant": "Debit Card Purchase Uber Eats",
+      "amount": -19.49,
+      "category": "Food Delivery",
+      "description": "Debit Card Purchase Uber Eats",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "b5f25062-a776-4ea5-8a56-d5ff1b7a9e1d",
+      "date": "2025-10-28",
+      "merchant": "Debit Card Purchase Shake Shack Monroeville PA",
+      "amount": -17.36,
+      "category": "Other",
+      "description": "Debit Card Purchase Shake Shack Monroeville PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "48099430-35d9-4216-9bbb-cf06363def5d",
+      "date": "2025-10-28",
+      "merchant": "Debit Card Purchase Sunoco Homestead PA",
+      "amount": -33.0,
+      "category": "Other",
+      "description": "Debit Card Purchase Sunoco Homestead PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "8ba90543-2174-4bfb-9da7-edb4c7192115",
+      "date": "2025-10-28",
+      "merchant": "Debit Card Purchase Mini Golf",
+      "amount": -16.93,
+      "category": "Other",
+      "description": "Debit Card Purchase Mini Golf",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "57d80be8-3870-4df5-9e0e-8438381eb7a7",
+      "date": "2025-10-29",
+      "merchant": "Debit Card Purchase Burger King Oakland PA",
+      "amount": -24.09,
+      "category": "Dining Out",
+      "description": "Debit Card Purchase Burger King Oakland PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "f1fe7839-b683-459a-a4a2-eaf4a5b218b0",
+      "date": "2025-10-29",
+      "merchant": "Debit Card Purchase Peets Coffee",
+      "amount": -5.57,
+      "category": "Coffee Shops",
+      "description": "Debit Card Purchase Peets Coffee",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "e189885d-972b-4c8c-95aa-5ccf1f451d85",
+      "date": "2025-10-29",
+      "merchant": "Debit Card Purchase Sephora",
+      "amount": -41.78,
+      "category": "Other",
+      "description": "Debit Card Purchase Sephora",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "e6482b4d-1f5d-406e-afb5-32342b9847a6",
+      "date": "2025-10-30",
+      "merchant": "Debit Card Purchase Outback Homestead PA",
+      "amount": -47.94,
+      "category": "Other",
+      "description": "Debit Card Purchase Outback Homestead PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "116ba8cf-a2e3-4522-b024-1c21c6d7c32a",
+      "date": "2025-10-30",
+      "merchant": "Debit Card Purchase Rite Aid",
+      "amount": -43.85,
+      "category": "Pharmacy",
+      "description": "Debit Card Purchase Rite Aid",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "4081f3bb-d71b-4a66-802f-c99fa657da7c",
+      "date": "2025-10-31",
+      "merchant": "Payroll Direct Deposit - Monthly Salary",
+      "amount": 4500.0,
+      "category": "Salary",
+      "description": "Payroll Direct Deposit - Monthly Salary",
+      "type": "Deposit"
+    },
+    {
+      "id": "97384387-b811-477c-96de-b4c9bc594e2d",
+      "date": "2025-10-31",
+      "merchant": "Debit Card Purchase Local Coffee Shop",
+      "amount": -9.9,
+      "category": "Coffee Shops",
+      "description": "Debit Card Purchase Local Coffee Shop",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "40b96fe3-f68b-484b-80a9-c38177a4c276",
+      "date": "2025-10-31",
+      "merchant": "Debit Card Purchase Uber",
+      "amount": -26.83,
+      "category": "Rideshare",
+      "description": "Debit Card Purchase Uber",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "5ffe90e1-300e-499e-9551-3e58b042f89b",
+      "date": "2025-11-01",
+      "merchant": "Home Loan EMI - Monthly Payment",
+      "amount": -1200.0,
+      "category": "Home EMI",
+      "description": "Home Loan EMI - Monthly Payment",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "4457213b-77ff-46bd-b354-1ed521504922",
+      "date": "2025-11-02",
+      "merchant": "Renters Insurance",
+      "amount": -289.05,
+      "category": "Insurance",
+      "description": "Renters Insurance",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "c384f3f3-2d38-45e1-a8e4-f35c0e6cc8e9",
+      "date": "2025-11-02",
+      "merchant": "Debit Card Purchase Subway Monroeville PA",
+      "amount": -8.86,
+      "category": "Other",
+      "description": "Debit Card Purchase Subway Monroeville PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "bbe3982d-a1e6-46bd-9316-42a6748ceb43",
+      "date": "2025-11-02",
+      "merchant": "Debit Card Purchase Subway Mt Lebanon PA",
+      "amount": -19.73,
+      "category": "Other",
+      "description": "Debit Card Purchase Subway Mt Lebanon PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "36302d6b-ae7b-4d04-a4ef-59a9f5a944ed",
+      "date": "2025-11-02",
+      "merchant": "Debit Card Purchase DoorDash",
+      "amount": -43.07,
+      "category": "Food Delivery",
+      "description": "Debit Card Purchase DoorDash",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "e47a4d3b-a4c8-4bcd-8c95-868cf75cfd1a",
+      "date": "2025-11-03",
+      "merchant": "Debit Card Purchase Metro Transit Pass",
+      "amount": -96.68,
+      "category": "Public Transit",
+      "description": "Debit Card Purchase Metro Transit Pass",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "a39e4ef2-dcc7-40dc-b3b7-c9784321d569",
+      "date": "2025-11-03",
+      "merchant": "Debit Card Purchase Marshalls Mt Lebanon PA",
+      "amount": -100.05,
+      "category": "Other",
+      "description": "Debit Card Purchase Marshalls Mt Lebanon PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "8eeebca3-3f14-4e86-8a85-4026f9728c1c",
+      "date": "2025-11-03",
+      "merchant": "Debit Card Purchase TopGolf",
+      "amount": -26.3,
+      "category": "Other",
+      "description": "Debit Card Purchase TopGolf",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "c308f192-05a6-493f-9ef6-e1c6469a4371",
+      "date": "2025-11-04",
+      "merchant": "Google Fi",
+      "amount": -69.13,
+      "category": "Other",
+      "description": "Google Fi",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "05137ccf-49cd-4c1e-b702-c4c511d21425",
+      "date": "2025-11-04",
+      "merchant": "Debit Card Purchase Outback Oakland PA",
+      "amount": -66.32,
+      "category": "Other",
+      "description": "Debit Card Purchase Outback Oakland PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "8413d4f4-6859-4568-a94d-21ccff8e5799",
+      "date": "2025-11-04",
+      "merchant": "Debit Card Purchase Local Coffee Shop",
+      "amount": -7.88,
+      "category": "Coffee Shops",
+      "description": "Debit Card Purchase Local Coffee Shop",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "1ef58a2a-d5be-47b5-bde6-f6f5e106b83e",
+      "date": "2025-11-04",
+      "merchant": "Debit Card Purchase Dunkin",
+      "amount": -9.89,
+      "category": "Coffee Shops",
+      "description": "Debit Card Purchase Dunkin",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "96bdce02-81eb-40e2-acce-0b852682d618",
+      "date": "2025-11-04",
+      "merchant": "Debit Card Purchase Physical Therapy",
+      "amount": -67.67,
+      "category": "Other",
+      "description": "Debit Card Purchase Physical Therapy",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "76aad84e-2218-4739-bf14-4cec7d2d1c55",
+      "date": "2025-11-04",
+      "merchant": "Debit Card Purchase Instacart",
+      "amount": -30.57,
+      "category": "Other",
+      "description": "Debit Card Purchase Instacart",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "43964c39-7912-4472-941f-9076dd918219",
+      "date": "2025-11-05",
+      "merchant": "Car Loan EMI - Monthly Payment",
+      "amount": -350.0,
+      "category": "Car EMI",
+      "description": "Car Loan EMI - Monthly Payment",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "c5b702f7-2d45-44dc-881b-b53bb131589b",
+      "date": "2025-11-05",
+      "merchant": "Equinox",
+      "amount": -79.34,
+      "category": "Other",
+      "description": "Equinox",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "63ce7636-9117-407c-b292-bc7677782d54",
+      "date": "2025-11-05",
+      "merchant": "Debit Card Purchase ParkMobile",
+      "amount": -16.5,
+      "category": "Other",
+      "description": "Debit Card Purchase ParkMobile",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "9f62eef0-b3ee-4472-94df-df79169005dd",
+      "date": "2025-11-05",
+      "merchant": "ATM Withdrawal",
+      "amount": -120.93,
+      "category": "ATM Withdrawal",
+      "description": "ATM Withdrawal",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "e07da5ed-f6ec-4b2a-85ab-6f26a7541ded",
+      "date": "2025-11-06",
+      "merchant": "Debit Card Purchase Chipotle Cranberry Township PA",
+      "amount": -82.28,
+      "category": "Dining Out",
+      "description": "Debit Card Purchase Chipotle Cranberry Township PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "d268a3f1-c6ac-4054-a201-f223770876db",
+      "date": "2025-11-06",
+      "merchant": "Debit Card Purchase Subway Shadyside PA",
+      "amount": -11.57,
+      "category": "Other",
+      "description": "Debit Card Purchase Subway Shadyside PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "38e893a1-df1e-45b8-81a0-32d6143b8030",
+      "date": "2025-11-07",
+      "merchant": "Debit Card Purchase Safeway Homestead PA",
+      "amount": -31.64,
+      "category": "Other",
+      "description": "Debit Card Purchase Safeway Homestead PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "605b6839-fc73-45c8-9ea0-0dd15d5ac4a2",
+      "date": "2025-11-07",
+      "merchant": "Debit Card Purchase Costco Pittsburgh PA",
+      "amount": -59.13,
+      "category": "Groceries",
+      "description": "Debit Card Purchase Costco Pittsburgh PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "a8610187-0805-43dd-bd43-298e8a391ba4",
+      "date": "2025-11-07",
+      "merchant": "Debit Card Purchase Outback Oakland PA",
+      "amount": -70.28,
+      "category": "Other",
+      "description": "Debit Card Purchase Outback Oakland PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "6afc9760-3424-459a-ab08-6d80ed59edc4",
+      "date": "2025-11-07",
+      "merchant": "Debit Card Purchase Mobil Shadyside PA",
+      "amount": -45.78,
+      "category": "Other",
+      "description": "Debit Card Purchase Mobil Shadyside PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "32ef2a02-71d2-4cf0-8ede-8910a2eeba70",
+      "date": "2025-11-07",
+      "merchant": "Debit Card Purchase Sunoco Mt Lebanon PA",
+      "amount": -61.0,
+      "category": "Other",
+      "description": "Debit Card Purchase Sunoco Mt Lebanon PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "ee4a5f97-80c6-4372-a62b-6fbcd788b77c",
+      "date": "2025-11-08",
+      "merchant": "Debit Card Purchase Target Monroeville PA",
+      "amount": -138.47,
+      "category": "Groceries",
+      "description": "Debit Card Purchase Target Monroeville PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "9ad9027d-1ca1-4997-9715-1cf9b4e45659",
+      "date": "2025-11-08",
+      "merchant": "Debit Card Purchase Local Coffee Shop",
+      "amount": -7.68,
+      "category": "Coffee Shops",
+      "description": "Debit Card Purchase Local Coffee Shop",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "a987c77f-d99a-47eb-b134-89d78455b186",
+      "date": "2025-11-08",
+      "merchant": "Debit Card Purchase Local Coffee Shop",
+      "amount": -7.54,
+      "category": "Coffee Shops",
+      "description": "Debit Card Purchase Local Coffee Shop",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "2b386e99-686f-430b-8768-10e3c5ff578d",
+      "date": "2025-11-08",
+      "merchant": "Debit Card Purchase Ulta Beauty",
+      "amount": -28.74,
+      "category": "Personal Care",
+      "description": "Debit Card Purchase Ulta Beauty",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "3ca79aa6-cb4d-4865-b481-ddc55f3bd6c2",
+      "date": "2025-11-10",
+      "merchant": "Personal Loan EMI - Monthly Payment",
+      "amount": -250.0,
+      "category": "Personal Loan EMI",
+      "description": "Personal Loan EMI - Monthly Payment",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "39e0e68e-0038-477a-b398-366d678d1b0f",
+      "date": "2025-11-10",
+      "merchant": "HBO Max",
+      "amount": -16.84,
+      "category": "Other",
+      "description": "HBO Max",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "7a8f13d0-2465-449f-acf5-f873316a429f",
+      "date": "2025-11-10",
+      "merchant": "Debit Card Purchase Walmart Supercenter Monroeville PA",
+      "amount": -44.94,
+      "category": "Groceries",
+      "description": "Debit Card Purchase Walmart Supercenter Monroeville PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "0b7d3cd6-df9a-41b0-81ea-c628b42cc3cf",
+      "date": "2025-11-10",
+      "merchant": "Debit Card Purchase Whole Foods Squirrel Hill PA",
+      "amount": -118.77,
+      "category": "Groceries",
+      "description": "Debit Card Purchase Whole Foods Squirrel Hill PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "49eee3b2-3778-488f-9dc4-4166ab7a9610",
+      "date": "2025-11-10",
+      "merchant": "Debit Card Purchase Taco Bell Oakland PA",
+      "amount": -19.85,
+      "category": "Dining Out",
+      "description": "Debit Card Purchase Taco Bell Oakland PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "830e1763-5493-41ae-8cda-c93d020d73be",
+      "date": "2025-11-10",
+      "merchant": "Debit Card Purchase Shake Shack Mt Lebanon PA",
+      "amount": -14.27,
+      "category": "Other",
+      "description": "Debit Card Purchase Shake Shack Mt Lebanon PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "dcca4355-b8a0-4b4f-b32f-4a8a5760b815",
+      "date": "2025-11-10",
+      "merchant": "Debit Card Purchase BP Oakland PA",
+      "amount": -53.86,
+      "category": "Gas/Fuel",
+      "description": "Debit Card Purchase BP Oakland PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "8ee82dbf-2885-421a-a554-c4b78a0fc030",
+      "date": "2025-11-10",
+      "merchant": "ATM Withdrawal",
+      "amount": -116.92,
+      "category": "ATM Withdrawal",
+      "description": "ATM Withdrawal",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "fb19123b-5c2c-4e83-b602-1557e7068dc9",
+      "date": "2025-11-11",
+      "merchant": "Debit Card Purchase Apple Store Cranberry Township PA",
+      "amount": -276.34,
+      "category": "Online/Retail Shopping",
+      "description": "Debit Card Purchase Apple Store Cranberry Township PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "8665f488-94f3-468f-b18b-b9efa68b55d9",
+      "date": "2025-11-11",
+      "merchant": "Debit Card Purchase Target Monroeville PA",
+      "amount": -69.29,
+      "category": "Groceries",
+      "description": "Debit Card Purchase Target Monroeville PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "afe0e086-8111-4f60-abd3-0a14eae40e50",
+      "date": "2025-11-11",
+      "merchant": "Debit Card Purchase Instacart",
+      "amount": -53.08,
+      "category": "Other",
+      "description": "Debit Card Purchase Instacart",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "70262ef9-0e99-443b-9280-e98641889e24",
+      "date": "2025-11-12",
+      "merchant": "Debit Card Purchase Wendys Shadyside PA",
+      "amount": -10.86,
+      "category": "Other",
+      "description": "Debit Card Purchase Wendys Shadyside PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "4d038f50-f8b6-4e10-aa5d-15ef01eeae27",
+      "date": "2025-11-12",
+      "merchant": "Debit Card Purchase Uber Eats",
+      "amount": -32.61,
+      "category": "Food Delivery",
+      "description": "Debit Card Purchase Uber Eats",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "46419c39-3a07-4759-a6b9-a48a1a8fd0bb",
+      "date": "2025-11-12",
+      "merchant": "Debit Card Purchase HomeGoods Shadyside PA",
+      "amount": -167.03,
+      "category": "Other",
+      "description": "Debit Card Purchase HomeGoods Shadyside PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "c77f4c9a-c928-4c87-bed9-aa0869d3e3b7",
+      "date": "2025-11-12",
+      "merchant": "Debit Card Purchase Uniqlo Pittsburgh PA",
+      "amount": -97.19,
+      "category": "Other",
+      "description": "Debit Card Purchase Uniqlo Pittsburgh PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "477979d7-9474-4e9c-ba2d-20b758a5ab5c",
+      "date": "2025-11-12",
+      "merchant": "Debit Card Purchase School Supplies",
+      "amount": -103.77,
+      "category": "Other",
+      "description": "Debit Card Purchase School Supplies",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "4d4e27c8-9a6a-4670-bc20-9e81aa4a7a6d",
+      "date": "2025-11-13",
+      "merchant": "Debit Card Purchase Target Monroeville PA",
+      "amount": -97.0,
+      "category": "Groceries",
+      "description": "Debit Card Purchase Target Monroeville PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "5c421207-95f2-4337-9c32-1628e96536a8",
+      "date": "2025-11-13",
+      "merchant": "Debit Card Purchase Local Coffee Shop",
+      "amount": -11.11,
+      "category": "Coffee Shops",
+      "description": "Debit Card Purchase Local Coffee Shop",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "369db1fa-f9a0-477c-a06a-1755b0ba717c",
+      "date": "2025-11-13",
+      "merchant": "Debit Card Purchase Peets Coffee",
+      "amount": -5.24,
+      "category": "Coffee Shops",
+      "description": "Debit Card Purchase Peets Coffee",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "2e91bb5e-7180-4dd4-b0a5-abc399e18eba",
+      "date": "2025-11-13",
+      "merchant": "Debit Card Purchase Exxon Monroeville PA",
+      "amount": -31.46,
+      "category": "Gas/Fuel",
+      "description": "Debit Card Purchase Exxon Monroeville PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "5767829a-bb99-4492-9da5-bc844b859144",
+      "date": "2025-11-13",
+      "merchant": "Debit Card Purchase Macys Monroeville PA",
+      "amount": -129.92,
+      "category": "Other",
+      "description": "Debit Card Purchase Macys Monroeville PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "dd8e9d96-06a5-4dbd-a14c-65ae78ccb7c3",
+      "date": "2025-11-13",
+      "merchant": "Debit Card Purchase Mini Golf",
+      "amount": -20.42,
+      "category": "Other",
+      "description": "Debit Card Purchase Mini Golf",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "68d8e7fd-ba8d-469c-ba78-65aec3fe6e61",
+      "date": "2025-11-13",
+      "merchant": "Debit Card Purchase Rite Aid",
+      "amount": -71.96,
+      "category": "Pharmacy",
+      "description": "Debit Card Purchase Rite Aid",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "a91c99cd-21e5-4dbe-a752-3ed6f61b292c",
+      "date": "2025-11-14",
+      "merchant": "Gas Bill",
+      "amount": -132.89,
+      "category": "Gas/Fuel",
+      "description": "Gas Bill",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "8bb47b4a-ec81-4bbe-af2d-2ffc888275d5",
+      "date": "2025-11-15",
+      "merchant": "Debit Card Purchase Safeway Cranberry Township PA",
+      "amount": -179.48,
+      "category": "Other",
+      "description": "Debit Card Purchase Safeway Cranberry Township PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "3fc64548-c3bc-4f21-8d45-16cfe09d0eeb",
+      "date": "2025-11-15",
+      "merchant": "Debit Card Purchase Uniqlo Pittsburgh PA",
+      "amount": -33.54,
+      "category": "Other",
+      "description": "Debit Card Purchase Uniqlo Pittsburgh PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "0bbe3ede-888f-46d2-b79a-d247ed7bed55",
+      "date": "2025-11-15",
+      "merchant": "Debit Card Purchase Uber Eats",
+      "amount": -36.37,
+      "category": "Food Delivery",
+      "description": "Debit Card Purchase Uber Eats",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "902c8c04-5204-4965-9b3d-806190486b92",
+      "date": "2025-11-16",
+      "merchant": "Debit Card Purchase Giant Eagle Monroeville PA",
+      "amount": -118.52,
+      "category": "Groceries",
+      "description": "Debit Card Purchase Giant Eagle Monroeville PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "dc959a0f-ff4b-4e9a-b007-c65ca6b525d1",
+      "date": "2025-11-16",
+      "merchant": "Debit Card Purchase Wendys Mt Lebanon PA",
+      "amount": -22.17,
+      "category": "Other",
+      "description": "Debit Card Purchase Wendys Mt Lebanon PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "51dcd3d3-b01d-4120-bc7d-f9a0ef14c54d",
+      "date": "2025-11-16",
+      "merchant": "Debit Card Purchase Mobil Pittsburgh PA",
+      "amount": -40.53,
+      "category": "Other",
+      "description": "Debit Card Purchase Mobil Pittsburgh PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "129e9aef-ead2-432f-98d9-6ed8d4dfc161",
+      "date": "2025-11-17",
+      "merchant": "Debit Card Purchase BP Squirrel Hill PA",
+      "amount": -47.52,
+      "category": "Gas/Fuel",
+      "description": "Debit Card Purchase BP Squirrel Hill PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "3f7d28a7-33b9-4c1e-b14f-f00859fb7f69",
+      "date": "2025-11-18",
+      "merchant": "Debit Card Purchase Walmart Pittsburgh PA",
+      "amount": -322.63,
+      "category": "Groceries",
+      "description": "Debit Card Purchase Walmart Pittsburgh PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "43bc5ec6-ae00-431a-8beb-e48e314a32f8",
+      "date": "2025-11-18",
+      "merchant": "Debit Card Purchase TopGolf",
+      "amount": -21.86,
+      "category": "Other",
+      "description": "Debit Card Purchase TopGolf",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "391eb8f8-c377-4783-9f84-ee076bf15876",
+      "date": "2025-11-19",
+      "merchant": "Debit Card Purchase KFC Mt Lebanon PA",
+      "amount": -9.02,
+      "category": "Dining Out",
+      "description": "Debit Card Purchase KFC Mt Lebanon PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "b03959cb-d010-468b-ae74-15b04ff88cfc",
+      "date": "2025-11-20",
+      "merchant": "Debit Card Purchase Bus Fare",
+      "amount": -113.25,
+      "category": "Public Transit",
+      "description": "Debit Card Purchase Bus Fare",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "3d47a9e1-8ecf-4c17-ba38-a68792533e3f",
+      "date": "2025-11-21",
+      "merchant": "Debit Card Purchase ParkMobile",
+      "amount": -26.13,
+      "category": "Other",
+      "description": "Debit Card Purchase ParkMobile",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "6fa61a18-4a9c-46eb-9605-f42420d7f6c3",
+      "date": "2025-11-21",
+      "merchant": "Debit Card Purchase Target Homestead PA",
+      "amount": -208.56,
+      "category": "Groceries",
+      "description": "Debit Card Purchase Target Homestead PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "fe9724b5-8741-47a5-8513-43f978c2be5a",
+      "date": "2025-11-21",
+      "merchant": "Debit Card Purchase CVS Pharmacy",
+      "amount": -62.9,
+      "category": "Pharmacy",
+      "description": "Debit Card Purchase CVS Pharmacy",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "a18c9b52-04e2-47fa-8f82-11c8e23907c8",
+      "date": "2025-11-21",
+      "merchant": "Debit Card Purchase Marriott",
+      "amount": -110.11,
+      "category": "Travel/Hotel",
+      "description": "Debit Card Purchase Marriott",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "4ccab2ae-441b-467a-bb8a-a9678623d935",
+      "date": "2025-11-21",
+      "merchant": "Debit Card Purchase Sephora",
+      "amount": -117.8,
+      "category": "Other",
+      "description": "Debit Card Purchase Sephora",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "b2d4c1d7-843c-4352-a157-a69d4b70aa47",
+      "date": "2025-11-22",
+      "merchant": "Debit Card Purchase Shell Oakland PA",
+      "amount": -31.0,
+      "category": "Gas/Fuel",
+      "description": "Debit Card Purchase Shell Oakland PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "884b4d54-05ef-4142-8f92-e47ac597e6cc",
+      "date": "2025-11-22",
+      "merchant": "Debit Card Purchase TJ Maxx Squirrel Hill PA",
+      "amount": -51.58,
+      "category": "Other",
+      "description": "Debit Card Purchase TJ Maxx Squirrel Hill PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "1e9b11bf-c5f6-4d3e-83f0-97bd4f273420",
+      "date": "2025-11-23",
+      "merchant": "Debit Card Purchase Dunkin",
+      "amount": -10.71,
+      "category": "Coffee Shops",
+      "description": "Debit Card Purchase Dunkin",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "83366a5a-351a-4e1e-8792-c4ffd3442f2a",
+      "date": "2025-11-23",
+      "merchant": "Debit Card Purchase Uber Eats",
+      "amount": -31.31,
+      "category": "Food Delivery",
+      "description": "Debit Card Purchase Uber Eats",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "8cc42be2-944e-4fd2-8492-9a07819edf0e",
+      "date": "2025-11-24",
+      "merchant": "Debit Card Purchase Texas Roadhouse Squirrel Hill PA",
+      "amount": -81.46,
+      "category": "Other",
+      "description": "Debit Card Purchase Texas Roadhouse Squirrel Hill PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "296bc86f-9a0a-40f5-826f-9830eabf4e46",
+      "date": "2025-11-24",
+      "merchant": "Debit Card Purchase Wendys Oakland PA",
+      "amount": -11.39,
+      "category": "Other",
+      "description": "Debit Card Purchase Wendys Oakland PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "05be1913-1dce-4fd2-b494-7e0d0526e066",
+      "date": "2025-11-24",
+      "merchant": "Debit Card Purchase Local Coffee Shop",
+      "amount": -5.48,
+      "category": "Coffee Shops",
+      "description": "Debit Card Purchase Local Coffee Shop",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "4a145812-9fa7-4165-a47b-f7ea49ee61ed",
+      "date": "2025-11-24",
+      "merchant": "Debit Card Purchase Uber Eats",
+      "amount": -43.69,
+      "category": "Food Delivery",
+      "description": "Debit Card Purchase Uber Eats",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "c148b298-ca04-4476-ad2b-883796985580",
+      "date": "2025-11-24",
+      "merchant": "Debit Card Purchase IKEA",
+      "amount": -60.7,
+      "category": "Home Improvement",
+      "description": "Debit Card Purchase IKEA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "341c66b0-bf65-4e01-8eac-e56eef3970ab",
+      "date": "2025-11-24",
+      "merchant": "Debit Card Purchase Regal Cinemas",
+      "amount": -25.37,
+      "category": "Movies/Entertainment",
+      "description": "Debit Card Purchase Regal Cinemas",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "6de4dad7-0683-4ba5-9e33-3a3c3dc9a045",
+      "date": "2025-11-24",
+      "merchant": "Debit Card Purchase DoorDash",
+      "amount": -48.31,
+      "category": "Food Delivery",
+      "description": "Debit Card Purchase DoorDash",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "d6a69edd-e41b-41ed-be37-a5358fb74c15",
+      "date": "2025-11-25",
+      "merchant": "Debit Card Purchase PF Changs Squirrel Hill PA",
+      "amount": -65.03,
+      "category": "Other",
+      "description": "Debit Card Purchase PF Changs Squirrel Hill PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "f899c1a0-22ac-4b5d-a169-88b9676fbf73",
+      "date": "2025-11-25",
+      "merchant": "Debit Card Purchase Subway Card",
+      "amount": -114.42,
+      "category": "Other",
+      "description": "Debit Card Purchase Subway Card",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "6a69f5c5-e403-4113-90a2-40f1d11808f1",
+      "date": "2025-11-25",
+      "merchant": "Debit Card Purchase Vet Clinic",
+      "amount": -87.51,
+      "category": "Healthcare",
+      "description": "Debit Card Purchase Vet Clinic",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "c8a27137-305c-4542-b5e9-fae31e5255c6",
+      "date": "2025-11-26",
+      "merchant": "Debit Card Purchase City Parking Garage",
+      "amount": -22.82,
+      "category": "Parking",
+      "description": "Debit Card Purchase City Parking Garage",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "99c993fe-a4cb-48b1-9d17-aac4ca4ea61f",
+      "date": "2025-11-26",
+      "merchant": "Debit Card Purchase Rite Aid",
+      "amount": -20.0,
+      "category": "Pharmacy",
+      "description": "Debit Card Purchase Rite Aid",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "9f8bf4dc-723f-401e-98df-8cc2c6eac6e0",
+      "date": "2025-11-26",
+      "merchant": "Debit Card Purchase Udemy",
+      "amount": -173.4,
+      "category": "Education",
+      "description": "Debit Card Purchase Udemy",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "b33b4de1-3913-4d87-b7aa-b80149ebc80b",
+      "date": "2025-11-26",
+      "merchant": "Debit Card Purchase Postmates",
+      "amount": -25.03,
+      "category": "Other",
+      "description": "Debit Card Purchase Postmates",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "2484890c-7c5d-40da-9623-7ab8b4f45ec8",
+      "date": "2025-11-27",
+      "merchant": "Debit Card Purchase Dunkin",
+      "amount": -6.41,
+      "category": "Coffee Shops",
+      "description": "Debit Card Purchase Dunkin",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "9f0101ff-41e9-4210-9f84-a24a83afcfb8",
+      "date": "2025-11-27",
+      "merchant": "Debit Card Purchase Airport Parking",
+      "amount": -21.58,
+      "category": "Parking",
+      "description": "Debit Card Purchase Airport Parking",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "56506104-a574-4827-be66-88fe0c571027",
+      "date": "2025-11-27",
+      "merchant": "Debit Card Purchase DoorDash Ride",
+      "amount": -44.01,
+      "category": "Food Delivery",
+      "description": "Debit Card Purchase DoorDash Ride",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "015e0cdc-9f71-4514-be73-6d6aa3c246a7",
+      "date": "2025-11-27",
+      "merchant": "Debit Card Purchase Target Oakland PA",
+      "amount": -78.21,
+      "category": "Groceries",
+      "description": "Debit Card Purchase Target Oakland PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "830f0fb2-5d71-4767-a658-3b1c85c3425a",
+      "date": "2025-11-28",
+      "merchant": "Debit Card Purchase Dunkin",
+      "amount": -5.73,
+      "category": "Coffee Shops",
+      "description": "Debit Card Purchase Dunkin",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "d48a6eac-99b8-4772-890d-91375596abfb",
+      "date": "2025-11-28",
+      "merchant": "Debit Card Purchase DoorDash Ride",
+      "amount": -32.41,
+      "category": "Food Delivery",
+      "description": "Debit Card Purchase DoorDash Ride",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "a8be0ab6-e74a-4dac-a52c-2aca365e7283",
+      "date": "2025-11-28",
+      "merchant": "Debit Card Purchase Uber",
+      "amount": -22.4,
+      "category": "Rideshare",
+      "description": "Debit Card Purchase Uber",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "99f1f454-8b0f-4532-a032-e83687015bea",
+      "date": "2025-11-28",
+      "merchant": "ATM Withdrawal",
+      "amount": -174.9,
+      "category": "ATM Withdrawal",
+      "description": "ATM Withdrawal",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "1c6e9659-9940-47bd-8111-55383c9a8328",
+      "date": "2025-11-29",
+      "merchant": "Debit Card Purchase GetGo Oakland PA",
+      "amount": -64.66,
+      "category": "Other",
+      "description": "Debit Card Purchase GetGo Oakland PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "5390e853-52d0-4919-b140-1f559cd3073f",
+      "date": "2025-11-29",
+      "merchant": "Debit Card Purchase Vet Clinic",
+      "amount": -138.56,
+      "category": "Healthcare",
+      "description": "Debit Card Purchase Vet Clinic",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "1f12c605-8aed-464b-9268-ab19058b395e",
+      "date": "2025-11-30",
+      "merchant": "Payroll Direct Deposit - Monthly Salary",
+      "amount": 4500.0,
+      "category": "Salary",
+      "description": "Payroll Direct Deposit - Monthly Salary",
+      "type": "Deposit"
+    },
+    {
+      "id": "4fa9d709-040f-4669-8aeb-86f6f6528653",
+      "date": "2025-11-30",
+      "merchant": "Debit Card Purchase Chipotle Cranberry Township PA",
+      "amount": -41.66,
+      "category": "Dining Out",
+      "description": "Debit Card Purchase Chipotle Cranberry Township PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "d5f7a256-73df-491c-8e85-8ce8ab106a1a",
+      "date": "2025-11-30",
+      "merchant": "Debit Card Purchase Burger King Shadyside PA",
+      "amount": -10.44,
+      "category": "Dining Out",
+      "description": "Debit Card Purchase Burger King Shadyside PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "c0b7d67f-e4c7-42f6-9491-56aa3c78b923",
+      "date": "2025-11-30",
+      "merchant": "Debit Card Purchase Blue Bottle",
+      "amount": -10.26,
+      "category": "Other",
+      "description": "Debit Card Purchase Blue Bottle",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "c9dfce4d-d400-4f22-a1b3-807856c8195e",
+      "date": "2025-11-30",
+      "merchant": "Debit Card Purchase Starbucks",
+      "amount": -7.53,
+      "category": "Coffee Shops",
+      "description": "Debit Card Purchase Starbucks",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "2cdf3fd3-5f49-4bb3-9b43-daf95ed6678b",
+      "date": "2025-11-30",
+      "merchant": "Debit Card Purchase IKEA",
+      "amount": -215.78,
+      "category": "Home Improvement",
+      "description": "Debit Card Purchase IKEA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "82f7c4d6-c8d4-4495-b0d0-4f6cbc8d89f2",
+      "date": "2025-12-01",
+      "merchant": "Home Loan EMI - Monthly Payment",
+      "amount": -1200.0,
+      "category": "Home EMI",
+      "description": "Home Loan EMI - Monthly Payment",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "266bfd2e-cc1c-4605-b9de-43d5c8f42f9b",
+      "date": "2025-12-01",
+      "merchant": "Debit Card Purchase Target Shadyside PA",
+      "amount": -87.82,
+      "category": "Groceries",
+      "description": "Debit Card Purchase Target Shadyside PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "6ce8b35a-22dd-4bfb-81bb-3f7c79a014dc",
+      "date": "2025-12-01",
+      "merchant": "Debit Card Purchase Shake Shack Squirrel Hill PA",
+      "amount": -13.68,
+      "category": "Other",
+      "description": "Debit Card Purchase Shake Shack Squirrel Hill PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "04a203f7-2fcd-4f40-921a-685edba42b41",
+      "date": "2025-12-01",
+      "merchant": "Debit Card Purchase Dunkin",
+      "amount": -9.71,
+      "category": "Coffee Shops",
+      "description": "Debit Card Purchase Dunkin",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "5fe35d28-2243-475c-b540-146cb96215df",
+      "date": "2025-12-01",
+      "merchant": "Debit Card Purchase Starbucks",
+      "amount": -4.66,
+      "category": "Coffee Shops",
+      "description": "Debit Card Purchase Starbucks",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "ee3bfe8f-3df0-4738-8974-cd7dfd97d699",
+      "date": "2025-12-01",
+      "merchant": "Debit Card Purchase Dave & Busters",
+      "amount": -62.97,
+      "category": "Public Transit",
+      "description": "Debit Card Purchase Dave & Busters",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "25f94575-2216-40ac-949b-03f905bb9a80",
+      "date": "2025-12-01",
+      "merchant": "Debit Card Purchase Walgreens",
+      "amount": -11.05,
+      "category": "Pharmacy",
+      "description": "Debit Card Purchase Walgreens",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "4b4a0589-6b00-4ced-abb1-c6f54fd7b12e",
+      "date": "2025-12-02",
+      "merchant": "Yoga Studio",
+      "amount": -59.21,
+      "category": "Gym/Fitness",
+      "description": "Yoga Studio",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "4845c47b-1f2e-435b-aa70-35ab310bae7a",
+      "date": "2025-12-02",
+      "merchant": "Debit Card Purchase Giant Eagle Pittsburgh PA",
+      "amount": -81.87,
+      "category": "Groceries",
+      "description": "Debit Card Purchase Giant Eagle Pittsburgh PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "2a5d91bd-f4ad-4bba-a64b-2247d07d5cd6",
+      "date": "2025-12-02",
+      "merchant": "Debit Card Purchase Uniqlo Cranberry Township PA",
+      "amount": -58.43,
+      "category": "Other",
+      "description": "Debit Card Purchase Uniqlo Cranberry Township PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "62f7a6e9-e505-45e4-8381-593b6cf859a4",
+      "date": "2025-12-03",
+      "merchant": "Debit Card Purchase KFC Pittsburgh PA",
+      "amount": -21.14,
+      "category": "Dining Out",
+      "description": "Debit Card Purchase KFC Pittsburgh PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "ae27635c-862b-437b-9180-12538b30b311",
+      "date": "2025-12-04",
+      "merchant": "Debit Card Purchase Costco Oakland PA",
+      "amount": -46.74,
+      "category": "Groceries",
+      "description": "Debit Card Purchase Costco Oakland PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "52a31ffe-bafe-4cb8-a6af-9acf0c65ebb7",
+      "date": "2025-12-04",
+      "merchant": "Debit Card Purchase Kroger Monroeville PA",
+      "amount": -65.52,
+      "category": "Groceries",
+      "description": "Debit Card Purchase Kroger Monroeville PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "cc0c7e5e-9963-4eae-96c5-1223fe538ae7",
+      "date": "2025-12-04",
+      "merchant": "Debit Card Purchase Shop n Save Mt Lebanon PA",
+      "amount": -66.81,
+      "category": "Other",
+      "description": "Debit Card Purchase Shop n Save Mt Lebanon PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "618ebde4-0bba-4905-b353-a02dd46796f5",
+      "date": "2025-12-04",
+      "merchant": "Debit Card Purchase SP Plus Parking",
+      "amount": -13.67,
+      "category": "Parking",
+      "description": "Debit Card Purchase SP Plus Parking",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "c2ea1156-84c8-44af-8022-d305a3e128e9",
+      "date": "2025-12-05",
+      "merchant": "Car Loan EMI - Monthly Payment",
+      "amount": -350.0,
+      "category": "Car EMI",
+      "description": "Car Loan EMI - Monthly Payment",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "e1963d3b-22ec-44ff-9eea-033f7be62d8b",
+      "date": "2025-12-06",
+      "merchant": "Gas Bill",
+      "amount": -106.81,
+      "category": "Gas/Fuel",
+      "description": "Gas Bill",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "08819c80-bd3b-44f3-9b79-58d06082c811",
+      "date": "2025-12-06",
+      "merchant": "Debit Card Purchase Shake Shack Mt Lebanon PA",
+      "amount": -11.33,
+      "category": "Other",
+      "description": "Debit Card Purchase Shake Shack Mt Lebanon PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "129af598-4eec-4d04-87dc-830ca7936f58",
+      "date": "2025-12-06",
+      "merchant": "Debit Card Purchase Chick-fil-A Cranberry Township PA",
+      "amount": -15.43,
+      "category": "Other",
+      "description": "Debit Card Purchase Chick-fil-A Cranberry Township PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "52d47921-321e-49b7-ade3-b1a761c398d0",
+      "date": "2025-12-06",
+      "merchant": "Debit Card Purchase Subway Homestead PA",
+      "amount": -18.46,
+      "category": "Other",
+      "description": "Debit Card Purchase Subway Homestead PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "910caf26-f60a-4fbd-98b7-bf8b31799577",
+      "date": "2025-12-06",
+      "merchant": "Debit Card Purchase Peets Coffee",
+      "amount": -6.81,
+      "category": "Coffee Shops",
+      "description": "Debit Card Purchase Peets Coffee",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "8e6fad25-1d08-40de-9f23-60ddb3f45de1",
+      "date": "2025-12-06",
+      "merchant": "Debit Card Purchase Chevron Oakland PA",
+      "amount": -40.6,
+      "category": "Gas/Fuel",
+      "description": "Debit Card Purchase Chevron Oakland PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "622c6574-33ec-4bdf-a91b-c784f268ed72",
+      "date": "2025-12-07",
+      "merchant": "Health Insurance Premium",
+      "amount": -240.98,
+      "category": "EMI/Loans",
+      "description": "Health Insurance Premium",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "353347dc-fb89-4471-acbd-7bef1c5c8cbf",
+      "date": "2025-12-07",
+      "merchant": "Debit Card Purchase Texas Roadhouse Shadyside PA",
+      "amount": -69.46,
+      "category": "Other",
+      "description": "Debit Card Purchase Texas Roadhouse Shadyside PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "b7e89eaf-218e-4e59-91c9-b25a753da7e4",
+      "date": "2025-12-07",
+      "merchant": "Debit Card Purchase Exxon Oakland PA",
+      "amount": -30.88,
+      "category": "Gas/Fuel",
+      "description": "Debit Card Purchase Exxon Oakland PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "6dbb73da-e069-4b28-a63f-a4b3fd152dab",
+      "date": "2025-12-07",
+      "merchant": "Debit Card Purchase Lyft",
+      "amount": -35.29,
+      "category": "Rideshare",
+      "description": "Debit Card Purchase Lyft",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "330ee26a-5c6e-4a58-9df0-7d4698193b86",
+      "date": "2025-12-08",
+      "merchant": "Debit Card Purchase BP Shadyside PA",
+      "amount": -39.74,
+      "category": "Gas/Fuel",
+      "description": "Debit Card Purchase BP Shadyside PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "57c5fd82-b286-474b-a2b6-912f96c56a0d",
+      "date": "2025-12-09",
+      "merchant": "Spotify",
+      "amount": -17.8,
+      "category": "Streaming/Subscriptions",
+      "description": "Spotify",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "3d0f4222-956a-4cb6-a368-fec18458a297",
+      "date": "2025-12-09",
+      "merchant": "Debit Card Purchase Peets Coffee",
+      "amount": -5.72,
+      "category": "Coffee Shops",
+      "description": "Debit Card Purchase Peets Coffee",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "3910ae8a-e62d-4f17-ace1-90e570d20dfa",
+      "date": "2025-12-09",
+      "merchant": "Debit Card Purchase Walmart Oakland PA",
+      "amount": -112.36,
+      "category": "Groceries",
+      "description": "Debit Card Purchase Walmart Oakland PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "5f784cdb-ccdc-49ad-8ecf-f75c8a055154",
+      "date": "2025-12-09",
+      "merchant": "Debit Card Purchase Target Pharmacy",
+      "amount": -62.55,
+      "category": "Groceries",
+      "description": "Debit Card Purchase Target Pharmacy",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "1b5e6335-3703-4fe8-8290-40b886d476a9",
+      "date": "2025-12-09",
+      "merchant": "Debit Card Purchase Uber Eats",
+      "amount": -27.89,
+      "category": "Food Delivery",
+      "description": "Debit Card Purchase Uber Eats",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "efcf9ba5-9a71-454e-8c3e-63b384ca9ba9",
+      "date": "2025-12-09",
+      "merchant": "Debit Card Purchase Postmates",
+      "amount": -54.7,
+      "category": "Other",
+      "description": "Debit Card Purchase Postmates",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "aa963162-b8e3-4f24-a6a2-d5eaf39041f6",
+      "date": "2025-12-09",
+      "merchant": "ATM Withdrawal",
+      "amount": -166.96,
+      "category": "ATM Withdrawal",
+      "description": "ATM Withdrawal",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "d3c8603a-1a27-425e-b44e-fb92c7150af2",
+      "date": "2025-12-10",
+      "merchant": "Personal Loan EMI - Monthly Payment",
+      "amount": -250.0,
+      "category": "Personal Loan EMI",
+      "description": "Personal Loan EMI - Monthly Payment",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "5d3d0401-26f8-4f15-9f7c-3f5ac28a4a77",
+      "date": "2025-12-10",
+      "merchant": "Debit Card Purchase Safeway Mt Lebanon PA",
+      "amount": -152.16,
+      "category": "Other",
+      "description": "Debit Card Purchase Safeway Mt Lebanon PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "3749322d-d54a-4c5e-86bc-f47a0d045be8",
+      "date": "2025-12-10",
+      "merchant": "Debit Card Purchase Starbucks",
+      "amount": -5.66,
+      "category": "Coffee Shops",
+      "description": "Debit Card Purchase Starbucks",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "85924e4f-1b8e-4450-b91e-82eecc1150a6",
+      "date": "2025-12-10",
+      "merchant": "Debit Card Purchase Speedway Mt Lebanon PA",
+      "amount": -59.57,
+      "category": "Other",
+      "description": "Debit Card Purchase Speedway Mt Lebanon PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "74404999-8a67-4eb6-b549-1d8df1856697",
+      "date": "2025-12-10",
+      "merchant": "Debit Card Purchase Apple Store Cranberry Township PA",
+      "amount": -241.31,
+      "category": "Online/Retail Shopping",
+      "description": "Debit Card Purchase Apple Store Cranberry Township PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "6501b9e5-c35c-487f-8719-e82dc42b0a51",
+      "date": "2025-12-10",
+      "merchant": "Debit Card Purchase HomeGoods Oakland PA",
+      "amount": -225.3,
+      "category": "Other",
+      "description": "Debit Card Purchase HomeGoods Oakland PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "bb89cae6-8245-4170-8927-6001d27279fb",
+      "date": "2025-12-10",
+      "merchant": "Debit Card Purchase Petco",
+      "amount": -147.18,
+      "category": "Pet Care",
+      "description": "Debit Card Purchase Petco",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "95ee2c76-46be-4922-8ed9-53d8df77cff5",
+      "date": "2025-12-11",
+      "merchant": "Debit Card Purchase Coursera",
+      "amount": -107.08,
+      "category": "Education",
+      "description": "Debit Card Purchase Coursera",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "ef18794b-b462-4ad2-9899-c58b60fefbd6",
+      "date": "2025-12-12",
+      "merchant": "Verizon Wireless",
+      "amount": -68.3,
+      "category": "Internet/Phone",
+      "description": "Verizon Wireless",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "d175a655-e14a-464b-b479-f33cee71da53",
+      "date": "2025-12-12",
+      "merchant": "Debit Card Purchase BP Squirrel Hill PA",
+      "amount": -33.13,
+      "category": "Gas/Fuel",
+      "description": "Debit Card Purchase BP Squirrel Hill PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "6dbf63ca-eb32-4f96-9ae5-29dd77c665aa",
+      "date": "2025-12-12",
+      "merchant": "Debit Card Purchase Menards",
+      "amount": -72.05,
+      "category": "Other",
+      "description": "Debit Card Purchase Menards",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "a340d725-71c4-4ef8-8d32-5c9a6c7b6f5f",
+      "date": "2025-12-13",
+      "merchant": "Debit Card Purchase Cheesecake Factory Squirrel Hill PA",
+      "amount": -80.93,
+      "category": "Other",
+      "description": "Debit Card Purchase Cheesecake Factory Squirrel Hill PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "46c02e0c-82fc-4281-b3e3-ab8cedffebe9",
+      "date": "2025-12-13",
+      "merchant": "Debit Card Purchase Lyft",
+      "amount": -12.95,
+      "category": "Rideshare",
+      "description": "Debit Card Purchase Lyft",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "b45537c2-b2d0-48ee-9f11-1b0163b40f8c",
+      "date": "2025-12-13",
+      "merchant": "Debit Card Purchase HomeGoods Shadyside PA",
+      "amount": -30.24,
+      "category": "Other",
+      "description": "Debit Card Purchase HomeGoods Shadyside PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "3a9e7137-b548-4b57-9289-5dd41a4b751c",
+      "date": "2025-12-14",
+      "merchant": "Debit Card Purchase Safeway Cranberry Township PA",
+      "amount": -112.78,
+      "category": "Other",
+      "description": "Debit Card Purchase Safeway Cranberry Township PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "4c152030-6de0-40ab-bc63-ed660f6ddad4",
+      "date": "2025-12-14",
+      "merchant": "Debit Card Purchase Kroger Homestead PA",
+      "amount": -175.56,
+      "category": "Groceries",
+      "description": "Debit Card Purchase Kroger Homestead PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "e1cc1318-ae7b-4ea3-9b8a-76013ef252a8",
+      "date": "2025-12-14",
+      "merchant": "Debit Card Purchase Chipotle Cranberry Township PA",
+      "amount": -30.31,
+      "category": "Dining Out",
+      "description": "Debit Card Purchase Chipotle Cranberry Township PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "ae48e246-a80e-4d9e-b837-762c6b14286e",
+      "date": "2025-12-14",
+      "merchant": "Debit Card Purchase Blue Bottle",
+      "amount": -10.8,
+      "category": "Other",
+      "description": "Debit Card Purchase Blue Bottle",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "874e5a79-ef0f-4a32-8231-a493e3aaafd5",
+      "date": "2025-12-14",
+      "merchant": "Debit Card Purchase Uber Eats",
+      "amount": -31.89,
+      "category": "Food Delivery",
+      "description": "Debit Card Purchase Uber Eats",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "b9af3a2b-c5ca-490a-ba70-efd85d17864a",
+      "date": "2025-12-14",
+      "merchant": "Debit Card Purchase Subway Card",
+      "amount": -13.09,
+      "category": "Other",
+      "description": "Debit Card Purchase Subway Card",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "fdae7762-f9b8-41f6-81c7-71e61fc8a617",
+      "date": "2025-12-14",
+      "merchant": "Debit Card Purchase Walmart Monroeville PA",
+      "amount": -228.42,
+      "category": "Groceries",
+      "description": "Debit Card Purchase Walmart Monroeville PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "4ed35cd4-aed6-4979-8c34-eab005774477",
+      "date": "2025-12-15",
+      "merchant": "Debit Card Purchase Chick-fil-A Mt Lebanon PA",
+      "amount": -21.91,
+      "category": "Other",
+      "description": "Debit Card Purchase Chick-fil-A Mt Lebanon PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "8be346dd-60d3-4eb3-8eeb-5502dbce5ed8",
+      "date": "2025-12-15",
+      "merchant": "Debit Card Purchase Five Guys Mt Lebanon PA",
+      "amount": -11.15,
+      "category": "Other",
+      "description": "Debit Card Purchase Five Guys Mt Lebanon PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "f7b4e2f9-dd15-42bb-9e6e-57f98582b5c4",
+      "date": "2025-12-15",
+      "merchant": "Debit Card Purchase Starbucks",
+      "amount": -6.73,
+      "category": "Coffee Shops",
+      "description": "Debit Card Purchase Starbucks",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "9e4841b9-9c71-473e-8c5b-26c01cbc63ae",
+      "date": "2025-12-15",
+      "merchant": "Debit Card Purchase Kohls Shadyside PA",
+      "amount": -30.77,
+      "category": "Other",
+      "description": "Debit Card Purchase Kohls Shadyside PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "688e837f-86ff-4e16-a687-8e91c096d584",
+      "date": "2025-12-15",
+      "merchant": "Debit Card Purchase Ulta Beauty",
+      "amount": -49.09,
+      "category": "Personal Care",
+      "description": "Debit Card Purchase Ulta Beauty",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "ecbf1a4e-93a3-44de-85b8-bd6b5ec20c47",
+      "date": "2025-12-17",
+      "merchant": "Debit Card Purchase Uber Eats",
+      "amount": -34.15,
+      "category": "Food Delivery",
+      "description": "Debit Card Purchase Uber Eats",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "ec563c10-0084-423e-a7db-cdfa68b62d32",
+      "date": "2025-12-17",
+      "merchant": "Debit Card Purchase Forever 21 Cranberry Township PA",
+      "amount": -37.95,
+      "category": "Other",
+      "description": "Debit Card Purchase Forever 21 Cranberry Township PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "54a60200-d296-4dee-969a-d42e78786785",
+      "date": "2025-12-18",
+      "merchant": "Debit Card Purchase Olive Garden Monroeville PA",
+      "amount": -80.9,
+      "category": "Dining Out",
+      "description": "Debit Card Purchase Olive Garden Monroeville PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "7935da98-ae63-4d92-aa94-19c4c5f30d9e",
+      "date": "2025-12-18",
+      "merchant": "Debit Card Purchase Kohls Monroeville PA",
+      "amount": -56.57,
+      "category": "Other",
+      "description": "Debit Card Purchase Kohls Monroeville PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "b2d1ee59-d2bd-4e49-974b-c59009dfca2d",
+      "date": "2025-12-18",
+      "merchant": "Debit Card Purchase Amazon Monroeville PA",
+      "amount": -83.46,
+      "category": "Online/Retail Shopping",
+      "description": "Debit Card Purchase Amazon Monroeville PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "ee8f9724-d4be-4ac0-afd8-8955c44e2583",
+      "date": "2025-12-19",
+      "merchant": "ATM Withdrawal",
+      "amount": -125.22,
+      "category": "ATM Withdrawal",
+      "description": "ATM Withdrawal",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "1988eba2-6028-4af9-b514-713cf48a9c7d",
+      "date": "2025-12-20",
+      "merchant": "Debit Card Purchase Olive Garden Squirrel Hill PA",
+      "amount": -39.33,
+      "category": "Dining Out",
+      "description": "Debit Card Purchase Olive Garden Squirrel Hill PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "52a56f74-018e-4894-827a-e8be0fe2db24",
+      "date": "2025-12-20",
+      "merchant": "Debit Card Purchase Metro Transit Pass",
+      "amount": -93.27,
+      "category": "Public Transit",
+      "description": "Debit Card Purchase Metro Transit Pass",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "0d0e32bb-5344-42b7-8cbf-3f41b5aa523b",
+      "date": "2025-12-20",
+      "merchant": "Debit Card Purchase Grubhub",
+      "amount": -37.69,
+      "category": "Food Delivery",
+      "description": "Debit Card Purchase Grubhub",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "f593523b-d46d-4891-9b6e-3ef08820ba92",
+      "date": "2025-12-21",
+      "merchant": "Debit Card Purchase Shake Shack Monroeville PA",
+      "amount": -24.06,
+      "category": "Other",
+      "description": "Debit Card Purchase Shake Shack Monroeville PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "0237945e-066e-47f0-b4af-6a7a6b56d8b3",
+      "date": "2025-12-21",
+      "merchant": "Debit Card Purchase Caribou Coffee",
+      "amount": -7.11,
+      "category": "Coffee Shops",
+      "description": "Debit Card Purchase Caribou Coffee",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "8c1736c7-8f26-4776-be4f-f96b2f8e3e38",
+      "date": "2025-12-21",
+      "merchant": "Debit Card Purchase Sunoco Cranberry Township PA",
+      "amount": -34.7,
+      "category": "Other",
+      "description": "Debit Card Purchase Sunoco Cranberry Township PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "dd7fef9b-d8f7-42ed-bc21-552ddfffe9a4",
+      "date": "2025-12-21",
+      "merchant": "Debit Card Purchase City Parking Garage",
+      "amount": -31.36,
+      "category": "Parking",
+      "description": "Debit Card Purchase City Parking Garage",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "dc9cb983-edf2-41a8-a722-b79dc1e8ebec",
+      "date": "2025-12-21",
+      "merchant": "Debit Card Purchase Dave & Busters",
+      "amount": -52.92,
+      "category": "Public Transit",
+      "description": "Debit Card Purchase Dave & Busters",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "ed2d7a95-bb07-4296-a5e0-92f255af06e2",
+      "date": "2025-12-21",
+      "merchant": "Debit Card Purchase Dave & Busters",
+      "amount": -39.07,
+      "category": "Public Transit",
+      "description": "Debit Card Purchase Dave & Busters",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "920b6862-f28b-4d57-a3c8-8bb6046e68a3",
+      "date": "2025-12-21",
+      "merchant": "Debit Card Purchase Ulta Beauty",
+      "amount": -84.73,
+      "category": "Personal Care",
+      "description": "Debit Card Purchase Ulta Beauty",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "19d06650-8f3b-4f79-8d24-8b4e98529fb6",
+      "date": "2025-12-22",
+      "merchant": "Debit Card Purchase Taco Bell Shadyside PA",
+      "amount": -10.8,
+      "category": "Dining Out",
+      "description": "Debit Card Purchase Taco Bell Shadyside PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "93722b03-89d1-4e48-b6f1-691a69d4b122",
+      "date": "2025-12-22",
+      "merchant": "ATM Withdrawal",
+      "amount": -89.6,
+      "category": "ATM Withdrawal",
+      "description": "ATM Withdrawal",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "aaa31c8b-d5fc-4a49-b02d-ab4e3514748e",
+      "date": "2025-12-23",
+      "merchant": "Debit Card Purchase Mobil Squirrel Hill PA",
+      "amount": -30.71,
+      "category": "Other",
+      "description": "Debit Card Purchase Mobil Squirrel Hill PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "772d704d-5253-4c79-90c4-ba67058af160",
+      "date": "2025-12-24",
+      "merchant": "Debit Card Purchase Olive Garden Mt Lebanon PA",
+      "amount": -35.54,
+      "category": "Dining Out",
+      "description": "Debit Card Purchase Olive Garden Mt Lebanon PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "bca0c901-f09f-4e0b-8ada-b852c70b27ab",
+      "date": "2025-12-24",
+      "merchant": "Debit Card Purchase Blue Bottle",
+      "amount": -7.71,
+      "category": "Other",
+      "description": "Debit Card Purchase Blue Bottle",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "fdae7459-9e24-4085-89c1-7359973d25df",
+      "date": "2025-12-24",
+      "merchant": "Debit Card Purchase Bus Fare",
+      "amount": -81.7,
+      "category": "Public Transit",
+      "description": "Debit Card Purchase Bus Fare",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "abf27c84-3156-4a1b-9e22-4d46eb2547e7",
+      "date": "2025-12-24",
+      "merchant": "Debit Card Purchase Menards",
+      "amount": -235.71,
+      "category": "Other",
+      "description": "Debit Card Purchase Menards",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "2cf3fa01-f0d3-4a0e-8fe6-925e54750dea",
+      "date": "2025-12-24",
+      "merchant": "Debit Card Purchase Doctor Visit Copay",
+      "amount": -67.61,
+      "category": "Healthcare",
+      "description": "Debit Card Purchase Doctor Visit Copay",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "1cf0dcac-623c-445c-b483-e2d6e03b05d0",
+      "date": "2025-12-24",
+      "merchant": "Debit Card Purchase Dog Grooming",
+      "amount": -29.92,
+      "category": "Other",
+      "description": "Debit Card Purchase Dog Grooming",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "8d440074-c44f-455e-ab51-f8aa52af5e02",
+      "date": "2025-12-24",
+      "merchant": "Debit Card Purchase Grubhub",
+      "amount": -26.23,
+      "category": "Food Delivery",
+      "description": "Debit Card Purchase Grubhub",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "906d5f93-48f6-449b-aea8-5456783c31f9",
+      "date": "2025-12-25",
+      "merchant": "Debit Card Purchase Chick-fil-A Monroeville PA",
+      "amount": -9.29,
+      "category": "Other",
+      "description": "Debit Card Purchase Chick-fil-A Monroeville PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "4317a817-4537-4a10-9512-b9458c48ec94",
+      "date": "2025-12-25",
+      "merchant": "Debit Card Purchase DoorDash Ride",
+      "amount": -38.76,
+      "category": "Food Delivery",
+      "description": "Debit Card Purchase DoorDash Ride",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "88d324e1-8c9b-480d-925b-cd86a39b92c1",
+      "date": "2025-12-26",
+      "merchant": "Debit Card Purchase Uber",
+      "amount": -14.82,
+      "category": "Rideshare",
+      "description": "Debit Card Purchase Uber",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "2200cdbb-e888-4025-9e9b-423379182d57",
+      "date": "2025-12-26",
+      "merchant": "Debit Card Purchase Uber Eats",
+      "amount": -45.59,
+      "category": "Food Delivery",
+      "description": "Debit Card Purchase Uber Eats",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "80c36b50-6d77-44a5-bbb2-498f259583d3",
+      "date": "2025-12-26",
+      "merchant": "Debit Card Purchase Grubhub",
+      "amount": -32.64,
+      "category": "Food Delivery",
+      "description": "Debit Card Purchase Grubhub",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "3f1473fd-d016-438f-8948-1a8a2bbd14d0",
+      "date": "2025-12-27",
+      "merchant": "Debit Card Purchase ParkMobile",
+      "amount": -16.63,
+      "category": "Other",
+      "description": "Debit Card Purchase ParkMobile",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "8296f69b-34aa-452a-aa4c-e0e680ef5b64",
+      "date": "2025-12-28",
+      "merchant": "Debit Card Purchase Blue Bottle",
+      "amount": -7.62,
+      "category": "Other",
+      "description": "Debit Card Purchase Blue Bottle",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "224720cf-bfa5-443e-afd7-e7e839f9e956",
+      "date": "2025-12-28",
+      "merchant": "Debit Card Purchase Peets Coffee",
+      "amount": -10.32,
+      "category": "Coffee Shops",
+      "description": "Debit Card Purchase Peets Coffee",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "82b2f17f-faf5-4138-9094-4b4d00545def",
+      "date": "2025-12-28",
+      "merchant": "Debit Card Purchase Mobil Homestead PA",
+      "amount": -46.04,
+      "category": "Other",
+      "description": "Debit Card Purchase Mobil Homestead PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "08cccda6-fccf-4c5a-a721-0e9278bf6099",
+      "date": "2025-12-28",
+      "merchant": "Debit Card Purchase Forever 21 Cranberry Township PA",
+      "amount": -127.06,
+      "category": "Other",
+      "description": "Debit Card Purchase Forever 21 Cranberry Township PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "a1dd0125-921c-4526-810c-cf10123fadbb",
+      "date": "2025-12-28",
+      "merchant": "Debit Card Purchase Rite Aid",
+      "amount": -55.01,
+      "category": "Pharmacy",
+      "description": "Debit Card Purchase Rite Aid",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "19ea15e1-6ca7-4da8-acea-93e36b10bb6a",
+      "date": "2025-12-29",
+      "merchant": "Debit Card Purchase City Parking Garage",
+      "amount": -16.61,
+      "category": "Parking",
+      "description": "Debit Card Purchase City Parking Garage",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "303d210a-6573-4eeb-be48-2def02c4b6f1",
+      "date": "2025-12-29",
+      "merchant": "Debit Card Purchase Dave & Busters",
+      "amount": -67.63,
+      "category": "Public Transit",
+      "description": "Debit Card Purchase Dave & Busters",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "b4bb10d1-fa7e-44f5-807b-b820f73ca9fe",
+      "date": "2025-12-29",
+      "merchant": "Debit Card Purchase School Supplies",
+      "amount": -147.69,
+      "category": "Other",
+      "description": "Debit Card Purchase School Supplies",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "60932e5c-0457-4626-b82f-6379e168efe7",
+      "date": "2025-12-31",
+      "merchant": "Payroll Direct Deposit - Monthly Salary",
+      "amount": 4500.0,
+      "category": "Salary",
+      "description": "Payroll Direct Deposit - Monthly Salary",
+      "type": "Deposit"
+    },
+    {
+      "id": "a3ef53b6-da00-4b1d-81f8-f2b25a6e4fde",
+      "date": "2025-12-31",
+      "merchant": "Debit Card Purchase Peets Coffee",
+      "amount": -11.96,
+      "category": "Coffee Shops",
+      "description": "Debit Card Purchase Peets Coffee",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "d8ccb0a1-1ec7-45a6-b379-989155e448c0",
+      "date": "2026-01-01",
+      "merchant": "Home Loan EMI - Monthly Payment",
+      "amount": -1200.0,
+      "category": "Home EMI",
+      "description": "Home Loan EMI - Monthly Payment",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "53c37080-4733-433d-b1db-95d1f07597aa",
+      "date": "2026-01-01",
+      "merchant": "Debit Card Purchase Walgreens",
+      "amount": -40.61,
+      "category": "Pharmacy",
+      "description": "Debit Card Purchase Walgreens",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "e5363e66-8670-4228-af7b-e6d203b7e4a2",
+      "date": "2026-01-01",
+      "merchant": "Debit Card Purchase Book Store",
+      "amount": -50.09,
+      "category": "Education",
+      "description": "Debit Card Purchase Book Store",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "a727713e-aaf3-4ec2-9b63-8c7bc27179b5",
+      "date": "2026-01-02",
+      "merchant": "Debit Card Purchase Gap Shadyside PA",
+      "amount": -35.63,
+      "category": "Clothing",
+      "description": "Debit Card Purchase Gap Shadyside PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "72b2763c-6cf4-4d24-957f-85d702f57e52",
+      "date": "2026-01-02",
+      "merchant": "Debit Card Purchase Dave & Busters",
+      "amount": -55.33,
+      "category": "Public Transit",
+      "description": "Debit Card Purchase Dave & Busters",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "ae735224-b57f-43a5-955a-4240f1475c5a",
+      "date": "2026-01-02",
+      "merchant": "Debit Card Purchase Udemy",
+      "amount": -120.02,
+      "category": "Education",
+      "description": "Debit Card Purchase Udemy",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "704bab7e-2735-4450-9ee4-1a230268fdc1",
+      "date": "2026-01-03",
+      "merchant": "Debit Card Purchase Wendys Cranberry Township PA",
+      "amount": -22.94,
+      "category": "Other",
+      "description": "Debit Card Purchase Wendys Cranberry Township PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "a7087412-2f80-44e0-8bf3-162c8f4b666d",
+      "date": "2026-01-03",
+      "merchant": "Debit Card Purchase McDonalds Monroeville PA",
+      "amount": -13.19,
+      "category": "Dining Out",
+      "description": "Debit Card Purchase McDonalds Monroeville PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "cb3dbe9b-d063-4eb1-bf48-c0ca34217ef1",
+      "date": "2026-01-03",
+      "merchant": "Debit Card Purchase Mobil Squirrel Hill PA",
+      "amount": -51.33,
+      "category": "Other",
+      "description": "Debit Card Purchase Mobil Squirrel Hill PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "c7cee4eb-49ab-4f98-b350-f1dec8d18bbc",
+      "date": "2026-01-03",
+      "merchant": "Debit Card Purchase BP Shadyside PA",
+      "amount": -59.09,
+      "category": "Gas/Fuel",
+      "description": "Debit Card Purchase BP Shadyside PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "d8961db5-88f9-43a7-b264-7f120cb532ec",
+      "date": "2026-01-04",
+      "merchant": "Electric Bill",
+      "amount": -165.95,
+      "category": "Utilities",
+      "description": "Electric Bill",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "f8bf9d61-70de-48f9-b677-9c1bca27d85c",
+      "date": "2026-01-04",
+      "merchant": "Debit Card Purchase HomeGoods Mt Lebanon PA",
+      "amount": -225.64,
+      "category": "Other",
+      "description": "Debit Card Purchase HomeGoods Mt Lebanon PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "c4e299da-1130-4a03-91ce-c1799355e691",
+      "date": "2026-01-04",
+      "merchant": "Debit Card Purchase Barbershop",
+      "amount": -105.79,
+      "category": "Personal Care",
+      "description": "Debit Card Purchase Barbershop",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "456ce5f9-df01-4de6-8fd1-a8d14e143cd5",
+      "date": "2026-01-04",
+      "merchant": "Debit Card Purchase Spa",
+      "amount": -91.59,
+      "category": "Personal Care",
+      "description": "Debit Card Purchase Spa",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "5c55bfde-5a8c-46f3-b566-46b07f1bb301",
+      "date": "2026-01-05",
+      "merchant": "Car Loan EMI - Monthly Payment",
+      "amount": -350.0,
+      "category": "Car EMI",
+      "description": "Car Loan EMI - Monthly Payment",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "6f5eb0e5-9703-4c7f-a2e3-2cf1514e2763",
+      "date": "2026-01-05",
+      "merchant": "Debit Card Purchase Dentist Payment",
+      "amount": -79.96,
+      "category": "Healthcare",
+      "description": "Debit Card Purchase Dentist Payment",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "6cbc228b-a1e3-4398-900b-9e0df8c3d132",
+      "date": "2026-01-06",
+      "merchant": "Debit Card Purchase TJ Maxx Pittsburgh PA",
+      "amount": -301.52,
+      "category": "Other",
+      "description": "Debit Card Purchase TJ Maxx Pittsburgh PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "f51e5e2e-4770-4666-b255-b68a92d9a05c",
+      "date": "2026-01-06",
+      "merchant": "Debit Card Purchase Bowling Alley",
+      "amount": -82.88,
+      "category": "Other",
+      "description": "Debit Card Purchase Bowling Alley",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "68efb415-3581-45b5-94ba-80d5b7929cab",
+      "date": "2026-01-07",
+      "merchant": "Debit Card Purchase Walmart Squirrel Hill PA",
+      "amount": -339.55,
+      "category": "Groceries",
+      "description": "Debit Card Purchase Walmart Squirrel Hill PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "81e8a7be-e280-49aa-9380-bf8f98a71d17",
+      "date": "2026-01-07",
+      "merchant": "Debit Card Purchase Petco",
+      "amount": -66.87,
+      "category": "Pet Care",
+      "description": "Debit Card Purchase Petco",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "6cba1227-7443-446a-82e3-347283cfbcbd",
+      "date": "2026-01-08",
+      "merchant": "Equinox",
+      "amount": -32.64,
+      "category": "Other",
+      "description": "Equinox",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "e7e5dab4-c00b-4f6a-bd4a-a378205a111b",
+      "date": "2026-01-08",
+      "merchant": "Debit Card Purchase Aldi Pittsburgh PA",
+      "amount": -153.59,
+      "category": "Groceries",
+      "description": "Debit Card Purchase Aldi Pittsburgh PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "f9612826-29d9-4180-9e45-88f3ca513fa7",
+      "date": "2026-01-08",
+      "merchant": "Debit Card Purchase KFC Oakland PA",
+      "amount": -14.68,
+      "category": "Dining Out",
+      "description": "Debit Card Purchase KFC Oakland PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "620939a8-5812-4553-b4ac-ef6d6e2ee730",
+      "date": "2026-01-08",
+      "merchant": "Debit Card Purchase Five Guys Pittsburgh PA",
+      "amount": -21.84,
+      "category": "Other",
+      "description": "Debit Card Purchase Five Guys Pittsburgh PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "45e9d311-6e4c-4d8d-86e0-fa86d327d28d",
+      "date": "2026-01-08",
+      "merchant": "Debit Card Purchase Starbucks",
+      "amount": -8.49,
+      "category": "Coffee Shops",
+      "description": "Debit Card Purchase Starbucks",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "4dab844b-0936-49cc-b36d-fb5a552076a3",
+      "date": "2026-01-08",
+      "merchant": "Debit Card Purchase GetGo Oakland PA",
+      "amount": -50.49,
+      "category": "Other",
+      "description": "Debit Card Purchase GetGo Oakland PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "68a67b4f-1332-4975-b07b-99ee843c8349",
+      "date": "2026-01-08",
+      "merchant": "Debit Card Purchase Uber Eats",
+      "amount": -27.24,
+      "category": "Food Delivery",
+      "description": "Debit Card Purchase Uber Eats",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "ee907382-87a5-4b4f-841e-a12fb7d8433a",
+      "date": "2026-01-10",
+      "merchant": "Personal Loan EMI - Monthly Payment",
+      "amount": -250.0,
+      "category": "Personal Loan EMI",
+      "description": "Personal Loan EMI - Monthly Payment",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "fe3594a1-cbb4-4e01-b348-31ef5229ac7e",
+      "date": "2026-01-10",
+      "merchant": "YouTube Premium",
+      "amount": -10.64,
+      "category": "EMI/Loans",
+      "description": "YouTube Premium",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "627d798f-0781-40ea-9058-1849d340678f",
+      "date": "2026-01-10",
+      "merchant": "Debit Card Purchase Giant Eagle Squirrel Hill PA",
+      "amount": -153.19,
+      "category": "Groceries",
+      "description": "Debit Card Purchase Giant Eagle Squirrel Hill PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "6515995f-fc2c-4b9e-8a6d-7eb2746ececd",
+      "date": "2026-01-10",
+      "merchant": "Debit Card Purchase Costco Mt Lebanon PA",
+      "amount": -111.43,
+      "category": "Groceries",
+      "description": "Debit Card Purchase Costco Mt Lebanon PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "fdb774a9-8fef-4011-ae25-e0926b208b3b",
+      "date": "2026-01-10",
+      "merchant": "Debit Card Purchase Burger King Monroeville PA",
+      "amount": -14.47,
+      "category": "Dining Out",
+      "description": "Debit Card Purchase Burger King Monroeville PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "774f3b8d-db18-432e-bef9-f272c5f19a22",
+      "date": "2026-01-10",
+      "merchant": "Debit Card Purchase Exxon Mt Lebanon PA",
+      "amount": -56.86,
+      "category": "Gas/Fuel",
+      "description": "Debit Card Purchase Exxon Mt Lebanon PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "37963202-3b3b-48f8-89ea-81401aff2f47",
+      "date": "2026-01-10",
+      "merchant": "Debit Card Purchase Subway Card",
+      "amount": -51.96,
+      "category": "Other",
+      "description": "Debit Card Purchase Subway Card",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "cbdb3a94-ecc5-4b3c-84d9-0a5974c0b230",
+      "date": "2026-01-10",
+      "merchant": "Debit Card Purchase DoorDash",
+      "amount": -21.4,
+      "category": "Food Delivery",
+      "description": "Debit Card Purchase DoorDash",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "a2d8df3b-78a0-48bf-b4bd-622e310d537f",
+      "date": "2026-01-11",
+      "merchant": "Debit Card Purchase Kroger Squirrel Hill PA",
+      "amount": -156.79,
+      "category": "Groceries",
+      "description": "Debit Card Purchase Kroger Squirrel Hill PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "d55a30e7-a1d2-458f-a2cb-784a78416a7e",
+      "date": "2026-01-11",
+      "merchant": "Debit Card Purchase Caribou Coffee",
+      "amount": -5.58,
+      "category": "Coffee Shops",
+      "description": "Debit Card Purchase Caribou Coffee",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "193129af-1382-430d-9967-1afb9e862a80",
+      "date": "2026-01-11",
+      "merchant": "Debit Card Purchase Apple Store Mt Lebanon PA",
+      "amount": -72.82,
+      "category": "Online/Retail Shopping",
+      "description": "Debit Card Purchase Apple Store Mt Lebanon PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "78400dd6-ec4f-4f89-8ff4-1ad0cab88015",
+      "date": "2026-01-11",
+      "merchant": "Debit Card Purchase Regal Cinemas",
+      "amount": -36.2,
+      "category": "Movies/Entertainment",
+      "description": "Debit Card Purchase Regal Cinemas",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "c9f77e0a-f183-40de-a391-a56a1a29be93",
+      "date": "2026-01-12",
+      "merchant": "Debit Card Purchase Walmart Supercenter Homestead PA",
+      "amount": -99.53,
+      "category": "Groceries",
+      "description": "Debit Card Purchase Walmart Supercenter Homestead PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "01e3e888-8226-4022-be00-0cc93ec0e9ab",
+      "date": "2026-01-12",
+      "merchant": "Debit Card Purchase Taco Bell Pittsburgh PA",
+      "amount": -10.59,
+      "category": "Dining Out",
+      "description": "Debit Card Purchase Taco Bell Pittsburgh PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "524d68a8-c25e-4c46-8135-6f9cefd71125",
+      "date": "2026-01-12",
+      "merchant": "Debit Card Purchase Uber Eats",
+      "amount": -12.13,
+      "category": "Food Delivery",
+      "description": "Debit Card Purchase Uber Eats",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "6ef22b38-9b98-4d43-b531-855d4571a1e5",
+      "date": "2026-01-12",
+      "merchant": "ATM Withdrawal",
+      "amount": -161.51,
+      "category": "ATM Withdrawal",
+      "description": "ATM Withdrawal",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "5700092d-b9d6-491d-bd19-8d049f6634a5",
+      "date": "2026-01-13",
+      "merchant": "T-Mobile",
+      "amount": -51.84,
+      "category": "Internet/Phone",
+      "description": "T-Mobile",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "4b5b85c6-9a29-4e42-b5e6-f7b54520ef7c",
+      "date": "2026-01-13",
+      "merchant": "Car Insurance",
+      "amount": -165.43,
+      "category": "Insurance",
+      "description": "Car Insurance",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "79adc4e7-6021-45ca-b0bb-e9309810a281",
+      "date": "2026-01-13",
+      "merchant": "Debit Card Purchase Red Lobster Cranberry Township PA",
+      "amount": -38.28,
+      "category": "Other",
+      "description": "Debit Card Purchase Red Lobster Cranberry Township PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "d1c3f0b3-fe8d-47b5-97b8-8dd9e969846f",
+      "date": "2026-01-13",
+      "merchant": "Debit Card Purchase PF Changs Cranberry Township PA",
+      "amount": -51.66,
+      "category": "Other",
+      "description": "Debit Card Purchase PF Changs Cranberry Township PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "b41a92cb-e2a4-4829-84eb-de5b8498f7c2",
+      "date": "2026-01-13",
+      "merchant": "Debit Card Purchase GetGo Mt Lebanon PA",
+      "amount": -45.14,
+      "category": "Other",
+      "description": "Debit Card Purchase GetGo Mt Lebanon PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "446cd6fd-1632-4445-ba7b-362b97b52681",
+      "date": "2026-01-13",
+      "merchant": "Debit Card Purchase Apple Store Shadyside PA",
+      "amount": -173.93,
+      "category": "Online/Retail Shopping",
+      "description": "Debit Card Purchase Apple Store Shadyside PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "25d37224-2e6a-48d4-94b9-bd98e8eec833",
+      "date": "2026-01-13",
+      "merchant": "Debit Card Purchase Target Pharmacy",
+      "amount": -46.18,
+      "category": "Groceries",
+      "description": "Debit Card Purchase Target Pharmacy",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "30976780-fd84-4285-a165-c51c18f3f9b4",
+      "date": "2026-01-14",
+      "merchant": "Debit Card Purchase HomeGoods Pittsburgh PA",
+      "amount": -229.6,
+      "category": "Other",
+      "description": "Debit Card Purchase HomeGoods Pittsburgh PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "e0f5e7e1-8610-405e-a209-4f0d8ed72afd",
+      "date": "2026-01-15",
+      "merchant": "Debit Card Purchase City Parking Garage",
+      "amount": -9.14,
+      "category": "Parking",
+      "description": "Debit Card Purchase City Parking Garage",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "00fdf7d0-a6f2-4184-80ac-b9dce177707a",
+      "date": "2026-01-15",
+      "merchant": "Debit Card Purchase Uber Eats",
+      "amount": -51.08,
+      "category": "Food Delivery",
+      "description": "Debit Card Purchase Uber Eats",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "fc19ae55-fbc7-4a80-b467-d5a1ebb1413b",
+      "date": "2026-01-16",
+      "merchant": "Debit Card Purchase Dunkin",
+      "amount": -11.33,
+      "category": "Coffee Shops",
+      "description": "Debit Card Purchase Dunkin",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "49bbcccd-a50c-4856-8364-7e35d69b115e",
+      "date": "2026-01-16",
+      "merchant": "Debit Card Purchase Exxon Pittsburgh PA",
+      "amount": -30.37,
+      "category": "Gas/Fuel",
+      "description": "Debit Card Purchase Exxon Pittsburgh PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "3894d4f4-ec0d-43dc-b107-5a6f1c74b4b0",
+      "date": "2026-01-16",
+      "merchant": "Debit Card Purchase City Parking Garage",
+      "amount": -7.73,
+      "category": "Parking",
+      "description": "Debit Card Purchase City Parking Garage",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "02ebc829-c69f-4eea-a624-cf9f28176126",
+      "date": "2026-01-16",
+      "merchant": "ATM Withdrawal",
+      "amount": -174.46,
+      "category": "ATM Withdrawal",
+      "description": "ATM Withdrawal",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "f1593987-f927-4c3a-ba83-9bc19ad5e202",
+      "date": "2026-01-16",
+      "merchant": "ATM Withdrawal",
+      "amount": -66.84,
+      "category": "ATM Withdrawal",
+      "description": "ATM Withdrawal",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "0d86d4b4-2ded-4ee8-80f3-effc51daed35",
+      "date": "2026-01-17",
+      "merchant": "Debit Card Purchase Outback Homestead PA",
+      "amount": -70.65,
+      "category": "Other",
+      "description": "Debit Card Purchase Outback Homestead PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "823b4e06-ca10-4b15-b3dd-a982342e39de",
+      "date": "2026-01-17",
+      "merchant": "Debit Card Purchase Target Monroeville PA",
+      "amount": -56.05,
+      "category": "Groceries",
+      "description": "Debit Card Purchase Target Monroeville PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "c510fb98-d83a-4c73-832e-f5c4c8d628c2",
+      "date": "2026-01-17",
+      "merchant": "Debit Card Purchase Pet Food",
+      "amount": -63.98,
+      "category": "Pet Care",
+      "description": "Debit Card Purchase Pet Food",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "f64be26c-b513-4039-b2c2-f1cd7f5449d1",
+      "date": "2026-01-18",
+      "merchant": "Debit Card Purchase Starbucks",
+      "amount": -9.23,
+      "category": "Coffee Shops",
+      "description": "Debit Card Purchase Starbucks",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "9d73e014-b463-4fb0-8053-f46d3fb62ebc",
+      "date": "2026-01-18",
+      "merchant": "Debit Card Purchase Metro Transit Pass",
+      "amount": -91.89,
+      "category": "Public Transit",
+      "description": "Debit Card Purchase Metro Transit Pass",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "e6ae0736-1229-4276-8cd1-58041c81d304",
+      "date": "2026-01-18",
+      "merchant": "Debit Card Purchase Nordstrom Monroeville PA",
+      "amount": -49.31,
+      "category": "Other",
+      "description": "Debit Card Purchase Nordstrom Monroeville PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "759ae56a-87fd-45e0-8b3d-1995f4daf702",
+      "date": "2026-01-18",
+      "merchant": "Debit Card Purchase Uber Eats",
+      "amount": -27.07,
+      "category": "Food Delivery",
+      "description": "Debit Card Purchase Uber Eats",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "5c51ec6e-a970-455f-8282-0709b8634caa",
+      "date": "2026-01-18",
+      "merchant": "Debit Card Purchase Grubhub",
+      "amount": -47.0,
+      "category": "Food Delivery",
+      "description": "Debit Card Purchase Grubhub",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "c0892074-740f-491d-8085-bf662d91d431",
+      "date": "2026-01-20",
+      "merchant": "Debit Card Purchase Dunkin",
+      "amount": -6.82,
+      "category": "Coffee Shops",
+      "description": "Debit Card Purchase Dunkin",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "2d34e89e-59a1-4ca4-aa76-71b967848402",
+      "date": "2026-01-20",
+      "merchant": "Debit Card Purchase Caribou Coffee",
+      "amount": -11.44,
+      "category": "Coffee Shops",
+      "description": "Debit Card Purchase Caribou Coffee",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "bf85f25c-bdcb-4b08-a889-22c41132f1fc",
+      "date": "2026-01-20",
+      "merchant": "Debit Card Purchase Dunkin",
+      "amount": -10.1,
+      "category": "Coffee Shops",
+      "description": "Debit Card Purchase Dunkin",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "4dd51925-4d5d-43c9-8863-32eaafed112e",
+      "date": "2026-01-20",
+      "merchant": "Debit Card Purchase Lyft",
+      "amount": -18.1,
+      "category": "Rideshare",
+      "description": "Debit Card Purchase Lyft",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "33750584-8b41-44c9-af59-dd9f81273830",
+      "date": "2026-01-20",
+      "merchant": "Debit Card Purchase Ace Hardware",
+      "amount": -241.68,
+      "category": "Home Improvement",
+      "description": "Debit Card Purchase Ace Hardware",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "5e15d4cf-80b0-4773-ad77-f8c88c83a603",
+      "date": "2026-01-20",
+      "merchant": "Debit Card Purchase Rite Aid",
+      "amount": -66.29,
+      "category": "Pharmacy",
+      "description": "Debit Card Purchase Rite Aid",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "c191ab0c-785a-47e9-ae6c-46942cc596e0",
+      "date": "2026-01-21",
+      "merchant": "Debit Card Purchase Dunkin",
+      "amount": -8.79,
+      "category": "Coffee Shops",
+      "description": "Debit Card Purchase Dunkin",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "bc38dd7c-1331-42d4-ba29-f96d73d43cd6",
+      "date": "2026-01-22",
+      "merchant": "Debit Card Purchase Giant Eagle Oakland PA",
+      "amount": -92.95,
+      "category": "Groceries",
+      "description": "Debit Card Purchase Giant Eagle Oakland PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "f0bee5c7-1364-41b6-b789-118566da7706",
+      "date": "2026-01-22",
+      "merchant": "Debit Card Purchase PF Changs Oakland PA",
+      "amount": -74.74,
+      "category": "Other",
+      "description": "Debit Card Purchase PF Changs Oakland PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "7f7c334d-4435-4e55-8b75-0d66c29a994c",
+      "date": "2026-01-22",
+      "merchant": "Debit Card Purchase Postmates",
+      "amount": -28.93,
+      "category": "Other",
+      "description": "Debit Card Purchase Postmates",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "ec20b750-6de2-4652-bc5c-8a83c277dced",
+      "date": "2026-01-23",
+      "merchant": "Debit Card Purchase Kroger Squirrel Hill PA",
+      "amount": -104.06,
+      "category": "Groceries",
+      "description": "Debit Card Purchase Kroger Squirrel Hill PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "f2d481ae-e4ab-4235-afe7-9df3a549b446",
+      "date": "2026-01-23",
+      "merchant": "Debit Card Purchase PF Changs Oakland PA",
+      "amount": -81.51,
+      "category": "Other",
+      "description": "Debit Card Purchase PF Changs Oakland PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "59d1186a-ff77-418b-a435-d3061960cb54",
+      "date": "2026-01-23",
+      "merchant": "Debit Card Purchase Lyft",
+      "amount": -19.72,
+      "category": "Rideshare",
+      "description": "Debit Card Purchase Lyft",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "6fb817ce-c13e-4dee-90ae-298119dfda46",
+      "date": "2026-01-23",
+      "merchant": "Debit Card Purchase Lowes",
+      "amount": -117.76,
+      "category": "Home Improvement",
+      "description": "Debit Card Purchase Lowes",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "38aaf2cc-9ae9-4b8b-a86f-776e2444da9b",
+      "date": "2026-01-24",
+      "merchant": "Debit Card Purchase KFC Oakland PA",
+      "amount": -18.15,
+      "category": "Dining Out",
+      "description": "Debit Card Purchase KFC Oakland PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "8110ca5c-b1af-4331-a07f-8f79d736a68c",
+      "date": "2026-01-24",
+      "merchant": "Debit Card Purchase Street Parking Meter",
+      "amount": -32.25,
+      "category": "Parking",
+      "description": "Debit Card Purchase Street Parking Meter",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "36ffc564-37aa-43b8-90c0-7675f644dcd4",
+      "date": "2026-01-24",
+      "merchant": "Debit Card Purchase Lyft",
+      "amount": -26.12,
+      "category": "Rideshare",
+      "description": "Debit Card Purchase Lyft",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "d0039824-a936-47ef-a5ac-6dd20446323a",
+      "date": "2026-01-25",
+      "merchant": "Debit Card Purchase Uber Eats",
+      "amount": -34.04,
+      "category": "Food Delivery",
+      "description": "Debit Card Purchase Uber Eats",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "7a95ff9d-afd6-47c4-bbd3-04c2956c048b",
+      "date": "2026-01-26",
+      "merchant": "Debit Card Purchase Burger King Squirrel Hill PA",
+      "amount": -14.5,
+      "category": "Dining Out",
+      "description": "Debit Card Purchase Burger King Squirrel Hill PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "b5f078e5-8d20-4b58-bf4e-3d30e7de529d",
+      "date": "2026-01-26",
+      "merchant": "Debit Card Purchase Mobil Pittsburgh PA",
+      "amount": -56.77,
+      "category": "Other",
+      "description": "Debit Card Purchase Mobil Pittsburgh PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "87797ac3-a958-4a84-8220-33293bb441a9",
+      "date": "2026-01-26",
+      "merchant": "Debit Card Purchase Street Parking Meter",
+      "amount": -17.46,
+      "category": "Parking",
+      "description": "Debit Card Purchase Street Parking Meter",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "2358d07a-1ef3-4830-b507-8ad8f3be7189",
+      "date": "2026-01-26",
+      "merchant": "Debit Card Purchase Train Ticket",
+      "amount": -107.4,
+      "category": "Public Transit",
+      "description": "Debit Card Purchase Train Ticket",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "b9ab4c7a-e9f4-422c-afd0-5fe945ed46a4",
+      "date": "2026-01-27",
+      "merchant": "Debit Card Purchase Red Lobster Oakland PA",
+      "amount": -63.48,
+      "category": "Other",
+      "description": "Debit Card Purchase Red Lobster Oakland PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "401f89e7-44a4-4590-a8f4-edaae9ab25a7",
+      "date": "2026-01-27",
+      "merchant": "Debit Card Purchase Caribou Coffee",
+      "amount": -10.32,
+      "category": "Coffee Shops",
+      "description": "Debit Card Purchase Caribou Coffee",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "e79dbe37-be68-491f-bd01-3f83e64bb1d0",
+      "date": "2026-01-27",
+      "merchant": "Debit Card Purchase Sunoco Pittsburgh PA",
+      "amount": -33.3,
+      "category": "Other",
+      "description": "Debit Card Purchase Sunoco Pittsburgh PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "738ee78d-0ab6-4fb4-8f46-b66b94b11207",
+      "date": "2026-01-27",
+      "merchant": "Debit Card Purchase Lyft",
+      "amount": -40.63,
+      "category": "Rideshare",
+      "description": "Debit Card Purchase Lyft",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "ee3113a8-26c1-4043-a01b-bea7db836c20",
+      "date": "2026-01-27",
+      "merchant": "Debit Card Purchase TopGolf",
+      "amount": -76.95,
+      "category": "Other",
+      "description": "Debit Card Purchase TopGolf",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "8b0350eb-98f4-42a6-b4c8-cdd0822bddf8",
+      "date": "2026-01-28",
+      "merchant": "Debit Card Purchase Whole Foods Squirrel Hill PA",
+      "amount": -30.32,
+      "category": "Groceries",
+      "description": "Debit Card Purchase Whole Foods Squirrel Hill PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "2d5ab05a-e054-4c39-a2fb-91ac706a0c14",
+      "date": "2026-01-28",
+      "merchant": "Debit Card Purchase Peets Coffee",
+      "amount": -10.24,
+      "category": "Coffee Shops",
+      "description": "Debit Card Purchase Peets Coffee",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "e012cb55-f33c-4f34-a1b7-e239d073c4b7",
+      "date": "2026-01-28",
+      "merchant": "Debit Card Purchase Marshalls Pittsburgh PA",
+      "amount": -123.77,
+      "category": "Other",
+      "description": "Debit Card Purchase Marshalls Pittsburgh PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "13ae1dc7-a3d3-4ea6-af18-41ebdb14b203",
+      "date": "2026-01-28",
+      "merchant": "Debit Card Purchase Marshalls Mt Lebanon PA",
+      "amount": -89.91,
+      "category": "Other",
+      "description": "Debit Card Purchase Marshalls Mt Lebanon PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "699d28b2-cb1e-4f1d-aef1-ccc421c7797b",
+      "date": "2026-01-29",
+      "merchant": "Debit Card Purchase Five Guys Homestead PA",
+      "amount": -21.16,
+      "category": "Other",
+      "description": "Debit Card Purchase Five Guys Homestead PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "0ad173aa-402f-4985-891d-c11b3341f0a6",
+      "date": "2026-01-29",
+      "merchant": "Debit Card Purchase Local Coffee Shop",
+      "amount": -7.48,
+      "category": "Coffee Shops",
+      "description": "Debit Card Purchase Local Coffee Shop",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "8a891c83-6f62-4e84-834a-bd920d0f9d6c",
+      "date": "2026-01-30",
+      "merchant": "Debit Card Purchase Starbucks",
+      "amount": -10.01,
+      "category": "Coffee Shops",
+      "description": "Debit Card Purchase Starbucks",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "1df9d2a3-6af1-47c3-8203-2bc695441b63",
+      "date": "2026-01-31",
+      "merchant": "Payroll Direct Deposit - Monthly Salary",
+      "amount": 4500.0,
+      "category": "Salary",
+      "description": "Payroll Direct Deposit - Monthly Salary",
+      "type": "Deposit"
+    },
+    {
+      "id": "640dee15-0a80-4f50-971a-44bcf99f87c7",
+      "date": "2026-01-31",
+      "merchant": "Debit Card Purchase Chick-fil-A Oakland PA",
+      "amount": -8.59,
+      "category": "Other",
+      "description": "Debit Card Purchase Chick-fil-A Oakland PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "29c00987-5b58-4f7c-a20c-2b9d72a0215e",
+      "date": "2026-02-01",
+      "merchant": "Home Loan EMI - Monthly Payment",
+      "amount": -1200.0,
+      "category": "Home EMI",
+      "description": "Home Loan EMI - Monthly Payment",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "75332094-5ba5-4cbb-85e1-e7d0606a007e",
+      "date": "2026-02-01",
+      "merchant": "Debit Card Purchase Walmart Supercenter Squirrel Hill PA",
+      "amount": -53.33,
+      "category": "Groceries",
+      "description": "Debit Card Purchase Walmart Supercenter Squirrel Hill PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "8ad97bfe-4fd5-4cfa-b20b-b416a0c63baf",
+      "date": "2026-02-02",
+      "merchant": "SoulCycle",
+      "amount": -36.12,
+      "category": "Other",
+      "description": "SoulCycle",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "14fb6552-f8c4-42ba-8acf-6807bd796a1e",
+      "date": "2026-02-02",
+      "merchant": "Debit Card Purchase Target Monroeville PA",
+      "amount": -330.52,
+      "category": "Groceries",
+      "description": "Debit Card Purchase Target Monroeville PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "8e259703-4c6a-4a12-beef-5eb158aea0a4",
+      "date": "2026-02-03",
+      "merchant": "Debit Card Purchase Red Lobster Squirrel Hill PA",
+      "amount": -49.38,
+      "category": "Other",
+      "description": "Debit Card Purchase Red Lobster Squirrel Hill PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "86586011-5c03-4d14-b7ab-1957aac9883a",
+      "date": "2026-02-03",
+      "merchant": "Debit Card Purchase Wendys Cranberry Township PA",
+      "amount": -17.77,
+      "category": "Other",
+      "description": "Debit Card Purchase Wendys Cranberry Township PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "b3a02051-6c31-4f51-890e-67ffd7aea11b",
+      "date": "2026-02-03",
+      "merchant": "Debit Card Purchase Peets Coffee",
+      "amount": -7.64,
+      "category": "Coffee Shops",
+      "description": "Debit Card Purchase Peets Coffee",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "e4b51fb7-3e98-4bbb-866d-9d093f0d6085",
+      "date": "2026-02-03",
+      "merchant": "Debit Card Purchase BP Cranberry Township PA",
+      "amount": -36.65,
+      "category": "Gas/Fuel",
+      "description": "Debit Card Purchase BP Cranberry Township PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "ff320415-3a9d-45b2-832a-cd346893093a",
+      "date": "2026-02-03",
+      "merchant": "Debit Card Purchase Rite Aid",
+      "amount": -71.96,
+      "category": "Pharmacy",
+      "description": "Debit Card Purchase Rite Aid",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "787e5dd2-d65a-47fe-81dc-0340053e30fc",
+      "date": "2026-02-04",
+      "merchant": "Debit Card Purchase Outback Monroeville PA",
+      "amount": -28.49,
+      "category": "Other",
+      "description": "Debit Card Purchase Outback Monroeville PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "227bb4fd-8a3b-42e4-9ea8-2dab03e1d4df",
+      "date": "2026-02-04",
+      "merchant": "Debit Card Purchase DoorDash Ride",
+      "amount": -14.56,
+      "category": "Food Delivery",
+      "description": "Debit Card Purchase DoorDash Ride",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "acc67f50-6c8c-4106-9d8b-b965782c6932",
+      "date": "2026-02-04",
+      "merchant": "Debit Card Purchase Instacart",
+      "amount": -27.27,
+      "category": "Other",
+      "description": "Debit Card Purchase Instacart",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "8e95650a-5bd6-42d6-b0e8-a82cf87db503",
+      "date": "2026-02-05",
+      "merchant": "Car Loan EMI - Monthly Payment",
+      "amount": -350.0,
+      "category": "Car EMI",
+      "description": "Car Loan EMI - Monthly Payment",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "26618136-ff4c-490d-baf7-02cbca1f567f",
+      "date": "2026-02-05",
+      "merchant": "Electric Bill",
+      "amount": -83.86,
+      "category": "Utilities",
+      "description": "Electric Bill",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "c88832d9-305d-4943-8492-1838db9be579",
+      "date": "2026-02-05",
+      "merchant": "Google Fi",
+      "amount": -124.38,
+      "category": "Other",
+      "description": "Google Fi",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "b8d44472-fb2f-4992-97c8-2f993a9e8336",
+      "date": "2026-02-05",
+      "merchant": "Debit Card Purchase Shell Cranberry Township PA",
+      "amount": -47.27,
+      "category": "Gas/Fuel",
+      "description": "Debit Card Purchase Shell Cranberry Township PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "2f45a080-4c5b-4cbe-a3c0-c4e47ceb7801",
+      "date": "2026-02-05",
+      "merchant": "Debit Card Purchase Target Mt Lebanon PA",
+      "amount": -176.86,
+      "category": "Groceries",
+      "description": "Debit Card Purchase Target Mt Lebanon PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "4d55a40e-12ec-4f85-9f7a-7fe9957553d3",
+      "date": "2026-02-05",
+      "merchant": "Debit Card Purchase TopGolf",
+      "amount": -53.31,
+      "category": "Other",
+      "description": "Debit Card Purchase TopGolf",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "92fc10ea-0099-4056-86cd-e51b90c70e13",
+      "date": "2026-02-06",
+      "merchant": "Debit Card Purchase Shake Shack Shadyside PA",
+      "amount": -19.67,
+      "category": "Other",
+      "description": "Debit Card Purchase Shake Shack Shadyside PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "38bec69a-fac9-4033-8b7b-0c1b31109fdf",
+      "date": "2026-02-06",
+      "merchant": "Debit Card Purchase Wawa Mt Lebanon PA",
+      "amount": -48.54,
+      "category": "Other",
+      "description": "Debit Card Purchase Wawa Mt Lebanon PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "1507c135-053e-483b-8e61-1b61d2b884ad",
+      "date": "2026-02-06",
+      "merchant": "Debit Card Purchase TopGolf",
+      "amount": -83.94,
+      "category": "Other",
+      "description": "Debit Card Purchase TopGolf",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "774e631c-9cb0-4a1c-97a3-8e3064dd6a51",
       "date": "2026-02-07",
-      "merchant": "Berghotel",
-      "amount": 54.5,
-      "category": "Shopping",
-      "description": "Auto-created from receipt r1png.png"
+      "merchant": "Debit Card Purchase Costco Shadyside PA",
+      "amount": -90.56,
+      "category": "Groceries",
+      "description": "Debit Card Purchase Costco Shadyside PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "fc8022f2-5a96-4f68-8f6a-001f8c75fb56",
+      "date": "2026-02-07",
+      "merchant": "Debit Card Purchase Peets Coffee",
+      "amount": -7.88,
+      "category": "Coffee Shops",
+      "description": "Debit Card Purchase Peets Coffee",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "dd6885a5-8a41-45a1-90be-c229f31545d6",
+      "date": "2026-02-08",
+      "merchant": "Debit Card Purchase Blue Bottle",
+      "amount": -7.52,
+      "category": "Other",
+      "description": "Debit Card Purchase Blue Bottle",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "f3a625e0-60b9-4a14-9456-181ff3247a9b",
+      "date": "2026-02-08",
+      "merchant": "Debit Card Purchase Metro Transit Pass",
+      "amount": -49.7,
+      "category": "Public Transit",
+      "description": "Debit Card Purchase Metro Transit Pass",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "cb167ba1-57fd-4f3a-bf7c-cbc17318c87a",
+      "date": "2026-02-08",
+      "merchant": "Debit Card Purchase HomeGoods Shadyside PA",
+      "amount": -120.01,
+      "category": "Other",
+      "description": "Debit Card Purchase HomeGoods Shadyside PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "dce31f9f-c5e8-46f7-b9c7-1b618c108b70",
+      "date": "2026-02-08",
+      "merchant": "Debit Card Purchase AMC Theatres",
+      "amount": -50.75,
+      "category": "Movies/Entertainment",
+      "description": "Debit Card Purchase AMC Theatres",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "44a3fa44-3158-4301-a3db-56e208279e80",
+      "date": "2026-02-08",
+      "merchant": "Debit Card Purchase Vet Clinic",
+      "amount": -42.08,
+      "category": "Healthcare",
+      "description": "Debit Card Purchase Vet Clinic",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "f33e8143-55ad-4576-96e0-f56f03897706",
+      "date": "2026-02-09",
+      "merchant": "Debit Card Purchase Safeway Cranberry Township PA",
+      "amount": -151.24,
+      "category": "Other",
+      "description": "Debit Card Purchase Safeway Cranberry Township PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "3fa445c2-78da-4f4d-87ea-75cfe8b983cd",
+      "date": "2026-02-09",
+      "merchant": "Debit Card Purchase McDonalds Homestead PA",
+      "amount": -22.21,
+      "category": "Dining Out",
+      "description": "Debit Card Purchase McDonalds Homestead PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "1d240c46-ea86-4d38-a9e6-1af6f337889d",
+      "date": "2026-02-09",
+      "merchant": "Debit Card Purchase Uber",
+      "amount": -26.96,
+      "category": "Rideshare",
+      "description": "Debit Card Purchase Uber",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "4db8d901-1a4a-462c-99a8-b27b52df9775",
+      "date": "2026-02-09",
+      "merchant": "Debit Card Purchase Nail Salon",
+      "amount": -48.84,
+      "category": "Personal Care",
+      "description": "Debit Card Purchase Nail Salon",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "df04337b-bf6d-42e3-a932-2fd9f86ab1db",
+      "date": "2026-02-10",
+      "merchant": "Personal Loan EMI - Monthly Payment",
+      "amount": -250.0,
+      "category": "Personal Loan EMI",
+      "description": "Personal Loan EMI - Monthly Payment",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "f2e96ccc-7e70-4afb-9247-9b96c8e7c412",
+      "date": "2026-02-10",
+      "merchant": "Hulu",
+      "amount": -14.69,
+      "category": "Streaming/Subscriptions",
+      "description": "Hulu",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "58760735-8391-4da7-a183-dae04677fb84",
+      "date": "2026-02-10",
+      "merchant": "Debit Card Purchase BP Cranberry Township PA",
+      "amount": -44.14,
+      "category": "Gas/Fuel",
+      "description": "Debit Card Purchase BP Cranberry Township PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "3092f48e-6766-43a0-adfd-eb345a781736",
+      "date": "2026-02-10",
+      "merchant": "Debit Card Purchase Target Pharmacy",
+      "amount": -35.9,
+      "category": "Groceries",
+      "description": "Debit Card Purchase Target Pharmacy",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "4fe2c4b5-4621-4f32-b4d6-387b3d9d93d1",
+      "date": "2026-02-11",
+      "merchant": "Debit Card Purchase Olive Garden Squirrel Hill PA",
+      "amount": -38.67,
+      "category": "Dining Out",
+      "description": "Debit Card Purchase Olive Garden Squirrel Hill PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "c3d258ee-cd78-4eca-a351-127d1fe6f2ea",
+      "date": "2026-02-11",
+      "merchant": "Debit Card Purchase Dunkin",
+      "amount": -8.98,
+      "category": "Coffee Shops",
+      "description": "Debit Card Purchase Dunkin",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "fd891e48-3b7c-4e9a-90e3-bd17bf1ec1f5",
+      "date": "2026-02-11",
+      "merchant": "Debit Card Purchase City Parking Garage",
+      "amount": -12.19,
+      "category": "Parking",
+      "description": "Debit Card Purchase City Parking Garage",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "f115a035-2a5d-4659-a74b-e4de671b1e3e",
+      "date": "2026-02-11",
+      "merchant": "Debit Card Purchase Old Navy Monroeville PA",
+      "amount": -126.87,
+      "category": "Other",
+      "description": "Debit Card Purchase Old Navy Monroeville PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "c71d9bd1-ae95-4cff-bac1-09a005304011",
+      "date": "2026-02-11",
+      "merchant": "Debit Card Purchase Urgent Care",
+      "amount": -102.1,
+      "category": "Other",
+      "description": "Debit Card Purchase Urgent Care",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "a80d7c44-114b-4eae-9adf-bc8b60b7e60b",
+      "date": "2026-02-12",
+      "merchant": "Debit Card Purchase Kroger Cranberry Township PA",
+      "amount": -127.01,
+      "category": "Groceries",
+      "description": "Debit Card Purchase Kroger Cranberry Township PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "9502632d-1fad-42d3-b89f-2a60a717a483",
+      "date": "2026-02-12",
+      "merchant": "Debit Card Purchase Uber Eats",
+      "amount": -40.95,
+      "category": "Food Delivery",
+      "description": "Debit Card Purchase Uber Eats",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "9e19cb30-fa52-4b4a-b6e9-f736b51daa3e",
+      "date": "2026-02-13",
+      "merchant": "Debit Card Purchase Trader Joes Squirrel Hill PA",
+      "amount": -75.5,
+      "category": "Groceries",
+      "description": "Debit Card Purchase Trader Joes Squirrel Hill PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "67aa5350-befa-4711-90b9-34dfe6ed5363",
+      "date": "2026-02-13",
+      "merchant": "Debit Card Purchase Street Parking Meter",
+      "amount": -23.03,
+      "category": "Parking",
+      "description": "Debit Card Purchase Street Parking Meter",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "1701a558-cdd2-438d-b739-0ad91e329dbb",
+      "date": "2026-02-13",
+      "merchant": "Debit Card Purchase Regal Cinemas",
+      "amount": -36.06,
+      "category": "Movies/Entertainment",
+      "description": "Debit Card Purchase Regal Cinemas",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "5808a5a1-1614-4b28-96c1-acff0481acc7",
+      "date": "2026-02-13",
+      "merchant": "Debit Card Purchase Grubhub",
+      "amount": -50.49,
+      "category": "Food Delivery",
+      "description": "Debit Card Purchase Grubhub",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "de7a67bd-194e-4e89-93ac-552e803153c4",
+      "date": "2026-02-14",
+      "merchant": "Debit Card Purchase Shop n Save Pittsburgh PA",
+      "amount": -38.5,
+      "category": "Other",
+      "description": "Debit Card Purchase Shop n Save Pittsburgh PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "c6103e41-f3f8-4aef-b309-ca00c67ad2d3",
+      "date": "2026-02-14",
+      "merchant": "Debit Card Purchase Lowes",
+      "amount": -124.59,
+      "category": "Home Improvement",
+      "description": "Debit Card Purchase Lowes",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "80d80045-c5c6-45e9-bfea-d36994761fa8",
+      "date": "2026-02-14",
+      "merchant": "Debit Card Purchase Spa",
+      "amount": -97.75,
+      "category": "Personal Care",
+      "description": "Debit Card Purchase Spa",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "af5e16a6-2457-492d-8a06-1cde7715b186",
+      "date": "2026-02-14",
+      "merchant": "Debit Card Purchase Uber Eats",
+      "amount": -53.14,
+      "category": "Food Delivery",
+      "description": "Debit Card Purchase Uber Eats",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "fc9e3c57-697c-48e0-a122-6d3d0efb9333",
+      "date": "2026-02-15",
+      "merchant": "Life Insurance",
+      "amount": -281.47,
+      "category": "Insurance",
+      "description": "Life Insurance",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "9f680fda-6447-4c23-8aee-fc05747278cf",
+      "date": "2026-02-15",
+      "merchant": "Debit Card Purchase Red Lobster Shadyside PA",
+      "amount": -46.03,
+      "category": "Other",
+      "description": "Debit Card Purchase Red Lobster Shadyside PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "2e854363-2fa3-4f6f-8437-257a5a8ba4d7",
+      "date": "2026-02-15",
+      "merchant": "Debit Card Purchase Taco Bell Pittsburgh PA",
+      "amount": -24.83,
+      "category": "Dining Out",
+      "description": "Debit Card Purchase Taco Bell Pittsburgh PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "c4f1ef6c-b792-4e9d-b290-d848948c663b",
+      "date": "2026-02-15",
+      "merchant": "Debit Card Purchase Petco",
+      "amount": -143.21,
+      "category": "Pet Care",
+      "description": "Debit Card Purchase Petco",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "e7047347-b880-48fc-ae95-a24d1297a31e",
+      "date": "2026-02-15",
+      "merchant": "Debit Card Purchase Instacart",
+      "amount": -46.66,
+      "category": "Other",
+      "description": "Debit Card Purchase Instacart",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "b1c2669f-1336-4a3b-af46-690439d47002",
+      "date": "2026-02-16",
+      "merchant": "Debit Card Purchase Shop n Save Monroeville PA",
+      "amount": -127.73,
+      "category": "Other",
+      "description": "Debit Card Purchase Shop n Save Monroeville PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "921da58c-8e96-48af-b03e-390af0ac0090",
+      "date": "2026-02-16",
+      "merchant": "Debit Card Purchase Burger King Cranberry Township PA",
+      "amount": -9.79,
+      "category": "Dining Out",
+      "description": "Debit Card Purchase Burger King Cranberry Township PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "59ea96f8-8690-438e-8fae-c77b6a78a7db",
+      "date": "2026-02-16",
+      "merchant": "Debit Card Purchase Peets Coffee",
+      "amount": -8.95,
+      "category": "Coffee Shops",
+      "description": "Debit Card Purchase Peets Coffee",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "d0037641-20be-429a-92a1-d3a9128876bc",
+      "date": "2026-02-16",
+      "merchant": "Debit Card Purchase Ross Cranberry Township PA",
+      "amount": -131.87,
+      "category": "Other",
+      "description": "Debit Card Purchase Ross Cranberry Township PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "c45dac2c-487e-42e5-8823-15c5f1e94f82",
+      "date": "2026-02-16",
+      "merchant": "Debit Card Purchase Gap Squirrel Hill PA",
+      "amount": -92.13,
+      "category": "Clothing",
+      "description": "Debit Card Purchase Gap Squirrel Hill PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "94718bd3-9c1a-4f84-990d-842aedc3738b",
+      "date": "2026-02-16",
+      "merchant": "ATM Withdrawal",
+      "amount": -189.68,
+      "category": "ATM Withdrawal",
+      "description": "ATM Withdrawal",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "58efdd50-de4e-4df0-8a64-ef7d991e0808",
+      "date": "2026-02-17",
+      "merchant": "Debit Card Purchase City Parking Garage",
+      "amount": -5.03,
+      "category": "Parking",
+      "description": "Debit Card Purchase City Parking Garage",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "9d1a32ae-41bd-4e08-b25e-013f990cf5d9",
+      "date": "2026-02-17",
+      "merchant": "Debit Card Purchase Subway Card",
+      "amount": -17.87,
+      "category": "Other",
+      "description": "Debit Card Purchase Subway Card",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "e66cd5ac-ab4e-4611-9714-2886cb639332",
+      "date": "2026-02-17",
+      "merchant": "Debit Card Purchase School Supplies",
+      "amount": -193.43,
+      "category": "Other",
+      "description": "Debit Card Purchase School Supplies",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "f56f7ed6-0c80-48a5-a743-cef495f273b3",
+      "date": "2026-02-18",
+      "merchant": "Debit Card Purchase Target Oakland PA",
+      "amount": -38.42,
+      "category": "Groceries",
+      "description": "Debit Card Purchase Target Oakland PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "4e127bf5-9bb8-428c-894f-84eaf7a43192",
+      "date": "2026-02-19",
+      "merchant": "Debit Card Purchase Subway Oakland PA",
+      "amount": -19.26,
+      "category": "Other",
+      "description": "Debit Card Purchase Subway Oakland PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "25e430e4-111a-4125-970c-4830bccd9001",
+      "date": "2026-02-19",
+      "merchant": "Debit Card Purchase Wawa Homestead PA",
+      "amount": -39.97,
+      "category": "Other",
+      "description": "Debit Card Purchase Wawa Homestead PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "e600ee76-153c-4c4c-8031-1413d9632ff7",
+      "date": "2026-02-20",
+      "merchant": "Debit Card Purchase Shake Shack Shadyside PA",
+      "amount": -11.44,
+      "category": "Other",
+      "description": "Debit Card Purchase Shake Shack Shadyside PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "bb461358-1f46-4d22-8821-c23aa89ad510",
+      "date": "2026-02-20",
+      "merchant": "Debit Card Purchase Postmates",
+      "amount": -52.86,
+      "category": "Other",
+      "description": "Debit Card Purchase Postmates",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "fd77454c-66da-4851-a474-2b975f1cb154",
+      "date": "2026-02-21",
+      "merchant": "Debit Card Purchase Panera Bread Monroeville PA",
+      "amount": -81.67,
+      "category": "Dining Out",
+      "description": "Debit Card Purchase Panera Bread Monroeville PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "a39c0f2f-5551-4f6c-81cd-71d2d95756d6",
+      "date": "2026-02-21",
+      "merchant": "Debit Card Purchase Uber",
+      "amount": -42.05,
+      "category": "Rideshare",
+      "description": "Debit Card Purchase Uber",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "64525af6-15ab-423d-ae84-9c6ae905f4a5",
+      "date": "2026-02-21",
+      "merchant": "Debit Card Purchase Walmart Squirrel Hill PA",
+      "amount": -115.01,
+      "category": "Groceries",
+      "description": "Debit Card Purchase Walmart Squirrel Hill PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "4fd15be6-2389-4d6c-8115-5e110855cf74",
+      "date": "2026-02-21",
+      "merchant": "Debit Card Purchase Southwest Airlines",
+      "amount": -390.84,
+      "category": "Airfare",
+      "description": "Debit Card Purchase Southwest Airlines",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "5dda9520-3ec2-46eb-b7cd-95db37fa130c",
+      "date": "2026-02-22",
+      "merchant": "Debit Card Purchase Chick-fil-A Homestead PA",
+      "amount": -12.12,
+      "category": "Other",
+      "description": "Debit Card Purchase Chick-fil-A Homestead PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "6d418d4b-511d-4a80-af22-e7483019b823",
+      "date": "2026-02-22",
+      "merchant": "Debit Card Purchase Local Coffee Shop",
+      "amount": -11.67,
+      "category": "Coffee Shops",
+      "description": "Debit Card Purchase Local Coffee Shop",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "57247ce9-bd8c-4837-99a8-23bd054a0637",
+      "date": "2026-02-22",
+      "merchant": "Debit Card Purchase Blue Bottle",
+      "amount": -9.31,
+      "category": "Other",
+      "description": "Debit Card Purchase Blue Bottle",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "d485ff61-09b0-44be-bdc7-ae9f81bfd6cf",
+      "date": "2026-02-24",
+      "merchant": "Debit Card Purchase Panera Bread Monroeville PA",
+      "amount": -45.46,
+      "category": "Dining Out",
+      "description": "Debit Card Purchase Panera Bread Monroeville PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "ea9d0015-a111-4485-b564-2cb0da16a35d",
+      "date": "2026-02-24",
+      "merchant": "Debit Card Purchase Dunkin",
+      "amount": -7.04,
+      "category": "Coffee Shops",
+      "description": "Debit Card Purchase Dunkin",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "5c4681f4-6917-4f5c-b7f7-bf5479e14cc9",
+      "date": "2026-02-24",
+      "merchant": "Debit Card Purchase Peets Coffee",
+      "amount": -8.28,
+      "category": "Coffee Shops",
+      "description": "Debit Card Purchase Peets Coffee",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "697dcd1a-f4eb-4984-ad8d-462a2702f45f",
+      "date": "2026-02-24",
+      "merchant": "Debit Card Purchase Street Parking Meter",
+      "amount": -33.39,
+      "category": "Parking",
+      "description": "Debit Card Purchase Street Parking Meter",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "f4c00446-0933-4f93-bba8-415d6ee429eb",
+      "date": "2026-02-24",
+      "merchant": "Debit Card Purchase Home Depot",
+      "amount": -144.64,
+      "category": "Home Improvement",
+      "description": "Debit Card Purchase Home Depot",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "da643744-feec-43e5-801c-1f34478c7e9b",
+      "date": "2026-02-24",
+      "merchant": "Debit Card Purchase CVS Pharmacy",
+      "amount": -51.59,
+      "category": "Pharmacy",
+      "description": "Debit Card Purchase CVS Pharmacy",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "d0c6bb96-80d7-4877-b697-d78164faff20",
+      "date": "2026-02-24",
+      "merchant": "ATM Withdrawal",
+      "amount": -44.01,
+      "category": "ATM Withdrawal",
+      "description": "ATM Withdrawal",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "c43d7555-d11e-4811-a51a-815944fd6c93",
+      "date": "2026-02-25",
+      "merchant": "Debit Card Purchase Peets Coffee",
+      "amount": -6.98,
+      "category": "Coffee Shops",
+      "description": "Debit Card Purchase Peets Coffee",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "b3c23c93-81c4-45f5-8151-ce2afdfb294e",
+      "date": "2026-02-25",
+      "merchant": "Debit Card Purchase Exxon Oakland PA",
+      "amount": -46.08,
+      "category": "Gas/Fuel",
+      "description": "Debit Card Purchase Exxon Oakland PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "89399875-aed3-4496-84eb-dc956ccb61df",
+      "date": "2026-02-25",
+      "merchant": "Debit Card Purchase GetGo Shadyside PA",
+      "amount": -58.88,
+      "category": "Other",
+      "description": "Debit Card Purchase GetGo Shadyside PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "56e46d19-af16-47bc-a034-71be298b6021",
+      "date": "2026-02-25",
+      "merchant": "Debit Card Purchase Wawa Oakland PA",
+      "amount": -42.04,
+      "category": "Other",
+      "description": "Debit Card Purchase Wawa Oakland PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "aa13fdea-c42b-4209-9e5e-c0868c0d9317",
+      "date": "2026-02-25",
+      "merchant": "Debit Card Purchase Uber Eats",
+      "amount": -47.17,
+      "category": "Food Delivery",
+      "description": "Debit Card Purchase Uber Eats",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "6006c559-e4d1-4642-b83e-548e8d9b5c38",
+      "date": "2026-02-26",
+      "merchant": "Debit Card Purchase Taco Bell Pittsburgh PA",
+      "amount": -16.71,
+      "category": "Dining Out",
+      "description": "Debit Card Purchase Taco Bell Pittsburgh PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "1538d1cd-4cbb-437b-ab45-805352d49d10",
+      "date": "2026-02-26",
+      "merchant": "Debit Card Purchase Amazon Cranberry Township PA",
+      "amount": -128.98,
+      "category": "Online/Retail Shopping",
+      "description": "Debit Card Purchase Amazon Cranberry Township PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "a23c81ac-514c-49c3-a5b5-0992a4e05c24",
+      "date": "2026-02-27",
+      "merchant": "Debit Card Purchase Wendys Mt Lebanon PA",
+      "amount": -11.22,
+      "category": "Other",
+      "description": "Debit Card Purchase Wendys Mt Lebanon PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "a790be6c-0c7d-4e9e-854b-df772965e3a2",
+      "date": "2026-02-27",
+      "merchant": "Debit Card Purchase Caribou Coffee",
+      "amount": -4.82,
+      "category": "Coffee Shops",
+      "description": "Debit Card Purchase Caribou Coffee",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "46aa923b-6a3f-4e14-8f0b-59662db148fb",
+      "date": "2026-02-27",
+      "merchant": "Debit Card Purchase Uber",
+      "amount": -25.68,
+      "category": "Rideshare",
+      "description": "Debit Card Purchase Uber",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "7b2a0ee2-0f86-4e2b-b5eb-9ec4e8ea9d03",
+      "date": "2026-02-27",
+      "merchant": "Debit Card Purchase Uber",
+      "amount": -34.09,
+      "category": "Rideshare",
+      "description": "Debit Card Purchase Uber",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "da307148-b9a0-485f-bfda-ae61f4329988",
+      "date": "2026-02-27",
+      "merchant": "Debit Card Purchase Coursera",
+      "amount": -66.64,
+      "category": "Education",
+      "description": "Debit Card Purchase Coursera",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "969b42e5-a627-47cd-b463-a5a24dbe2fd8",
+      "date": "2026-02-28",
+      "merchant": "Payroll Direct Deposit - Monthly Salary",
+      "amount": 4500.0,
+      "category": "Salary",
+      "description": "Payroll Direct Deposit - Monthly Salary",
+      "type": "Deposit"
+    },
+    {
+      "id": "a56d9026-d709-4b70-876d-350006d8f047",
+      "date": "2026-02-28",
+      "merchant": "Debit Card Purchase Blue Bottle",
+      "amount": -11.91,
+      "category": "Other",
+      "description": "Debit Card Purchase Blue Bottle",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "23398f8c-82e4-487b-b688-ec63bb62a3d2",
+      "date": "2026-02-28",
+      "merchant": "Debit Card Purchase Metro Transit Pass",
+      "amount": -56.35,
+      "category": "Public Transit",
+      "description": "Debit Card Purchase Metro Transit Pass",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "c069d288-9ee2-49e7-acbb-5d0389a8f60b",
+      "date": "2026-02-28",
+      "merchant": "Debit Card Purchase Best Buy Oakland PA",
+      "amount": -162.05,
+      "category": "Online/Retail Shopping",
+      "description": "Debit Card Purchase Best Buy Oakland PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "eafb1517-0cfa-4437-826a-27e345cf6612",
+      "date": "2026-02-28",
+      "merchant": "Debit Card Purchase Kohls Cranberry Township PA",
+      "amount": -301.13,
+      "category": "Other",
+      "description": "Debit Card Purchase Kohls Cranberry Township PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "59804724-8c3a-4fb8-a23b-f732bc5bd2a4",
+      "date": "2026-02-28",
+      "merchant": "Debit Card Purchase Nordstrom Monroeville PA",
+      "amount": -280.28,
+      "category": "Other",
+      "description": "Debit Card Purchase Nordstrom Monroeville PA",
+      "type": "Withdrawal"
+    },
+    {
+      "id": "37b4cdc6-e7db-42bb-b4cf-801fbd139a7f",
+      "date": "2026-02-28",
+      "merchant": "ATM Withdrawal",
+      "amount": -47.64,
+      "category": "ATM Withdrawal",
+      "description": "ATM Withdrawal",
+      "type": "Withdrawal"
     }
   ],
   "category_budgets": {},
-  "default_budget": 2500.0
+  "default_budget": 10000.0
 }
