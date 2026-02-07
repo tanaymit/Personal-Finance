@@ -4996,7 +4996,7 @@
     "Health & Medical": 200.0,
     "Personal Care": 200.0
   },
-  "default_budget": 7000.0,
+  "default_budget": 10000.0,
   "goals": [
     {
       "name": "Europe Trip 2026",
