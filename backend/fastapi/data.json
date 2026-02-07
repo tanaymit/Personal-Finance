@@ -1,6 +1,14 @@
 {
   "transactions": [
     {
+      "id": "5d6b26a8380549febc1f1c499f66ace7",
+      "date": "2026-02-07",
+      "merchant": "# COSTCO WHOLESALE",
+      "amount": 123.34,
+      "category": "Shopping",
+      "description": "Auto-created from receipt r2.jpeg"
+    },
+    {
       "id": "19fc443d4f0046c899124976f5f7d13a",
       "date": "2025-07-17",
       "merchant": "Home Loan EMI",

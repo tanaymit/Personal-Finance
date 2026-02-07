@@ -62,6 +62,22 @@ export function SpendingChart({ type = 'line', days = 30 }: SpendingChartProps) 
     return () => window.removeEventListener('monthYearFilterChange', handleFilterChange as EventListener);
   }, []);
 
+  // Listen for new transactions from upload page
+  useEffect(() => {
+    const handleTransactionCreated = async () => {
+      // Reload spending chart data
+      try {
+        const transactions = await getTransactionsByDate(days, filterYear, filterMonth);
+        setData(transactions);
+      } catch (error) {
+        console.error('Failed to reload spending data:', error);
+      }
+    };
+
+    window.addEventListener('transactionCreated', handleTransactionCreated as EventListener);
+    return () => window.removeEventListener('transactionCreated', handleTransactionCreated as EventListener);
+  }, [days, filterYear, filterMonth]);
+
   if (loading) {
     return (
       <div className="w-full h-80 bg-gradient-to-br from-slate-900 to-slate-800 rounded-xl animate-pulse" />

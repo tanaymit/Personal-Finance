@@ -82,6 +82,22 @@ export default function CategoriesPage() {
     return () => window.removeEventListener('monthYearFilterChange', handleFilterChange as EventListener);
   }, []);
 
+  // Listen for new transactions from upload page
+  useEffect(() => {
+    const handleTransactionCreated = async () => {
+      // Reload categories and budget to reflect new transaction
+      try {
+        loadCategories();
+        loadBudget();
+      } catch (error) {
+        console.error('Failed to reload categories:', error);
+      }
+    };
+
+    window.addEventListener('transactionCreated', handleTransactionCreated as EventListener);
+    return () => window.removeEventListener('transactionCreated', handleTransactionCreated as EventListener);
+  }, [filterYear, filterMonth]);
+
   const handleEdit = (category: Category) => {
     setSelectedCategory(category);
   };

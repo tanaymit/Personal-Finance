@@ -75,6 +75,19 @@ export default function Dashboard() {
     return () => window.removeEventListener('monthYearFilterChange', handleFilterChange as EventListener);
   }, []);
 
+  // Listen for new transactions from upload page
+  useEffect(() => {
+    const handleTransactionCreated = () => {
+      // Reload data to reflect new transaction
+      fetchBudgetSummary(filterYear, filterMonth).then(data => {
+        setSummary(data);
+      }).catch(error => console.error('Failed to reload budget summary:', error));
+    };
+
+    window.addEventListener('transactionCreated', handleTransactionCreated as EventListener);
+    return () => window.removeEventListener('transactionCreated', handleTransactionCreated as EventListener);
+  }, [filterYear, filterMonth]);
+
   const getSpendingPercentage = () => {
     if (!summary) return 0;
     return Math.round((summary.totalSpent / summary.totalBudget) * 100);

@@ -163,6 +163,31 @@ class Category(BaseModel):
     spent: Optional[float] = 0
 
 
+# Category color palette
+CATEGORY_COLORS = [
+    '#06b6d4',  # cyan-500
+    '#10b981',  # emerald-500
+    '#f59e0b',  # amber-500
+    '#ef4444',  # red-500
+    '#8b5cf6',  # violet-500
+    '#ec4899',  # pink-500
+    '#14b8a6',  # teal-500
+    '#f97316',  # orange-500
+    '#3b82f6',  # blue-500
+    '#6366f1',  # indigo-500
+    '#84cc16',  # lime-500
+]
+
+
+def get_category_color(category_name: str) -> str:
+    """Assign a stable color to a category based on its name."""
+    # Use UUID hash to get a stable index for this category name
+    hash_obj = uuid.uuid5(uuid.NAMESPACE_DNS, category_name.lower())
+    hash_int = int(hash_obj.hex, 16)
+    color_index = hash_int % len(CATEGORY_COLORS)
+    return CATEGORY_COLORS[color_index]
+
+
 class GoalIn(BaseModel):
     name: str
     targetAmount: float
@@ -496,7 +521,7 @@ def list_categories(year: Optional[int] = None, month: Optional[int] = None):
             'id': cid,
             'name': name,
             'icon': None,
-            'color': None,
+            'color': get_category_color(name),
             'budgetLimit': category_budgets.get(name),
             'spent': spent
         })

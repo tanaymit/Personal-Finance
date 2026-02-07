@@ -57,6 +57,22 @@ export function RecentTransactions() {
     return () => window.removeEventListener('monthYearFilterChange', handleFilterChange as EventListener);
   }, []);
 
+  // Listen for new transactions from upload page
+  useEffect(() => {
+    const handleTransactionCreated = async () => {
+      // Reload recent transactions
+      try {
+        const data = await fetchTransactions(undefined, filterYear, filterMonth);
+        setTransactions(data);
+      } catch (error) {
+        console.error('Failed to reload transactions:', error);
+      }
+    };
+
+    window.addEventListener('transactionCreated', handleTransactionCreated as EventListener);
+    return () => window.removeEventListener('transactionCreated', handleTransactionCreated as EventListener);
+  }, [filterYear, filterMonth]);
+
   if (loading) {
     return (
       <div className="space-y-3">

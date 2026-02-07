@@ -67,7 +67,18 @@ export default function UploadPage() {
           date: data.date,
           description: `Receipt: ${receipt?.fileName}`
         });
-        if (typeof window !== 'undefined') localStorage.setItem('dataInitialized', '1');
+      }
+
+      // Dispatch event to notify all pages of new transaction
+      if (typeof window !== 'undefined') {
+        window.dispatchEvent(new CustomEvent('transactionCreated', {
+          detail: {
+            merchant: data.merchant,
+            amount: data.amount,
+            category: data.category,
+            date: data.date
+          }
+        }));
       }
 
       setSuccessMessage(`Transaction recorded: ${data.merchant} for $${data.amount.toFixed(2)}`);

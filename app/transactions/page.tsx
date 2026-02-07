@@ -64,6 +64,23 @@ export default function TransactionsPage() {
     return () => window.removeEventListener('monthYearFilterChange', handleFilterChange as EventListener);
   }, []);
 
+  // Listen for new transactions from upload page
+  useEffect(() => {
+    const handleTransactionCreated = async () => {
+      // Reload transactions to reflect new data
+      try {
+        const data = await fetchTransactions(undefined, filterYear, filterMonth);
+        setTransactions(data);
+        setFilteredTransactions(data);
+      } catch (error) {
+        console.error('Failed to reload transactions:', error);
+      }
+    };
+
+    window.addEventListener('transactionCreated', handleTransactionCreated as EventListener);
+    return () => window.removeEventListener('transactionCreated', handleTransactionCreated as EventListener);
+  }, [filterYear, filterMonth]);
+
   useEffect(() => {
     let filtered = transactions;
 
