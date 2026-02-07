@@ -16,11 +16,14 @@ import httpx
 
 def resolve_period_for_transactions(
     transactions: List[Dict[str, Any]],
-    year: Optional[int],
-    month: Optional[int],
+    year: Optional[Any],
+    month: Optional[Any],
 ) -> Tuple[int, int]:
     if year is not None and month is not None:
-        return year, month
+        try:
+            return int(year), int(month)
+        except ValueError:
+            pass # Fallback to default logic if casting fails
 
     # Prefer "current" period based on data (latest transaction), so demos
     # can behave like it's mid-month even if the system date differs.
@@ -309,28 +312,43 @@ def get_cashflow_projection(
     starting_balance: float = 0.0,
 ) -> Dict[str, Any]:
     y, m = resolve_period_for_transactions(transactions, year, month)
+    
+    # 1. Get real data
     period_tx = filter_transactions_period(transactions, y, m)
+    
+    # 2. Get projected data (The "Smart" AI part)
+    projected_tx = _get_projected_bills(transactions, y, m)
+    
+    # Combine for calculation
+    all_tx = period_tx + projected_tx
 
-    rows: List[Tuple[date, float]] = []
-    for t in period_tx:
+    rows: List[Tuple[date, float, bool]] = []
+    for t in all_tx:
         try:
             dt = parse_date(str(t.get("date", "")))
         except Exception:
             continue
-        rows.append((dt, amount(t)))
+        # Check if projected
+        is_proj = t.get("is_projected", False)
+        rows.append((dt, amount(t), is_proj))
 
     rows.sort(key=lambda x: x[0])
 
     bal = float(starting_balance)
     low_bal = bal
     low_date: Optional[str] = None
+    
+    projected_expenses_sum = 0.0
 
-    for dt, amt in rows:
+    for dt, amt, is_proj in rows:
         # expenses positive => decrease balance; income negative => increase balance
         bal += (-amt)
         if bal < low_bal:
             low_bal = bal
             low_date = dt.isoformat()
+        
+        if is_proj and amt > 0:
+            projected_expenses_sum += amt
 
     return {
         "period": {"year": y, "month": m},
@@ -339,6 +357,7 @@ def get_cashflow_projection(
         "lowestBalance": round(float(low_bal), 2),
         "lowestBalanceDate": low_date,
         "endingBalance": round(float(bal), 2),
+        "projectedMissingBills": round(projected_expenses_sum, 2),
         "note": "Projection is based only on imported transactions; it is not linked to your real bank balance.",
     }
 
@@ -354,25 +373,35 @@ def simulate_purchase(
     starting_balance: float = 0.0,
 ) -> Dict[str, Any]:
     y, m = resolve_period_for_transactions(transactions, year, month)
-    status_before = get_budget_status(transactions, default_budget, category_budgets, y, m)
-    cash_before = get_cashflow_projection(transactions, y, m, starting_balance=starting_balance)
+    
+    # We now base the simulation on (Real Data + Projected Bills)
+    # This prevents the AI from saying "Yes" just because rent hasn't posted yet.
+    projected = _get_projected_bills(transactions, y, m)
+    temp_list = transactions + projected
+
+    status_before = get_budget_status(temp_list, default_budget, category_budgets, y, m)
+    
+    # Only supply starting_balance to cashflow if user provided it, otherwise it defaults 0
+    cash_before = get_cashflow_projection(temp_list, y, m, starting_balance=starting_balance)
 
     added = {
-        "date": date.today().isoformat(),
+        "date": date.today().isoformat(), # Simulate 'today'
         "merchant": "Simulated Purchase",
         "amount": abs(float(amount_value)),
         "category": category,
         "description": "Simulated purchase for affordability check",
     }
 
-    temp = [added, *transactions]
-    status_after = get_budget_status(temp, default_budget, category_budgets, y, m)
-    cash_after = get_cashflow_projection(temp, y, m, starting_balance=starting_balance)
+    temp_list_with_purchase = [added, *temp_list]
+    
+    status_after = get_budget_status(temp_list_with_purchase, default_budget, category_budgets, y, m)
+    cash_after = get_cashflow_projection(temp_list_with_purchase, y, m, starting_balance=starting_balance)
 
     return {
         "period": {"year": y, "month": m},
         "currency": "USD",
         "purchase": {"amount": round(abs(float(amount_value)), 2), "category": category},
+        "analysis": "Projection includes estimated future bills based on history.",
         "budget": {
             "before": status_before,
             "after": status_after,
@@ -518,6 +547,8 @@ def get_recurring_transactions(
             "estimatedMonthly": round(median, 2),
             "occurrences": len(similar),
             "category": (similar[0].get("category") if similar else None),
+            # NEW: Capture the typical day of month for projection logic
+            "typicalDay": sorted([parse_date(str(t.get("date"))).day for t in txs])[len(txs)//2] 
         })
 
     recurring = sorted(recurring, key=lambda r: r["estimatedMonthly"], reverse=True)[:10]
@@ -526,6 +557,66 @@ def get_recurring_transactions(
         "recurring": recurring,
         "note": "Recurring detection is heuristic (hackathon-friendly).",
     }
+
+
+def _get_projected_bills(transactions: List[Dict[str, Any]], target_month_y: int, target_month_m: int) -> List[Dict[str, Any]]:
+    """
+    Internal helper: Generates 'ghost' transactions for the remainder of the month 
+    based on historical recurring patterns.
+    """
+    # 1. Detect recurring patterns from ALL history
+    recur_data = get_recurring_transactions(transactions, months_back=6)
+    recurring_rules = recur_data.get("recurring", [])
+    
+    # 2. Determine the analysis window (e.g., "Rest of Jan 2026")
+    today = date.today()
+    try:
+        latest_tx_date = parse_date(get_latest_transaction_date())
+        # Use the LATEST DATA DATE as 'today' for projection purposes
+        # This ensures that if data ends Jan 13, we project Jan 14-31
+        today = latest_tx_date
+    except:
+        pass
+    
+    # If target month is in the past relative to our 'today', no projection needed
+    if (target_month_y < today.year) or (target_month_y == today.year and target_month_m < today.month):
+        return []
+
+    # Identify what has ALREADY happened this month to avoid duplicates
+    current_month_txns = filter_transactions_period(transactions, target_month_y, target_month_m)
+    already_paid_merchants = {str(t.get("merchant", "")).strip().lower() for t in current_month_txns}
+    
+    ghost_txns = []
+    
+    # 3. Generate missing bills
+    for rule in recurring_rules:
+        merch = rule["merchant"]
+        if merch.strip().lower() in already_paid_merchants:
+            continue # Already paid this month
+            
+        typical_day = rule.get("typicalDay", 1)
+        
+        # Only project if the typical day is AFTER the latest data point we have for this month
+        dates_in_month = [parse_date(str(t["date"])) for t in current_month_txns]
+        last_data_in_month = max(dates_in_month) if dates_in_month else date(target_month_y, target_month_m, 1)
+        
+        if typical_day > last_data_in_month.day:
+            try:
+                # Handle simplified month lengths (Feb 30 -> Feb 28)
+                max_days = calendar.monthrange(target_month_y, target_month_m)[1]
+                safe_day = min(typical_day, max_days)
+                
+                ghost_txns.append({
+                    "date": date(target_month_y, target_month_m, safe_day).isoformat(),
+                    "merchant": f"{merch} (Projected)",
+                    "amount": rule["estimatedMonthly"],
+                    "category": rule["category"],
+                    "is_projected": True
+                })
+            except:
+                continue
+            
+    return ghost_txns
 
 
 # -----------------
