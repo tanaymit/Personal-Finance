@@ -1,13 +1,56 @@
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, UploadFile, File
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import List, Optional
 import uvicorn
+import asyncio
+import traceback
+import sys
+from datetime import datetime
+from pathlib import Path
+import uuid
+from dotenv import load_dotenv
 
-try:
-    from .mock_data import mock_transactions, mock_categories, mock_budget_summary
-except ImportError:
-    from mock_data import mock_transactions, mock_categories, mock_budget_summary
+# Ensure current directory is in path for imports
+sys.path.insert(0, str(Path(__file__).parent))
+
+# Load .env file
+env_path = Path(__file__).parent / '.env'
+load_dotenv(dotenv_path=env_path)
+
+from receipt_extractor import ReceiptExtractor
+import json
+
+# JSON-based persistence
+data_file = Path(__file__).parent / 'data.json'
+
+def load_data():
+    """Load transactions and settings from JSON file."""
+    if data_file.exists():
+        try:
+            with open(data_file, 'r') as f:
+                data = json.load(f)
+                return data.get('transactions', []), data.get('category_budgets', {}), data.get('default_budget', 3000.0)
+        except Exception as e:
+            print(f"⚠️  Failed to load data: {e}")
+    return [], {}, 3000.0
+
+def save_data():
+    """Save transactions and settings to JSON file."""
+    try:
+        data = {
+            'transactions': transactions,
+            'category_budgets': category_budgets,
+            'default_budget': default_budget
+        }
+        with open(data_file, 'w') as f:
+            json.dump(data, f, indent=2)
+    except Exception as e:
+        print(f"❌ Failed to save data: {e}")
+
+# Load data on startup
+transactions, category_budgets, default_budget = load_data()
+print(f"✅ Loaded {len(transactions)} transactions, default budget: {default_budget}")
 
 app = FastAPI(title="Personal Finance Mock API")
 
@@ -39,49 +82,74 @@ class Category(BaseModel):
 
 @app.get('/transactions', response_model=List[Transaction])
 def list_transactions():
-    return mock_transactions
+    return transactions
 
 @app.get('/transactions/{transaction_id}', response_model=Transaction)
 def get_transaction(transaction_id: str):
-    for t in mock_transactions:
+    for t in transactions:
         if t['id'] == transaction_id:
             return t
     raise HTTPException(status_code=404, detail='Transaction not found')
 
 @app.post('/transactions', response_model=Transaction)
 def create_transaction(tx: TransactionIn):
-    new_id = str(int(mock_transactions[-1]['id']) + 1 if mock_transactions else 1)
+    # Use UUIDs for transaction IDs to avoid collisions
+    new_id = uuid.uuid4().hex
     new = {"id": new_id, **tx.dict()}
-    mock_transactions.insert(0, new)
+    transactions.insert(0, new)
+    save_data()
     return new
 
 @app.get('/categories', response_model=List[Category])
 def list_categories():
-    return mock_categories
+    # Build categories from recorded transactions
+    grouped = {}
+    for t in transactions:
+        cat = t.get('category') or 'Uncategorized'
+        grouped.setdefault(cat, 0.0)
+        try:
+            grouped[cat] += float(t.get('amount') or 0)
+        except Exception:
+            pass
+
+    categories = []
+    for name, spent in grouped.items():
+        # create stable id from name
+        cid = uuid.uuid5(uuid.NAMESPACE_DNS, name).hex
+        categories.append({
+            'id': cid,
+            'name': name,
+            'icon': None,
+            'color': None,
+            'budgetLimit': category_budgets.get(name),
+            'spent': spent
+        })
+    return categories
 
 @app.get('/budget-summary')
 def budget_summary():
-    # Compute authoritative budget summary from mock_categories so values stay consistent
-    total_budget = 0.0
+    # totalBudget is the user-configurable default_budget
+    total_budget = float(default_budget or 0.0)
+    # totalSpent is sum of all recorded transactions
     total_spent = 0.0
+    by_cat = {}
+    for t in transactions:
+        try:
+            amt = float(t.get('amount') or 0)
+        except Exception:
+            amt = 0.0
+        total_spent += amt
+        cat = t.get('category') or 'Uncategorized'
+        by_cat.setdefault(cat, 0.0)
+        by_cat[cat] += amt
+
+    # largest category by spent
     largest_category = None
     largest_amount = 0.0
-    for c in mock_categories:
-        # ensure numeric values
-        try:
-            limit = float(c.get('budgetLimit') or 0)
-        except Exception:
-            limit = 0.0
-        try:
-            spent = float(c.get('spent') or 0)
-        except Exception:
-            spent = 0.0
-
-        total_budget += limit
-        total_spent += spent
-        if spent > largest_amount:
-            largest_amount = spent
-            largest_category = c.get('name')
+    for cat, amt in by_cat.items():
+        if amt > largest_amount:
+            largest_amount = amt
+            largest_category = cat
 
     return {
         'totalBudget': total_budget,
@@ -90,6 +158,85 @@ def budget_summary():
         'largestCategory': largest_category,
         'largestCategoryAmount': largest_amount,
     }
+
+
+@app.get('/budget')
+def get_budget():
+    return {'defaultBudget': float(default_budget)}
+
+
+@app.put('/budget')
+def set_budget(payload: dict):
+    global default_budget
+    try:
+        v = float(payload.get('defaultBudget'))
+        default_budget = v
+        save_data()
+        return {'defaultBudget': default_budget}
+    except Exception:
+        raise HTTPException(status_code=400, detail='Invalid budget value')
+
+
+@app.put('/categories/{name}')
+def set_category_budget(name: str, payload: dict):
+    # set a budget limit for a category
+    try:
+        v = payload.get('budgetLimit')
+        if v is None:
+            raise ValueError('missing')
+        category_budgets[name] = float(v)
+        save_data()
+        return {'name': name, 'budgetLimit': category_budgets[name]}
+    except Exception:
+        raise HTTPException(status_code=400, detail='Invalid category budget')
+
+@app.post('/upload-receipt')
+async def upload_receipt(file: UploadFile = File(...)):
+    """Upload a receipt and extract merchant/total via OCR"""
+    try:
+        # Read file bytes
+        file_bytes = await file.read()
+        print(f"📥 Received file: {file.filename}, size: {len(file_bytes)} bytes")
+        
+        # Extract using ReceiptExtractor
+        extractor = ReceiptExtractor()
+        print(f"🔄 Starting OCR extraction...")
+        result = await extractor.extract_from_bytes(file_bytes, file.filename or 'receipt')
+        print(f"✅ OCR result: {result}")
+        
+        # Ensure numeric values
+        amount = 0.0
+        try:
+            amount = float(result.get('total')) if result.get('total') else 0.0
+        except (TypeError, ValueError):
+            amount = 0.0
+        
+        date_str = result.get('date')
+        if not date_str:
+            date_str = datetime.utcnow().date().isoformat()
+        
+        merchant = result.get('merchant') or 'Unknown Store'
+        
+        # Return extracted data
+        response = {
+            'id': str(hash(file_bytes))[:8],
+            'fileName': file.filename,
+            'uploadDate': datetime.utcnow().isoformat(),
+            'ocrData': {
+                'merchant': merchant,
+                'amount': amount,
+                'date': date_str,
+                'items': [],
+                'suggestedCategory': 'Shopping'
+            }
+        }
+        print(f"📤 Returning: {response}")
+        return response
+    except Exception as e:
+        print(f"❌ Upload error: {e}")
+        traceback.print_exc()
+        raise HTTPException(status_code=500, detail=f"Failed to process receipt: {str(e)}")
+
 
 if __name__ == '__main__':
     uvicorn.run('backend.fastapi.main:app', host='0.0.0.0', port=8000, reload=True)

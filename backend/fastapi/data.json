@@ -1,0 +1,14 @@
+{
+  "transactions": [
+    {
+      "id": "fb61ea4657954931ad87a1e403131628",
+      "date": "2026-02-07",
+      "merchant": "Berghotel",
+      "amount": 54.5,
+      "category": "Shopping",
+      "description": "Auto-created from receipt r1png.png"
+    }
+  ],
+  "category_budgets": {},
+  "default_budget": 2500.0
+}

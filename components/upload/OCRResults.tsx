@@ -59,11 +59,31 @@ export function OCRResults({ receipt, onConfirm, onCancel }: OCRResultsProps) {
     <div className="bg-white border border-slate-200 rounded-lg p-6">
       <h3 className="text-lg font-semibold text-slate-900 mb-4">Confirm Transaction Details</h3>
 
+      {/* OCR Extracted Data Display */}
+      <div className="bg-gray-50 rounded-lg p-4 mb-6 border border-gray-200">
+        <h4 className="text-sm font-semibold text-gray-700 mb-3">Extracted OCR Data</h4>
+        <div className="grid grid-cols-3 gap-4 text-sm">
+          <div>
+            <span className="text-gray-600">Merchant</span>
+            <p className="font-medium text-gray-900">{receipt.ocrData.merchant}</p>
+          </div>
+          <div>
+            <span className="text-gray-600">Amount</span>
+            <p className="font-medium text-gray-900">{formatCurrency(receipt.ocrData.amount)}</p>
+          </div>
+          <div>
+            <span className="text-gray-600">Date</span>
+            <p className="font-medium text-gray-900">{receipt.ocrData.date}</p>
+          </div>
+        </div>
+      </div>
+
       <div className="space-y-4 mb-6">
         {/* Merchant */}
         <div>
           <label className="block text-sm font-medium text-slate-700 mb-1">
             Merchant Name
+            <span className="text-xs text-gray-500 ml-1">(OCR: {receipt.ocrData.merchant})</span>
           </label>
           <input
             type="text"
@@ -77,6 +97,7 @@ export function OCRResults({ receipt, onConfirm, onCancel }: OCRResultsProps) {
         <div>
           <label className="block text-sm font-medium text-slate-700 mb-1">
             Amount
+            <span className="text-xs text-gray-500 ml-1">(OCR: {formatCurrency(receipt.ocrData.amount)})</span>
           </label>
           <div className="flex items-center gap-2">
             <span className="text-slate-700 font-medium">$</span>
@@ -94,6 +115,7 @@ export function OCRResults({ receipt, onConfirm, onCancel }: OCRResultsProps) {
         <div>
           <label className="block text-sm font-medium text-slate-700 mb-1">
             Date
+            <span className="text-xs text-gray-500 ml-1">(OCR: {receipt.ocrData.date})</span>
           </label>
           <input
             type="date"

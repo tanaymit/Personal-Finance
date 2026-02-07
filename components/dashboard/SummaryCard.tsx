@@ -11,6 +11,7 @@ interface SummaryCardProps {
   trend?: number;
   trendLabel?: string;
   color?: 'blue' | 'green' | 'red' | 'amber';
+  onClick?: () => void;
 }
 
 const colorClasses = {
@@ -33,10 +34,14 @@ export function SummaryCard({
   icon,
   trend,
   trendLabel,
-  color = 'blue'
+  color = 'blue',
+  onClick
 }: SummaryCardProps) {
   return (
-    <div className={`bg-gradient-to-br ${colorClasses[color]} border rounded-xl p-6 transition-transform hover:scale-105`}>
+    <div 
+      onClick={onClick}
+      className={`bg-gradient-to-br ${colorClasses[color]} border rounded-xl p-6 transition-transform ${onClick ? 'cursor-pointer hover:scale-110' : 'hover:scale-105'}`}
+    >
       <div className="flex items-start justify-between">
         <div>
           <p className="text-sm font-medium opacity-75 mb-1">{title}</p>

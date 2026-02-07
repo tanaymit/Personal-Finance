@@ -20,12 +20,31 @@ export default function UploadPage() {
 
     setIsProcessing(true);
     try {
+      console.log(`🔄 Processing file: ${files[0].name}`);
       const uploadedReceipt = await uploadReceipt(files[0]);
+      console.log(`✅ Received receipt data:`, uploadedReceipt);
+      // Auto-create a transaction from OCR data so dashboards populate immediately
+      try {
+        const tx = await createTransaction({
+          merchant: uploadedReceipt.ocrData.merchant || 'Unknown Merchant',
+          amount: Number(uploadedReceipt.ocrData.amount) || 0,
+          category: uploadedReceipt.ocrData.suggestedCategory || 'Other',
+          date: uploadedReceipt.ocrData.date || new Date().toISOString().split('T')[0],
+          description: `Auto-created from receipt ${uploadedReceipt.fileName}`
+        });
+        // mark initialized so dashboard shows data
+        if (typeof window !== 'undefined') localStorage.setItem('dataInitialized', '1');
+        // attach created transaction id to receipt for dedup
+        (uploadedReceipt as any)._createdTxId = tx.id;
+      } catch (e) {
+        console.warn('Auto-create transaction failed, will still show preview', e);
+      }
+
       setReceipt(uploadedReceipt);
       setCurrentStep('preview');
     } catch (error) {
-      console.error('Failed to upload receipt:', error);
-      alert('Failed to upload receipt. Please try again.');
+      console.error('❌ Failed to upload receipt:', error);
+      alert(`Failed to upload receipt: ${error instanceof Error ? error.message : 'Unknown error'}`);
     } finally {
       setIsProcessing(false);
     }
@@ -38,13 +57,17 @@ export default function UploadPage() {
     category: string;
   }) => {
     try {
-      await createTransaction({
-        merchant: data.merchant,
-        amount: data.amount,
-        category: data.category,
-        date: data.date,
-        description: `Receipt: ${receipt?.fileName}`
-      });
+      // If we already auto-created a transaction on upload, skip creating duplicate
+      if (!(receipt as any)?._createdTxId) {
+        await createTransaction({
+          merchant: data.merchant,
+          amount: data.amount,
+          category: data.category,
+          date: data.date,
+          description: `Receipt: ${receipt?.fileName}`
+        });
+        if (typeof window !== 'undefined') localStorage.setItem('dataInitialized', '1');
+      }
 
       setSuccessMessage(`Transaction recorded: ${data.merchant} for $${data.amount.toFixed(2)}`);
       setCurrentStep('success');

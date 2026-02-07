@@ -6,19 +6,39 @@ import { SummaryCard } from '@/components/dashboard/SummaryCard';
 import { SpendingChart } from '@/components/dashboard/SpendingChart';
 import { CategoryChart } from '@/components/dashboard/CategoryChart';
 import { RecentTransactions } from '@/components/dashboard/RecentTransactions';
+import { BudgetEditModal } from '@/components/dashboard/BudgetEditModal';
 import { fetchBudgetSummary, fetchCategories } from '@/lib/api';
 import { formatCurrency } from '@/lib/utils';
 import { BudgetSummary } from '@/lib/types';
 
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+
 export default function Dashboard() {
   const [summary, setSummary] = useState<BudgetSummary | null>(null);
   const [loading, setLoading] = useState(true);
+  const [initialized, setInitialized] = useState<boolean | null>(null);
+  const [budgetModalOpen, setBudgetModalOpen] = useState(false);
 
   useEffect(() => {
+    // Check if app has been initialized by an uploaded receipt
+    const flag = typeof window !== 'undefined' && localStorage.getItem('dataInitialized');
+    setInitialized(!!flag);
+
     async function loadData() {
       try {
-        const data = await fetchBudgetSummary();
-        setSummary(data);
+        if (!flag) {
+          // Not initialized yet — show zeros by default
+          setSummary({
+            totalBudget: 0,
+            totalSpent: 0,
+            remainingBudget: 0,
+            largestCategory: '',
+            largestCategoryAmount: 0
+          });
+        } else {
+          const data = await fetchBudgetSummary();
+          setSummary(data);
+        }
       } catch (error) {
         console.error('Failed to load budget summary:', error);
       } finally {
@@ -36,6 +56,32 @@ export default function Dashboard() {
   const getTrend = () => {
     // Mock trend calculation - in real app would compare with previous period
     return -5; // 5% decrease
+  };
+
+  const handleBudgetUpdate = async (newBudget: number) => {
+    try {
+      const res = await fetch(`${API_BASE_URL}/budget`, {
+        method: 'PUT',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ defaultBudget: newBudget })
+      });
+      if (!res.ok) throw new Error('Failed to update budget');
+      
+      // Reload the summary to update all fields
+      const updatedSummary = await fetchBudgetSummary();
+      setSummary(updatedSummary);
+      
+      // Notify other tabs/components of budget change
+      localStorage.setItem('budgetUpdated', JSON.stringify({ 
+        timestamp: Date.now(), 
+        newBudget 
+      }));
+      
+      setBudgetModalOpen(false);
+    } catch (error) {
+      console.error('Failed to update budget:', error);
+      throw error;
+    }
   };
 
   return (
@@ -63,6 +109,7 @@ export default function Dashboard() {
             value={formatCurrency(summary.totalBudget)}
             icon={<Wallet size={24} className="text-blue-700" />}
             color="blue"
+            onClick={() => setBudgetModalOpen(true)}
           />
           <SummaryCard
             title="Total Spent"
@@ -120,6 +167,14 @@ export default function Dashboard() {
         <h2 className="text-lg font-semibold text-slate-900 mb-4">Recent Transactions</h2>
         <RecentTransactions />
       </div>
+
+      {/* Budget Edit Modal */}
+      <BudgetEditModal
+        isOpen={budgetModalOpen}
+        currentBudget={summary?.totalBudget || 0}
+        onClose={() => setBudgetModalOpen(false)}
+        onSave={handleBudgetUpdate}
+      />
     </div>
   );
 }

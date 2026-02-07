@@ -11,15 +11,24 @@ export function RecentTransactions() {
   const [transactions, setTransactions] = useState<Transaction[]>([]);
   const [loading, setLoading] = useState(true);
   const [categories, setCategories] = useState<any[]>([]);
+  const [initialized, setInitialized] = useState<boolean | null>(null);
 
   useEffect(() => {
     async function loadTransactions() {
       try {
-        const data = await fetchTransactions();
-        setTransactions(data.slice(0, 5));
-        // load categories for colors
-        const cats = await fetchCategories();
-        setCategories(cats as any[]);
+        const flag = typeof window !== 'undefined' && localStorage.getItem('dataInitialized');
+        setInitialized(!!flag);
+        if (!flag) {
+          // not initialized: show empty state
+          setTransactions([]);
+          setCategories([]);
+        } else {
+          const data = await fetchTransactions();
+          setTransactions(data.slice(0, 5));
+          // load categories for colors
+          const cats = await fetchCategories();
+          setCategories(cats as any[]);
+        }
       } catch (error) {
         console.error('Failed to load transactions:', error);
       } finally {
@@ -41,7 +50,10 @@ export function RecentTransactions() {
 
   return (
     <div className="space-y-2">
-      {transactions.map(transaction => {
+      {transactions.length === 0 ? (
+        <div className="p-6 text-center text-sm text-slate-600">No transactions yet — upload a receipt to populate data.</div>
+      ) : (
+        transactions.map(transaction => {
         const category = categories.find(c => c.name === transaction.category);
         return (
           <div
@@ -66,7 +78,8 @@ export function RecentTransactions() {
             </div>
           </div>
         );
-      })}
+        })
+      )}
       <Link href="/transactions">
         <div className="flex items-center justify-center gap-2 p-3 text-blue-600 hover:bg-blue-50 rounded-lg transition-colors">
           View All Transactions

@@ -75,29 +75,34 @@ export async function createTransaction(
 
 /**
  * Upload a receipt file for OCR processing
- * For now this is mocked; you can later add a backend endpoint to accept multipart uploads.
+ * POST /upload-receipt with multipart form-data
+ * Backend will extract merchant, total, and date using OCR
  */
 export async function uploadReceipt(file: File): Promise<UploadedReceipt> {
-  await simulateDelay(1500); // Longer delay to simulate OCR processing
+  console.log(`📤 Uploading receipt: ${file.name} (${file.size} bytes)`);
   
-  // Mock OCR results
-  const mockOCRData = {
-    merchant: 'Sample Store',
-    amount: 45.99,
-    date: new Date().toISOString().split('T')[0],
-    items: [
-      { name: 'Item 1', price: 25.99 },
-      { name: 'Item 2', price: 20.00 }
-    ],
-    suggestedCategory: 'Shopping'
-  };
+  const formData = new FormData();
+  formData.append('file', file);
 
-  return {
-    id: Date.now().toString(),
-    fileName: file.name,
-    uploadDate: new Date().toISOString(),
-    ocrData: mockOCRData
-  };
+  try {
+    const res = await fetch(`${API_BASE_URL}/upload-receipt`, {
+      method: 'POST',
+      body: formData,
+    });
+
+    if (!res.ok) {
+      const errorText = await res.text();
+      console.error(`Upload failed: ${res.status} - ${errorText}`);
+      throw new Error(`Upload failed: ${res.status}`);
+    }
+
+    const data = await res.json();
+    console.log(`✅ Upload successful:`, data);
+    return data as UploadedReceipt;
+  } catch (error) {
+    console.error(`❌ Upload error:`, error);
+    throw error;
+  }
 }
 
 /**

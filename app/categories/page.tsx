@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { Category } from '@/lib/types';
-import { fetchCategories, updateCategory } from '@/lib/api';
+import { fetchCategories, updateCategory, fetchBudgetSummary } from '@/lib/api';
 import { CategoryCard } from '@/components/categories/CategoryCard';
 import { EditCategoryModal } from '@/components/categories/EditCategoryModal';
 
@@ -10,19 +10,43 @@ export default function CategoriesPage() {
   const [categories, setCategories] = useState<Category[]>([]);
   const [selectedCategory, setSelectedCategory] = useState<Category | null>(null);
   const [loading, setLoading] = useState(true);
+  const [globalBudget, setGlobalBudget] = useState<number>(0);
+
+  const loadCategories = async () => {
+    try {
+      const data = await fetchCategories();
+      setCategories(data);
+    } catch (error) {
+      console.error('Failed to load categories:', error);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const loadBudget = async () => {
+    try {
+      const summary = await fetchBudgetSummary();
+      setGlobalBudget(summary.totalBudget);
+    } catch (error) {
+      console.error('Failed to load global budget:', error);
+    }
+  };
 
   useEffect(() => {
-    async function loadCategories() {
-      try {
-        const data = await fetchCategories();
-        setCategories(data);
-      } catch (error) {
-        console.error('Failed to load categories:', error);
-      } finally {
-        setLoading(false);
-      }
-    }
     loadCategories();
+    loadBudget();
+  }, []);
+
+  // Listen for budget updates from dashboard
+  useEffect(() => {
+    const handleBudgetUpdate = (e: StorageEvent) => {
+      if (e.key === 'budgetUpdated' && e.newValue) {
+        loadBudget();
+      }
+    };
+
+    window.addEventListener('storage', handleBudgetUpdate);
+    return () => window.removeEventListener('storage', handleBudgetUpdate);
   }, []);
 
   const handleEdit = (category: Category) => {
@@ -41,7 +65,6 @@ export default function CategoriesPage() {
 
   // Calculate total spent
   const totalSpent = categories.reduce((sum, cat) => sum + cat.spent, 0);
-  const totalBudget = categories.reduce((sum, cat) => sum + (cat.budgetLimit || 0), 0);
 
   return (
     <div className="p-6 space-y-6">
@@ -55,7 +78,7 @@ export default function CategoriesPage() {
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
         <div className="bg-gradient-to-br from-blue-50 to-blue-100 border border-blue-200 rounded-lg p-4">
           <p className="text-xs text-blue-600 mb-1">Total Budget</p>
-          <p className="text-2xl font-bold text-blue-700">${totalBudget.toFixed(2)}</p>
+          <p className="text-2xl font-bold text-blue-700">${globalBudget.toFixed(2)}</p>
         </div>
         <div className="bg-gradient-to-br from-red-50 to-red-100 border border-red-200 rounded-lg p-4">
           <p className="text-xs text-red-600 mb-1">Total Spent</p>
@@ -63,7 +86,7 @@ export default function CategoriesPage() {
         </div>
         <div className="bg-gradient-to-br from-green-50 to-green-100 border border-green-200 rounded-lg p-4">
           <p className="text-xs text-green-600 mb-1">Remaining</p>
-          <p className="text-2xl font-bold text-green-700">${(totalBudget - totalSpent).toFixed(2)}</p>
+          <p className="text-2xl font-bold text-green-700">${(globalBudget - totalSpent).toFixed(2)}</p>
         </div>
       </div>
 
