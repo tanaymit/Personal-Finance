@@ -1,9 +1,10 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { PieChart, Pie, Cell, Legend, Tooltip, ResponsiveContainer } from 'recharts';
+import { PieChart, Pie, Cell, Tooltip, ResponsiveContainer } from 'recharts';
 import { getTransactionsByCategory, fetchCategories } from '@/lib/api';
 import { formatCurrency } from '@/lib/utils';
+import { Category } from '@/lib/types';
 
 interface CategoryData {
   name: string;
@@ -14,6 +15,7 @@ interface CategoryData {
 export function CategoryChart() {
   const [data, setData] = useState<CategoryData[]>([]);
   const [loading, setLoading] = useState(true);
+  const [categories, setCategories] = useState<Category[]>([]);
   const [filterYear, setFilterYear] = useState<number | undefined>();
   const [filterMonth, setFilterMonth] = useState<number | undefined>();
 
@@ -34,13 +36,15 @@ export function CategoryChart() {
   useEffect(() => {
     async function loadData() {
       try {
-        const [categoryTotals, categories] = await Promise.all([
+        const [categoryTotals, cats] = await Promise.all([
           getTransactionsByCategory(filterYear, filterMonth),
           fetchCategories(filterYear, filterMonth)
         ]);
 
+        setCategories(cats);
+
         const chartData: CategoryData[] = Object.entries(categoryTotals).map(([category, total]) => {
-          const categoryData = categories.find((c: any) => c.name === category);
+          const categoryData = cats.find(c => c.name === category);
           return {
             name: category,
             value: total,
@@ -59,14 +63,15 @@ export function CategoryChart() {
 
   // Listen for filter changes
   useEffect(() => {
-    const handleFilterChange = (e: CustomEvent) => {
+    const handleFilterChange = (event: Event) => {
+      const e = event as CustomEvent<{ year: number; month: number }>;
       const { year, month } = e.detail;
       setFilterYear(year);
       setFilterMonth(month);
     };
 
-    window.addEventListener('monthYearFilterChange' as any, handleFilterChange);
-    return () => window.removeEventListener('monthYearFilterChange' as any, handleFilterChange);
+    window.addEventListener('monthYearFilterChange', handleFilterChange as EventListener);
+    return () => window.removeEventListener('monthYearFilterChange', handleFilterChange as EventListener);
   }, []);
 
   if (loading) {
@@ -93,7 +98,7 @@ export function CategoryChart() {
               <Cell key={`cell-${index}`} fill={entry.color} />
             ))}
           </Pie>
-          <Tooltip formatter={(value: any) => formatCurrency(value)} />
+          <Tooltip formatter={(value: unknown) => formatCurrency(Number(value))} />
         </PieChart>
       </ResponsiveContainer>
     </div>

@@ -3,14 +3,14 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
-import { Transaction } from '@/lib/types';
+import { Category, Transaction } from '@/lib/types';
 import { fetchTransactions, fetchCategories } from '@/lib/api';
-import { formatCurrency, formatDate, getRelativeTime } from '@/lib/utils';
+import { formatCurrency, getRelativeTime } from '@/lib/utils';
 
 export function RecentTransactions() {
   const [transactions, setTransactions] = useState<Transaction[]>([]);
   const [loading, setLoading] = useState(true);
-  const [categories, setCategories] = useState<any[]>([]);
+  const [categories, setCategories] = useState<Category[]>([]);
   const [filterYear, setFilterYear] = useState<number | undefined>();
   const [filterMonth, setFilterMonth] = useState<number | undefined>();
 
@@ -34,7 +34,7 @@ export function RecentTransactions() {
         const data = await fetchTransactions(undefined, filterYear, filterMonth);
         setTransactions(data.slice(0, 5));
         const cats = await fetchCategories(filterYear, filterMonth);
-        setCategories(cats as any[]);
+        setCategories(cats);
       } catch (error) {
         console.error('Failed to load transactions:', error);
       } finally {
@@ -46,14 +46,15 @@ export function RecentTransactions() {
 
   // Listen for filter changes
   useEffect(() => {
-    const handleFilterChange = (e: CustomEvent) => {
+    const handleFilterChange = (event: Event) => {
+      const e = event as CustomEvent<{ year: number; month: number }>;
       const { year, month } = e.detail;
       setFilterYear(year);
       setFilterMonth(month);
     };
 
-    window.addEventListener('monthYearFilterChange' as any, handleFilterChange);
-    return () => window.removeEventListener('monthYearFilterChange' as any, handleFilterChange);
+    window.addEventListener('monthYearFilterChange', handleFilterChange as EventListener);
+    return () => window.removeEventListener('monthYearFilterChange', handleFilterChange as EventListener);
   }, []);
 
   if (loading) {

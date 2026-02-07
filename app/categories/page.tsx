@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { Category } from '@/lib/types';
 import { fetchCategories, updateCategory, fetchBudgetSummary } from '@/lib/api';
 import { CategoryCard } from '@/components/categories/CategoryCard';
@@ -15,7 +15,7 @@ export default function CategoriesPage() {
   const [filterYear, setFilterYear] = useState<number | undefined>();
   const [filterMonth, setFilterMonth] = useState<number | undefined>();
 
-  const loadCategories = async () => {
+  const loadCategories = useCallback(async () => {
     try {
       const data = await fetchCategories(filterYear, filterMonth);
       setCategories(data);
@@ -24,16 +24,16 @@ export default function CategoriesPage() {
     } finally {
       setLoading(false);
     }
-  };
+  }, [filterYear, filterMonth]);
 
-  const loadBudget = async () => {
+  const loadBudget = useCallback(async () => {
     try {
       const summary = await fetchBudgetSummary(filterYear, filterMonth);
       setGlobalBudget(summary.totalBudget);
     } catch (error) {
       console.error('Failed to load global budget:', error);
     }
-  };
+  }, [filterYear, filterMonth]);
 
   useEffect(() => {
     // Load filter from localStorage on mount
@@ -68,14 +68,15 @@ export default function CategoriesPage() {
 
   // Listen for filter changes
   useEffect(() => {
-    const handleFilterChange = (e: CustomEvent) => {
+    const handleFilterChange = (event: Event) => {
+      const e = event as CustomEvent<{ year: number; month: number }>;
       const { year, month } = e.detail;
       setFilterYear(year);
       setFilterMonth(month);
     };
 
-    window.addEventListener('monthYearFilterChange' as any, handleFilterChange);
-    return () => window.removeEventListener('monthYearFilterChange' as any, handleFilterChange);
+    window.addEventListener('monthYearFilterChange', handleFilterChange as EventListener);
+    return () => window.removeEventListener('monthYearFilterChange', handleFilterChange as EventListener);
   }, []);
 
   const handleEdit = (category: Category) => {

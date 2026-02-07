@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { FilterOptions } from '@/lib/types';
+import { Category, FilterOptions } from '@/lib/types';
 import { fetchCategories } from '@/lib/api';
 import { ChevronDown } from 'lucide-react';
 
@@ -13,14 +13,14 @@ interface FilterPanelProps {
 
 export function FilterPanel({ onFilterChange, isOpen, onToggle }: FilterPanelProps) {
   const [filters, setFilters] = useState<FilterOptions>({});
-  const [categories, setCategories] = useState<any[]>([]);
+  const [categories, setCategories] = useState<Category[]>([]);
 
   useEffect(() => {
     let mounted = true;
     (async () => {
       try {
         const cats = await fetchCategories();
-        if (mounted) setCategories(cats as any[]);
+        if (mounted) setCategories(cats);
       } catch (e) {
         // ignore
       }

@@ -8,7 +8,7 @@ import { CategoryChart } from '@/components/dashboard/CategoryChart';
 import { RecentTransactions } from '@/components/dashboard/RecentTransactions';
 import { BudgetEditModal } from '@/components/dashboard/BudgetEditModal';
 import { MonthYearFilter } from '@/components/shared/MonthYearFilter';
-import { fetchBudgetSummary, fetchCategories } from '@/lib/api';
+import { fetchBudgetSummary } from '@/lib/api';
 import { formatCurrency } from '@/lib/utils';
 import { BudgetSummary } from '@/lib/types';
 
@@ -56,14 +56,15 @@ export default function Dashboard() {
 
   // Listen for filter changes from other pages
   useEffect(() => {
-    const handleFilterChange = (e: CustomEvent) => {
+    const handleFilterChange = (event: Event) => {
+      const e = event as CustomEvent<{ year: number; month: number }>;
       const { year, month } = e.detail;
       setFilterYear(year);
       setFilterMonth(month);
     };
 
-    window.addEventListener('monthYearFilterChange' as any, handleFilterChange);
-    return () => window.removeEventListener('monthYearFilterChange' as any, handleFilterChange);
+    window.addEventListener('monthYearFilterChange', handleFilterChange as EventListener);
+    return () => window.removeEventListener('monthYearFilterChange', handleFilterChange as EventListener);
   }, []);
 
   const getSpendingPercentage = () => {
@@ -107,7 +108,7 @@ export default function Dashboard() {
       {/* Page Title */}
       <div className="mb-8">
         <h1 className="text-3xl font-bold text-slate-100 mb-2">Welcome back, John!</h1>
-        <p className="text-slate-400">Here's your financial overview for this month</p>
+        <p className="text-slate-400">Here&apos;s your financial overview for this month</p>
       </div>
 
       {/* Month/Year Filter */}
@@ -161,7 +162,7 @@ export default function Dashboard() {
           <div>
             <h3 className="font-semibold text-amber-100 mb-1">Approaching Budget Limit</h3>
             <p className="text-sm text-amber-200">
-              You've spent {getSpendingPercentage()}% of your monthly budget. Be mindful of your
+              You&apos;ve spent {getSpendingPercentage()}% of your monthly budget. Be mindful of your
               remaining funds.
             </p>
           </div>

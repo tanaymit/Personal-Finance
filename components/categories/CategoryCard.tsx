@@ -5,6 +5,7 @@ import { formatCurrency, calculatePercentage } from '@/lib/utils';
 import { Edit2, MoreHorizontal } from 'lucide-react';
 import * as Icons from 'lucide-react';
 import { useState } from 'react';
+import type { ComponentType } from 'react';
 
 interface CategoryCardProps {
   category: Category;
@@ -24,8 +25,8 @@ export function CategoryCard({ category, onEdit }: CategoryCardProps) {
 
   // Get icon component
   const iconName = category.icon || 'Tag';
-  const IconComponent = (Icons as any)[iconName];
-  const Icon = IconComponent || null;
+  const iconMap = Icons as unknown as Record<string, ComponentType<{ size?: number }>>;
+  const Icon = iconMap[iconName] || null;
 
   const color = category.color || '#6b7280';
 
