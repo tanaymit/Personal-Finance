@@ -1,0 +1,160 @@
+'use client';
+
+import { useState, useEffect } from 'react';
+import { FilterOptions } from '@/lib/types';
+import { fetchCategories } from '@/lib/api';
+import { ChevronDown } from 'lucide-react';
+
+interface FilterPanelProps {
+  onFilterChange: (filters: FilterOptions) => void;
+  isOpen: boolean;
+  onToggle: () => void;
+}
+
+export function FilterPanel({ onFilterChange, isOpen, onToggle }: FilterPanelProps) {
+  const [filters, setFilters] = useState<FilterOptions>({});
+  const [categories, setCategories] = useState<any[]>([]);
+
+  useEffect(() => {
+    let mounted = true;
+    (async () => {
+      try {
+        const cats = await fetchCategories();
+        if (mounted) setCategories(cats as any[]);
+      } catch (e) {
+        // ignore
+      }
+    })();
+    return () => { mounted = false; };
+  }, []);
+
+  const handleCategoryChange = (category: string) => {
+    const newFilters = {
+      ...filters,
+      category: category === 'all' ? undefined : category
+    };
+    setFilters(newFilters);
+    onFilterChange(newFilters);
+  };
+
+  const handleAmountChange = (min: number, max: number) => {
+    const newFilters = {
+      ...filters,
+      minAmount: min || undefined,
+      maxAmount: max || undefined
+    };
+    setFilters(newFilters);
+    onFilterChange(newFilters);
+  };
+
+  const handleDateChange = (start: string, end: string) => {
+    const newFilters = {
+      ...filters,
+      startDate: start || undefined,
+      endDate: end || undefined
+    };
+    setFilters(newFilters);
+    onFilterChange(newFilters);
+  };
+
+  const handleReset = () => {
+    setFilters({});
+    onFilterChange({});
+  };
+
+  return (
+    <div className="bg-white border border-slate-200 rounded-lg overflow-hidden">
+      {/* Filter Header */}
+      <button
+        onClick={onToggle}
+        className="w-full flex items-center justify-between p-4 hover:bg-slate-50 transition-colors"
+      >
+        <h3 className="font-semibold text-slate-900">Filters</h3>
+        <ChevronDown
+          size={20}
+          className={`text-slate-600 transition-transform ${isOpen ? 'rotate-180' : ''}`}
+        />
+      </button>
+
+      {/* Filter Content */}
+      {isOpen && (
+        <div className="border-t border-slate-200 p-4 space-y-4">
+          {/* Category Filter */}
+          <div>
+            <label className="block text-sm font-medium text-slate-700 mb-2">Category</label>
+            <select
+              value={filters.category || 'all'}
+              onChange={e => handleCategoryChange(e.target.value)}
+              className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:outline-none focus:border-blue-500"
+            >
+              <option value="all">All Categories</option>
+              {categories.map(cat => (
+                <option key={cat.id} value={cat.name}>
+                  {cat.name}
+                </option>
+              ))}
+            </select>
+          </div>
+
+          {/* Amount Range */}
+          <div>
+            <label className="block text-sm font-medium text-slate-700 mb-2">Amount Range</label>
+            <div className="flex gap-2">
+              <input
+                type="number"
+                placeholder="Min"
+                value={filters.minAmount || ''}
+                onChange={e =>
+                  handleAmountChange(
+                    e.target.value ? parseFloat(e.target.value) : 0,
+                    filters.maxAmount || 0
+                  )
+                }
+                className="flex-1 px-3 py-2 border border-slate-300 rounded-lg focus:outline-none focus:border-blue-500"
+              />
+              <input
+                type="number"
+                placeholder="Max"
+                value={filters.maxAmount || ''}
+                onChange={e =>
+                  handleAmountChange(
+                    filters.minAmount || 0,
+                    e.target.value ? parseFloat(e.target.value) : 0
+                  )
+                }
+                className="flex-1 px-3 py-2 border border-slate-300 rounded-lg focus:outline-none focus:border-blue-500"
+              />
+            </div>
+          </div>
+
+          {/* Date Range */}
+          <div>
+            <label className="block text-sm font-medium text-slate-700 mb-2">Date Range</label>
+            <div className="flex gap-2">
+              <input
+                type="date"
+                value={filters.startDate || ''}
+                onChange={e => handleDateChange(e.target.value, filters.endDate || '')}
+                className="flex-1 px-3 py-2 border border-slate-300 rounded-lg focus:outline-none focus:border-blue-500"
+              />
+              <input
+                type="date"
+                value={filters.endDate || ''}
+                onChange={e => handleDateChange(filters.startDate || '', e.target.value)}
+                className="flex-1 px-3 py-2 border border-slate-300 rounded-lg focus:outline-none focus:border-blue-500"
+              />
+            </div>
+          </div>
+
+          {/* Reset Button */}
+          <button
+            onClick={handleReset}
+            className="w-full px-4 py-2 bg-slate-100 text-slate-700 rounded-lg hover:bg-slate-200 transition-colors font-medium"
+          >
+            Reset Filters
+          </button>
+        </div>
+      )}
+    </div>
+  );
+}

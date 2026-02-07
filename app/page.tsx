@@ -1,65 +1,125 @@
-import Image from "next/image";
+'use client';
 
-export default function Home() {
+import { useEffect, useState } from 'react';
+import { DollarSign, TrendingUp, Wallet, AlertCircle } from 'lucide-react';
+import { SummaryCard } from '@/components/dashboard/SummaryCard';
+import { SpendingChart } from '@/components/dashboard/SpendingChart';
+import { CategoryChart } from '@/components/dashboard/CategoryChart';
+import { RecentTransactions } from '@/components/dashboard/RecentTransactions';
+import { fetchBudgetSummary, fetchCategories } from '@/lib/api';
+import { formatCurrency } from '@/lib/utils';
+import { BudgetSummary } from '@/lib/types';
+
+export default function Dashboard() {
+  const [summary, setSummary] = useState<BudgetSummary | null>(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    async function loadData() {
+      try {
+        const data = await fetchBudgetSummary();
+        setSummary(data);
+      } catch (error) {
+        console.error('Failed to load budget summary:', error);
+      } finally {
+        setLoading(false);
+      }
+    }
+    loadData();
+  }, []);
+
+  const getSpendingPercentage = () => {
+    if (!summary) return 0;
+    return Math.round((summary.totalSpent / summary.totalBudget) * 100);
+  };
+
+  const getTrend = () => {
+    // Mock trend calculation - in real app would compare with previous period
+    return -5; // 5% decrease
+  };
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
+    <div className="p-6 space-y-6">
+      {/* Page Title */}
+      <div className="mb-8">
+        <h1 className="text-3xl font-bold text-slate-900 mb-2">Welcome back, John!</h1>
+        <p className="text-slate-600">Here's your financial overview for this month</p>
+      </div>
+
+      {/* Summary Cards */}
+      {loading ? (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          {[...Array(4)].map((_, i) => (
+            <div
+              key={i}
+              className="h-28 bg-gradient-to-br from-slate-100 to-slate-200 rounded-xl animate-pulse"
             />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+          ))}
         </div>
-      </main>
+      ) : summary ? (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          <SummaryCard
+            title="Total Budget"
+            value={formatCurrency(summary.totalBudget)}
+            icon={<Wallet size={24} className="text-blue-700" />}
+            color="blue"
+          />
+          <SummaryCard
+            title="Total Spent"
+            value={formatCurrency(summary.totalSpent)}
+            icon={<DollarSign size={24} className="text-red-700" />}
+            trend={getTrend()}
+            color="red"
+          />
+          <SummaryCard
+            title="Remaining"
+            value={formatCurrency(summary.remainingBudget)}
+            icon={<TrendingUp size={24} className="text-green-700" />}
+            color="green"
+          />
+          <SummaryCard
+            title="Spending Rate"
+            value={`${getSpendingPercentage()}%`}
+            icon={<AlertCircle size={24} className="text-amber-700" />}
+            color="amber"
+          />
+        </div>
+      ) : null}
+
+      {/* Alert */}
+      {summary && summary.totalSpent > summary.totalBudget * 0.8 && (
+        <div className="bg-gradient-to-br from-amber-50 to-orange-50 border border-orange-200 rounded-lg p-4 flex items-start gap-3">
+          <AlertCircle className="text-orange-600 mt-0.5 flex-shrink-0" size={20} />
+          <div>
+            <h3 className="font-semibold text-orange-900 mb-1">Approaching Budget Limit</h3>
+            <p className="text-sm text-orange-800">
+              You've spent {getSpendingPercentage()}% of your monthly budget. Be mindful of your
+              remaining funds.
+            </p>
+          </div>
+        </div>
+      )}
+
+      {/* Charts Grid */}
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        {/* Spending Trend */}
+        <div className="bg-white border border-slate-200 rounded-lg p-6">
+          <h2 className="text-lg font-semibold text-slate-900 mb-4">Spending Trend</h2>
+          <SpendingChart type="line" />
+        </div>
+
+        {/* Category Breakdown */}
+        <div className="bg-white border border-slate-200 rounded-lg p-6">
+          <h2 className="text-lg font-semibold text-slate-900 mb-4">Spending by Category</h2>
+          <CategoryChart />
+        </div>
+      </div>
+
+      {/* Recent Transactions */}
+      <div className="bg-white border border-slate-200 rounded-lg p-6">
+        <h2 className="text-lg font-semibold text-slate-900 mb-4">Recent Transactions</h2>
+        <RecentTransactions />
+      </div>
     </div>
   );
 }
