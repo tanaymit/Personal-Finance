@@ -73,14 +73,17 @@ export function MonthYearFilter({ onChange }: MonthYearFilterProps) {
   const years = Array.from({ length: 5 }, (_, i) => currentDate.getFullYear() - i);
 
   return (
-    <div className="bg-white border border-slate-200 rounded-lg p-4">
-      <div className="flex items-center gap-3">
-        <Calendar size={20} className="text-slate-600" />
-        <div className="flex gap-2 flex-1">
+    <div className="rounded-xl p-[1px] bg-gradient-to-r from-slate-800 via-slate-700 to-slate-800 shadow-[0_0_24px_rgba(15,23,42,0.5)]">
+      <div className="rounded-xl bg-slate-950/90 border border-slate-800/80 px-4 py-3 backdrop-blur">
+        <div className="flex items-center gap-3">
+          <div className="w-9 h-9 rounded-lg bg-slate-900/80 border border-slate-800 flex items-center justify-center">
+            <Calendar size={18} className="text-slate-300" />
+          </div>
+          <div className="flex gap-2 flex-1">
           <select
             value={selectedMonth}
             onChange={e => setSelectedMonth(parseInt(e.target.value))}
-            className="flex-1 px-3 py-2 border border-slate-300 rounded-lg focus:outline-none focus:border-blue-500 text-sm"
+            className="flex-1 px-3 py-2 rounded-lg bg-slate-900/80 text-slate-100 border border-slate-800 focus:outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/20 text-sm"
           >
             {months.map(m => (
               <option key={m.value} value={m.value}>
@@ -91,7 +94,7 @@ export function MonthYearFilter({ onChange }: MonthYearFilterProps) {
           <select
             value={selectedYear}
             onChange={e => setSelectedYear(parseInt(e.target.value))}
-            className="px-3 py-2 border border-slate-300 rounded-lg focus:outline-none focus:border-blue-500 text-sm"
+            className="px-3 py-2 rounded-lg bg-slate-900/80 text-slate-100 border border-slate-800 focus:outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/20 text-sm"
           >
             {years.map(y => (
               <option key={y} value={y}>
@@ -99,6 +102,7 @@ export function MonthYearFilter({ onChange }: MonthYearFilterProps) {
               </option>
             ))}
           </select>
+          </div>
         </div>
       </div>
     </div>

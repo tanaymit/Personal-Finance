@@ -15,17 +15,24 @@ interface SummaryCardProps {
 }
 
 const colorClasses = {
-  blue: 'from-blue-50 to-blue-100 text-blue-700 border-blue-200',
-  green: 'from-green-50 to-green-100 text-green-700 border-green-200',
-  red: 'from-red-50 to-red-100 text-red-700 border-red-200',
-  amber: 'from-amber-50 to-amber-100 text-amber-700 border-amber-200'
+  blue: 'from-slate-950 to-slate-900 text-slate-100 border-slate-800',
+  green: 'from-slate-950 to-slate-900 text-slate-100 border-slate-800',
+  red: 'from-slate-950 to-slate-900 text-slate-100 border-slate-800',
+  amber: 'from-slate-950 to-slate-900 text-slate-100 border-slate-800'
 };
 
 const iconBgClasses = {
-  blue: 'bg-blue-200',
-  green: 'bg-green-200',
-  red: 'bg-red-200',
-  amber: 'bg-amber-200'
+  blue: 'bg-cyan-400/10 text-cyan-300',
+  green: 'bg-emerald-400/10 text-emerald-300',
+  red: 'bg-rose-400/10 text-rose-300',
+  amber: 'bg-amber-400/10 text-amber-300'
+};
+
+const valueClasses = {
+  blue: 'text-cyan-300',
+  green: 'text-emerald-300',
+  red: 'text-rose-300',
+  amber: 'text-amber-300'
 };
 
 export function SummaryCard({
@@ -40,12 +47,12 @@ export function SummaryCard({
   return (
     <div 
       onClick={onClick}
-      className={`bg-gradient-to-br ${colorClasses[color]} border rounded-xl p-6 transition-transform ${onClick ? 'cursor-pointer hover:scale-110' : 'hover:scale-105'}`}
+      className={`bg-gradient-to-br ${colorClasses[color]} border rounded-xl p-6 transition-transform shadow-[0_0_24px_rgba(2,6,23,0.35)] ${onClick ? 'cursor-pointer hover:scale-[1.02]' : 'hover:scale-[1.01]'}`}
     >
       <div className="flex items-start justify-between">
         <div>
-          <p className="text-sm font-medium opacity-75 mb-1">{title}</p>
-          <h3 className="text-2xl font-bold">{value}</h3>
+          <p className="text-xs uppercase tracking-widest text-slate-400 mb-1">{title}</p>
+          <h3 className={`text-2xl font-bold ${valueClasses[color]}`}>{value}</h3>
           {trend !== undefined && (
             <div className="flex items-center gap-1 mt-2 text-xs">
               {trend >= 0 ? (
@@ -62,7 +69,7 @@ export function SummaryCard({
             </div>
           )}
         </div>
-        <div className={`p-3 rounded-lg ${iconBgClasses[color]}`}>
+        <div className={`p-3 rounded-lg border border-slate-800 ${iconBgClasses[color]}`}>
           {icon}
         </div>
       </div>

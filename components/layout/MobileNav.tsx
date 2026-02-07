@@ -23,7 +23,7 @@ export function MobileNav() {
   const pathname = usePathname();
 
   return (
-    <nav className="lg:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200 z-40">
+    <nav className="lg:hidden fixed bottom-0 left-0 right-0 bg-slate-950/90 border-t border-slate-800 z-40 backdrop-blur">
       <div className="flex justify-around h-16">
         {navigationItems.map(item => {
           const Icon = item.icon;
@@ -35,8 +35,8 @@ export function MobileNav() {
               className={cn(
                 'flex flex-col items-center justify-center gap-1 flex-1 transition-colors border-b-2',
                 isActive
-                  ? 'bg-blue-50 text-blue-600 border-blue-600'
-                  : 'text-slate-600 border-transparent hover:bg-slate-50'
+                  ? 'bg-slate-900 text-slate-100 border-cyan-400'
+                  : 'text-slate-400 border-transparent hover:bg-slate-900'
               )}
             >
               <Icon size={24} />

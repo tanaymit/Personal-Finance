@@ -71,7 +71,7 @@ export function CategoryChart() {
 
   if (loading) {
     return (
-      <div className="w-full h-80 bg-gradient-to-br from-slate-50 to-slate-100 rounded-xl animate-pulse" />
+      <div className="w-full h-80 bg-gradient-to-br from-slate-900 to-slate-800 rounded-xl animate-pulse" />
     );
   }
 

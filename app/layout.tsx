@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Orbitron } from "next/font/google";
 import "./globals.css";
 import { Header } from '@/components/layout/Header';
 import { Sidebar } from '@/components/layout/Sidebar';
@@ -11,6 +11,11 @@ const geistSans = Geist({
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+const orbitron = Orbitron({
+  variable: "--font-future",
   subsets: ["latin"],
 });
 
@@ -26,11 +31,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body suppressHydrationWarning className={`${geistSans.variable} ${geistMono.variable} antialiased light`}>
+      <body suppressHydrationWarning className={`${geistSans.variable} ${geistMono.variable} ${orbitron.variable} antialiased bg-slate-950 text-slate-100`}>
         <Header />
         <div className="flex">
           <Sidebar />
-          <main className="flex-1 min-h-screen" style={{ background: 'var(--background)', color: 'var(--foreground)' }}>
+          <main className="flex-1 min-h-screen bg-[radial-gradient(1200px_circle_at_20%_-10%,rgba(34,211,238,0.08),transparent_45%),radial-gradient(900px_circle_at_80%_-20%,rgba(59,130,246,0.08),transparent_40%),linear-gradient(180deg,#0b0f14,#0b0f14)]" style={{ color: 'var(--foreground)' }}>
             {children}
           </main>
         </div>

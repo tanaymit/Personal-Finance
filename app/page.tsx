@@ -115,8 +115,8 @@ export default function Dashboard() {
     <div className="p-6 space-y-6">
       {/* Page Title */}
       <div className="mb-8">
-        <h1 className="text-3xl font-bold text-slate-900 mb-2">Welcome back, John!</h1>
-        <p className="text-slate-600">Here's your financial overview for this month</p>
+        <h1 className="text-3xl font-bold text-slate-100 mb-2">Welcome back, John!</h1>
+        <p className="text-slate-400">Here's your financial overview for this month</p>
       </div>
 
       {/* Month/Year Filter */}
@@ -128,7 +128,7 @@ export default function Dashboard() {
           {[...Array(4)].map((_, i) => (
             <div
               key={i}
-              className="h-28 bg-gradient-to-br from-slate-100 to-slate-200 rounded-xl animate-pulse"
+              className="h-28 bg-gradient-to-br from-slate-900 to-slate-800 rounded-xl animate-pulse"
             />
           ))}
         </div>
@@ -137,27 +137,27 @@ export default function Dashboard() {
           <SummaryCard
             title="Total Budget"
             value={formatCurrency(summary.totalBudget)}
-            icon={<Wallet size={24} className="text-blue-700" />}
+            icon={<Wallet size={24} className="text-cyan-300" />}
             color="blue"
             onClick={() => setBudgetModalOpen(true)}
           />
           <SummaryCard
             title="Total Spent"
             value={formatCurrency(summary.totalSpent)}
-            icon={<DollarSign size={24} className="text-red-700" />}
+            icon={<DollarSign size={24} className="text-rose-300" />}
             trend={getTrend()}
             color="red"
           />
           <SummaryCard
             title="Remaining"
             value={formatCurrency(summary.remainingBudget)}
-            icon={<TrendingUp size={24} className="text-green-700" />}
+            icon={<TrendingUp size={24} className="text-emerald-300" />}
             color="green"
           />
           <SummaryCard
             title="Spending Rate"
             value={`${getSpendingPercentage()}%`}
-            icon={<AlertCircle size={24} className="text-amber-700" />}
+            icon={<AlertCircle size={24} className="text-amber-300" />}
             color="amber"
           />
         </div>
@@ -165,11 +165,11 @@ export default function Dashboard() {
 
       {/* Alert */}
       {summary && summary.totalSpent > summary.totalBudget * 0.8 && (
-        <div className="bg-gradient-to-br from-amber-50 to-orange-50 border border-orange-200 rounded-lg p-4 flex items-start gap-3">
-          <AlertCircle className="text-orange-600 mt-0.5 flex-shrink-0" size={20} />
+        <div className="bg-gradient-to-br from-amber-900/20 to-orange-900/20 border border-amber-800/40 rounded-lg p-4 flex items-start gap-3">
+          <AlertCircle className="text-amber-300 mt-0.5 flex-shrink-0" size={20} />
           <div>
-            <h3 className="font-semibold text-orange-900 mb-1">Approaching Budget Limit</h3>
-            <p className="text-sm text-orange-800">
+            <h3 className="font-semibold text-amber-100 mb-1">Approaching Budget Limit</h3>
+            <p className="text-sm text-amber-200">
               You've spent {getSpendingPercentage()}% of your monthly budget. Be mindful of your
               remaining funds.
             </p>
@@ -180,21 +180,21 @@ export default function Dashboard() {
       {/* Charts Grid */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
         {/* Spending Trend */}
-        <div className="bg-white border border-slate-200 rounded-lg p-6">
-          <h2 className="text-lg font-semibold text-slate-900 mb-4">Spending Trend</h2>
+        <div className="bg-slate-950 border border-slate-800 rounded-xl p-6">
+          <h2 className="text-lg font-semibold text-slate-100 mb-4">Spending Trend</h2>
           <SpendingChart type="line" />
         </div>
 
         {/* Category Breakdown */}
-        <div className="bg-white border border-slate-200 rounded-lg p-6">
-          <h2 className="text-lg font-semibold text-slate-900 mb-4">Spending by Category</h2>
+        <div className="bg-slate-950 border border-slate-800 rounded-xl p-6">
+          <h2 className="text-lg font-semibold text-slate-100 mb-4">Spending by Category</h2>
           <CategoryChart />
         </div>
       </div>
 
       {/* Recent Transactions */}
-      <div className="bg-white border border-slate-200 rounded-lg p-6">
-        <h2 className="text-lg font-semibold text-slate-900 mb-4">Recent Transactions</h2>
+      <div className="bg-slate-950 border border-slate-800 rounded-xl p-6">
+        <h2 className="text-lg font-semibold text-slate-100 mb-4">Recent Transactions</h2>
         <RecentTransactions />
       </div>
 

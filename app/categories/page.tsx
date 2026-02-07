@@ -99,8 +99,8 @@ export default function CategoriesPage() {
     <div className="p-6 space-y-6">
       {/* Page Header */}
       <div>
-        <h1 className="text-3xl font-bold text-slate-900 mb-2">Categories</h1>
-        <p className="text-slate-600">View and manage your spending categories</p>
+        <h1 className="text-3xl font-bold text-slate-100 mb-2">Categories</h1>
+        <p className="text-slate-400">View and manage your spending categories</p>
       </div>
 
       {/* Month/Year Filter */}
@@ -108,17 +108,17 @@ export default function CategoriesPage() {
 
       {/* Summary */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-        <div className="bg-gradient-to-br from-blue-50 to-blue-100 border border-blue-200 rounded-lg p-4">
-          <p className="text-xs text-blue-600 mb-1">Total Budget</p>
-          <p className="text-2xl font-bold text-blue-700">${globalBudget.toFixed(2)}</p>
+        <div className="bg-slate-950 border border-slate-800 rounded-xl p-4">
+          <p className="text-xs uppercase tracking-widest text-slate-400 mb-1">Total Budget</p>
+          <p className="text-2xl font-bold text-emerald-300">${globalBudget.toFixed(2)}</p>
         </div>
-        <div className="bg-gradient-to-br from-red-50 to-red-100 border border-red-200 rounded-lg p-4">
-          <p className="text-xs text-red-600 mb-1">Total Spent</p>
-          <p className="text-2xl font-bold text-red-700">${totalSpent.toFixed(2)}</p>
+        <div className="bg-slate-950 border border-slate-800 rounded-xl p-4">
+          <p className="text-xs uppercase tracking-widest text-slate-400 mb-1">Total Spent</p>
+          <p className="text-2xl font-bold text-rose-300">${totalSpent.toFixed(2)}</p>
         </div>
-        <div className="bg-gradient-to-br from-green-50 to-green-100 border border-green-200 rounded-lg p-4">
-          <p className="text-xs text-green-600 mb-1">Remaining</p>
-          <p className="text-2xl font-bold text-green-700">${(globalBudget - totalSpent).toFixed(2)}</p>
+        <div className="bg-slate-950 border border-slate-800 rounded-xl p-4">
+          <p className="text-xs uppercase tracking-widest text-slate-400 mb-1">Remaining</p>
+          <p className="text-2xl font-bold text-emerald-300">${(globalBudget - totalSpent).toFixed(2)}</p>
         </div>
       </div>
 
@@ -128,7 +128,7 @@ export default function CategoriesPage() {
           {[...Array(6)].map((_, i) => (
             <div
               key={i}
-              className="h-64 bg-gradient-to-br from-slate-100 to-slate-200 rounded-lg animate-pulse"
+              className="h-64 bg-gradient-to-br from-slate-900 to-slate-800 rounded-xl animate-pulse"
             />
           ))}
         </div>

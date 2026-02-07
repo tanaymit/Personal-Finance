@@ -103,8 +103,8 @@ export default function TransactionsPage() {
     <div className="p-6 space-y-6">
       {/* Page Header */}
       <div>
-        <h1 className="text-3xl font-bold text-slate-900 mb-2">Transactions</h1>
-        <p className="text-slate-600">View and manage all your transactions</p>
+        <h1 className="text-3xl font-bold text-slate-100 mb-2">Transactions</h1>
+        <p className="text-slate-400">View and manage all your transactions</p>
       </div>
 
       {/* Month/Year Filter */}
@@ -119,7 +119,7 @@ export default function TransactionsPage() {
             placeholder="Search transactions..."
             value={searchTerm}
             onChange={e => setSearchTerm(e.target.value)}
-            className="w-full pl-10 pr-4 py-2 border border-slate-300 rounded-lg focus:outline-none focus:border-blue-500"
+            className="w-full pl-10 pr-4 py-2 border border-slate-800 rounded-lg bg-slate-950 text-slate-100 focus:outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/20"
           />
         </div>
       </div>
@@ -137,10 +137,10 @@ export default function TransactionsPage() {
 
         {/* Transaction List */}
         <div className="lg:col-span-3">
-          <div className="bg-white border border-slate-200 rounded-lg p-6">
+          <div className="bg-slate-950 border border-slate-800 rounded-xl p-6">
             {filteredTransactions.length > 0 && (
-              <div className="mb-4 pb-4 border-b border-slate-200">
-                <p className="text-sm text-slate-600">
+              <div className="mb-4 pb-4 border-b border-slate-800">
+                <p className="text-sm text-slate-400">
                   Showing {filteredTransactions.length} of {transactions.length} transactions
                 </p>
               </div>

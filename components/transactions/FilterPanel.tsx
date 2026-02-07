@@ -63,29 +63,29 @@ export function FilterPanel({ onFilterChange, isOpen, onToggle }: FilterPanelPro
   };
 
   return (
-    <div className="bg-white border border-slate-200 rounded-lg overflow-hidden">
+    <div className="bg-slate-950 border border-slate-800 rounded-xl overflow-hidden shadow-[0_0_24px_rgba(2,6,23,0.4)]">
       {/* Filter Header */}
       <button
         onClick={onToggle}
-        className="w-full flex items-center justify-between p-4 hover:bg-slate-50 transition-colors"
+        className="w-full flex items-center justify-between p-4 hover:bg-slate-900 transition-colors"
       >
-        <h3 className="font-semibold text-slate-900">Filters</h3>
+        <h3 className="font-semibold text-slate-100">Filters</h3>
         <ChevronDown
           size={20}
-          className={`text-slate-600 transition-transform ${isOpen ? 'rotate-180' : ''}`}
+          className={`text-slate-400 transition-transform ${isOpen ? 'rotate-180' : ''}`}
         />
       </button>
 
       {/* Filter Content */}
       {isOpen && (
-        <div className="border-t border-slate-200 p-4 space-y-4">
+        <div className="border-t border-slate-800 p-4 space-y-4">
           {/* Category Filter */}
           <div>
-            <label className="block text-sm font-medium text-slate-700 mb-2">Category</label>
+            <label className="block text-sm font-medium text-slate-300 mb-2">Category</label>
             <select
               value={filters.category || 'all'}
               onChange={e => handleCategoryChange(e.target.value)}
-              className="w-full px-3 py-2 border border-slate-300 rounded-lg focus:outline-none focus:border-blue-500"
+              className="w-full px-3 py-2 border border-slate-800 rounded-lg bg-slate-900/70 text-slate-100 focus:outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/20"
             >
               <option value="all">All Categories</option>
               {categories.map(cat => (
@@ -98,7 +98,7 @@ export function FilterPanel({ onFilterChange, isOpen, onToggle }: FilterPanelPro
 
           {/* Amount Range */}
           <div>
-            <label className="block text-sm font-medium text-slate-700 mb-2">Amount Range</label>
+            <label className="block text-sm font-medium text-slate-300 mb-2">Amount Range</label>
             <div className="flex gap-2">
               <input
                 type="number"
@@ -110,7 +110,7 @@ export function FilterPanel({ onFilterChange, isOpen, onToggle }: FilterPanelPro
                     filters.maxAmount || 0
                   )
                 }
-                className="flex-1 px-3 py-2 border border-slate-300 rounded-lg focus:outline-none focus:border-blue-500"
+                className="flex-1 px-3 py-2 border border-slate-800 rounded-lg bg-slate-900/70 text-slate-100 focus:outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/20"
               />
               <input
                 type="number"
@@ -122,26 +122,26 @@ export function FilterPanel({ onFilterChange, isOpen, onToggle }: FilterPanelPro
                     e.target.value ? parseFloat(e.target.value) : 0
                   )
                 }
-                className="flex-1 px-3 py-2 border border-slate-300 rounded-lg focus:outline-none focus:border-blue-500"
+                className="flex-1 px-3 py-2 border border-slate-800 rounded-lg bg-slate-900/70 text-slate-100 focus:outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/20"
               />
             </div>
           </div>
 
           {/* Date Range */}
           <div>
-            <label className="block text-sm font-medium text-slate-700 mb-2">Date Range</label>
+            <label className="block text-sm font-medium text-slate-300 mb-2">Date Range</label>
             <div className="flex gap-2">
               <input
                 type="date"
                 value={filters.startDate || ''}
                 onChange={e => handleDateChange(e.target.value, filters.endDate || '')}
-                className="flex-1 px-3 py-2 border border-slate-300 rounded-lg focus:outline-none focus:border-blue-500"
+                className="flex-1 px-3 py-2 border border-slate-800 rounded-lg bg-slate-900/70 text-slate-100 focus:outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/20"
               />
               <input
                 type="date"
                 value={filters.endDate || ''}
                 onChange={e => handleDateChange(filters.startDate || '', e.target.value)}
-                className="flex-1 px-3 py-2 border border-slate-300 rounded-lg focus:outline-none focus:border-blue-500"
+                className="flex-1 px-3 py-2 border border-slate-800 rounded-lg bg-slate-900/70 text-slate-100 focus:outline-none focus:border-cyan-400 focus:ring-2 focus:ring-cyan-400/20"
               />
             </div>
           </div>
@@ -149,7 +149,7 @@ export function FilterPanel({ onFilterChange, isOpen, onToggle }: FilterPanelPro
           {/* Reset Button */}
           <button
             onClick={handleReset}
-            className="w-full px-4 py-2 bg-slate-100 text-slate-700 rounded-lg hover:bg-slate-200 transition-colors font-medium"
+            className="w-full px-4 py-2 bg-slate-900 text-slate-200 rounded-lg hover:bg-slate-800 transition-colors font-medium"
           >
             Reset Filters
           </button>

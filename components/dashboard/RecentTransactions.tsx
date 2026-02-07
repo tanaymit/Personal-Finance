@@ -70,7 +70,7 @@ export function RecentTransactions() {
     return (
       <div className="space-y-3">
         {[...Array(5)].map((_, i) => (
-          <div key={i} className="h-16 bg-gradient-to-r from-slate-100 to-slate-200 rounded-lg animate-pulse" />
+          <div key={i} className="h-16 bg-gradient-to-r from-slate-900 to-slate-800 rounded-lg animate-pulse" />
         ))}
       </div>
     );
@@ -79,14 +79,14 @@ export function RecentTransactions() {
   return (
     <div className="space-y-2">
       {transactions.length === 0 ? (
-        <div className="p-6 text-center text-sm text-slate-600">No transactions yet — upload a receipt to populate data.</div>
+        <div className="p-6 text-center text-sm text-slate-400">No transactions yet — upload a receipt to populate data.</div>
       ) : (
         transactions.map(transaction => {
         const category = categories.find(c => c.name === transaction.category);
         return (
           <div
             key={transaction.id}
-            className="flex items-center justify-between p-4 bg-slate-50 rounded-lg hover:bg-slate-100 transition-colors"
+            className="flex items-center justify-between p-4 bg-slate-900/60 rounded-lg hover:bg-slate-900 transition-colors border border-slate-800"
           >
             <div className="flex items-center gap-4 flex-1">
               <div
@@ -96,13 +96,13 @@ export function RecentTransactions() {
                 {category?.name[0]}
               </div>
               <div className="flex-1">
-                <p className="font-medium text-slate-900">{transaction.merchant}</p>
-                <p className="text-sm text-slate-500">{getRelativeTime(transaction.date)}</p>
+                <p className="font-medium text-slate-100">{transaction.merchant}</p>
+                <p className="text-sm text-slate-400">{getRelativeTime(transaction.date)}</p>
               </div>
             </div>
             <div className="text-right">
-              <p className="font-semibold text-slate-900">-{formatCurrency(transaction.amount)}</p>
-              <p className="text-xs text-slate-500">{transaction.category}</p>
+              <p className="font-semibold text-rose-300">-{formatCurrency(transaction.amount)}</p>
+              <p className="text-xs text-slate-400">{transaction.category}</p>
             </div>
           </div>
         );

@@ -87,8 +87,8 @@ export default function UploadPage() {
     <div className="p-6 space-y-6">
       {/* Page Header */}
       <div>
-        <h1 className="text-3xl font-bold text-slate-900 mb-2">Upload Receipt</h1>
-        <p className="text-slate-600">Upload a receipt to automatically categorize your spending</p>
+        <h1 className="text-3xl font-bold text-slate-100 mb-2">Upload Receipt</h1>
+        <p className="text-slate-400">Upload a receipt to automatically categorize your spending</p>
       </div>
 
       {/* Progress Steps */}
@@ -96,26 +96,26 @@ export default function UploadPage() {
         <div
           className={`flex items-center justify-center w-8 h-8 rounded-full font-bold ${
             ['initial', 'preview', 'confirm', 'success'].includes(currentStep)
-              ? 'bg-blue-600 text-white'
-              : 'bg-slate-200 text-slate-600'
+              ? 'bg-cyan-500 text-slate-950'
+              : 'bg-slate-800 text-slate-400'
           }`}
         >
           1
         </div>
-        <div className={`flex-1 h-1 ${currentStep !== 'initial' ? 'bg-blue-600' : 'bg-slate-200'}`} />
+        <div className={`flex-1 h-1 ${currentStep !== 'initial' ? 'bg-cyan-500' : 'bg-slate-800'}`} />
         <div
           className={`flex items-center justify-center w-8 h-8 rounded-full font-bold ${
             ['preview', 'confirm', 'success'].includes(currentStep)
-              ? 'bg-blue-600 text-white'
-              : 'bg-slate-200 text-slate-600'
+              ? 'bg-cyan-500 text-slate-950'
+              : 'bg-slate-800 text-slate-400'
           }`}
         >
           2
         </div>
-        <div className={`flex-1 h-1 ${['confirm', 'success'].includes(currentStep) ? 'bg-blue-600' : 'bg-slate-200'}`} />
+        <div className={`flex-1 h-1 ${['confirm', 'success'].includes(currentStep) ? 'bg-cyan-500' : 'bg-slate-800'}`} />
         <div
           className={`flex items-center justify-center w-8 h-8 rounded-full font-bold ${
-            currentStep === 'success' ? 'bg-blue-600 text-white' : 'bg-slate-200 text-slate-600'
+            currentStep === 'success' ? 'bg-cyan-500 text-slate-950' : 'bg-slate-800 text-slate-400'
           }`}
         >
           3
@@ -124,19 +124,19 @@ export default function UploadPage() {
 
       {/* Success Message */}
       {currentStep === 'success' && (
-        <div className="bg-gradient-to-br from-green-50 to-emerald-50 border border-green-200 rounded-lg p-6 text-center">
-          <div className="text-4xl mb-2">✓</div>
-          <h3 className="text-lg font-semibold text-green-900 mb-1">Transaction Saved!</h3>
-          <p className="text-green-700">{successMessage}</p>
-          <p className="text-sm text-green-600 mt-3">Redirecting in 3 seconds...</p>
+        <div className="bg-gradient-to-br from-emerald-900/20 to-emerald-800/10 border border-emerald-800/50 rounded-xl p-6 text-center">
+          <div className="text-4xl mb-2 text-emerald-300">✓</div>
+          <h3 className="text-lg font-semibold text-emerald-100 mb-1">Transaction Saved!</h3>
+          <p className="text-emerald-200">{successMessage}</p>
+          <p className="text-sm text-emerald-300 mt-3">Redirecting in 3 seconds...</p>
         </div>
       )}
 
       {/* Step 1: Upload File */}
       {currentStep === 'initial' && (
-        <div className="bg-white border border-slate-200 rounded-lg p-8">
+        <div className="bg-slate-950 border border-slate-800 rounded-xl p-8">
           <DropZone onFilesSelected={handleFilesSelected} />
-          <p className="text-xs text-slate-500 text-center mt-6">
+          <p className="text-xs text-slate-400 text-center mt-6">
             💡 Pro tip: Upload clear, well-lit photos for better OCR accuracy
           </p>
         </div>
@@ -147,11 +147,11 @@ export default function UploadPage() {
         <div className="space-y-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
             <div>
-              <h3 className="font-semibold text-slate-900 mb-3">Receipt Preview</h3>
+              <h3 className="font-semibold text-slate-100 mb-3">Receipt Preview</h3>
               <ReceiptPreview receipt={receipt} isLoading={isProcessing} />
             </div>
             <div>
-              <h3 className="font-semibold text-slate-900 mb-3">Transaction Details</h3>
+              <h3 className="font-semibold text-slate-100 mb-3">Transaction Details</h3>
               <OCRResults
                 receipt={receipt}
                 onConfirm={handleConfirm}

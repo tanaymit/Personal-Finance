@@ -30,7 +30,7 @@ export function CategoryCard({ category, onEdit }: CategoryCardProps) {
   const color = category.color || '#6b7280';
 
   return (
-    <div className="bg-white border border-slate-200 rounded-lg p-6 hover:border-slate-300 transition-colors relative">
+    <div className="bg-slate-950 border border-slate-800 rounded-xl p-6 hover:border-slate-700 transition-colors relative shadow-[0_0_24px_rgba(2,6,23,0.4)]">
       {/* Header */}
       <div className="flex items-start justify-between mb-4">
         <div className="flex items-center gap-3">
@@ -43,25 +43,25 @@ export function CategoryCard({ category, onEdit }: CategoryCardProps) {
             </div>
           )}
           <div>
-            <h3 className="font-semibold text-slate-900">{category.name}</h3>
-            <p className="text-sm text-slate-500">{formatCurrency(spentNum)} spent</p>
+            <h3 className="font-semibold text-slate-100">{category.name}</h3>
+            <p className="text-sm text-slate-400">{formatCurrency(spentNum)} spent</p>
           </div>
         </div>
         <div className="relative">
           <button
             onClick={() => setShowMenu(!showMenu)}
-            className="p-2 hover:bg-slate-100 rounded-lg transition-colors"
+            className="p-2 hover:bg-slate-900 rounded-lg transition-colors"
           >
-            <MoreHorizontal size={18} className="text-slate-600" />
+            <MoreHorizontal size={18} className="text-slate-300" />
           </button>
           {showMenu && (
-            <div className="absolute right-0 top-10 bg-white border border-slate-200 rounded-lg shadow-lg z-10">
+            <div className="absolute right-0 top-10 bg-slate-950 border border-slate-800 rounded-lg shadow-lg z-10">
               <button
                 onClick={() => {
                   onEdit?.(category);
                   setShowMenu(false);
                 }}
-                className="flex items-center gap-2 px-4 py-2 text-sm text-slate-700 hover:bg-slate-50 w-full"
+                className="flex items-center gap-2 px-4 py-2 text-sm text-slate-200 hover:bg-slate-900 w-full"
               >
                 <Edit2 size={16} />
                 Edit
@@ -76,14 +76,14 @@ export function CategoryCard({ category, onEdit }: CategoryCardProps) {
           <div className="mb-4">
           <div className="flex justify-between items-center mb-2">
             <div>
-              <p className="text-xs text-slate-600">Budget: {formatCurrency(budgetLimitNum)}</p>
-              <p className="text-xs text-slate-600">
+              <p className="text-xs text-slate-400">Budget: {formatCurrency(budgetLimitNum)}</p>
+              <p className="text-xs text-slate-400">
                 Remaining: {formatCurrency(Math.max(0, budgetLimitNum - spentNum))}
               </p>
             </div>
             <span
               className={`text-sm font-semibold ${
-                isOverBudget ? 'text-red-600' : 'text-green-600'
+                isOverBudget ? 'text-rose-400' : 'text-emerald-400'
               }`}
             >
               {percentageUsed}%
@@ -91,10 +91,10 @@ export function CategoryCard({ category, onEdit }: CategoryCardProps) {
           </div>
 
           {/* Progress Bar */}
-          <div className="w-full bg-slate-200 rounded-full h-2 overflow-hidden">
+          <div className="w-full bg-slate-800 rounded-full h-2 overflow-hidden">
             <div
               className={`h-full transition-all ${
-                isOverBudget ? 'bg-red-500' : 'bg-green-500'
+                isOverBudget ? 'bg-rose-500' : 'bg-emerald-500'
               }`}
               style={{
                 width: `${Math.min(percentageUsed, 100)}%`
@@ -103,7 +103,7 @@ export function CategoryCard({ category, onEdit }: CategoryCardProps) {
           </div>
 
           {isOverBudget && (
-            <p className="text-xs text-red-600 mt-2 font-medium">
+            <p className="text-xs text-rose-400 mt-2 font-medium">
               Over budget by {formatCurrency(spentNum - (budgetLimitNum || 0))}
             </p>
           )}
@@ -113,7 +113,7 @@ export function CategoryCard({ category, onEdit }: CategoryCardProps) {
       {/* Status Badge */}
       <div className="flex items-center justify-between">
         <div
-          className="px-3 py-1 rounded-full text-xs font-medium"
+          className="px-3 py-1 rounded-full text-xs font-medium border border-slate-800"
           style={{
             backgroundColor: color + '20',
             color: color
@@ -122,7 +122,7 @@ export function CategoryCard({ category, onEdit }: CategoryCardProps) {
           {category.name}
         </div>
         {isOverBudget && (
-          <span className="text-xs bg-red-100 text-red-700 px-2 py-1 rounded-full font-medium">
+          <span className="text-xs bg-rose-900/40 text-rose-300 px-2 py-1 rounded-full font-medium border border-rose-800/60">
             Over
           </span>
         )}

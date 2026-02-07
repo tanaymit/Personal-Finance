@@ -76,10 +76,10 @@ export function DropZone({
       onDragLeave={handleDragLeave}
       onDragOver={handleDragOver}
       onDrop={handleDrop}
-      className={`border-2 border-dashed rounded-lg p-8 text-center transition-colors cursor-pointer ${
+      className={`border-2 border-dashed rounded-xl p-8 text-center transition-colors cursor-pointer ${
         isDragging
-          ? 'border-blue-500 bg-blue-50'
-          : 'border-slate-300 bg-slate-50 hover:border-slate-400'
+          ? 'border-cyan-400 bg-cyan-500/10'
+          : 'border-slate-800 bg-slate-950 hover:border-slate-700'
       }`}
     >
       <input
@@ -93,14 +93,14 @@ export function DropZone({
 
       <label htmlFor="file-input" className="cursor-pointer">
         <div className="flex justify-center mb-4">
-          <div className="p-4 bg-blue-100 rounded-full">
-            <Upload size={32} className="text-blue-600" />
+          <div className="p-4 bg-slate-900/70 border border-slate-800 rounded-full">
+            <Upload size={32} className="text-cyan-300" />
           </div>
         </div>
-        <h3 className="text-lg font-semibold text-slate-900 mb-1">
+        <h3 className="text-lg font-semibold text-slate-100 mb-1">
           Upload Receipt
         </h3>
-        <p className="text-slate-600 text-sm mb-2">
+        <p className="text-slate-400 text-sm mb-2">
           Drag and drop your receipt here, or click to select
         </p>
         <p className="text-xs text-slate-500">
@@ -109,9 +109,9 @@ export function DropZone({
       </label>
 
       {error && (
-        <div className="mt-4 p-3 bg-red-50 border border-red-200 rounded-lg flex items-center gap-2">
-          <X size={16} className="text-red-600" />
-          <p className="text-sm text-red-700">{error}</p>
+        <div className="mt-4 p-3 bg-rose-950/50 border border-rose-800/60 rounded-lg flex items-center gap-2">
+          <X size={16} className="text-rose-300" />
+          <p className="text-sm text-rose-200">{error}</p>
         </div>
       )}
     </div>
