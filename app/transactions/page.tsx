@@ -53,14 +53,15 @@ export default function TransactionsPage() {
 
   // Listen for filter changes
   useEffect(() => {
-    const handleFilterChange = (e: CustomEvent) => {
+    const handleFilterChange = (event: Event) => {
+      const e = event as CustomEvent<{ year: number; month: number }>;
       const { year, month } = e.detail;
       setFilterYear(year);
       setFilterMonth(month);
     };
 
-    window.addEventListener('monthYearFilterChange' as any, handleFilterChange);
-    return () => window.removeEventListener('monthYearFilterChange' as any, handleFilterChange);
+    window.addEventListener('monthYearFilterChange', handleFilterChange as EventListener);
+    return () => window.removeEventListener('monthYearFilterChange', handleFilterChange as EventListener);
   }, []);
 
   useEffect(() => {

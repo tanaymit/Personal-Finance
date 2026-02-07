@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Transaction, FilterOptions } from '@/lib/types';
+import { Category, Transaction } from '@/lib/types';
 import { fetchCategories } from '@/lib/api';
 import { formatCurrency, getRelativeTime } from '@/lib/utils';
 import { Trash2 } from 'lucide-react';
@@ -18,14 +18,14 @@ export function TransactionList({
   isLoading = false
 }: TransactionListProps) {
   const [deletingId, setDeletingId] = useState<string | null>(null);
-  const [categories, setCategories] = useState<any[]>([]);
+  const [categories, setCategories] = useState<Category[]>([]);
 
   useEffect(() => {
     let mounted = true;
     (async () => {
       try {
         const cats = await fetchCategories();
-        if (mounted) setCategories(cats as any[]);
+        if (mounted) setCategories(cats);
       } catch (e) {
         // ignore
       }

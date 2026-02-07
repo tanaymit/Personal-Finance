@@ -1,9 +1,16 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { UploadedReceipt } from '@/lib/types';
+import { Category, UploadedReceipt } from '@/lib/types';
 import { fetchCategories } from '@/lib/api';
 import { formatCurrency } from '@/lib/utils';
+
+type EditableTx = {
+  merchant: string;
+  amount: number;
+  date: string;
+  category: string;
+};
 
 interface OCRResultsProps {
   receipt: UploadedReceipt;
@@ -17,21 +24,21 @@ interface OCRResultsProps {
 }
 
 export function OCRResults({ receipt, onConfirm, onCancel }: OCRResultsProps) {
-  const [editableData, setEditableData] = useState({
+  const [editableData, setEditableData] = useState<EditableTx>({
     merchant: receipt.ocrData.merchant,
     amount: receipt.ocrData.amount,
     date: receipt.ocrData.date,
-    category: receipt.ocrData.suggestedCategory
+    category: receipt.ocrData.suggestedCategory,
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [categories, setCategories] = useState<any[]>([]);
+  const [categories, setCategories] = useState<Category[]>([]);
 
-  const handleChange = (field: string, value: string | number) => {
-    setEditableData({
-      ...editableData,
-      [field]: value
-    });
+  const handleChange = <K extends keyof EditableTx>(field: K, value: EditableTx[K]) => {
+    setEditableData(prev => ({
+      ...prev,
+      [field]: value,
+    }));
   };
 
   const handleSubmit = async () => {
@@ -47,7 +54,7 @@ export function OCRResults({ receipt, onConfirm, onCancel }: OCRResultsProps) {
     (async () => {
       try {
         const cats = await fetchCategories();
-        if (mounted) setCategories(cats as any[]);
+        if (mounted) setCategories(cats);
       } catch (e) {
         // ignore
       }

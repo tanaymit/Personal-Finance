@@ -83,15 +83,15 @@ uvicorn backend.fastapi.main:app --reload --host 0.0.0.0 --port 8000
 2) Import the CSV (from the project root):
 
 ```bash
-python backend/fastapi/import_bank_statement.py --csv comprehensive_bank_statement.csv --api http://localhost:8000
+python backend/scripts/import_bank_statement.py --csv comprehensive_bank_statement.csv --api http://localhost:8000
 ```
 
 Optional: see how rows map into the fixed taxonomy without importing:
 
 ```bash
-python backend/fastapi/import_bank_statement.py --csv comprehensive_bank_statement.csv --dry-run
+python backend/scripts/import_bank_statement.py --csv comprehensive_bank_statement.csv --dry-run
 ```
 
-Category mapping rules live in `backend/fastapi/bank_categories.py`.
+Category mapping rules live in `backend/scripts/bank_categories.py`.
 
 The backend persists to `backend/fastapi/data.json` and is intended for local development only.

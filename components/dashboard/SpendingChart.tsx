@@ -51,14 +51,15 @@ export function SpendingChart({ type = 'line', days = 30 }: SpendingChartProps) 
 
   // Listen for filter changes
   useEffect(() => {
-    const handleFilterChange = (e: CustomEvent) => {
+    const handleFilterChange = (event: Event) => {
+      const e = event as CustomEvent<{ year: number; month: number }>;
       const { year, month } = e.detail;
       setFilterYear(year);
       setFilterMonth(month);
     };
 
-    window.addEventListener('monthYearFilterChange' as any, handleFilterChange);
-    return () => window.removeEventListener('monthYearFilterChange' as any, handleFilterChange);
+    window.addEventListener('monthYearFilterChange', handleFilterChange as EventListener);
+    return () => window.removeEventListener('monthYearFilterChange', handleFilterChange as EventListener);
   }, []);
 
   if (loading) {
@@ -82,7 +83,7 @@ export function SpendingChart({ type = 'line', days = 30 }: SpendingChartProps) 
                 borderRadius: '8px',
                 color: '#fff'
               }}
-              formatter={(value: any) => formatCurrency(value)}
+              formatter={(value: unknown) => formatCurrency(Number(value))}
             />
             <Line
               type="monotone"
@@ -105,7 +106,7 @@ export function SpendingChart({ type = 'line', days = 30 }: SpendingChartProps) 
                 borderRadius: '8px',
                 color: '#fff'
               }}
-              formatter={(value: any) => formatCurrency(value)}
+              formatter={(value: unknown) => formatCurrency(Number(value))}
             />
             <Bar dataKey="total" fill="#3b82f6" radius={[8, 8, 0, 0]} />
           </BarChart>

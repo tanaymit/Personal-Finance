@@ -14,6 +14,7 @@ export default function UploadPage() {
   const [receipt, setReceipt] = useState<UploadedReceipt | null>(null);
   const [isProcessing, setIsProcessing] = useState(false);
   const [successMessage, setSuccessMessage] = useState('');
+  const [autoCreatedTxId, setAutoCreatedTxId] = useState<string | null>(null);
 
   const handleFilesSelected = async (files: File[]) => {
     if (files.length === 0) return;
@@ -34,10 +35,10 @@ export default function UploadPage() {
         });
         // mark initialized so dashboard shows data
         if (typeof window !== 'undefined') localStorage.setItem('dataInitialized', '1');
-        // attach created transaction id to receipt for dedup
-        (uploadedReceipt as any)._createdTxId = tx.id;
+        setAutoCreatedTxId(tx.id);
       } catch (e) {
         console.warn('Auto-create transaction failed, will still show preview', e);
+        setAutoCreatedTxId(null);
       }
 
       setReceipt(uploadedReceipt);
@@ -58,7 +59,7 @@ export default function UploadPage() {
   }) => {
     try {
       // If we already auto-created a transaction on upload, skip creating duplicate
-      if (!(receipt as any)?._createdTxId) {
+      if (!autoCreatedTxId) {
         await createTransaction({
           merchant: data.merchant,
           amount: data.amount,
@@ -76,6 +77,7 @@ export default function UploadPage() {
       setTimeout(() => {
         setCurrentStep('initial');
         setReceipt(null);
+        setAutoCreatedTxId(null);
       }, 3000);
     } catch (error) {
       console.error('Failed to create transaction:', error);
