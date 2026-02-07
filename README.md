@@ -22,10 +22,6 @@ Below are screenshots of the running application (dark theme). They illustrate t
 
 Dashboard
 
-![Dashboard](./WhatsApp%20Image%202026-02-07%20at%204.14.41%20PM.jpeg)
-
-Categories page
-
 ![Categories](./WhatsApp%20Image%202026-02-07%20at%204.21.47%20PM.jpeg)
 
 Assistant (chat)
