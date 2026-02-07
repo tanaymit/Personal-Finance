@@ -1,6 +1,22 @@
 {
   "transactions": [
     {
+      "id": "d86a6e385ae84391921b90bc70b10daf",
+      "date": "2026-02-07",
+      "merchant": "# COSTCO WHOLESALE",
+      "amount": 123.34,
+      "category": "Shopping",
+      "description": "Auto-created from receipt r2.jpeg"
+    },
+    {
+      "id": "6a06e5f869804206b62c805170b6e14f",
+      "date": "2026-02-07",
+      "merchant": "# COSTCO WHOLESALE",
+      "amount": 123.34,
+      "category": "Shopping",
+      "description": "Auto-created from receipt r2.jpeg"
+    },
+    {
       "id": "fb61ea4657954931ad87a1e403131628",
       "date": "2026-02-07",
       "merchant": "Berghotel",

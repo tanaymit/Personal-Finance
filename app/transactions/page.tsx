@@ -5,6 +5,7 @@ import { Transaction, FilterOptions } from '@/lib/types';
 import { fetchTransactions, deleteTransaction } from '@/lib/api';
 import { TransactionList } from '@/components/transactions/TransactionList';
 import { FilterPanel } from '@/components/transactions/FilterPanel';
+import { MonthYearFilter } from '@/components/shared/MonthYearFilter';
 import { Search } from 'lucide-react';
 
 export default function TransactionsPage() {
@@ -14,11 +15,27 @@ export default function TransactionsPage() {
   const [filters, setFilters] = useState<FilterOptions>({});
   const [filterOpen, setFilterOpen] = useState(false);
   const [loading, setLoading] = useState(true);
+  const [filterYear, setFilterYear] = useState<number | undefined>();
+  const [filterMonth, setFilterMonth] = useState<number | undefined>();
+
+  useEffect(() => {
+    // Load filter from localStorage on mount
+    const stored = localStorage.getItem('monthYearFilter');
+    if (stored) {
+      try {
+        const { year, month } = JSON.parse(stored);
+        setFilterYear(year);
+        setFilterMonth(month);
+      } catch (e) {
+        console.error('Failed to parse stored filter:', e);
+      }
+    }
+  }, []);
 
   useEffect(() => {
     async function loadTransactions() {
       try {
-        const data = await fetchTransactions();
+        const data = await fetchTransactions(undefined, filterYear, filterMonth);
         setTransactions(data);
         setFilteredTransactions(data);
       } catch (error) {
@@ -28,6 +45,18 @@ export default function TransactionsPage() {
       }
     }
     loadTransactions();
+  }, [filterYear, filterMonth]);
+
+  // Listen for filter changes
+  useEffect(() => {
+    const handleFilterChange = (e: CustomEvent) => {
+      const { year, month } = e.detail;
+      setFilterYear(year);
+      setFilterMonth(month);
+    };
+
+    window.addEventListener('monthYearFilterChange' as any, handleFilterChange);
+    return () => window.removeEventListener('monthYearFilterChange' as any, handleFilterChange);
   }, []);
 
   useEffect(() => {
@@ -77,6 +106,9 @@ export default function TransactionsPage() {
         <h1 className="text-3xl font-bold text-slate-900 mb-2">Transactions</h1>
         <p className="text-slate-600">View and manage all your transactions</p>
       </div>
+
+      {/* Month/Year Filter */}
+      <MonthYearFilter />
 
       {/* Search Bar */}
       <div className="flex gap-4 flex-col sm:flex-row">

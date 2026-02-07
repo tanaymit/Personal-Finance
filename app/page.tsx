@@ -7,6 +7,7 @@ import { SpendingChart } from '@/components/dashboard/SpendingChart';
 import { CategoryChart } from '@/components/dashboard/CategoryChart';
 import { RecentTransactions } from '@/components/dashboard/RecentTransactions';
 import { BudgetEditModal } from '@/components/dashboard/BudgetEditModal';
+import { MonthYearFilter } from '@/components/shared/MonthYearFilter';
 import { fetchBudgetSummary, fetchCategories } from '@/lib/api';
 import { formatCurrency } from '@/lib/utils';
 import { BudgetSummary } from '@/lib/types';
@@ -18,11 +19,25 @@ export default function Dashboard() {
   const [loading, setLoading] = useState(true);
   const [initialized, setInitialized] = useState<boolean | null>(null);
   const [budgetModalOpen, setBudgetModalOpen] = useState(false);
+  const [filterYear, setFilterYear] = useState<number | undefined>();
+  const [filterMonth, setFilterMonth] = useState<number | undefined>();
 
   useEffect(() => {
     // Check if app has been initialized by an uploaded receipt
     const flag = typeof window !== 'undefined' && localStorage.getItem('dataInitialized');
     setInitialized(!!flag);
+
+    // Load filter from localStorage
+    const stored = localStorage.getItem('monthYearFilter');
+    if (stored) {
+      try {
+        const { year, month } = JSON.parse(stored);
+        setFilterYear(year);
+        setFilterMonth(month);
+      } catch (e) {
+        console.error('Failed to parse stored filter:', e);
+      }
+    }
 
     async function loadData() {
       try {
@@ -36,7 +51,7 @@ export default function Dashboard() {
             largestCategoryAmount: 0
           });
         } else {
-          const data = await fetchBudgetSummary();
+          const data = await fetchBudgetSummary(filterYear, filterMonth);
           setSummary(data);
         }
       } catch (error) {
@@ -46,6 +61,18 @@ export default function Dashboard() {
       }
     }
     loadData();
+  }, [filterYear, filterMonth]);
+
+  // Listen for filter changes from other pages
+  useEffect(() => {
+    const handleFilterChange = (e: CustomEvent) => {
+      const { year, month } = e.detail;
+      setFilterYear(year);
+      setFilterMonth(month);
+    };
+
+    window.addEventListener('monthYearFilterChange' as any, handleFilterChange);
+    return () => window.removeEventListener('monthYearFilterChange' as any, handleFilterChange);
   }, []);
 
   const getSpendingPercentage = () => {
@@ -68,7 +95,7 @@ export default function Dashboard() {
       if (!res.ok) throw new Error('Failed to update budget');
       
       // Reload the summary to update all fields
-      const updatedSummary = await fetchBudgetSummary();
+      const updatedSummary = await fetchBudgetSummary(filterYear, filterMonth);
       setSummary(updatedSummary);
       
       // Notify other tabs/components of budget change
@@ -91,6 +118,9 @@ export default function Dashboard() {
         <h1 className="text-3xl font-bold text-slate-900 mb-2">Welcome back, John!</h1>
         <p className="text-slate-600">Here's your financial overview for this month</p>
       </div>
+
+      {/* Month/Year Filter */}
+      <MonthYearFilter />
 
       {/* Summary Cards */}
       {loading ? (

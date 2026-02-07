@@ -14,13 +14,29 @@ interface CategoryData {
 export function CategoryChart() {
   const [data, setData] = useState<CategoryData[]>([]);
   const [loading, setLoading] = useState(true);
+  const [filterYear, setFilterYear] = useState<number | undefined>();
+  const [filterMonth, setFilterMonth] = useState<number | undefined>();
+
+  useEffect(() => {
+    // Load filter from localStorage on mount
+    const stored = localStorage.getItem('monthYearFilter');
+    if (stored) {
+      try {
+        const { year, month } = JSON.parse(stored);
+        setFilterYear(year);
+        setFilterMonth(month);
+      } catch (e) {
+        console.error('Failed to parse stored filter:', e);
+      }
+    }
+  }, []);
 
   useEffect(() => {
     async function loadData() {
       try {
         const [categoryTotals, categories] = await Promise.all([
-          getTransactionsByCategory(),
-          fetchCategories()
+          getTransactionsByCategory(filterYear, filterMonth),
+          fetchCategories(filterYear, filterMonth)
         ]);
 
         const chartData: CategoryData[] = Object.entries(categoryTotals).map(([category, total]) => {
@@ -39,6 +55,18 @@ export function CategoryChart() {
       }
     }
     loadData();
+  }, [filterYear, filterMonth]);
+
+  // Listen for filter changes
+  useEffect(() => {
+    const handleFilterChange = (e: CustomEvent) => {
+      const { year, month } = e.detail;
+      setFilterYear(year);
+      setFilterMonth(month);
+    };
+
+    window.addEventListener('monthYearFilterChange' as any, handleFilterChange);
+    return () => window.removeEventListener('monthYearFilterChange' as any, handleFilterChange);
   }, []);
 
   if (loading) {

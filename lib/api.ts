@@ -17,7 +17,7 @@ const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
  * Fetch all transactions from FastAPI backend
  * GET /transactions
  */
-export async function fetchTransactions(filters?: FilterOptions): Promise<Transaction[]> {
+export async function fetchTransactions(filters?: FilterOptions, year?: number, month?: number): Promise<Transaction[]> {
   const params = new URLSearchParams();
   if (filters) {
     if (filters.category) params.set('category', filters.category);
@@ -27,6 +27,8 @@ export async function fetchTransactions(filters?: FilterOptions): Promise<Transa
     if (filters.maxAmount) params.set('maxAmount', String(filters.maxAmount));
     if (filters.search) params.set('search', filters.search);
   }
+  if (year) params.set('year', String(year));
+  if (month) params.set('month', String(month));
 
   const url = `${API_BASE_URL}/transactions${params.toString() ? `?${params.toString()}` : ''}`;
   const res = await fetch(url);
@@ -43,8 +45,13 @@ export async function fetchTransactions(filters?: FilterOptions): Promise<Transa
  * Fetch all spending categories from FastAPI backend
  * GET /categories
  */
-export async function fetchCategories(): Promise<Category[]> {
-  const res = await fetch(`${API_BASE_URL}/categories`);
+export async function fetchCategories(year?: number, month?: number): Promise<Category[]> {
+  const params = new URLSearchParams();
+  if (year) params.set('year', String(year));
+  if (month) params.set('month', String(month));
+  
+  const url = `${API_BASE_URL}/categories${params.toString() ? `?${params.toString()}` : ''}`;
+  const res = await fetch(url);
   
   if (!res.ok) {
     throw new Error(`Failed to fetch categories: ${res.status}`);
@@ -109,8 +116,13 @@ export async function uploadReceipt(file: File): Promise<UploadedReceipt> {
  * Fetch budget summary from FastAPI backend
  * GET /budget-summary
  */
-export async function fetchBudgetSummary(): Promise<BudgetSummary> {
-  const res = await fetch(`${API_BASE_URL}/budget-summary`);
+export async function fetchBudgetSummary(year?: number, month?: number): Promise<BudgetSummary> {
+  const params = new URLSearchParams();
+  if (year) params.set('year', String(year));
+  if (month) params.set('month', String(month));
+  
+  const url = `${API_BASE_URL}/budget-summary${params.toString() ? `?${params.toString()}` : ''}`;
+  const res = await fetch(url);
   
   if (!res.ok) {
     throw new Error(`Failed to fetch budget summary: ${res.status}`);
@@ -155,8 +167,8 @@ export async function deleteTransaction(id: string): Promise<void> {
 /**
  * Get transactions grouped by category for chart visualization
  */
-export async function getTransactionsByCategory(): Promise<Record<string, number>> {
-  const transactions = await fetchTransactions();
+export async function getTransactionsByCategory(year?: number, month?: number): Promise<Record<string, number>> {
+  const transactions = await fetchTransactions(undefined, year, month);
   const grouped: Record<string, number> = {};
 
   transactions.forEach(t => {
@@ -169,8 +181,8 @@ export async function getTransactionsByCategory(): Promise<Record<string, number
 /**
  * Get transactions grouped by date for trend visualization
  */
-export async function getTransactionsByDate(days: number = 30): Promise<Array<{ date: string; total: number }>> {
-  const transactions = await fetchTransactions();
+export async function getTransactionsByDate(days: number = 30, year?: number, month?: number): Promise<Array<{ date: string; total: number }>> {
+  const transactions = await fetchTransactions(undefined, year, month);
   const grouped: Record<string, number> = {};
   
   const now = new Date();

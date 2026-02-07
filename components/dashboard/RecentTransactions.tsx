@@ -12,6 +12,22 @@ export function RecentTransactions() {
   const [loading, setLoading] = useState(true);
   const [categories, setCategories] = useState<any[]>([]);
   const [initialized, setInitialized] = useState<boolean | null>(null);
+  const [filterYear, setFilterYear] = useState<number | undefined>();
+  const [filterMonth, setFilterMonth] = useState<number | undefined>();
+
+  useEffect(() => {
+    // Load filter from localStorage on mount
+    const stored = localStorage.getItem('monthYearFilter');
+    if (stored) {
+      try {
+        const { year, month } = JSON.parse(stored);
+        setFilterYear(year);
+        setFilterMonth(month);
+      } catch (e) {
+        console.error('Failed to parse stored filter:', e);
+      }
+    }
+  }, []);
 
   useEffect(() => {
     async function loadTransactions() {
@@ -23,10 +39,10 @@ export function RecentTransactions() {
           setTransactions([]);
           setCategories([]);
         } else {
-          const data = await fetchTransactions();
+          const data = await fetchTransactions(undefined, filterYear, filterMonth);
           setTransactions(data.slice(0, 5));
           // load categories for colors
-          const cats = await fetchCategories();
+          const cats = await fetchCategories(filterYear, filterMonth);
           setCategories(cats as any[]);
         }
       } catch (error) {
@@ -36,6 +52,18 @@ export function RecentTransactions() {
       }
     }
     loadTransactions();
+  }, [filterYear, filterMonth]);
+
+  // Listen for filter changes
+  useEffect(() => {
+    const handleFilterChange = (e: CustomEvent) => {
+      const { year, month } = e.detail;
+      setFilterYear(year);
+      setFilterMonth(month);
+    };
+
+    window.addEventListener('monthYearFilterChange' as any, handleFilterChange);
+    return () => window.removeEventListener('monthYearFilterChange' as any, handleFilterChange);
   }, []);
 
   if (loading) {

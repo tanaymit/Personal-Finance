@@ -18,11 +18,27 @@ interface SpendingChartProps {
 export function SpendingChart({ type = 'line', days = 30 }: SpendingChartProps) {
   const [data, setData] = useState<ChartData[]>([]);
   const [loading, setLoading] = useState(true);
+  const [filterYear, setFilterYear] = useState<number | undefined>();
+  const [filterMonth, setFilterMonth] = useState<number | undefined>();
+
+  useEffect(() => {
+    // Load filter from localStorage on mount
+    const stored = localStorage.getItem('monthYearFilter');
+    if (stored) {
+      try {
+        const { year, month } = JSON.parse(stored);
+        setFilterYear(year);
+        setFilterMonth(month);
+      } catch (e) {
+        console.error('Failed to parse stored filter:', e);
+      }
+    }
+  }, []);
 
   useEffect(() => {
     async function loadData() {
       try {
-        const transactions = await getTransactionsByDate(days);
+        const transactions = await getTransactionsByDate(days, filterYear, filterMonth);
         setData(transactions);
       } catch (error) {
         console.error('Failed to load spending trend:', error);
@@ -31,7 +47,19 @@ export function SpendingChart({ type = 'line', days = 30 }: SpendingChartProps) 
       }
     }
     loadData();
-  }, [days]);
+  }, [days, filterYear, filterMonth]);
+
+  // Listen for filter changes
+  useEffect(() => {
+    const handleFilterChange = (e: CustomEvent) => {
+      const { year, month } = e.detail;
+      setFilterYear(year);
+      setFilterMonth(month);
+    };
+
+    window.addEventListener('monthYearFilterChange' as any, handleFilterChange);
+    return () => window.removeEventListener('monthYearFilterChange' as any, handleFilterChange);
+  }, []);
 
   if (loading) {
     return (

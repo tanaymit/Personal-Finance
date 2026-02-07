@@ -81,8 +81,29 @@ class Category(BaseModel):
     spent: Optional[float] = 0
 
 @app.get('/transactions', response_model=List[Transaction])
-def list_transactions():
-    return transactions
+def list_transactions(year: Optional[int] = None, month: Optional[int] = None):
+    if year is None and month is None:
+        return transactions
+    
+    filtered = []
+    for t in transactions:
+        try:
+            date_str = t.get('date', '')
+            if date_str:
+                date_parts = date_str.split('-')
+                t_year = int(date_parts[0])
+                t_month = int(date_parts[1])
+                
+                if year and t_year != year:
+                    continue
+                if month and t_month != month:
+                    continue
+                    
+                filtered.append(t)
+        except (ValueError, IndexError):
+            continue
+    
+    return filtered
 
 @app.get('/transactions/{transaction_id}', response_model=Transaction)
 def get_transaction(transaction_id: str):
@@ -101,10 +122,31 @@ def create_transaction(tx: TransactionIn):
     return new
 
 @app.get('/categories', response_model=List[Category])
-def list_categories():
-    # Build categories from recorded transactions
+def list_categories(year: Optional[int] = None, month: Optional[int] = None):
+    # Filter transactions by year/month if provided
+    filtered_transactions = transactions
+    if year is not None or month is not None:
+        filtered_transactions = []
+        for t in transactions:
+            try:
+                date_str = t.get('date', '')
+                if date_str:
+                    date_parts = date_str.split('-')
+                    t_year = int(date_parts[0])
+                    t_month = int(date_parts[1])
+                    
+                    if year and t_year != year:
+                        continue
+                    if month and t_month != month:
+                        continue
+                        
+                    filtered_transactions.append(t)
+            except (ValueError, IndexError):
+                continue
+    
+    # Build categories from filtered transactions
     grouped = {}
-    for t in transactions:
+    for t in filtered_transactions:
         cat = t.get('category') or 'Uncategorized'
         grouped.setdefault(cat, 0.0)
         try:
@@ -127,13 +169,34 @@ def list_categories():
     return categories
 
 @app.get('/budget-summary')
-def budget_summary():
+def budget_summary(year: Optional[int] = None, month: Optional[int] = None):
+    # Filter transactions by year/month if provided
+    filtered_transactions = transactions
+    if year is not None or month is not None:
+        filtered_transactions = []
+        for t in transactions:
+            try:
+                date_str = t.get('date', '')
+                if date_str:
+                    date_parts = date_str.split('-')
+                    t_year = int(date_parts[0])
+                    t_month = int(date_parts[1])
+                    
+                    if year and t_year != year:
+                        continue
+                    if month and t_month != month:
+                        continue
+                        
+                    filtered_transactions.append(t)
+            except (ValueError, IndexError):
+                continue
+    
     # totalBudget is the user-configurable default_budget
     total_budget = float(default_budget or 0.0)
-    # totalSpent is sum of all recorded transactions
+    # totalSpent is sum of filtered transactions
     total_spent = 0.0
     by_cat = {}
-    for t in transactions:
+    for t in filtered_transactions:
         try:
             amt = float(t.get('amount') or 0)
         except Exception:

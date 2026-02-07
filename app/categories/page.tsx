@@ -5,16 +5,19 @@ import { Category } from '@/lib/types';
 import { fetchCategories, updateCategory, fetchBudgetSummary } from '@/lib/api';
 import { CategoryCard } from '@/components/categories/CategoryCard';
 import { EditCategoryModal } from '@/components/categories/EditCategoryModal';
+import { MonthYearFilter } from '@/components/shared/MonthYearFilter';
 
 export default function CategoriesPage() {
   const [categories, setCategories] = useState<Category[]>([]);
   const [selectedCategory, setSelectedCategory] = useState<Category | null>(null);
   const [loading, setLoading] = useState(true);
   const [globalBudget, setGlobalBudget] = useState<number>(0);
+  const [filterYear, setFilterYear] = useState<number | undefined>();
+  const [filterMonth, setFilterMonth] = useState<number | undefined>();
 
   const loadCategories = async () => {
     try {
-      const data = await fetchCategories();
+      const data = await fetchCategories(filterYear, filterMonth);
       setCategories(data);
     } catch (error) {
       console.error('Failed to load categories:', error);
@@ -25,7 +28,7 @@ export default function CategoriesPage() {
 
   const loadBudget = async () => {
     try {
-      const summary = await fetchBudgetSummary();
+      const summary = await fetchBudgetSummary(filterYear, filterMonth);
       setGlobalBudget(summary.totalBudget);
     } catch (error) {
       console.error('Failed to load global budget:', error);
@@ -33,9 +36,23 @@ export default function CategoriesPage() {
   };
 
   useEffect(() => {
+    // Load filter from localStorage on mount
+    const stored = localStorage.getItem('monthYearFilter');
+    if (stored) {
+      try {
+        const { year, month } = JSON.parse(stored);
+        setFilterYear(year);
+        setFilterMonth(month);
+      } catch (e) {
+        console.error('Failed to parse stored filter:', e);
+      }
+    }
+  }, []);
+
+  useEffect(() => {
     loadCategories();
     loadBudget();
-  }, []);
+  }, [filterYear, filterMonth]);
 
   // Listen for budget updates from dashboard
   useEffect(() => {
@@ -47,6 +64,18 @@ export default function CategoriesPage() {
 
     window.addEventListener('storage', handleBudgetUpdate);
     return () => window.removeEventListener('storage', handleBudgetUpdate);
+  }, []);
+
+  // Listen for filter changes
+  useEffect(() => {
+    const handleFilterChange = (e: CustomEvent) => {
+      const { year, month } = e.detail;
+      setFilterYear(year);
+      setFilterMonth(month);
+    };
+
+    window.addEventListener('monthYearFilterChange' as any, handleFilterChange);
+    return () => window.removeEventListener('monthYearFilterChange' as any, handleFilterChange);
   }, []);
 
   const handleEdit = (category: Category) => {
@@ -73,6 +102,9 @@ export default function CategoriesPage() {
         <h1 className="text-3xl font-bold text-slate-900 mb-2">Categories</h1>
         <p className="text-slate-600">View and manage your spending categories</p>
       </div>
+
+      {/* Month/Year Filter */}
+      <MonthYearFilter />
 
       {/* Summary */}
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
