@@ -11,7 +11,6 @@ export function RecentTransactions() {
   const [transactions, setTransactions] = useState<Transaction[]>([]);
   const [loading, setLoading] = useState(true);
   const [categories, setCategories] = useState<any[]>([]);
-  const [initialized, setInitialized] = useState<boolean | null>(null);
   const [filterYear, setFilterYear] = useState<number | undefined>();
   const [filterMonth, setFilterMonth] = useState<number | undefined>();
 
@@ -32,19 +31,10 @@ export function RecentTransactions() {
   useEffect(() => {
     async function loadTransactions() {
       try {
-        const flag = typeof window !== 'undefined' && localStorage.getItem('dataInitialized');
-        setInitialized(!!flag);
-        if (!flag) {
-          // not initialized: show empty state
-          setTransactions([]);
-          setCategories([]);
-        } else {
-          const data = await fetchTransactions(undefined, filterYear, filterMonth);
-          setTransactions(data.slice(0, 5));
-          // load categories for colors
-          const cats = await fetchCategories(filterYear, filterMonth);
-          setCategories(cats as any[]);
-        }
+        const data = await fetchTransactions(undefined, filterYear, filterMonth);
+        setTransactions(data.slice(0, 5));
+        const cats = await fetchCategories(filterYear, filterMonth);
+        setCategories(cats as any[]);
       } catch (error) {
         console.error('Failed to load transactions:', error);
       } finally {
@@ -83,6 +73,8 @@ export function RecentTransactions() {
       ) : (
         transactions.map(transaction => {
         const category = categories.find(c => c.name === transaction.category);
+        const isIncome = transaction.amount < 0;
+        const amountAbs = Math.abs(transaction.amount);
         return (
           <div
             key={transaction.id}
@@ -101,7 +93,9 @@ export function RecentTransactions() {
               </div>
             </div>
             <div className="text-right">
-              <p className="font-semibold text-rose-300">-{formatCurrency(transaction.amount)}</p>
+              <p className={`font-semibold ${isIncome ? 'text-emerald-300' : 'text-rose-300'}`}>
+                {isIncome ? '+' : '-'}{formatCurrency(amountAbs)}
+              </p>
               <p className="text-xs text-slate-400">{transaction.category}</p>
             </div>
           </div>

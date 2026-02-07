@@ -12,6 +12,36 @@ export interface Transaction {
   paymentMethod?: string;
 }
 
+export type Goal = {
+  id: string;
+  name: string;
+  targetAmount: number;
+  targetDate?: string | null;
+  note?: string | null;
+  createdAt: string;
+};
+
+export type GoalIn = {
+  name: string;
+  targetAmount: number;
+  targetDate?: string | null;
+  note?: string | null;
+};
+
+export type AssistantChatRequest = {
+  message: string;
+  year?: number;
+  month?: number;
+  startingBalance?: number;
+};
+
+export type AssistantChatResponse = {
+  tier: number;
+  answer: string;
+  toolPlan?: unknown;
+  facts?: unknown;
+};
+
 export interface Category {
   id: string;
   name: string;

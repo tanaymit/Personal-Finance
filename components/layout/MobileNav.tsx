@@ -7,12 +7,14 @@ import {
   CreditCard,
   Layers,
   Upload,
-  Settings
+  Settings,
+  MessageCircle,
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const navigationItems = [
   { href: '/', label: 'Home', icon: Home },
+  { href: '/assistant', label: 'Assistant', icon: MessageCircle },
   { href: '/transactions', label: 'Transactions', icon: CreditCard },
   { href: '/categories', label: 'Categories', icon: Layers },
   { href: '/upload', label: 'Upload', icon: Upload },

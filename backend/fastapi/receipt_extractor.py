@@ -11,21 +11,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 
 # Load .env from the same directory as this file
 env_path = Path(__file__).parent / '.env'
-print(f"🔧 Loading .env from: {env_path}")
-print(f"   .env exists: {env_path.exists()}")
-
-if env_path.exists():
-    with open(env_path, 'r') as f:
-        print(f"   .env contents:\n{f.read()}")
-
-result = load_dotenv(dotenv_path=env_path, override=True)
-print(f"   load_dotenv returned: {result}")
-
-# Verify the key is loaded
-dedalus_key = os.environ.get('DEDALUS_API_KEY')
-print(f"🔐 DEDALUS_API_KEY after load_dotenv: {bool(dedalus_key)}")
-if dedalus_key:
-    print(f"   First 20 chars: {dedalus_key[:20]}...")
+load_dotenv(dotenv_path=env_path, override=True)
 
 try:
     from ocr_model import OCRModel
@@ -48,21 +34,10 @@ class ReceiptExtractor:
     def __init__(self):
         self.api_key = os.environ.get('DEDALUS_API_KEY')
         self.ocr_key = os.environ.get('DEDALUS_OCR_API_KEY', os.environ.get('DEDALUS_API_KEY'))
-        
-        print(f"\n📋 ReceiptExtractor.__init__():")
-        print(f"   self.api_key: {bool(self.api_key)} ({self.api_key[:20] if self.api_key else 'None'}...)")
-        print(f"   self.ocr_key: {bool(self.ocr_key)} ({self.ocr_key[:20] if self.ocr_key else 'None'}...)")
-        print(f"   HAS_OCR_MODEL: {HAS_OCR_MODEL}")
-        print(f"   HAS_DEDALUS: {HAS_DEDALUS}")
-        
+
         if self.ocr_key and HAS_OCR_MODEL and OCRModel:
             self.ocr_model = OCRModel(self.ocr_key)
-            print(f"   ✅ OCR Model initialized successfully")
         else:
-            print(f"   ⚠️  OCR Model NOT initialized")
-            print(f"      - has ocr_key: {bool(self.ocr_key)}")
-            print(f"      - HAS_OCR_MODEL: {HAS_OCR_MODEL}")
-            print(f"      - OCRModel: {OCRModel is not None}")
             self.ocr_model = None
     
     async def extract_from_bytes(self, file_bytes: bytes, filename: str) -> dict:

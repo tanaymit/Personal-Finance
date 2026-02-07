@@ -9,12 +9,14 @@ import {
   Upload,
   Settings,
   LogOut,
-  ChevronDown
+  ChevronDown,
+  MessageCircle,
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 const navigationItems = [
   { href: '/', label: 'Dashboard', icon: Home },
+  { href: '/assistant', label: 'Assistant', icon: MessageCircle },
   { href: '/transactions', label: 'Transactions', icon: CreditCard },
   { href: '/categories', label: 'Categories', icon: Layers },
   { href: '/upload', label: 'Upload Receipt', icon: Upload },

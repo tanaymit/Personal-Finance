@@ -3,6 +3,8 @@
 import { Calendar } from 'lucide-react';
 import { useEffect, useState } from 'react';
 
+const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
+
 interface MonthYearFilterProps {
   onChange?: (year: number, month: number) => void;
 }
@@ -11,19 +13,69 @@ export function MonthYearFilter({ onChange }: MonthYearFilterProps) {
   const currentDate = new Date();
   const [selectedYear, setSelectedYear] = useState(currentDate.getFullYear());
   const [selectedMonth, setSelectedMonth] = useState(currentDate.getMonth() + 1);
+  const [initialized, setInitialized] = useState(false);
+  const [maxYearInData, setMaxYearInData] = useState<number | null>(null);
 
   // Load from localStorage on mount
   useEffect(() => {
-    const stored = localStorage.getItem('monthYearFilter');
-    if (stored) {
-      try {
-        const { year, month } = JSON.parse(stored);
-        setSelectedYear(year);
-        setSelectedMonth(month);
-      } catch (e) {
-        console.error('Failed to parse stored filter:', e);
+    (async () => {
+      let storedYear: number | undefined;
+      let storedMonth: number | undefined;
+      const stored = localStorage.getItem('monthYearFilter');
+      if (stored) {
+        try {
+          const parsed = JSON.parse(stored) as { year?: number; month?: number };
+          storedYear = typeof parsed.year === 'number' ? parsed.year : undefined;
+          storedMonth = typeof parsed.month === 'number' ? parsed.month : undefined;
+        } catch (e) {
+          console.error('Failed to parse stored filter:', e);
+        }
       }
-    }
+
+      try {
+        const res = await fetch(`${API_BASE_URL}/transactions`);
+        if (!res.ok) throw new Error(`Failed to fetch transactions: ${res.status}`);
+        const txs = (await res.json()) as Array<{ date?: string }>;
+        const dates = txs
+          .map(t => (t.date || '').trim())
+          .filter(Boolean)
+          .map(d => new Date(d))
+          .filter(d => !Number.isNaN(d.getTime()));
+        const max = dates.length ? new Date(Math.max(...dates.map(d => d.getTime()))) : null;
+        const maxYear = max?.getFullYear();
+        const maxMonth = (max ? max.getMonth() + 1 : undefined);
+        if (typeof maxYear === 'number') {
+          setMaxYearInData(maxYear);
+        }
+
+        // Prefer stored filter if it's within the dataset; otherwise snap to latest.
+        if (storedYear && storedMonth) {
+          const isAfterMax =
+            maxYear !== undefined && maxMonth !== undefined
+              ? storedYear > maxYear || (storedYear === maxYear && storedMonth > maxMonth)
+              : false;
+          if (!isAfterMax) {
+            setSelectedYear(storedYear);
+            setSelectedMonth(storedMonth);
+          } else if (maxYear && maxMonth) {
+            setSelectedYear(maxYear);
+            setSelectedMonth(maxMonth);
+          }
+        } else if (maxYear && maxMonth) {
+          setSelectedYear(maxYear);
+          setSelectedMonth(maxMonth);
+        }
+      } catch (err) {
+        // Fallback: keep system month
+        console.warn('Failed to default filter from dataset:', err);
+        if (storedYear && storedMonth) {
+          setSelectedYear(storedYear);
+          setSelectedMonth(storedMonth);
+        }
+      } finally {
+        setInitialized(true);
+      }
+    })();
   }, []);
 
   // Listen for changes from other tabs/pages
@@ -46,6 +98,7 @@ export function MonthYearFilter({ onChange }: MonthYearFilterProps) {
 
   // Notify parent and save to localStorage when filter changes
   useEffect(() => {
+    if (!initialized) return;
     const filter = { year: selectedYear, month: selectedMonth };
     localStorage.setItem('monthYearFilter', JSON.stringify(filter));
     
@@ -53,7 +106,7 @@ export function MonthYearFilter({ onChange }: MonthYearFilterProps) {
     window.dispatchEvent(new CustomEvent('monthYearFilterChange', { detail: filter }));
     
     onChange?.(selectedYear, selectedMonth);
-  }, [selectedYear, selectedMonth, onChange]);
+  }, [selectedYear, selectedMonth, onChange, initialized]);
 
   const months = [
     { value: 1, label: 'January' },
@@ -70,7 +123,8 @@ export function MonthYearFilter({ onChange }: MonthYearFilterProps) {
     { value: 12, label: 'December' }
   ];
 
-  const years = Array.from({ length: 5 }, (_, i) => currentDate.getFullYear() - i);
+  const baseYear = (maxYearInData ?? selectedYear);
+  const years = Array.from({ length: 5 }, (_, i) => baseYear - i);
 
   return (
     <div className="rounded-xl p-[1px] bg-gradient-to-r from-slate-800 via-slate-700 to-slate-800 shadow-[0_0_24px_rgba(15,23,42,0.5)]">

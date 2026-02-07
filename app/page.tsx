@@ -17,16 +17,11 @@ const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
 export default function Dashboard() {
   const [summary, setSummary] = useState<BudgetSummary | null>(null);
   const [loading, setLoading] = useState(true);
-  const [initialized, setInitialized] = useState<boolean | null>(null);
   const [budgetModalOpen, setBudgetModalOpen] = useState(false);
   const [filterYear, setFilterYear] = useState<number | undefined>();
   const [filterMonth, setFilterMonth] = useState<number | undefined>();
 
   useEffect(() => {
-    // Check if app has been initialized by an uploaded receipt
-    const flag = typeof window !== 'undefined' && localStorage.getItem('dataInitialized');
-    setInitialized(!!flag);
-
     // Load filter from localStorage
     const stored = localStorage.getItem('monthYearFilter');
     if (stored) {
@@ -41,21 +36,17 @@ export default function Dashboard() {
 
     async function loadData() {
       try {
-        if (!flag) {
-          // Not initialized yet — show zeros by default
-          setSummary({
-            totalBudget: 0,
-            totalSpent: 0,
-            remainingBudget: 0,
-            largestCategory: '',
-            largestCategoryAmount: 0
-          });
-        } else {
-          const data = await fetchBudgetSummary(filterYear, filterMonth);
-          setSummary(data);
-        }
+        const data = await fetchBudgetSummary(filterYear, filterMonth);
+        setSummary(data);
       } catch (error) {
         console.error('Failed to load budget summary:', error);
+        setSummary({
+          totalBudget: 0,
+          totalSpent: 0,
+          remainingBudget: 0,
+          largestCategory: '',
+          largestCategoryAmount: 0
+        });
       } finally {
         setLoading(false);
       }

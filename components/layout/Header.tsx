@@ -6,6 +6,7 @@ import Link from 'next/link';
 
 const navigationItems = [
   { href: '/', label: 'Dashboard' },
+  { href: '/assistant', label: 'Assistant' },
   { href: '/transactions', label: 'Transactions' },
   { href: '/categories', label: 'Categories' },
   { href: '/upload', label: 'Upload Receipt' },

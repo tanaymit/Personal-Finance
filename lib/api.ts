@@ -8,7 +8,11 @@ import {
   Category,
   UploadedReceipt,
   BudgetSummary,
-  FilterOptions
+  FilterOptions,
+  AssistantChatRequest,
+  AssistantChatResponse,
+  Goal,
+  GoalIn,
 } from './types';
 
 const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8000';
@@ -172,6 +176,8 @@ export async function getTransactionsByCategory(year?: number, month?: number): 
   const grouped: Record<string, number> = {};
 
   transactions.forEach(t => {
+    // Convention: expenses are positive; income/refunds are negative
+    if (t.amount <= 0) return;
     grouped[t.category] = (grouped[t.category] || 0) + t.amount;
   });
 
@@ -184,12 +190,24 @@ export async function getTransactionsByCategory(year?: number, month?: number): 
 export async function getTransactionsByDate(days: number = 30, year?: number, month?: number): Promise<Array<{ date: string; total: number }>> {
   const transactions = await fetchTransactions(undefined, year, month);
   const grouped: Record<string, number> = {};
-  
-  const now = new Date();
-  const pastDate = new Date(now.getTime() - days * 24 * 60 * 60 * 1000);
+
+  // Use a sensible "as of" for demo data.
+  // If a specific month is selected, show that month's full trend.
+  // Otherwise, use the latest transaction date as the anchor.
+  let pastDate: Date | null = null;
+  if (year && month) {
+    pastDate = new Date(`${year}-${String(month).padStart(2, '0')}-01`);
+  } else {
+    const dates = transactions
+      .map(t => new Date(t.date))
+      .filter(d => !Number.isNaN(d.getTime()));
+    const asOf = dates.length ? new Date(Math.max(...dates.map(d => d.getTime()))) : new Date();
+    pastDate = new Date(asOf.getTime() - days * 24 * 60 * 60 * 1000);
+  }
 
   transactions
-    .filter(t => new Date(t.date) >= pastDate)
+    .filter(t => t.amount > 0)
+    .filter(t => new Date(t.date) >= (pastDate as Date))
     .forEach(t => {
       grouped[t.date] = (grouped[t.date] || 0) + t.amount;
     });
@@ -197,4 +215,46 @@ export async function getTransactionsByDate(days: number = 30, year?: number, mo
   return Object.entries(grouped)
     .map(([date, total]) => ({ date, total }))
     .sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
+}
+
+export async function sendAssistantChat(payload: AssistantChatRequest): Promise<AssistantChatResponse> {
+  const res = await fetch(`${API_BASE_URL}/assistant/chat`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(payload),
+  });
+  if (!res.ok) {
+    const text = await res.text();
+    throw new Error(text || 'Assistant chat failed');
+  }
+  return res.json();
+}
+
+export async function listGoals(): Promise<Goal[]> {
+  const res = await fetch(`${API_BASE_URL}/goals`);
+  if (!res.ok) throw new Error('Failed to load goals');
+  return res.json();
+}
+
+export async function createGoal(payload: GoalIn): Promise<Goal> {
+  const res = await fetch(`${API_BASE_URL}/goals`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(payload),
+  });
+  if (!res.ok) {
+    const text = await res.text();
+    throw new Error(text || 'Failed to create goal');
+  }
+  return res.json();
+}
+
+export async function deleteGoal(goalId: string): Promise<void> {
+  const res = await fetch(`${API_BASE_URL}/goals/${encodeURIComponent(goalId)}`, {
+    method: 'DELETE',
+  });
+  if (!res.ok) {
+    const text = await res.text();
+    throw new Error(text || 'Failed to delete goal');
+  }
 }

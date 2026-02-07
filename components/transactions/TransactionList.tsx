@@ -66,6 +66,8 @@ export function TransactionList({
       {transactions.map(transaction => {
         const category = categories.find(c => c.name === transaction.category);
         const isDeleting = deletingId === transaction.id;
+        const isIncome = transaction.amount < 0;
+        const amountAbs = Math.abs(transaction.amount);
 
         return (
           <div
@@ -96,7 +98,9 @@ export function TransactionList({
             </div>
             <div className="flex items-center gap-4 flex-shrink-0">
               <div className="text-right">
-                <p className="font-semibold text-rose-300">-{formatCurrency(transaction.amount)}</p>
+                <p className={`font-semibold ${isIncome ? 'text-emerald-300' : 'text-rose-300'}`}>
+                  {isIncome ? '+' : '-'}{formatCurrency(amountAbs)}
+                </p>
                 {transaction.paymentMethod && (
                   <p className="text-xs text-slate-400">{transaction.paymentMethod}</p>
                 )}
